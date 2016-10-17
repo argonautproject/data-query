@@ -1,7 +1,7 @@
 # Healthedata1/Argo-DSTU2 profiles
 This is the repository for Argo-DSTU2 profiles.
 
-**NOTE: WebHook publisher failing for DSTU2 IGs  -  See debugging info below for details and this [Wiki](#https://github.com/Healthedata1/Argo-DSTU2/wiki) for a link to the current publushed version**
+**NOTE: WebHook publisher failing for DSTU2 IGs  -  See debugging info below for details and this [Wiki](https://github.com/Healthedata1/Argo-DSTU2/wiki) for a link to the current publushed version**
 
 GitHub will automatically trigger a new build whenever you commit changes.
 (To manually trigger a build, just `POST` to the Webhook URL yourself, for example via:
