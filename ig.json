@@ -1,17 +1,17 @@
 {
   "tool" : "jekyll",
   "paths" : {
-    "resources" : "resources",
+    "resources" : ["resources","examples"],
     "pages" : "pages",
     "temp" : "temp",
     "qa" : "qa",
     "output" : "output",
-    "specification" : "http://hl7.org/fhir/2016May"
+    "specification" : "http://hl7.org/fhir"
   },
-	"canonicalBase": "http://hl7.org/fhir/test-ig-10",
+	"canonicalBase": "http://hl7.org/fhir/us/argonaut",
   "version" : "1.0.2",
 	"spreadsheets": [
-		"diagnosticorder-daf-profile-spreadsheet.xml"
+		"diagnosticorder-daf-profile-spreadsheet.xml","allergyintolerance-argonaut-profile-spreadsheet.xml"
 	],  
 	"defaults": {
 		"Any": {
