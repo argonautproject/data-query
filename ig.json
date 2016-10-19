@@ -14,7 +14,7 @@
 	"canonicalBase": "http://hl7.org/fhir/us/argonaut",
 	"version": "1.0.2",
 	"spreadsheets": [
-		"diagnosticorder-daf-profile-spreadsheet.xml", "allergyintolerance-argonaut-profile-spreadsheet.xml", "careplan-argonaut-profile-spreadsheet.xml", "careteam-argonaut-profile-spreadsheet.xml"
+		"diagnosticorder-daf-profile-spreadsheet.xml", "allergyintolerance-argonaut-profile-spreadsheet.xml", "careplan-argonaut-profile-spreadsheet.xml", "careteam-argonaut-profile-spreadsheet.xml","goal-argonaut-profile-spreadsheet.xml"
 	],
 	"defaults": {
 		"Any": {
