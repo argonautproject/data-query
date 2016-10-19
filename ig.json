@@ -1,34 +1,55 @@
 {
-  "tool" : "jekyll",
-  "paths" : {
-    "resources" : ["resources","examples"],
-    "pages" : "pages",
-    "temp" : "temp",
-    "qa" : "qa",
-    "output" : "output",
-    "specification" : "http://hl7.org/fhir"
-  },
+	"tool": "jekyll",
+	"paths": {
+		"resources": [
+			"resources", "examples"
+		],
+		"pages": "pages",
+		"temp": "temp",
+		"qa": "qa",
+		"output": "output",
+		"specification": "http://hl7.org/fhir"
+	},
+	"sct-edition": "http://snomed.info/sct/731000124108",
 	"canonicalBase": "http://hl7.org/fhir/us/argonaut",
-  "version" : "1.0.2",
+	"version": "1.0.2",
 	"spreadsheets": [
-		"diagnosticorder-daf-profile-spreadsheet.xml","allergyintolerance-argonaut-profile-spreadsheet.xml"
-	],  
+		"diagnosticorder-daf-profile-spreadsheet.xml", "allergyintolerance-argonaut-profile-spreadsheet.xml", "careplan-argonaut-profile-spreadsheet.xml"
+	],
 	"defaults": {
 		"Any": {
-	  	"template-format" : "format.html",
-      "template-base" : "base.html"
+			"template-format": "format.html",
+			"template-base": "base.html"
 		},
 		"ValueSet": {
-      "template-base" : "vs.html"
+			"template-base": "vs.html"
 		},
 		"ConceptMap": {
-      "template-base" : "cm.html"
+			"template-base": "cm.html"
 		},
 		"StructureDefinition": {
-      "template-base" : "sd.html"
+			"template-base": "sd.html"
 		}
 	},
 	"source": "ig.xml",
-  "resources" : {
-  }
+	"resources": {
+		"ValueSet/substance": {
+			"base": "valueset-substance.html"
+		},
+		"ValueSet/substance-ndfrt": {
+			"base": "valueset-substance-ndfrt.html"
+		},
+		"ValueSet/substance-rxnorm": {
+			"base": "valueset-substance-rxnorm.html"
+		},
+		"ValueSet/substance-sct": {
+			"base": "valueset-substance-sct.html"
+		},
+		"ValueSet/narrative-status": {
+			"base": "valueset-narrative-status.html"
+		},
+		"ValueSet/argo-codesystem": {
+			"base": "valueset-argo-codesystem.html"
+		}
+	}
 }

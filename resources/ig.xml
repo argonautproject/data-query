@@ -12,12 +12,61 @@ Hidden IG for de facto IG publishing
   <publisher value="FHIR Project"/>
   <package>
     <name value="base"/>
-    <resource>
+
+        <resource>
       <purpose value="example"/>
       <sourceReference>
         <reference value="ValueSet/test-ig-vs"/>
       </sourceReference>
     </resource>
+    
+    
+            <resource>
+      <purpose value="terminology"/>
+      <sourceReference>
+        <reference value="ValueSet/argo-codesystem"/>
+      </sourceReference>
+    </resource>
+    
+        <resource>
+      <purpose value="terminology"/>
+            <sourceReference>
+        <reference value="ValueSet/narrative-status"/>
+      </sourceReference>
+    </resource>
+    
+            <resource>
+      <purpose value="terminology"/>
+      <sourceReference>
+        <reference value="ValueSet/substance"/>
+      </sourceReference>
+    </resource>
+
+    
+    
+        <resource>
+      <purpose value="terminology"/>
+      <sourceReference>
+        <reference value="ValueSet/substance-sct"/>
+      </sourceReference>
+    </resource>
+    
+    
+        <resource>
+      <purpose value="terminology"/>
+      <sourceReference>
+        <reference value="ValueSet/substance-ndrft"/>
+      </sourceReference>
+    </resource>
+    
+        <resource>
+      <purpose value="terminology"/>
+      <sourceReference>
+        <reference value="ValueSet/substance-rxnorm"/>
+      </sourceReference>
+    </resource>
+    
+    
   </package>
   <page>
     <source value="index.html"/>
