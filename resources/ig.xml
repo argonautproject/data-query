@@ -66,6 +66,15 @@ Hidden IG for de facto IG publishing
       </sourceReference>
     </resource>
     
+        
+        <resource>
+      <purpose value="terminology"/>
+      <sourceReference>
+        <reference value="ValueSet/provider-role"/>
+      </sourceReference>
+    </resource>
+    
+
     
   </package>
   <page>
