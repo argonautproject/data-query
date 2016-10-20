@@ -20,7 +20,8 @@
 "device-argonaut-profile-spreadsheet.xml",
 "diagnosticreport-argonaut-profile-spreadsheet.xml",
 "goal-argonaut-profile-spreadsheet.xml",
-"immunization-argonaut-profile-spreadsheet.xml"
+"immunization-argonaut-profile-spreadsheet.xml",
+"observationresults-argonaut-profile-spreadsheet.xml"
 	],
 	"defaults": {
 		"Any": {
@@ -64,10 +65,16 @@
 			"base": "valueset-vacc-status.html"
 		},
 		"ValueSet/ndc-vaccine-codes": {
-			"base": "valueset-ndc-vaccine-codes"
+			"base": "valueset-ndc-vaccine-codes.html"
 		},
 		"ValueSet/device-kind": {
-			"base": "valueset-device-kind"
+			"base": "valueset-device-kind.html"
+		},
+		"ValueSet/ucum": {
+			"base": "valueset-ucum.html"
+		},
+		"ValueSet/observation-value-codes": {
+			"base": "valueset-observation-value-codes.html"
 		}
 	}
 }
