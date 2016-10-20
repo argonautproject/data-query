@@ -14,7 +14,7 @@
 	"canonicalBase": "http://hl7.org/fhir/us/argonaut",
 	"version": "1.0.2",
 	"spreadsheets": [
-		"diagnosticorder-daf-profile-spreadsheet.xml", "allergyintolerance-argonaut-profile-spreadsheet.xml", "careplan-argonaut-profile-spreadsheet.xml", "careteam-argonaut-profile-spreadsheet.xml","goal-argonaut-profile-spreadsheet.xml"
+		"allergyintolerance-argonaut-profile-spreadsheet.xml", "careplan-argonaut-profile-spreadsheet.xml", "careteam-argonaut-profile-spreadsheet.xml", "device-argonaut-profile-spreadsheet.xml", "goal-argonaut-profile-spreadsheet.xml", "immunization-argonaut-profile-spreadsheet.xml"
 	],
 	"defaults": {
 		"Any": {
@@ -53,6 +53,15 @@
 		},
 		"ValueSet/provider-role": {
 			"base": "valueset-provider-role.html"
+		},
+		"ValueSet/vacc-status": {
+			"base": "valueset-vacc-status.html"
+		},
+		"ValueSet/ndc-vaccine-codes": {
+			"base": "valueset-ndc-vaccine-codes"
+		},
+		"ValueSet/device-kind": {
+			"base": "valueset-device-kind"
 		}
 	}
 }

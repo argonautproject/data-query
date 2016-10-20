@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/Users/Eric/Documents/HL7/FHIR/BUILD_EDIT_FILES/dstu2-fhir-all-xsd/valueset-stripped.xsd">
+	<id value="vacc-status"/>
+	<url value="http://hl7.org/fhir/us/argonaut/ValueSet/vacc-status"/>
+	<name value="Argonaut Immunization Status"/>
+	<status value="draft"/>
+	<publisher value="Argonaut Project"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://argonautwiki.hl7.org"/>
+		</telecom>
+	</contact>
+	<date value="2016-10-18"/>
+	<description value="Immunization codes constrained from the DSTU2 core to include only 'completed' and 'enter-in-error'  which are the only two clinically relevent values."/>
+	<requirements value="Codes that may be used for implementation of the Argonaut Immunization IG and MU2015 certification."/>
+	<compose>
+		<include>
+			<system value="http://hl7.org/fhir/medication-admin-status"/>
+			<concept>
+				<code value="completed"/>
+				<display value="Completed"/>
+				<designation>
+					<value value="All actions that are implied by the administration have occurred"/>
+				</designation>
+			</concept>
+			<concept>
+				<code value="entered-in-error"/>
+				<display value="Entered in Error"/>
+				<designation>
+					<value value="The administration was entered in error and therefore nullified"/>
+				</designation>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>

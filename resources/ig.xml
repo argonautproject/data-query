@@ -74,6 +74,32 @@ Hidden IG for de facto IG publishing
       </sourceReference>
     </resource>
     
+    
+        
+        <resource>
+      <purpose value="terminology"/>
+      <sourceReference>
+        <reference value="ValueSet/ndc-vaccine-codes"/>
+      </sourceReference>
+    </resource>
+    
+    
+        
+        <resource>
+      <purpose value="terminology"/>
+      <sourceReference>
+        <reference value="ValueSet/vacc-status"/>
+      </sourceReference>
+    </resource>
+    
+    
+        
+        <resource>
+      <purpose value="terminology"/>
+      <sourceReference>
+        <reference value="ValueSet/device-kind"/>
+      </sourceReference>
+    </resource>
 
     
   </package>
