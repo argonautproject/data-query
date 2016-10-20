@@ -116,6 +116,13 @@ Hidden IG for de facto IG publishing
         <reference value="ValueSet/observation-value-codes"/>
       </sourceReference>
     </resource>
+        
+        <resource>
+      <purpose value="terminology"/>
+      <sourceReference>
+        <reference value="ValueSet/medication-codes"/>
+      </sourceReference>
+    </resource>
 
     
   </package>

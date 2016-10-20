@@ -21,6 +21,8 @@
 "diagnosticreport-argonaut-profile-spreadsheet.xml",
 "goal-argonaut-profile-spreadsheet.xml",
 "immunization-argonaut-profile-spreadsheet.xml",
+"medication-argonaut-profile-spreadsheet.xml",
+
 "observationresults-argonaut-profile-spreadsheet.xml"
 	],
 	"defaults": {
@@ -75,6 +77,9 @@
 		},
 		"ValueSet/observation-value-codes": {
 			"base": "valueset-observation-value-codes.html"
+		},
+		"ValueSet/medication-codes": {
+			"base": "valueset-medication-codes.html"
 		}
 	}
 }
