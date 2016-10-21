@@ -82,8 +82,11 @@
 		"ValueSet/observation-ccdasmokingstatus": {
 			"base": "valueset-observation-ccdasmokingstatus.html"
 		},
-		"ValueSet/observation-CCDAVitalSignResult": {
-			"base": "valueset-observation-CCDAVitalSignResult.html"
+		"ValueSet/observation-ccdavitalsignresult": {
+			"base": "valueset-observation-ccdavitalsignresult"
+		},
+		"ValueSet/ucum-vitals-common": {
+			"base": "valueset-ucum-vitals-common"
 		}
 	}
 }

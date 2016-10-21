@@ -147,7 +147,21 @@ Hidden IG for de facto IG publishing
       </sourceReference>
     </resource>
     
- 
+      
+            <resource>
+      <purpose value="terminology"/>
+      <sourceReference>
+        <reference value="ValueSet/observation-ccdavitalsignresult"/>
+      </sourceReference>
+    </resource>
+    
+               <resource>
+      <purpose value="terminology"/>
+      <sourceReference>
+        <reference value="ValueSet/ucum-vitals-common"/>
+      </sourceReference>
+    </resource>
+
 
   </package>
   <page>
