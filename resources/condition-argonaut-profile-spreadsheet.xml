@@ -9,7 +9,7 @@
   <Author>Grahame</Author>
   <LastAuthor>Eric Haas</LastAuthor>
   <Created>2012-03-19T11:12:07Z</Created>
-  <LastSaved>2016-10-20T16:49:22Z</LastSaved>
+  <LastSaved>2016-10-21T06:18:31Z</LastSaved>
   <Version>12.00</Version>
  </DocumentProperties>
  <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
@@ -21,7 +21,7 @@
   <WindowTopX>-15</WindowTopX>
   <WindowTopY>5955</WindowTopY>
   <TabRatio>774</TabRatio>
-  <ActiveSheet>4</ActiveSheet>
+  <ActiveSheet>8</ActiveSheet>
   <FirstVisibleSheet>1</FirstVisibleSheet>
   <RefModeR1C1/>
   <ProtectStructure>False</ProtectStructure>
@@ -897,6 +897,9 @@
    <NumberFormat/>
    <Protection/>
   </Style>
+  <Style ss:ID="s184">
+   <Font ss:FontName="Arial" x:Family="Swiss" ss:Size="11" ss:Color="#252525"/>
+  </Style>
  </Styles>
  <Worksheet ss:Name="Instructions">
   <Table ss:ExpandedColumnCount="1" ss:ExpandedRowCount="5" x:FullColumns="1"
@@ -1313,17 +1316,17 @@
     <Cell ss:StyleID="s106"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s108"><Data ss:Type="String">Condition.subject</Data><NamedCell
+    <Cell ss:StyleID="s108"><Data ss:Type="String">Condition.category</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s109"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s109"><Data ss:Type="String">1..1</Data><NamedCell
+    <Cell ss:StyleID="s109"><Data ss:Type="String">0..1</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s109"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s109"><Data ss:Type="String">Reference(Patient)</Data><NamedCell
-      ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s109"><Data ss:Type="String">Y</Data><NamedCell
+    <Cell ss:StyleID="s109"><Data ss:Type="String">CodeableConcept</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s109"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s109"><Data ss:Type="String">ArgoProblemCategory</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s109"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s109"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s109"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -1344,12 +1347,16 @@
     <Cell ss:StyleID="s106"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s108"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s108"><Data ss:Type="String">Condition.subject</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s109"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s109"><Data ss:Type="String">1..1</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s109"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s109"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s109"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s109"><NamedCell ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s109"><Data ss:Type="String">Reference(Patient)</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
+    <Cell ss:StyleID="s109"><Data ss:Type="String">Y</Data><NamedCell
+      ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s109"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s109"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s109"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -2481,8 +2488,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>2</ActiveRow>
-     <ActiveCol>6</ActiveCol>
+     <ActiveRow>5</ActiveRow>
+     <ActiveCol>9</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -5705,7 +5712,6 @@
     <HorizontalResolution>600</HorizontalResolution>
     <VerticalResolution>600</VerticalResolution>
    </Print>
-   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
@@ -5726,7 +5732,7 @@
     <Pane>
      <Number>0</Number>
      <ActiveRow>4</ActiveRow>
-     <ActiveCol>5</ActiveCol>
+     <ActiveCol>3</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -7903,11 +7909,11 @@
     <Cell ss:StyleID="s139"/>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s106"/>
-    <Cell ss:StyleID="s109"/>
-    <Cell ss:StyleID="s138"/>
-    <Cell ss:StyleID="s138"/>
-    <Cell ss:StyleID="s138"/>
+    <Cell ss:StyleID="s106"><Data ss:Type="String">ArgoProblemCategory</Data></Cell>
+    <Cell ss:StyleID="s184"><Data ss:Type="String">Extended category code valueset to support the intent of the separate concepts of problems and health concerns</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">value set</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">preferred</Data></Cell>
+    <Cell ss:StyleID="s138"><Data ss:Type="String">http://hl7.org/fhir/us/argonaut/ValueSet/condition-category</Data></Cell>
     <Cell ss:StyleID="s138"/>
     <Cell ss:StyleID="s138"/>
     <Cell ss:StyleID="s138"/>
@@ -8021,6 +8027,7 @@
     <HorizontalResolution>600</HorizontalResolution>
     <VerticalResolution>600</VerticalResolution>
    </Print>
+   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
@@ -8040,7 +8047,7 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>8</ActiveRow>
+     <ActiveRow>4</ActiveRow>
      <ActiveCol>4</ActiveCol>
     </Pane>
    </Panes>

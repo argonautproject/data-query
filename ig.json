@@ -83,7 +83,6 @@
 		},
 		"ValueSet/medication-codes": {
 			"base": "valueset-medication-codes.html"
-		}
-		
+		}		
 	}
 }

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns:xhtml="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://hl7.org/fhir file:///C:/Users/Eric/Documents/HL7/FHIR/BUILD_EDIT_FILES/dstu2-fhir-all-xsd/valueset-stripped-notext.xsd" xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<id value="condition-category"/>
+	<url value="http://hl7.org/fhir/us/argonaut/ValueSet/condition-category"/>
+	<name value="Argonaut Condition Category Codes"/>
+	<status value="draft"/>
+<publisher value="Argonaut Project"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://argonautwiki.hl7.org"/>
+		</telecom>
+	</contact>
+	<date value="2016-10-18"/>
+	<description value="This value set includes codes from the  http://hl7.org/fhir/condition-category code system and  the  Argonaut Project extension codes  'problems' and 'health-concerns'."/>
+	<requirements value="Codes that are needed for implementation of the Argonaut Project Problem and Health Concern IGs."/>
+	<compose>
+		<import/>
+		<include>
+			<system value="http://hl7.org/fhir/condition-category"/>
+		</include>
+		<include>
+			<system value="http://argonaut.hl7.org"/>
+			<concept>
+				<code value="problem"/>
+				<display value="Problem"/>
+			</concept>
+			<concept>
+				<code value="health-concern"/>
+				<display value="Health Concern"/>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>
