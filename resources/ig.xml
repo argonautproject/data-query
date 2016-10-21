@@ -124,7 +124,21 @@ Hidden IG for de facto IG publishing
       </sourceReference>
     </resource>
 
+           
+        <resource>
+      <purpose value="terminology"/>
+      <sourceReference>
+        <reference value="ValueSet/procedure-type"/>
+      </sourceReference>
+    </resource>
     
+            <resource>
+      <purpose value="terminology"/>
+      <sourceReference>
+        <reference value="ValueSet/procedure-icd10pcs"/>
+      </sourceReference>
+    </resource>
+ 
   </package>
   <page>
     <source value="index.html"/>

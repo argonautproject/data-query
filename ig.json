@@ -26,7 +26,8 @@
 "medication-argonaut-profile-spreadsheet.xml",
 "medicationorder-argonaut-profile-spreadsheet.xml",
 "medicationstatement-argonaut-profile-spreadsheet.xml",
-"observationresults-argonaut-profile-spreadsheet.xml"
+"observationresults-argonaut-profile-spreadsheet.xml",
+"procedure-argonaut-profile-spreadsheet.xml"
 	],
 	"defaults": {
 		"Any": {
@@ -83,6 +84,12 @@
 		},
 		"ValueSet/medication-codes": {
 			"base": "valueset-medication-codes.html"
+		}	,
+		"ValueSet/procedure-type": {
+			"base": "valueset-procedure-type.html"
+		},
+		"ValueSet/procedure-icd10pcs": {
+			"base": "valueset-procedure-icd10pcs.html"
 		}		
 	}
 }
