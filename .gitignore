@@ -65,5 +65,6 @@ Log-FHIR.xlsx
 ####################
 ~*.docx
 ~*.xlsx
+~*.pptx
 
 
