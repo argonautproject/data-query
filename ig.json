@@ -27,7 +27,9 @@
 "medicationorder-argonaut-profile-spreadsheet.xml",
 "medicationstatement-argonaut-profile-spreadsheet.xml",
 "observationresults-argonaut-profile-spreadsheet.xml",
-"procedure-argonaut-profile-spreadsheet.xml"
+"procedure-argonaut-profile-spreadsheet.xml",
+"smokingstatus-argonaut-profile-spreadsheet.xml"
+
 	],
 	"defaults": {
 		"Any": {
@@ -90,6 +92,10 @@
 		},
 		"ValueSet/procedure-icd10pcs": {
 			"base": "valueset-procedure-icd10pcs.html"
+		}		
+		,
+		"ValueSet/observation-ccdasmokingstatus": {
+			"base": "valueset-observation-ccdasmokingstatus.html"
 		}		
 	}
 }
