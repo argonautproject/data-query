@@ -28,8 +28,8 @@
 "medicationstatement-argonaut-profile-spreadsheet.xml",
 "observationresults-argonaut-profile-spreadsheet.xml",
 "procedure-argonaut-profile-spreadsheet.xml",
-"smokingstatus-argonaut-profile-spreadsheet.xml"
-
+"smokingstatus-argonaut-profile-spreadsheet.xml",
+"vitalsigns-argonaut-profile-spreadsheet.xml"
 	],
 	"defaults": {
 		"Any": {
@@ -96,6 +96,10 @@
 		,
 		"ValueSet/observation-ccdasmokingstatus": {
 			"base": "valueset-observation-ccdasmokingstatus.html"
+		}	
+		,
+		"ValueSet/observation-CCDAVitalSignResult": {
+			"base": "valueset-observation-CCDAVitalSignResult.html"
 		}		
 	}
 }
