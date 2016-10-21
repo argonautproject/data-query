@@ -19,7 +19,6 @@
 "careplan-argonaut-profile-spreadsheet.xml",
 "careteam-argonaut-profile-spreadsheet.xml",
 "condition-argonaut-profile-spreadsheet.xml",
-
 "device-argonaut-profile-spreadsheet.xml",
 "diagnosticreport-argonaut-profile-spreadsheet.xml",
 "goal-argonaut-profile-spreadsheet.xml",
@@ -27,7 +26,6 @@
 "medication-argonaut-profile-spreadsheet.xml",
 "medicationorder-argonaut-profile-spreadsheet.xml",
 "medicationstatement-argonaut-profile-spreadsheet.xml",
-
 "observationresults-argonaut-profile-spreadsheet.xml"
 	],
 	"defaults": {
