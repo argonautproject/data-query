@@ -12,15 +12,6 @@ Hidden IG for de facto IG publishing
   <publisher value="FHIR Project"/>
   <package>
     <name value="base"/>
-
-        <resource>
-      <purpose value="example"/>
-      <sourceReference>
-        <reference value="ValueSet/test-ig-vs"/>
-      </sourceReference>
-    </resource>
-    
-    
             <resource>
       <purpose value="terminology"/>
       <sourceReference>
