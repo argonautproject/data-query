@@ -1,1 +1,66 @@
-{"paths": {"temp": "temp", "specification": "http://hl7.org/fhir/DSTU2", "qa": "qa", "txCache": "txCache", "output": "output", "pages": "pages", "resources": ["resources", "examples"]}, "version": "1.0.2", "defaults": {"StructureDefinition": {"template-base": "sd.html"}, "ConceptMap": {"template-base": "cm.html"}, "Any": {"template-format": "format.html", "template-base": "base.html"}, "ValueSet": {"template-base": "vs.html"}}, "source": "ig.xml", "canonicalBase": "http://hl7.org/fhir/us/argonaut", "tool": "jekyll", "sct-edition": "http://snomed.info/sct/731000124108", "spreadsheets": ["allergyintolerance-argonaut-profile-spreadsheet.xml", "careplan-argonaut-profile-spreadsheet.xml", "careteam-argonaut-profile-spreadsheet.xml", "condition-argonaut-profile-spreadsheet.xml", "device-argonaut-profile-spreadsheet.xml", "diagnosticreport-argonaut-profile-spreadsheet.xml", "goal-argonaut-profile-spreadsheet.xml", "immunization-argonaut-profile-spreadsheet.xml", "medication-argonaut-profile-spreadsheet.xml", "medicationorder-argonaut-profile-spreadsheet.xml", "medicationstatement-argonaut-profile-spreadsheet.xml", "observationresults-argonaut-profile-spreadsheet.xml", "procedure-argonaut-profile-spreadsheet.xml", "smokingstatus-argonaut-profile-spreadsheet.xml", "vitalsigns-argonaut-profile-spreadsheet.xml"], "resources": {"ValueSet/substance-sct": {"base": "valueset-substance-sct.html"}, "ValueSet/substance": {"base": "valueset-substance.html"}, "ValueSet/ucum": {"base": "valueset-ucum.html"}, "ValueSet/procedure-icd10pcs": {"base": "valueset-procedure-icd10pcs.html"}, "ValueSet/argo-codesystem": {"base": "valueset-argo-codesystem.html"}, "ValueSet/substance-ndfrt": {"base": "valueset-substance-ndfrt.html"}, "ValueSet/ucum-vitals-common": {"base": "valueset-ucum-vitals-common.html"}, "ValueSet/device-kind": {"base": "valueset-device-kind.html"}, "ValueSet/medication-codes": {"base": "valueset-medication-codes.html"}, "ValueSet/condition-category": {"base": "valueset-condition-category.html"}, "ValueSet/narrative-status": {"base": "valueset-narrative-status.html"}, "ValueSet/provider-role": {"base": "valueset-provider-role.html"}, "ValueSet/ndc-vaccine-codes": {"base": "valueset-ndc-vaccine-codes.html"}, "ValueSet/substance-rxnorm": {"base": "valueset-substance-rxnorm.html"}, "ValueSet/procedure-type": {"base": "valueset-procedure-type.html"}, "ValueSet/vacc-status": {"base": "valueset-vacc-status.html"}, "ValueSet/observation-ccdasmokingstatus": {"base": "valueset-observation-ccdasmokingstatus.html"}, "ValueSet/observation-value-codes": {"base": "valueset-observation-value-codes.html"}}}
+{
+    "paths": {
+        "temp": "temp",
+        "specification": "http://hl7.org/fhir/DSTU2",
+        "qa": "qa",
+        "txCache": "txCache",
+        "output": "output",
+        "pages": "pages",
+        "resources": [
+            "resources",
+            "examples"
+        ]
+    },
+    "version": "1.0.2",
+    "defaults": {
+        "StructureDefinition": {"template-base": "sd.html"},
+        "ConceptMap": {"template-base": "cm.html"},
+        "Any": {
+            "template-format": "format.html",
+            "template-base": "base.html"
+        },
+        "ValueSet": {"template-base": "vs.html"}
+    },
+    "source": "ig.xml",
+    "canonicalBase": "http://hl7.org/fhir/us/argonaut",
+    "tool": "jekyll",
+    "sct-edition": "http://snomed.info/sct/731000124108",
+    "spreadsheets": [
+        "allergyintolerance-argonaut-profile-spreadsheet.xml",
+        "careplan-argonaut-profile-spreadsheet.xml",
+        "careteam-argonaut-profile-spreadsheet.xml",
+        "condition-argonaut-profile-spreadsheet.xml",
+        "device-argonaut-profile-spreadsheet.xml",
+        "diagnosticreport-argonaut-profile-spreadsheet.xml",
+        "goal-argonaut-profile-spreadsheet.xml",
+        "immunization-argonaut-profile-spreadsheet.xml",
+        "medication-argonaut-profile-spreadsheet.xml",
+        "medicationorder-argonaut-profile-spreadsheet.xml",
+        "medicationstatement-argonaut-profile-spreadsheet.xml",
+        "observationresults-argonaut-profile-spreadsheet.xml",
+        "patient-argonaut-profile-spreadsheet.xml",
+        "procedure-argonaut-profile-spreadsheet.xml",
+        "smokingstatus-argonaut-profile-spreadsheet.xml",
+        "vitalsigns-argonaut-profile-spreadsheet.xml"
+    ],
+    "resources": {
+        "ValueSet/substance-sct": {"base": "valueset-substance-sct.html"},
+        "ValueSet/substance": {"base": "valueset-substance.html"},
+        "ValueSet/ucum": {"base": "valueset-ucum.html"},
+        "ValueSet/procedure-icd10pcs": {"base": "valueset-procedure-icd10pcs.html"},
+        "ValueSet/argo-codesystem": {"base": "valueset-argo-codesystem.html"},
+        "ValueSet/substance-ndfrt": {"base": "valueset-substance-ndfrt.html"},
+        "ValueSet/ucum-vitals-common": {"base": "valueset-ucum-vitals-common.html"},
+        "ValueSet/device-kind": {"base": "valueset-device-kind.html"},
+        "ValueSet/medication-codes": {"base": "valueset-medication-codes.html"},
+        "ValueSet/condition-category": {"base": "valueset-condition-category.html"},
+        "ValueSet/narrative-status": {"base": "valueset-narrative-status.html"},
+        "ValueSet/provider-role": {"base": "valueset-provider-role.html"},
+        "ValueSet/ndc-vaccine-codes": {"base": "valueset-ndc-vaccine-codes.html"},
+        "ValueSet/substance-rxnorm": {"base": "valueset-substance-rxnorm.html"},
+        "ValueSet/procedure-type": {"base": "valueset-procedure-type.html"},
+        "ValueSet/vacc-status": {"base": "valueset-vacc-status.html"},
+        "ValueSet/observation-ccdasmokingstatus": {"base": "valueset-observation-ccdasmokingstatus.html"},
+        "ValueSet/observation-value-codes": {"base": "valueset-observation-value-codes.html"}
+    }
+}
