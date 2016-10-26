@@ -46,7 +46,7 @@ Hidden IG for de facto IG publishing
         <resource>
       <purpose value="terminology"/>
       <sourceReference>
-        <reference value="ValueSet/substance-ndrft"/>
+        <reference value="ValueSet/substance-ndfrt"/>
       </sourceReference>
     </resource>
     

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns:xhtml="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://hl7.org/fhir file:///C:/Users/Eric/Documents/HL7/FHIR/BUILD_EDIT_FILES/dstu2-fhir-all-xsd/valueset-stripped-notext.xsd" xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<id value="usrealm-birthsex"/>
+	<url value="http://hl7.org/fhir/us/argonaut/ValueSet/usrealm-birthsex"/>
+	<name value="USRealm Birth Sex Value Set"/>
+	<status value="active"/>
+	<publisher value="Argonaut Project"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://argonautwiki.hl7.org"/>
+		</telecom>
+	</contact>
+	<date value="2016-08-10"/>
+	<description value="Codes for assigning sex at birth as specified by the [Office of the National Coordinator for Health IT (ONC)](https://www.healthit.gov/newsroom/about-onc)"/>
+	<compose>
+		<include>
+			<system value="http://hl7.org/fhir/v3/AdministrativeGender"/>
+			<concept>
+				<code value="F"/>
+				<display value="Female"/>
+			</concept>
+			<concept>
+				<code value="M"/>
+				<display value="Male"/>
+			</concept>
+		</include>
+		<include>
+			<system value="http://hl7.org/fhir/v3/NullFlavor"/>
+			<concept>
+				<code value="UNK"/>
+				<display value="Unknown"/>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>
