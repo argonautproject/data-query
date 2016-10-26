@@ -9,7 +9,7 @@
   <Author>Grahame</Author>
   <LastAuthor>Eric Haas</LastAuthor>
   <Created>2012-03-19T11:12:07Z</Created>
-  <LastSaved>2016-10-26T00:55:21Z</LastSaved>
+  <LastSaved>2016-10-26T01:41:20Z</LastSaved>
   <Version>12.00</Version>
  </DocumentProperties>
  <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
@@ -21,7 +21,7 @@
   <WindowTopX>-15</WindowTopX>
   <WindowTopY>5940</WindowTopY>
   <TabRatio>774</TabRatio>
-  <ActiveSheet>5</ActiveSheet>
+  <ActiveSheet>1</ActiveSheet>
   <FirstVisibleSheet>1</FirstVisibleSheet>
   <ProtectStructure>False</ProtectStructure>
   <ProtectWindows>False</ProtectWindows>
@@ -1010,7 +1010,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s74"><Data ss:Type="String">extension.uri</Data></Cell>
     <Cell ss:StyleID="s81" ss:HRef="http://hl7.org/fhir/StructureDefinition/patient-argo"><Data
-      ss:Type="String">http://hl7.org/fhir/us/argonaut/StructureDefinition/Argo-Patient</Data></Cell>
+      ss:Type="String">http://hl7.org/fhir/us/argonaut/StructureDefinition/argo-</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s82"><Data ss:Type="String">introduction</Data></Cell>
@@ -1038,6 +1038,7 @@
     <HorizontalResolution>600</HorizontalResolution>
     <VerticalResolution>600</VerticalResolution>
    </Print>
+   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
@@ -1058,7 +1059,7 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>22</ActiveRow>
+     <ActiveRow>12</ActiveRow>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -2307,7 +2308,7 @@
     <Pane>
      <Number>0</Number>
      <ActiveRow>4</ActiveRow>
-     <ActiveCol>9</ActiveCol>
+     <ActiveCol>0</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -6838,7 +6839,6 @@
     <HorizontalResolution>600</HorizontalResolution>
     <VerticalResolution>600</VerticalResolution>
    </Print>
-   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
@@ -6858,7 +6858,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveCol>0</ActiveCol>
+     <ActiveRow>3</ActiveRow>
+     <ActiveCol>9</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -7881,7 +7882,7 @@
     <Cell ss:StyleID="s109"><Data ss:Type="String">Code for sex assigned at birth</Data></Cell>
     <Cell ss:StyleID="s139"><Data ss:Type="String">value set</Data></Cell>
     <Cell ss:StyleID="s139"><Data ss:Type="String">required</Data></Cell>
-    <Cell ss:StyleID="s171"><Data ss:Type="String">http://hl7.org/fhir/us/argonaut/ValueSet/substance</Data></Cell>
+    <Cell ss:StyleID="s171"><Data ss:Type="String">http://hl7.org/fhir/us/argonaut/ValueSet/usrealm-birthsex</Data></Cell>
     <Cell ss:StyleID="s139"/>
     <Cell ss:StyleID="s139"/>
     <Cell ss:StyleID="s139"/>
@@ -7896,7 +7897,7 @@
     <Cell ss:StyleID="s109"><Data ss:Type="String">The 5 race category codes according to the [OMB Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity, Statistical Policy Directive No. 15, as revised, October 30, 1997](https://www.whitehouse.gov/omb/fedreg_1997standards).</Data></Cell>
     <Cell ss:StyleID="s139"><Data ss:Type="String">value set</Data></Cell>
     <Cell ss:StyleID="s139"><Data ss:Type="String">required</Data></Cell>
-    <Cell ss:StyleID="s171"><Data ss:Type="String">http://hl7.org/fhir/us/argonaut/ValueSet/substance</Data></Cell>
+    <Cell ss:StyleID="s171"><Data ss:Type="String">http://hl7.org/fhir/us/argonaut/ValueSet/omb-race</Data></Cell>
     <Cell ss:StyleID="s139"/>
     <Cell ss:StyleID="s139"/>
     <Cell ss:StyleID="s139"/>
@@ -7911,7 +7912,7 @@
     <Cell ss:StyleID="s109"><Data ss:Type="String">The [900+ CDC Race codes](http://www.cdc.gov/phin/resources/vocabulary/index.html) that are grouped under one of the 5 OMB race category codes.</Data></Cell>
     <Cell ss:StyleID="s139"><Data ss:Type="String">value set</Data></Cell>
     <Cell ss:StyleID="s139"><Data ss:Type="String">required</Data></Cell>
-    <Cell ss:StyleID="s139"><Data ss:Type="String">http://hl7.org/fhir/us/argonaut/ValueSet/substance</Data></Cell>
+    <Cell ss:StyleID="s139"><Data ss:Type="String">http://hl7.org/fhir/us/argonaut/ValueSet/detailed-race</Data></Cell>
     <Cell ss:StyleID="s139"/>
     <Cell ss:StyleID="s139"/>
     <Cell ss:StyleID="s139"/>
@@ -7926,7 +7927,7 @@
     <Cell ss:StyleID="s109"><Data ss:Type="String">The 2 ethnicity category codes according to the [OMB Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity, Statistical Policy Directive No. 15, as revised, October 30, 1997](https://www.whitehouse.gov/omb/fedreg_1997standards).</Data></Cell>
     <Cell ss:StyleID="s139"><Data ss:Type="String">value set</Data></Cell>
     <Cell ss:StyleID="s139"><Data ss:Type="String">required</Data></Cell>
-    <Cell ss:StyleID="s139"><Data ss:Type="String">http://hl7.org/fhir/us/argonaut/ValueSet/substance</Data></Cell>
+    <Cell ss:StyleID="s139"><Data ss:Type="String">http://hl7.org/fhir/us/argonaut/ValueSet/omb-ethnicity</Data></Cell>
     <Cell ss:StyleID="s139"/>
     <Cell ss:StyleID="s139"/>
     <Cell ss:StyleID="s139"/>
@@ -7941,7 +7942,7 @@
     <Cell ss:StyleID="s109"><Data ss:Type="String">The 41 [CDC ethnicity codes](http://www.cdc.gov/phin/resources/vocabulary/index.html) that are grouped under one of the 2 OMB ethnicity category codes.</Data></Cell>
     <Cell ss:StyleID="s139"><Data ss:Type="String">value set</Data></Cell>
     <Cell ss:StyleID="s139"><Data ss:Type="String">required</Data></Cell>
-    <Cell ss:StyleID="s139"><Data ss:Type="String">http://hl7.org/fhir/us/argonaut/ValueSet/substance</Data></Cell>
+    <Cell ss:StyleID="s139"><Data ss:Type="String">http://hl7.org/fhir/us/argonaut/ValueSet/detailed-ethnicity</Data></Cell>
     <Cell ss:StyleID="s139"/>
     <Cell ss:StyleID="s139"/>
     <Cell ss:StyleID="s139"/>
@@ -8194,7 +8195,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>9</ActiveRow>
+     <ActiveRow>7</ActiveRow>
+     <ActiveCol>4</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>

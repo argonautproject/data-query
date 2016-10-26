@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns:xhtml="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://hl7.org/fhir file:///C:/Users/Eric/Documents/HL7/FHIR/BUILD_EDIT_FILES/dstu2-fhir-all-xsd/valueset-stripped-notext.xsd" xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<id value="omb-ethnicity"/>
+	<url value="http://hl7.org/fhir/us/argonaut/ValueSet/omb-ethnicity"/>
+	<name value="OMB Ethnicity Categories"/>
+	<status value="draft"/>
+	<publisher value="Argonaut Project"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://argonautwiki.hl7.org"/>
+		</telecom>
+	</contact>
+	<date value="2016-08-30"/>
+	<description value="The codes for the ethnicity categories - &apos;Hispanic or Latino&apos; and &apos;Non Hispanic or Latino&apos; - as defined by the [OMB Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity, Statistical Policy Directive No. 15, as revised, October 30, 1997](https://www.whitehouse.gov/omb/fedreg_1997standards)."/>
+	<compose>
+		<include>
+			<system value="http://hl7.org/fhir/ValueSet/v3-Ethnicity"/>
+			<concept>
+				<code value="2135-2"/>
+				<display value="Hispanic or Latino"/>
+			</concept>
+			<concept>
+				<code value="2186-5"/>
+				<display value="Non Hispanic or Latino"/>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>

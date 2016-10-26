@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns:xhtml="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://hl7.org/fhir file:///C:/Users/Eric/Documents/HL7/FHIR/BUILD_EDIT_FILES/dstu2-fhir-all-xsd/valueset-stripped-notext.xsd" xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<id value="omb-race"/>
+	<url value="http://hl7.org/fhir/us/argonaut/ValueSet/omb-race"/>
+	<name value="OMB Race Categories"/>
+	<status value="active"/>
+	<experimental value="true"/>
+	<publisher value="Argonaut Project"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://argonautwiki.hl7.org"/>
+		</telecom>
+	</contact>
+	<date value="2016-05-25T16:59:08+10:00"/>
+	<description value="The codes for the concepts &apos;Unknown&apos; and  &apos;Asked but no answer&apos; and the the codes for the five race categories - &apos;American Indian&apos; or &apos;Alaska Native&apos;, &apos;Asian&apos;, &apos;Black or African American&apos;, &apos;Native Hawaiian or Other Pacific Islander&apos;, and &apos;White&apos; - as defined by the [OMB Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity, Statistical Policy Directive No. 15, as revised, October 30, 1997](https://www.whitehouse.gov/omb/fedreg_1997standards) ."/>
+	<compose>
+		<include>
+			<system value="http://hl7.org/fhir/v3/Race"/>
+			<concept>
+				<code value="1002-5"/>
+				<display value="American Indian or Alaska Native"/>
+			</concept>
+			<concept>
+				<code value="2028-9"/>
+				<display value="Asian"/>
+			</concept>
+			<concept>
+				<code value="2054-5"/>
+				<display value="Black or African American"/>
+			</concept>
+			<concept>
+				<code value="2076-8"/>
+				<display value="Native Hawaiian or Other Pacific Islander"/>
+			</concept>
+			<concept>
+				<code value="2106-3"/>
+				<display value="White"/>
+			</concept>
+		</include>
+		<include>
+			<system value="http://hl7.org/fhir/v3/NullFlavor"/>
+			<concept>
+				<code value="UNK"/>
+				<display value="Unknown"/>
+			</concept>
+			<concept>
+				<code value="ASKU"/>
+				<display value="Asked but no answer"/>
+			</concept>
+		</include>
+	</compose>
+</ValueSet>
