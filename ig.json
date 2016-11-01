@@ -11,10 +11,16 @@
 		]
 	},
 	"version": "1.0.2",
+	"extraTemplates": [
+		"mappings"
+	],
 	"defaults": {
 		"StructureDefinition": {
-			"template-base": "sd.html"
+			"template-base": "sd.html",
+			"template-defns": "sd-definitions.html",
+			"template-mappings": "sd-mappings.html"
 		},
+
 		"ConceptMap": {
 			"template-base": "cm.html"
 		},
@@ -102,6 +108,9 @@
 		},
 		"ValueSet/omb-ethnicity": {
 			"base": "valueset-omb-ethnicity.html"
+		},
+		"ValueSet/languages": {
+			"base": "valueset-languages.html"
 		}
 	}
 }

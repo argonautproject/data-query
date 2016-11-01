@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValueSet xmlns:xhtml="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://hl7.org/fhir file:///C:/Users/Eric/Documents/HL7/FHIR/BUILD_EDIT_FILES/dstu2-fhir-all-xsd/valueset-stripped-notext.xsd" xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<id value="languages"/>
+	<url value="http://hl7.org/fhir/us/argonaut/ValueSet/languages"/>
+	<name value="All Languages"/>
+	<status value="draft"/>
+	<experimental value="true"/>
+	<publisher value="Argonaut Project"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://argonautwiki.hl7.org"/>
+		</telecom>
+	</contact>
+	<date value="2016-11-01T22:04:05+00:00"/>
+	<description value="This value set includes all possible codes from BCP-47 (http://tools.ietf.org/html/bcp47)"/>
+	<compose>
+		<include>
+			<system value="urn:ietf:bcp:47"/>
+		</include>
+	</compose>
+</ValueSet>

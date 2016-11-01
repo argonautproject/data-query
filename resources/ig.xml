@@ -17,11 +17,28 @@ Hidden IG for de facto IG publishing
 				<reference value="ValueSet/argo-codesystem"/>
 			</sourceReference>
 		</resource>
+		
+	<!--=====	internal code system is breaking the publisher=====
+				<resource>
+			<purpose value="terminology"/>
+			<sourceReference>
+				<reference value="ValueSet/condition-category"/>
+			</sourceReference>
+		</resource>
+		
+	-->	
+		<resource>
+			<purpose value="terminology"/>
+			<sourceReference>
+				<reference value="ValueSet/languages"/>
+			</sourceReference>
+		</resource>
+		
 		<resource>
 			<purpose value="terminology"/>
 			<sourceReference>
 				<reference value="ValueSet/narrative-status"/>
-			</sourceReference>
+		</sourceReference>
 		</resource>
 		<resource>
 			<purpose value="terminology"/>

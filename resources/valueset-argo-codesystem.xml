@@ -1,43 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ValueSet xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/Users/Eric/Documents/HL7/FHIR/BUILD_EDIT_FILES/dstu2-fhir-all-xsd/valueset-stripped.xsd">
+<ValueSet xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns="http://hl7.org/fhir">
 	<id value="argo-codesystem"/>
 	<text>
 		<status value="generated"/>
-		<xhtml:div>
-			<xhtml:p>Argonaut Extension Codes</xhtml:p>
-			<xhtml:table border="1" cellspacing="0" cellpadding="5">
-				<xhtml:tr>
-					<xhtml:th>Code</xhtml:th>
-					<xhtml:th>Code System</xhtml:th>
-					<xhtml:th>Display Term</xhtml:th>
-					<xhtml:th>Description</xhtml:th>
-				</xhtml:tr>
-				<xhtml:tr>
-					<xhtml:td>problem</xhtml:td>
-					<xhtml:td>http://argonaut.hl7.org</xhtml:td>
-					<xhtml:td>Problem</xhtml:td>
-					<xhtml:td>The patients problems as identified by the provider(s). Items on the provider’s problem list</xhtml:td>
-				</xhtml:tr>
-				<xhtml:tr>
-					<xhtml:td>health-concern</xhtml:td>
-					<xhtml:td>http://argonaut.hl7.org</xhtml:td>
-					<xhtml:td>Health Concern</xhtml:td>
-					<xhtml:td>Additional health concerns from other stakeholders which are outside the provider’s problem list.</xhtml:td>
-				</xhtml:tr>
-				<xhtml:tr>
-					<xhtml:td>careteam</xhtml:td>
-					<xhtml:td>http://argonaut.hl7.org</xhtml:td>
-					<xhtml:td>Care Team</xhtml:td>
-					<xhtml:td>Careplan for identifying all the people and /or organizations who plan to participate in the coordination of delivery of care.</xhtml:td>
-				</xhtml:tr>
-				<xhtml:tr>
-					<xhtml:td>assess-plan</xhtml:td>
-					<xhtml:td>http://argonaut.hl7.org</xhtml:td>
-					<xhtml:td>Assessment and Plan of Treatment</xhtml:td>
-					<xhtml:td>The clinical conclusions and assumptions that guide the patient's treatment and the clinical activities formulated for a patient.</xhtml:td>
-				</xhtml:tr>
-			</xhtml:table>
-		</xhtml:div>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+      
+			<p>Argonaut Extension Codes</p>
+			<table border="1" cellspacing="0" cellpadding="5">
+				<tr>
+					<th>Code</th>
+					<th>Code System</th>
+					<th>Display Term</th>
+					<th>Description</th>
+				</tr>
+				<tr>
+					<td>problem</td>
+					<td>http://argonaut.hl7.org</td>
+					<td>Problem</td>
+					<td>The patients problems as identified by the provider(s). Items on the provider’s problem list</td>
+				</tr>
+				<tr>
+					<td>health-concern</td>
+					<td>http://argonaut.hl7.org</td>
+					<td>Health Concern</td>
+					<td>Additional health concerns from other stakeholders which are outside the provider’s problem list.</td>
+				</tr>
+				<tr>
+					<td>careteam</td>
+					<td>http://argonaut.hl7.org</td>
+					<td>Care Team</td>
+					<td>Careplan for identifying all the people and /or organizations who plan to participate in the coordination of delivery of care.</td>
+				</tr>
+				<tr>
+					<td>assess-plan</td>
+					<td>http://argonaut.hl7.org</td>
+					<td>Assessment and Plan of Treatment</td>
+					<td>The clinical conclusions and assumptions that guide the patient's treatment and the clinical activities formulated for a patient.</td>
+				</tr>
+			</table>
+		</div>
 	</text>
 	<url value="http://hl7.org/fhir/us/argonaut/ValueSet/argo-codesystem"/>
 	<name value="Argonaut Extension Codes"/>
