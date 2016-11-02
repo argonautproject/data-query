@@ -37,7 +37,7 @@
 	"tool": "jekyll",
 	"sct-edition": "http://snomed.info/sct/731000124108",
 	"spreadsheets": [
-		"allergyintolerance-argonaut-profile-spreadsheet.xml", "careplan-argonaut-profile-spreadsheet.xml", "careteam-argonaut-profile-spreadsheet.xml", "condition-argonaut-profile-spreadsheet.xml", "device-argonaut-profile-spreadsheet.xml", "diagnosticreport-argonaut-profile-spreadsheet.xml", "goal-argonaut-profile-spreadsheet.xml", "immunization-argonaut-profile-spreadsheet.xml", "medication-argonaut-profile-spreadsheet.xml", "medicationorder-argonaut-profile-spreadsheet.xml", "medicationstatement-argonaut-profile-spreadsheet.xml", "observationresults-argonaut-profile-spreadsheet.xml", "patient-argonaut-profile-spreadsheet.xml", "procedure-argonaut-profile-spreadsheet.xml", "smokingstatus-argonaut-profile-spreadsheet.xml", "vitalsigns-argonaut-profile-spreadsheet.xml"
+		"allergyintolerance-argonaut-profile-spreadsheet.xml", "careplan-argonaut-profile-spreadsheet.xml", "careteam-argonaut-profile-spreadsheet.xml", "condition-argonaut-profile-spreadsheet.xml", "device-argonaut-profile-spreadsheet.xml", "diagnosticreport-argonaut-profile-spreadsheet.xml", "documentreference-argonaut-profile-spreadsheet.xml", "goal-argonaut-profile-spreadsheet.xml", "immunization-argonaut-profile-spreadsheet.xml", "medication-argonaut-profile-spreadsheet.xml", "medicationorder-argonaut-profile-spreadsheet.xml", "medicationstatement-argonaut-profile-spreadsheet.xml", "observationresults-argonaut-profile-spreadsheet.xml", "patient-argonaut-profile-spreadsheet.xml", "procedure-argonaut-profile-spreadsheet.xml", "smokingstatus-argonaut-profile-spreadsheet.xml", "vitalsigns-argonaut-profile-spreadsheet.xml"
 	],
 	"resources": {
 		"ValueSet/substance-sct": {

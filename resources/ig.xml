@@ -18,6 +18,15 @@ Hidden IG for de facto IG publishing
 			</sourceReference>
 		</resource>
 		
+<!-- =============operation============-->
+<resource>
+			<purpose value="terminology"/>
+			<sourceReference>
+				<reference value="OperationDefinition/patient-docref"/>
+			</sourceReference>
+		</resource>
+		
+		
 	<!--=====	internal code system is breaking the publisher=====
 				<resource>
 			<purpose value="terminology"/>
