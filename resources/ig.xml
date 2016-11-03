@@ -22,7 +22,7 @@ Hidden IG for de facto IG publishing
 <resource>
 			<purpose value="terminology"/>
 			<sourceReference>
-				<reference value="OperationDefinition/patient-docref"/>
+				<reference value="OperationDefinition/get-docref"/>
 			</sourceReference>
 		</resource>
 		
