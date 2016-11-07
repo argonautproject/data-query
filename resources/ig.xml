@@ -27,7 +27,7 @@ Hidden IG for de facto IG publishing
 		</resource>
 		
 		
-	<!--=====	internal code system is breaking the publisher=====
+	<!--=====	internal code system is breaking the publisher=====-->
 				<resource>
 			<purpose value="terminology"/>
 			<sourceReference>
@@ -35,7 +35,6 @@ Hidden IG for de facto IG publishing
 			</sourceReference>
 		</resource>
 		
-	-->	
 		<resource>
 			<purpose value="terminology"/>
 			<sourceReference>
