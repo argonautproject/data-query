@@ -59,6 +59,7 @@ schema-template.xsd
 infile.csv
 outfile.csv
 Log-FHIR.xlsx
+*.xlst
 
 # Microsoft Office #
 ####################
