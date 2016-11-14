@@ -1,0 +1,2496 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Conformance xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file://Mac/Home/Documents/FHIR/FHIR%20tools/DSTU2Schema/conformance.xsd">
+	<id value="server"/>
+	<text>
+		<status value="generated"/>
+		<div xmlns="http://www.w3.org/1999/xhtml">
+			<h2>Argonaut Data Query Implemenation Guide Server</h2>
+			<p>(Requirements Definition)</p>
+			<p>Published: 2016-10-18 (draft)</p>
+			<p>Published by: <b>Argonaut Project</b></p>
+			<p>This profile defines the expected capabilities of a server when conforming to the Argonaut Data Query Implementation Guide.</p>
+			<h2>General</h2>
+			<table>
+				<tbody>
+					<tr>
+						<th>FHIR Version:</th>
+						<td>$ver$</td>
+					</tr>
+					<tr>
+						<th>Supported formats:</th>
+						<td>xml, json</td>
+					</tr>
+				</tbody>
+			</table>
+			<h2>REST  behavior</h2>
+			<p>The Argonaut Data Query Server SHALL support the Argonaut Data Query patient resource profile. In addition to the Argonaut Data Query patient, the Argonaut Data Query Server SHALL support at least one additional resource profile from the list of Argonaut Data Query  profiles. The Argonaut Data Query Server SHALL implement REST behavior according to the FHIR specification. The Argonaut Data Query Server SHALL support both json and xml resource formats for all Argonaut Data Query  interactions.</p>
+			<p>
+				<b>Security:</b>
+			</p>
+			<p>Argonaut Data Query Servers SHALL implement the security requirements documented in the Argonaut Data Query IG.</p>
+			<h3>Resource summary</h3>
+			<table class="grid">
+				<thead>
+					<tr>
+						<th>Resource</th>
+						<th>Search</th>
+						<th>Read</th>
+						<th>Read Version</th>
+						<th>Instance History</th>
+						<th>Resource History</th>
+						<th>Create</th>
+						<th>Update</th>
+						<th>Delete</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>Patient (<a href="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-patient.html">Profile</a>)</th>
+						<td>
+							<a title="Allows discovery of existing Argonaut Data Query patient resources using different search criteria" href="#Patient-search-type">SHALL</a>
+						</td>
+						<td>
+							<a title="Allows retrieval of a specific Argonaut Data Query patients by id" href="#Patient-read">SHALL</a>
+						</td>
+						<td>
+							<a title="Allows retrieval of a historical version of a Argonaut Data Query patient instance" href="#Patient-vread">SHOULD</a>
+						</td>
+						<td>
+							<a title="Allows review of changes to Argonaut Data Query patient instance over time" href="#Patient-history-instance">SHOULD</a>
+						</td>
+						<td/>
+						<td/>
+						<td/>
+						<td/>
+					</tr>
+					<tr>
+						<th>AllergyIntolerance (<a href="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-allergyintolerance.html">Profile</a>)</th>
+						<td>
+							<a title="Allows discovery of existing Argonaut Data Query AllergyIntolerance resources using different search criteria" href="#AllergyIntolerance-search-type">SHALL</a>
+						</td>
+						<td>
+							<a title="Allows retrieval of a specific Argonaut Data Query AllergyIntolerance by id" href="#AllergyIntolerance-read">SHALL</a>
+						</td>
+						<td>
+							<a title="Allows retrieval of a historical version of a Argonaut Data Query AllergyIntolerance instance" href="#AllergyIntolerance-vread">SHOULD</a>
+						</td>
+						<td>
+							<a title="Allows review of changes to Argonaut Data Query AllergyIntolerance instance over time" href="#AllergyIntolerance-history-instance">SHOULD</a>
+						</td>
+						<td/>
+						<td/>
+						<td/>
+						<td/>
+					</tr>
+					<tr>
+						<th>CarePlan (<a href="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-careplan.html">Profile</a>)</th>
+						<td>
+							<a title="Allows discovery of existing Argonaut Data Query careplan resources using different search criteria" href="#CarePlan-search-type">SHALL</a>
+						</td>
+						<td>
+							<a title="Allows retrieval of a specific Argonaut Data Query careplan by id" href="#CarePlan-read">SHALL</a>
+						</td>
+						<td>
+							<a title="Allows retrieval of a historical version of a Argonaut Data Query careplan instance" href="#CarePlan-vread">SHOULD</a>
+						</td>
+						<td>
+							<a title="Allows review of changes to Argonaut Data Query careplan instance over time" href="#CarePlan-history-instance">SHOULD</a>
+						</td>
+						<td/>
+						<td/>
+						<td/>
+						<td/>
+					</tr>
+					<tr>
+						<th>CarePlan (<a href="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-careteam.html">Profile</a>)</th>
+						<td>
+							<a title="Allows discovery of existing Argonaut Data Query careteam resources using different search criteria" href="#CarePlan-search-type">SHALL</a>
+						</td>
+						<td>
+							<a title="Allows retrieval of a specific Argonaut Data Query careteam by id" href="#CarePlan-read">SHALL</a>
+						</td>
+						<td>
+							<a title="Allows retrieval of a historical version of a Argonaut Data Query careteam instance" href="#CarePlan-vread">SHOULD</a>
+						</td>
+						<td>
+							<a title="Allows review of changes to Argonaut Data Query careteam instance over time" href="#CarePlan-history-instance">SHOULD</a>
+						</td>
+						<td/>
+						<td/>
+						<td/>
+						<td/>
+					</tr>
+					<tr>
+						<th>Condition (<a href="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-condition.html">Profile</a>)</th>
+						<td>
+							<a title="Allows discovery of existing Argonaut Data Query condition resources using different search criteria" href="#Condition-search-type">SHALL</a>
+						</td>
+						<td>
+							<a title="Allows retrieval of a specific Argonaut Data Query condition by id" href="#Condition-read">SHALL</a>
+						</td>
+						<td>
+							<a title="Allows retrieval of a historical version of a Argonaut Data Query condition instance" href="#Condition-vread">SHOULD</a>
+						</td>
+						<td>
+							<a title="Allows review of changes to Argonaut Data Query condition instance over time" href="#Condition-history-instance">SHOULD</a>
+						</td>
+						<td/>
+						<td/>
+						<td/>
+						<td/>
+					</tr>
+					<tr>
+						<th>Device (<a href="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-device.html">Profile</a>)</th>
+						<td>
+							<a title="Allows discovery of existing Argonaut Data Query device resources using different search criteria" href="#Device-search-type">SHALL</a>
+						</td>
+						<td>
+							<a title="Allows retrieval of a specific Argonaut Data Query device by id" href="#Device-read">SHALL</a>
+						</td>
+						<td>
+							<a title="Allows retrieval of a historical version of a Argonaut Data Query device instance" href="#Device-vread">SHOULD</a>
+						</td>
+						<td>
+							<a title="Allows review of changes to Argonaut Data Query device instance over time" href="#Device-history-instance">SHOULD</a>
+						</td>
+						<td/>
+						<td/>
+						<td/>
+						<td/>
+					</tr>
+					<tr>
+						<th>Goal (<a href="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-goal.html">Profile</a>)</th>
+						<td>
+							<a title="Allows discovery of existing Argonaut Data Query goal resources using different search criteria" href="#Goal-search-type">SHALL</a>
+						</td>
+						<td>
+							<a title="Allows retrieval of a specific Argonaut Data Query goal by id" href="#Goal-read">SHALL</a>
+						</td>
+						<td>
+							<a title="Allows retrieval of a historical version of a Argonaut Data Query goal instance" href="#Goal-vread">SHOULD</a>
+						</td>
+						<td>
+							<a title="Allows review of changes to Argonaut Data Query goal instance over time" href="#Goal-history-instance">SHOULD</a>
+						</td>
+						<td/>
+						<td/>
+						<td/>
+						<td/>
+					</tr>
+					<tr>
+						<th>Immunization (<a href="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-immunization.html">Profile</a>)</th>
+						<td>
+							<a title="Allows discovery of existing Argonaut Data Query immunization resources using different search criteria" href="#Immunization-search-type">SHALL</a>
+						</td>
+						<td>
+							<a title="Allows retrieval of a specific Argonaut Data Query immunization by id" href="#Immunization-read">SHALL</a>
+						</td>
+						<td>
+							<a title="Allows retrieval of a historical version of a Argonaut Data Query immunization instance" href="#Immunization-vread">SHOULD</a>
+						</td>
+						<td>
+							<a title="Allows review of changes to Argonaut Data Query immunization instance over time" href="#Immunization-history-instance">SHOULD</a>
+						</td>
+						<td/>
+						<td/>
+						<td/>
+						<td/>
+					</tr>
+					<tr>
+						<th>DiagnosticReport (<a href="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-diagnosticreport.html">Profile</a>)</th>
+						<td>
+							<a title="Allows discovery of existing Argonaut Data Query diagnosticreport resources using different search criteria" href="#DiagnosticReport-search-type">SHALL</a>
+						</td>
+						<td>
+							<a title="Allows retrieval of a specific Argonaut Data Query diagnosticreport by id" href="#DiagnosticReport-read">SHALL</a>
+						</td>
+						<td>
+							<a title="Allows retrieval of a historical version of a Argonaut Data Query diagnosticreport instance" href="#DiagnosticReport-vread">SHOULD</a>
+						</td>
+						<td>
+							<a title="Allows review of changes to Argonaut Data Query diagnosticreport instance over time" href="#DiagnosticReport-history-instance">SHOULD</a>
+						</td>
+						<td/>
+						<td/>
+						<td/>
+						<td/>
+					</tr>
+					<tr>
+						<th>Observation (<a href="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-resultobs.html">Profile</a>)</th>
+						<td>
+							<a title="Allows discovery of existing Argonaut Data Query resultobs resources using different search criteria" href="#Observation-search-type">SHALL</a>
+						</td>
+						<td>
+							<a title="Allows retrieval of a specific Argonaut Data Query resultobs by id" href="#Observation-read">SHALL</a>
+						</td>
+						<td>
+							<a title="Allows retrieval of a historical version of a Argonaut Data Query resultobs instance" href="#Observation-vread">SHOULD</a>
+						</td>
+						<td>
+							<a title="Allows review of changes to Argonaut Data Query resultobs instance over time" href="#Observation-history-instance">SHOULD</a>
+						</td>
+						<td/>
+						<td/>
+						<td/>
+						<td/>
+					</tr>
+					<tr>
+						<th>MedicationStatement (<a href="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-medicationstatement.html">Profile</a>)</th>
+						<td>
+							<a title="Allows discovery of existing Argonaut Data Query medicationstatement resources using different search criteria" href="#MedicationStatement-search-type">SHALL</a>
+						</td>
+						<td>
+							<a title="Allows retrieval of a specific Argonaut Data Query medicationstatement by id" href="#MedicationStatement-read">SHALL</a>
+						</td>
+						<td>
+							<a title="Allows retrieval of a historical version of a Argonaut Data Query medicationstatement instance" href="#MedicationStatement-vread">SHOULD</a>
+						</td>
+						<td>
+							<a title="Allows review of changes to Argonaut Data Query medicationstatement instance over time" href="#MedicationStatement-history-instance">SHOULD</a>
+						</td>
+						<td/>
+						<td/>
+						<td/>
+						<td/>
+					</tr>
+					<tr>
+						<th>MedicationRequest (<a href="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-medicationrequest.html">Profile</a>)</th>
+						<td>
+							<a title="Allows discovery of existing Argonaut Data Query medicationrequest resources using different search criteria" href="#MedicationRequest-search-type">SHALL</a>
+						</td>
+						<td>
+							<a title="Allows retrieval of a specific Argonaut Data Query medicationrequest by id" href="#MedicationRequest-read">SHALL</a>
+						</td>
+						<td>
+							<a title="Allows retrieval of a historical version of a Argonaut Data Query medicationrequest instance" href="#MedicationRequest-vread">SHOULD</a>
+						</td>
+						<td>
+							<a title="Allows review of changes to Argonaut Data Query medicationrequest instance over time" href="#MedicationRequest-history-instance">SHOULD</a>
+						</td>
+						<td/>
+						<td/>
+						<td/>
+						<td/>
+					</tr>
+					<tr>
+						<th>Observation (<a href="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-smokingstatus.html">Profile</a>)</th>
+						<td>
+							<a title="Allows discovery of existing Argonaut Data Query smokingstatus resources using different search criteria" href="#Observation-search-type">SHALL</a>
+						</td>
+						<td>
+							<a title="Allows retrieval of a specific Argonaut Data Query smokingstatus by id" href="#Observation-read">SHALL</a>
+						</td>
+						<td>
+							<a title="Allows retrieval of a historical version of a Argonaut Data Query smokingstatus instance" href="#Observation-vread">SHOULD</a>
+						</td>
+						<td>
+							<a title="Allows review of changes to Argonaut Data Query smokingstatus instance over time" href="#Observation-history-instance">SHOULD</a>
+						</td>
+						<td/>
+						<td/>
+						<td/>
+						<td/>
+					</tr>
+					<tr>
+						<th>Observation (<a href="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-vitalsigns.html">Profile</a>)</th>
+						<td>
+							<a title="Allows discovery of existing Argonaut Data Query vitalsigns resources using different search criteria" href="#Observation-search-type">SHALL</a>
+						</td>
+						<td>
+							<a title="Allows retrieval of a specific Argonaut Data Query vitalsigns by id" href="#Observation-read">SHALL</a>
+						</td>
+						<td>
+							<a title="Allows retrieval of a historical version of a Argonaut Data Query vitalsigns instance" href="#Observation-vread">SHOULD</a>
+						</td>
+						<td>
+							<a title="Allows review of changes to Argonaut Data Query vitalsigns instance over time" href="#Observation-history-instance">SHOULD</a>
+						</td>
+						<td/>
+						<td/>
+						<td/>
+						<td/>
+					</tr>
+					<tr>
+						<th>Procedure (<a href="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-procedure.html">Profile</a>)</th>
+						<td>
+							<a title="Allows discovery of existing Argonaut Data Query procedure resources using different search criteria" href="#Procedure-search-type">SHALL</a>
+						</td>
+						<td>
+							<a title="Allows retrieval of a specific Argonaut Data Query procedure by id" href="#Procedure-read">SHALL</a>
+						</td>
+						<td>
+							<a title="Allows retrieval of a historical version of a Argonaut Data Query procedure instance" href="#Procedure-vread">SHOULD</a>
+						</td>
+						<td>
+							<a title="Allows review of changes to Argonaut Data Query procedure instance over time" href="#Procedure-history-instance">SHOULD</a>
+						</td>
+						<td/>
+						<td/>
+						<td/>
+						<td/>
+					</tr>
+				</tbody>
+			</table>
+			<p>
+				<b>Operations:</b>
+				<a title="" href="http://hl7.org/fhir/OperationDefinition/patient-everything">patient-everything</a> MAY, <a title="" href="http://hl7.org/fhir/us/argonaut/OperationDefinition/get-docref.html">docref</a> SHOULD</p>
+			<br/>
+			<br/>
+			<h3>
+				<a href="../patient.html">Patient</a>
+			</h3>
+			<h4>Interactions</h4>
+			<table class="list">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Conformance</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>
+							<a name="Patient-search-type"> </a>
+							<span>search-type</span>
+						</th>
+						<td>SHALL</td>
+						<td>
+							<p>Allows discovery of existing Argonaut Data Query patient resources using different search criteria</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="Patient-read"> </a>
+							<span>read</span>
+						</th>
+						<td>SHALL</td>
+						<td>
+							<p>Allows retrieval of a specific Argonaut Data Query patients by id</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="Patient-history-instance"> </a>
+							<span>history-instance</span>
+						</th>
+						<td>SHOULD</td>
+						<td>
+							<p>Allows review of changes to Argonaut Data Query patient instance over time</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="Patient-vread"> </a>
+							<span>vread</span>
+						</th>
+						<td>SHOULD</td>
+						<td>
+							<p>Allows retrieval of a historical version of a Argonaut Data Query patient instance</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<h4>Search</h4>
+			<table class="list">
+				<thead>
+					<tr>
+						<th>Parameter</th>
+						<th>Conformance</th>
+						<th>Type</th>
+						<th>Definition &amp; Chaining</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>name</th>
+						<td>SHALL</td>
+						<td>string</td>
+						<td/>
+					</tr>
+					<tr>
+						<th>family</th>
+						<td>SHALL</td>
+						<td>string</td>
+						<td/>
+					</tr>
+					<tr>
+						<th>given</th>
+						<td>SHALL</td>
+						<td>string</td>
+						<td/>
+					</tr>
+					<tr>
+						<th>identifier</th>
+						<td>SHALL</td>
+						<td>token</td>
+						<td/>
+					</tr>
+					<tr>
+						<th>gender</th>
+						<td>SHALL</td>
+						<td>token</td>
+						<td/>
+					</tr>
+					<tr>
+						<th>birthdate</th>
+						<td>SHALL</td>
+						<td>date</td>
+						<td/>
+					</tr>
+				</tbody>
+			</table>
+			<br/>
+			<br/>
+			<h3>
+				<a href="../allergyintolerance.html">AllergyIntolerance</a>
+			</h3>
+			<h4>Interactions</h4>
+			<table class="list">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Conformance</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>
+							<a name="AllergyIntolerance-search-type"> </a>
+							<span>search-type</span>
+						</th>
+						<td>SHALL</td>
+						<td>
+							<p>Allows discovery of existing Argonaut Data Query AllergyIntolerance resources using different search criteria</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="AllergyIntolerance-read"> </a>
+							<span>read</span>
+						</th>
+						<td>SHALL</td>
+						<td>
+							<p>Allows retrieval of a specific Argonaut Data Query AllergyIntolerance by id</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="AllergyIntolerance-history-instance"> </a>
+							<span>history-instance</span>
+						</th>
+						<td>SHOULD</td>
+						<td>
+							<p>Allows review of changes to Argonaut Data Query AllergyIntolerance instance over time</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="AllergyIntolerance-vread"> </a>
+							<span>vread</span>
+						</th>
+						<td>SHOULD</td>
+						<td>
+							<p>Allows retrieval of a historical version of a Argonaut Data Query AllergyIntolerance instance</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<h4>Search</h4>
+			<table class="list">
+				<thead>
+					<tr>
+						<th>Parameter</th>
+						<th>Conformance</th>
+						<th>Type</th>
+						<th>Definition &amp; Chaining</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th/>
+						<td>SHALL</td>
+						<td>reference</td>
+						<td/>
+					</tr>
+				</tbody>
+			</table>
+			<br/>
+			<br/>
+			<h3>
+				<a href="../careplan.html">CarePlan</a>
+			</h3>
+			<h4>Interactions</h4>
+			<table class="list">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Conformance</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>
+							<a name="CarePlan-search-type"> </a>
+							<span>search-type</span>
+						</th>
+						<td>SHALL</td>
+						<td>
+							<p>Allows discovery of existing Argonaut Data Query careplan resources using different search criteria</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="CarePlan-read"> </a>
+							<span>read</span>
+						</th>
+						<td>SHALL</td>
+						<td>
+							<p>Allows retrieval of a specific Argonaut Data Query careplan by id</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="CarePlan-history-instance"> </a>
+							<span>history-instance</span>
+						</th>
+						<td>SHOULD</td>
+						<td>
+							<p>Allows review of changes to Argonaut Data Query careplan instance over time</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="CarePlan-vread"> </a>
+							<span>vread</span>
+						</th>
+						<td>SHOULD</td>
+						<td>
+							<p>Allows retrieval of a historical version of a Argonaut Data Query careplan instance</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<h4>Search</h4>
+			<table class="list">
+				<thead>
+					<tr>
+						<th>Parameter</th>
+						<th>Conformance</th>
+						<th>Type</th>
+						<th>Definition &amp; Chaining</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th/>
+						<td>SHALL</td>
+						<td>reference</td>
+						<td/>
+					</tr>
+					<tr>
+						<th/>
+						<td>SHALL</td>
+						<td>token</td>
+						<td/>
+					</tr>
+					<tr>
+						<th/>
+						<td>SHALL</td>
+						<td>token</td>
+						<td/>
+					</tr>
+					<tr>
+						<th/>
+						<td>SHALL</td>
+						<td>date</td>
+						<td/>
+					</tr>
+				</tbody>
+			</table>
+			<br/>
+			<br/>
+			<h3>
+				<a href="../careplan.html">CarePlan</a>
+			</h3>
+			<h4>Interactions</h4>
+			<table class="list">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Conformance</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>
+							<a name="CarePlan-search-type"> </a>
+							<span>search-type</span>
+						</th>
+						<td>SHALL</td>
+						<td>
+							<p>Allows discovery of existing Argonaut Data Query careteam resources using different search criteria</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="CarePlan-read"> </a>
+							<span>read</span>
+						</th>
+						<td>SHALL</td>
+						<td>
+							<p>Allows retrieval of a specific Argonaut Data Query careteam by id</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="CarePlan-history-instance"> </a>
+							<span>history-instance</span>
+						</th>
+						<td>SHOULD</td>
+						<td>
+							<p>Allows review of changes to Argonaut Data Query careteam instance over time</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="CarePlan-vread"> </a>
+							<span>vread</span>
+						</th>
+						<td>SHOULD</td>
+						<td>
+							<p>Allows retrieval of a historical version of a Argonaut Data Query careteam instance</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<h4>Search</h4>
+			<table class="list">
+				<thead>
+					<tr>
+						<th>Parameter</th>
+						<th>Conformance</th>
+						<th>Type</th>
+						<th>Definition &amp; Chaining</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th/>
+						<td>SHALL</td>
+						<td>reference</td>
+						<td/>
+					</tr>
+					<tr>
+						<th/>
+						<td>SHALL</td>
+						<td>token</td>
+						<td/>
+					</tr>
+					<tr>
+						<th/>
+						<td>SHALL</td>
+						<td>token</td>
+						<td/>
+					</tr>
+				</tbody>
+			</table>
+			<br/>
+			<br/>
+			<h3>
+				<a href="../condition.html">Condition</a>
+			</h3>
+			<h4>Interactions</h4>
+			<table class="list">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Conformance</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>
+							<a name="Condition-search-type"> </a>
+							<span>search-type</span>
+						</th>
+						<td>SHALL</td>
+						<td>
+							<p>Allows discovery of existing Argonaut Data Query condition resources using different search criteria</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="Condition-read"> </a>
+							<span>read</span>
+						</th>
+						<td>SHALL</td>
+						<td>
+							<p>Allows retrieval of a specific Argonaut Data Query condition by id</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="Condition-history-instance"> </a>
+							<span>history-instance</span>
+						</th>
+						<td>SHOULD</td>
+						<td>
+							<p>Allows review of changes to Argonaut Data Query condition instance over time</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="Condition-vread"> </a>
+							<span>vread</span>
+						</th>
+						<td>SHOULD</td>
+						<td>
+							<p>Allows retrieval of a historical version of a Argonaut Data Query condition instance</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<h4>Search</h4>
+			<table class="list">
+				<thead>
+					<tr>
+						<th>Parameter</th>
+						<th>Conformance</th>
+						<th>Type</th>
+						<th>Definition &amp; Chaining</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th/>
+						<td>SHALL</td>
+						<td>reference</td>
+						<td/>
+					</tr>
+					<tr>
+						<th/>
+						<td>SHALL</td>
+						<td>token</td>
+						<td/>
+					</tr>
+					<tr>
+						<th/>
+						<td>SHALL</td>
+						<td>token</td>
+						<td/>
+					</tr>
+				</tbody>
+			</table>
+			<br/>
+			<br/>
+			<h3>
+				<a href="../device.html">Device</a>
+			</h3>
+			<h4>Interactions</h4>
+			<table class="list">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Conformance</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>
+							<a name="Device-search-type"> </a>
+							<span>search-type</span>
+						</th>
+						<td>SHALL</td>
+						<td>
+							<p>Allows discovery of existing Argonaut Data Query device resources using different search criteria</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="Device-read"> </a>
+							<span>read</span>
+						</th>
+						<td>SHALL</td>
+						<td>
+							<p>Allows retrieval of a specific Argonaut Data Query device by id</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="Device-history-instance"> </a>
+							<span>history-instance</span>
+						</th>
+						<td>SHOULD</td>
+						<td>
+							<p>Allows review of changes to Argonaut Data Query device instance over time</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="Device-vread"> </a>
+							<span>vread</span>
+						</th>
+						<td>SHOULD</td>
+						<td>
+							<p>Allows retrieval of a historical version of a Argonaut Data Query device instance</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<h4>Search</h4>
+			<table class="list">
+				<thead>
+					<tr>
+						<th>Parameter</th>
+						<th>Conformance</th>
+						<th>Type</th>
+						<th>Definition &amp; Chaining</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th/>
+						<td>SHALL</td>
+						<td>reference</td>
+						<td/>
+					</tr>
+				</tbody>
+			</table>
+			<br/>
+			<br/>
+			<h3>
+				<a href="../goal.html">Goal</a>
+			</h3>
+			<h4>Interactions</h4>
+			<table class="list">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Conformance</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>
+							<a name="Goal-search-type"> </a>
+							<span>search-type</span>
+						</th>
+						<td>SHALL</td>
+						<td>
+							<p>Allows discovery of existing Argonaut Data Query goal resources using different search criteria</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="Goal-read"> </a>
+							<span>read</span>
+						</th>
+						<td>SHALL</td>
+						<td>
+							<p>Allows retrieval of a specific Argonaut Data Query goal by id</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="Goal-history-instance"> </a>
+							<span>history-instance</span>
+						</th>
+						<td>SHOULD</td>
+						<td>
+							<p>Allows review of changes to Argonaut Data Query goal instance over time</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="Goal-vread"> </a>
+							<span>vread</span>
+						</th>
+						<td>SHOULD</td>
+						<td>
+							<p>Allows retrieval of a historical version of a Argonaut Data Query goal instance</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<h4>Search</h4>
+			<table class="list">
+				<thead>
+					<tr>
+						<th>Parameter</th>
+						<th>Conformance</th>
+						<th>Type</th>
+						<th>Definition &amp; Chaining</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th/>
+						<td>SHALL</td>
+						<td>reference</td>
+						<td/>
+					</tr>
+					<tr>
+						<th/>
+						<td>SHALL</td>
+						<td>date</td>
+						<td/>
+					</tr>
+				</tbody>
+			</table>
+			<br/>
+			<br/>
+			<h3>
+				<a href="../immunization.html">Immunization</a>
+			</h3>
+			<h4>Interactions</h4>
+			<table class="list">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Conformance</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>
+							<a name="Immunization-search-type"> </a>
+							<span>search-type</span>
+						</th>
+						<td>SHALL</td>
+						<td>
+							<p>Allows discovery of existing Argonaut Data Query immunization resources using different search criteria</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="Immunization-read"> </a>
+							<span>read</span>
+						</th>
+						<td>SHALL</td>
+						<td>
+							<p>Allows retrieval of a specific Argonaut Data Query immunization by id</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="Immunization-history-instance"> </a>
+							<span>history-instance</span>
+						</th>
+						<td>SHOULD</td>
+						<td>
+							<p>Allows review of changes to Argonaut Data Query immunization instance over time</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="Immunization-vread"> </a>
+							<span>vread</span>
+						</th>
+						<td>SHOULD</td>
+						<td>
+							<p>Allows retrieval of a historical version of a Argonaut Data Query immunization instance</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<h4>Search</h4>
+			<table class="list">
+				<thead>
+					<tr>
+						<th>Parameter</th>
+						<th>Conformance</th>
+						<th>Type</th>
+						<th>Definition &amp; Chaining</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th/>
+						<td>SHALL</td>
+						<td>reference</td>
+						<td/>
+					</tr>
+				</tbody>
+			</table>
+			<br/>
+			<br/>
+			<h3>
+				<a href="../diagnosticreport.html">DiagnosticReport</a>
+			</h3>
+			<h4>Interactions</h4>
+			<table class="list">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Conformance</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>
+							<a name="DiagnosticReport-search-type"> </a>
+							<span>search-type</span>
+						</th>
+						<td>SHALL</td>
+						<td>
+							<p>Allows discovery of existing Argonaut Data Query diagnosticreport resources using different search criteria</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="DiagnosticReport-read"> </a>
+							<span>read</span>
+						</th>
+						<td>SHALL</td>
+						<td>
+							<p>Allows retrieval of a specific Argonaut Data Query diagnosticreport by id</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="DiagnosticReport-history-instance"> </a>
+							<span>history-instance</span>
+						</th>
+						<td>SHOULD</td>
+						<td>
+							<p>Allows review of changes to Argonaut Data Query diagnosticreport instance over time</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="DiagnosticReport-vread"> </a>
+							<span>vread</span>
+						</th>
+						<td>SHOULD</td>
+						<td>
+							<p>Allows retrieval of a historical version of a Argonaut Data Query diagnosticreport instance</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<h4>Search</h4>
+			<table class="list">
+				<thead>
+					<tr>
+						<th>Parameter</th>
+						<th>Conformance</th>
+						<th>Type</th>
+						<th>Definition &amp; Chaining</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th/>
+						<td>SHALL</td>
+						<td>reference</td>
+						<td/>
+					</tr>
+					<tr>
+						<th/>
+						<td>SHALL</td>
+						<td>token</td>
+						<td/>
+					</tr>
+					<tr>
+						<th/>
+						<td>SHALL</td>
+						<td>token</td>
+						<td/>
+					</tr>
+					<tr>
+						<th/>
+						<td>SHALL</td>
+						<td>date</td>
+						<td/>
+					</tr>
+				</tbody>
+			</table>
+			<br/>
+			<br/>
+			<h3>
+				<a href="../observation.html">Observation</a>
+			</h3>
+			<h4>Interactions</h4>
+			<table class="list">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Conformance</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>
+							<a name="Observation-search-type"> </a>
+							<span>search-type</span>
+						</th>
+						<td>SHALL</td>
+						<td>
+							<p>Allows discovery of existing Argonaut Data Query resultobs resources using different search criteria</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="Observation-read"> </a>
+							<span>read</span>
+						</th>
+						<td>SHALL</td>
+						<td>
+							<p>Allows retrieval of a specific Argonaut Data Query resultobs by id</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="Observation-history-instance"> </a>
+							<span>history-instance</span>
+						</th>
+						<td>SHOULD</td>
+						<td>
+							<p>Allows review of changes to Argonaut Data Query resultobs instance over time</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="Observation-vread"> </a>
+							<span>vread</span>
+						</th>
+						<td>SHOULD</td>
+						<td>
+							<p>Allows retrieval of a historical version of a Argonaut Data Query resultobs instance</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<h4>Search</h4>
+			<table class="list">
+				<thead>
+					<tr>
+						<th>Parameter</th>
+						<th>Conformance</th>
+						<th>Type</th>
+						<th>Definition &amp; Chaining</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th/>
+						<td>SHALL</td>
+						<td>reference</td>
+						<td/>
+					</tr>
+					<tr>
+						<th/>
+						<td>SHALL</td>
+						<td>token</td>
+						<td/>
+					</tr>
+					<tr>
+						<th/>
+						<td>SHALL</td>
+						<td>token</td>
+						<td/>
+					</tr>
+					<tr>
+						<th/>
+						<td>SHALL</td>
+						<td>date</td>
+						<td/>
+					</tr>
+				</tbody>
+			</table>
+			<br/>
+			<br/>
+			<h3>
+				<a href="../medicationstatement.html">MedicationStatement</a>
+			</h3>
+			<h4>Interactions</h4>
+			<table class="list">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Conformance</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>
+							<a name="MedicationStatement-search-type"> </a>
+							<span>search-type</span>
+						</th>
+						<td>SHALL</td>
+						<td>
+							<p>Allows discovery of existing Argonaut Data Query medicationstatement resources using different search criteria</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="MedicationStatement-read"> </a>
+							<span>read</span>
+						</th>
+						<td>SHALL</td>
+						<td>
+							<p>Allows retrieval of a specific Argonaut Data Query medicationstatement by id</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="MedicationStatement-history-instance"> </a>
+							<span>history-instance</span>
+						</th>
+						<td>SHOULD</td>
+						<td>
+							<p>Allows review of changes to Argonaut Data Query medicationstatement instance over time</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="MedicationStatement-vread"> </a>
+							<span>vread</span>
+						</th>
+						<td>SHOULD</td>
+						<td>
+							<p>Allows retrieval of a historical version of a Argonaut Data Query medicationstatement instance</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<h4>Search</h4>
+			<table class="list">
+				<thead>
+					<tr>
+						<th>Parameter</th>
+						<th>Conformance</th>
+						<th>Type</th>
+						<th>Definition &amp; Chaining</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th/>
+						<td>SHALL</td>
+						<td>reference</td>
+						<td/>
+					</tr>
+				</tbody>
+			</table>
+			<br/>
+			<br/>
+			<h3>
+				<a href="../medicationrequest.html">MedicationRequest</a>
+			</h3>
+			<h4>Interactions</h4>
+			<table class="list">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Conformance</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>
+							<a name="MedicationRequest-search-type"> </a>
+							<span>search-type</span>
+						</th>
+						<td>SHALL</td>
+						<td>
+							<p>Allows discovery of existing Argonaut Data Query medicationrequest resources using different search criteria</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="MedicationRequest-read"> </a>
+							<span>read</span>
+						</th>
+						<td>SHALL</td>
+						<td>
+							<p>Allows retrieval of a specific Argonaut Data Query medicationrequest by id</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="MedicationRequest-history-instance"> </a>
+							<span>history-instance</span>
+						</th>
+						<td>SHOULD</td>
+						<td>
+							<p>Allows review of changes to Argonaut Data Query medicationrequest instance over time</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="MedicationRequest-vread"> </a>
+							<span>vread</span>
+						</th>
+						<td>SHOULD</td>
+						<td>
+							<p>Allows retrieval of a historical version of a Argonaut Data Query medicationrequest instance</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<h4>Search</h4>
+			<table class="list">
+				<thead>
+					<tr>
+						<th>Parameter</th>
+						<th>Conformance</th>
+						<th>Type</th>
+						<th>Definition &amp; Chaining</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th/>
+						<td>SHALL</td>
+						<td>reference</td>
+						<td/>
+					</tr>
+				</tbody>
+			</table>
+			<br/>
+			<br/>
+			<h3>
+				<a href="../observation.html">Observation</a>
+			</h3>
+			<h4>Interactions</h4>
+			<table class="list">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Conformance</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>
+							<a name="Observation-search-type"> </a>
+							<span>search-type</span>
+						</th>
+						<td>SHALL</td>
+						<td>
+							<p>Allows discovery of existing Argonaut Data Query smokingstatus resources using different search criteria</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="Observation-read"> </a>
+							<span>read</span>
+						</th>
+						<td>SHALL</td>
+						<td>
+							<p>Allows retrieval of a specific Argonaut Data Query smokingstatus by id</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="Observation-history-instance"> </a>
+							<span>history-instance</span>
+						</th>
+						<td>SHOULD</td>
+						<td>
+							<p>Allows review of changes to Argonaut Data Query smokingstatus instance over time</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="Observation-vread"> </a>
+							<span>vread</span>
+						</th>
+						<td>SHOULD</td>
+						<td>
+							<p>Allows retrieval of a historical version of a Argonaut Data Query smokingstatus instance</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<h4>Search</h4>
+			<table class="list">
+				<thead>
+					<tr>
+						<th>Parameter</th>
+						<th>Conformance</th>
+						<th>Type</th>
+						<th>Definition &amp; Chaining</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th/>
+						<td>SHALL</td>
+						<td>reference</td>
+						<td/>
+					</tr>
+					<tr>
+						<th/>
+						<td>SHALL</td>
+						<td>token</td>
+						<td/>
+					</tr>
+				</tbody>
+			</table>
+			<br/>
+			<br/>
+			<h3>
+				<a href="../observation.html">Observation</a>
+			</h3>
+			<h4>Interactions</h4>
+			<table class="list">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Conformance</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>
+							<a name="Observation-search-type"> </a>
+							<span>search-type</span>
+						</th>
+						<td>SHALL</td>
+						<td>
+							<p>Allows discovery of existing Argonaut Data Query vitalsigns resources using different search criteria</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="Observation-read"> </a>
+							<span>read</span>
+						</th>
+						<td>SHALL</td>
+						<td>
+							<p>Allows retrieval of a specific Argonaut Data Query vitalsigns by id</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="Observation-history-instance"> </a>
+							<span>history-instance</span>
+						</th>
+						<td>SHOULD</td>
+						<td>
+							<p>Allows review of changes to Argonaut Data Query vitalsigns instance over time</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="Observation-vread"> </a>
+							<span>vread</span>
+						</th>
+						<td>SHOULD</td>
+						<td>
+							<p>Allows retrieval of a historical version of a Argonaut Data Query vitalsigns instance</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<h4>Search</h4>
+			<table class="list">
+				<thead>
+					<tr>
+						<th>Parameter</th>
+						<th>Conformance</th>
+						<th>Type</th>
+						<th>Definition &amp; Chaining</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th/>
+						<td>SHALL</td>
+						<td>reference</td>
+						<td/>
+					</tr>
+					<tr>
+						<th/>
+						<td>SHALL</td>
+						<td>token</td>
+						<td/>
+					</tr>
+					<tr>
+						<th/>
+						<td>SHALL</td>
+						<td>token</td>
+						<td/>
+					</tr>
+					<tr>
+						<th/>
+						<td>SHALL</td>
+						<td>date</td>
+						<td/>
+					</tr>
+				</tbody>
+			</table>
+			<br/>
+			<br/>
+			<h3>
+				<a href="../procedure.html">Procedure</a>
+			</h3>
+			<h4>Interactions</h4>
+			<table class="list">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Conformance</th>
+						<th>Description</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th>
+							<a name="Procedure-search-type"> </a>
+							<span>search-type</span>
+						</th>
+						<td>SHALL</td>
+						<td>
+							<p>Allows discovery of existing Argonaut Data Query procedure resources using different search criteria</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="Procedure-read"> </a>
+							<span>read</span>
+						</th>
+						<td>SHALL</td>
+						<td>
+							<p>Allows retrieval of a specific Argonaut Data Query procedure by id</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="Procedure-history-instance"> </a>
+							<span>history-instance</span>
+						</th>
+						<td>SHOULD</td>
+						<td>
+							<p>Allows review of changes to Argonaut Data Query procedure instance over time</p>
+						</td>
+					</tr>
+					<tr>
+						<th>
+							<a name="Procedure-vread"> </a>
+							<span>vread</span>
+						</th>
+						<td>SHOULD</td>
+						<td>
+							<p>Allows retrieval of a historical version of a Argonaut Data Query procedure instance</p>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<h4>Search</h4>
+			<table class="list">
+				<thead>
+					<tr>
+						<th>Parameter</th>
+						<th>Conformance</th>
+						<th>Type</th>
+						<th>Definition &amp; Chaining</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<th/>
+						<td>SHALL</td>
+						<td>reference</td>
+						<td/>
+					</tr>
+					<tr>
+						<th/>
+						<td>SHALL</td>
+						<td>date</td>
+						<td/>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</text>
+
+	
+	<name value="Argonaut Data Query Implemenation Guide Server"/>
+<status value="draft"/>
+	<publisher value="Argonaut Project"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://argonautwiki.hl7.org"/>
+		</telecom>
+	</contact>
+	<date value="2016-10-18"/>
+<description value="This profile defines the expected capabilities of a server when conforming to the Argonaut Data Query Implementation Guide."/>
+	<kind value="requirements"/>
+	<fhirVersion value="1.7.0"/>
+	<acceptUnknown value="extensions"/>
+	<format value="xml"/>
+	<format value="json"/>
+	<profile>
+		<reference value="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-allergyintolerance.html"/>
+	</profile>
+	<profile>
+		<reference value="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-careplan.html"/>
+	</profile>
+	<profile>
+		<reference value="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-condition.html"/>
+	</profile>
+	<profile>
+		<reference value="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-device.html"/>
+	</profile>
+	<profile>
+		<reference value="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-goal.html"/>
+	</profile>
+	<profile>
+		<reference value="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-immunization.html"/>
+	</profile>
+	<profile>
+		<reference value="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-diagnosticreport.html"/>
+	</profile>
+	<profile>
+		<reference value="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-observationresults.html"/>
+	</profile>
+
+	<profile>
+		<reference value="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-medication.html"/>
+	</profile>
+	<profile>
+		<reference value="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-medicationrequest.html"/>
+	</profile>
+	<profile>
+		<reference value="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-vitalsigns.html"/>
+	</profile>
+	<profile>
+		<reference value="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-patient.html"/>
+	</profile>
+
+	<profile>
+		<reference value="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-procedure.html"/>
+	</profile>
+	<rest>
+		<mode value="server"/>
+		<documentation value="The Argonaut Data Query Server SHALL support the Argonaut Data Query patient resource profile. In addition to the Argonaut Data Query patient, the Argonaut Data Query Server SHALL support at least one additional resource profile from the list of Argonaut Data Query  profiles. The Argonaut Data Query Server SHALL implement REST behavior according to the FHIR specification. The Argonaut Data Query Server SHALL support both json and xml resource formats for all Argonaut Data Query  interactions."/>
+		<security>
+			<description value="Argonaut Data Query Servers SHALL implement the security requirements documented in the Argonaut Data Query IG."/>
+		</security>
+		<resource>
+			<type value="Patient"/>
+			<profile>
+				<reference value="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-patient.html"/>
+			</profile>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="search-type"/>
+				<documentation value="Allows discovery of existing Argonaut Data Query patient resources using different search criteria"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="read"/>
+				<documentation value="Allows retrieval of a specific Argonaut Data Query patients by id"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="history-instance"/>
+				<documentation value="Allows review of changes to Argonaut Data Query patient instance over time"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="vread"/>
+				<documentation value="Allows retrieval of a historical version of a Argonaut Data Query patient instance"/>
+			</interaction>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="name"/>
+				<definition value="http://hl7.org/fhir/SearchParameter/Patient-name"/>
+				<type value="string"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="family"/>
+				<definition value="http://hl7.org/fhir/SearchParameter/Patient-family"/>
+				<type value="string"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="given"/>
+				<definition value="http://hl7.org/fhir/SearchParameter/Patient-given"/>
+				<type value="string"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="identifier"/>
+				<definition value="http://hl7.org/fhir/SearchParameter/Patient-identifier"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="gender"/>
+				<definition value="http://hl7.org/fhir/SearchParameter/Patient-gender"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="birthdate"/>
+				<definition value="http://hl7.org/fhir/SearchParameter/Patient-birthdate"/>
+				<type value="date"/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value="AllergyIntolerance"/>
+			<profile>
+				<reference value="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-allergyintolerance.html"/>
+			</profile>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="search-type"/>
+				<documentation value="Allows discovery of existing Argonaut Data Query AllergyIntolerance resources using different search criteria"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="read"/>
+				<documentation value="Allows retrieval of a specific Argonaut Data Query AllergyIntolerance by id"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="history-instance"/>
+				<documentation value="Allows review of changes to Argonaut Data Query AllergyIntolerance instance over time"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="vread"/>
+				<documentation value="Allows retrieval of a historical version of a Argonaut Data Query AllergyIntolerance instance"/>
+			</interaction>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="patient"/>
+				<type value="reference"/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value="CarePlan"/>
+			<profile>
+				<reference value="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-careplan.html"/>
+			</profile>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="search-type"/>
+				<documentation value="Allows discovery of existing Argonaut Data Query careplan resources using different search criteria"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="read"/>
+				<documentation value="Allows retrieval of a specific Argonaut Data Query careplan by id"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="history-instance"/>
+				<documentation value="Allows review of changes to Argonaut Data Query careplan instance over time"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="vread"/>
+				<documentation value="Allows retrieval of a historical version of a Argonaut Data Query careplan instance"/>
+			</interaction>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="patient"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="category"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="status"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="date"/>
+				<type value="date"/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value="CarePlan"/>
+			<profile>
+				<reference value="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-careteam.html"/>
+			</profile>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="search-type"/>
+				<documentation value="Allows discovery of existing Argonaut Data Query careteam resources using different search criteria"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="read"/>
+				<documentation value="Allows retrieval of a specific Argonaut Data Query careteam by id"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="history-instance"/>
+				<documentation value="Allows review of changes to Argonaut Data Query careteam instance over time"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="vread"/>
+				<documentation value="Allows retrieval of a historical version of a Argonaut Data Query careteam instance"/>
+			</interaction>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="patient"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="category"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="status"/>
+				<type value="token"/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value="Condition"/>
+			<profile>
+				<reference value="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-condition.html"/>
+			</profile>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="search-type"/>
+				<documentation value="Allows discovery of existing Argonaut Data Query condition resources using different search criteria"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="read"/>
+				<documentation value="Allows retrieval of a specific Argonaut Data Query condition by id"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="history-instance"/>
+				<documentation value="Allows review of changes to Argonaut Data Query condition instance over time"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="vread"/>
+				<documentation value="Allows retrieval of a historical version of a Argonaut Data Query condition instance"/>
+			</interaction>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="patient"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="category"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="clinicalstatus"/>
+				<type value="token"/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value="Device"/>
+			<profile>
+				<reference value="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-device.html"/>
+			</profile>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="search-type"/>
+				<documentation value="Allows discovery of existing Argonaut Data Query device resources using different search criteria"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="read"/>
+				<documentation value="Allows retrieval of a specific Argonaut Data Query device by id"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="history-instance"/>
+				<documentation value="Allows review of changes to Argonaut Data Query device instance over time"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="vread"/>
+				<documentation value="Allows retrieval of a historical version of a Argonaut Data Query device instance"/>
+			</interaction>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="patient"/>
+				<type value="reference"/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value="Goal"/>
+			<profile>
+				<reference value="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-goal.html"/>
+			</profile>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="search-type"/>
+				<documentation value="Allows discovery of existing Argonaut Data Query goal resources using different search criteria"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="read"/>
+				<documentation value="Allows retrieval of a specific Argonaut Data Query goal by id"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="history-instance"/>
+				<documentation value="Allows review of changes to Argonaut Data Query goal instance over time"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="vread"/>
+				<documentation value="Allows retrieval of a historical version of a Argonaut Data Query goal instance"/>
+			</interaction>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="patient"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="date"/>
+				<type value="date"/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value="Immunization"/>
+			<profile>
+				<reference value="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-immunization.html"/>
+			</profile>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="search-type"/>
+				<documentation value="Allows discovery of existing Argonaut Data Query immunization resources using different search criteria"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="read"/>
+				<documentation value="Allows retrieval of a specific Argonaut Data Query immunization by id"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="history-instance"/>
+				<documentation value="Allows review of changes to Argonaut Data Query immunization instance over time"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="vread"/>
+				<documentation value="Allows retrieval of a historical version of a Argonaut Data Query immunization instance"/>
+			</interaction>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="patient"/>
+				<type value="reference"/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value="DiagnosticReport"/>
+			<profile>
+				<reference value="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-diagnosticreport.html"/>
+			</profile>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="search-type"/>
+				<documentation value="Allows discovery of existing Argonaut Data Query diagnosticreport resources using different search criteria"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="read"/>
+				<documentation value="Allows retrieval of a specific Argonaut Data Query diagnosticreport by id"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="history-instance"/>
+				<documentation value="Allows review of changes to Argonaut Data Query diagnosticreport instance over time"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="vread"/>
+				<documentation value="Allows retrieval of a historical version of a Argonaut Data Query diagnosticreport instance"/>
+			</interaction>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="patient"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="category"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="code"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="date"/>
+				<type value="date"/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value="Observation"/>
+			<profile>
+				<reference value="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-resultobs.html"/>
+			</profile>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="search-type"/>
+				<documentation value="Allows discovery of existing Argonaut Data Query resultobs resources using different search criteria"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="read"/>
+				<documentation value="Allows retrieval of a specific Argonaut Data Query resultobs by id"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="history-instance"/>
+				<documentation value="Allows review of changes to Argonaut Data Query resultobs instance over time"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="vread"/>
+				<documentation value="Allows retrieval of a historical version of a Argonaut Data Query resultobs instance"/>
+			</interaction>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="patient"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="category"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="code"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="date"/>
+				<type value="date"/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value="MedicationStatement"/>
+			<profile>
+				<reference value="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-medicationstatement.html"/>
+			</profile>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="search-type"/>
+				<documentation value="Allows discovery of existing Argonaut Data Query medicationstatement resources using different search criteria"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="read"/>
+				<documentation value="Allows retrieval of a specific Argonaut Data Query medicationstatement by id"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="history-instance"/>
+				<documentation value="Allows review of changes to Argonaut Data Query medicationstatement instance over time"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="vread"/>
+				<documentation value="Allows retrieval of a historical version of a Argonaut Data Query medicationstatement instance"/>
+			</interaction>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="patient"/>
+				<type value="reference"/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value="MedicationRequest"/>
+			<profile>
+				<reference value="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-medicationrequest.html"/>
+			</profile>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="search-type"/>
+				<documentation value="Allows discovery of existing Argonaut Data Query medicationrequest resources using different search criteria"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="read"/>
+				<documentation value="Allows retrieval of a specific Argonaut Data Query medicationrequest by id"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="history-instance"/>
+				<documentation value="Allows review of changes to Argonaut Data Query medicationrequest instance over time"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="vread"/>
+				<documentation value="Allows retrieval of a historical version of a Argonaut Data Query medicationrequest instance"/>
+			</interaction>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="patient"/>
+				<type value="reference"/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value="Observation"/>
+			<profile>
+				<reference value="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-smokingstatus.html"/>
+			</profile>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="search-type"/>
+				<documentation value="Allows discovery of existing Argonaut Data Query smokingstatus resources using different search criteria"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="read"/>
+				<documentation value="Allows retrieval of a specific Argonaut Data Query smokingstatus by id"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="history-instance"/>
+				<documentation value="Allows review of changes to Argonaut Data Query smokingstatus instance over time"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="vread"/>
+				<documentation value="Allows retrieval of a historical version of a Argonaut Data Query smokingstatus instance"/>
+			</interaction>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="patient"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="code"/>
+				<type value="token"/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value="Observation"/>
+			<profile>
+				<reference value="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-vitalsigns.html"/>
+			</profile>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="search-type"/>
+				<documentation value="Allows discovery of existing Argonaut Data Query vitalsigns resources using different search criteria"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="read"/>
+				<documentation value="Allows retrieval of a specific Argonaut Data Query vitalsigns by id"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="history-instance"/>
+				<documentation value="Allows review of changes to Argonaut Data Query vitalsigns instance over time"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="vread"/>
+				<documentation value="Allows retrieval of a historical version of a Argonaut Data Query vitalsigns instance"/>
+			</interaction>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="patient"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="category"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="code"/>
+				<type value="token"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="date"/>
+				<type value="date"/>
+			</searchParam>
+		</resource>
+		<resource>
+			<type value="Procedure"/>
+			<profile>
+				<reference value="http://healthedatainc.com/go-ftp/Argo-DSTU2/StructureDefinition-argo-procedure.html"/>
+			</profile>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="search-type"/>
+				<documentation value="Allows discovery of existing Argonaut Data Query procedure resources using different search criteria"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<code value="read"/>
+				<documentation value="Allows retrieval of a specific Argonaut Data Query procedure by id"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="history-instance"/>
+				<documentation value="Allows review of changes to Argonaut Data Query procedure instance over time"/>
+			</interaction>
+			<interaction>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHOULD"/>
+				</extension>
+				<code value="vread"/>
+				<documentation value="Allows retrieval of a historical version of a Argonaut Data Query procedure instance"/>
+			</interaction>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="patient"/>
+				<type value="reference"/>
+			</searchParam>
+			<searchParam>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+					<valueCode value="SHALL"/>
+				</extension>
+				<name value="date"/>
+				<type value="date"/>
+			</searchParam>
+		</resource>
+		<operation>
+			<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+				<valueCode value="MAY"/>
+			</extension>
+			<name value="patient-everything"/>
+			<definition>
+				<reference value="http://hl7.org/fhir/OperationDefinition/patient-everything"/>
+			</definition>
+		</operation>
+		<operation>
+				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
+				<valueCode value="SHOULD"/>
+			</extension>
+			<name value="docref"/>
+			<definition>
+				<reference value="http://hl7.org/fhir/us/argonaut/OperationDefinition/get-docref.html"/>
+			</definition>
+		</operation>
+	</rest>
+</Conformance>

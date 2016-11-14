@@ -17,36 +17,31 @@ Hidden IG for de facto IG publishing
 				<reference value="ValueSet/argo-codesystem"/>
 			</sourceReference>
 		</resource>
-		
-<!-- =============operation============-->
-<resource>
+		<!-- =============operation============-->
+		<resource>
 			<purpose value="terminology"/>
 			<sourceReference>
 				<reference value="OperationDefinition/get-docref"/>
 			</sourceReference>
 		</resource>
-		
-		
-	<!--=====	internal code system is breaking the publisher=====-->
-				<resource>
+		<!--=====	internal code system is breaking the publisher=====-->
+		<resource>
 			<purpose value="terminology"/>
 			<sourceReference>
 				<reference value="ValueSet/condition-category"/>
 			</sourceReference>
 		</resource>
-		
 		<resource>
 			<purpose value="terminology"/>
 			<sourceReference>
 				<reference value="ValueSet/languages"/>
 			</sourceReference>
 		</resource>
-		
 		<resource>
 			<purpose value="terminology"/>
 			<sourceReference>
 				<reference value="ValueSet/narrative-status"/>
-		</sourceReference>
+			</sourceReference>
 		</resource>
 		<resource>
 			<purpose value="terminology"/>
@@ -172,6 +167,19 @@ Hidden IG for de facto IG publishing
 			<purpose value="terminology"/>
 			<sourceReference>
 				<reference value="ValueSet/omb-ethnicity"/>
+			</sourceReference>
+		</resource>
+		<!-- ==============Confomance==================		-->
+		<resource>
+			<purpose value="example"/>
+			<sourceReference>
+				<reference value="Conformance/server"/>
+			</sourceReference>
+		</resource>
+		<resource>
+			<purpose value="example"/>
+			<sourceReference>
+				<reference value="Conformance/client"/>
 			</sourceReference>
 		</resource>
 	</package>
