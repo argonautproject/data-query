@@ -5,19 +5,11 @@
 
   <!-- ============BreadCrumb=============== -->
 
- <div id="segment-breadcrumb" class="segmnt">  <!-- segment-breadcrumb -->
-  <div class="container">  <!-- container -->
-   <ul class="breadcrumb">
-            <li title="Argonaut"><a href="index.html"><b>Home</b></a></li>
- 
-   </ul>
-  </div>  <!-- /container -->
- </div>  <!-- /segment-breadcrumb -->
-
 {% include container-start.html %}
 
   <!-- ============CONTENT CONTENT=============== -->
 
+  {% capture my-include %}{% include intro.md %}{% endcapture %}{{ my-include | markdownify }}
 
 
 <h2>
@@ -45,5 +37,5 @@ List of Operations:
   <!-- ==============END CONTENT END CONTENT=================== -->
 
 {% include container-end.html %}
-    
+
     {% include footer.html %}
