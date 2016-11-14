@@ -1,9 +1,9 @@
 # Healthedata1/Argo-DSTU2 profiles
 This is the repository for Argo-DSTU2 profiles.
 
-<!--
-### NOTE:(11/1/2016) The CI build is currently not working a recent version of the IG is available [here](http://healthedatainc.com/go-ftp/Argo-DSTU2/)
--->
+
+### NOTE:(11/13/2016) The CI build is currently not working a recent version of the IG is available [here](http://healthedatainc.com/go-ftp/Argo-DSTU2/)
+
 
 GitHub will automatically trigger a new build whenever you commit changes.
 (To manually trigger a build, just `POST` to the Webhook URL yourself, for example via:
