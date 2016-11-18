@@ -16,12 +16,6 @@ http://healthedatainc.com/go-ftp/Argo-DSTU2
 
 ### Find your rendered IG automatically available at
 
-
-###The CI build is currently not working a recent version of the IG is available at
-
-http://healthedatainc.com/go-ftp/Argo-DSTU2
-
-
 http://ig.fhir.me/Healthedata1/Argo-DSTU2
 
 ### Find debugging info about the build
