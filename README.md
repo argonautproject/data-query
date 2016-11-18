@@ -8,9 +8,19 @@ GitHub will automatically trigger a new build whenever you commit changes.
 
 *Note: a build takes 2-3 minutes to complete. Then you can...*
 
+
+###The CI build is currently not working a recent version of the IG is available at
+
+http://healthedatainc.com/go-ftp/Argo-DSTU2
+
+
 ### Find your rendered IG automatically available at
 
-(If the CI build is currently not working a recent version of the IG is available [here](http://healthedatainc.com/go-ftp/Argo-DSTU2/))
+
+###The CI build is currently not working a recent version of the IG is available at
+
+http://healthedatainc.com/go-ftp/Argo-DSTU2
+
 
 http://ig.fhir.me/Healthedata1/Argo-DSTU2
 
