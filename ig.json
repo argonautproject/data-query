@@ -1,25 +1,150 @@
 {
-	"paths": {
-		"temp": "temp",
-		"specification": "http://hl7.org/fhir/DSTU2",
-		"qa": "qa",
-		"txCache": "txCache",
-		"output": "output",
-		"pages": "pages",
-		"resources": [
-			"resources", "examples"
-		]
-	},
-	"version": "1.0.2",
 	"extraTemplates": [
 		"mappings"
 	],
-	"defaults": {
-		"StructureDefinition": {
-			"template-base": "sd.html",
-			"template-defns": "sd-definitions.html",
-			"template-mappings": "sd-mappings.html"
+	"resources": {
+		"ValueSet/ucum": {
+			"base": "valueset-ucum.html"
 		},
+		"ValueSet/detailed-ethnicity": {
+			"base": "valueset-detailed-ethnicity.html"
+		},
+		"StructureDefinition/argo-allergyintolerance": {
+			"base": "structuredefinition-argo-allergyintolerance.html",
+			"defns": "argo-allergyintolerancedefinitions.html"
+		},
+		"ValueSet/procedure-icd10pcs": {
+			"base": "valueset-procedure-icd10pcs.html"
+		},
+		"ValueSet/omb-ethnicity": {
+			"base": "valueset-omb-ethnicity.html"
+		},
+		"StructureDefinition/argo-observationresults": {
+			"base": "structuredefinition-argo-observationresults.html",
+			"defns": "argo-observationresultsdefinitions.html"
+		},
+		"ValueSet/procedure-type": {
+			"base": "valueset-procedure-type.html"
+		},
+		"ValueSet/substance-rxnorm": {
+			"base": "valueset-substance-rxnorm.html"
+		},
+		"ValueSet/ucum-vitals-common": {
+			"base": "valueset-ucum-vitals-common.html"
+		},
+		"ValueSet/substance": {
+			"base": "valueset-substance.html"
+		},
+		"StructureDefinition/argo-patient": {
+			"base": "structuredefinition-argo-patient.html",
+			"defns": "argo-patientdefinitions.html"
+		},
+		"StructureDefinition/argo-documentreference": {
+			"base": "structuredefinition-argo-documentreference.html",
+			"defns": "argo-documentreferencedefinitions.html"
+		},
+		"ValueSet/condition-category": {
+			"base": "valueset-condition-category.html"
+		},
+		"StructureDefinition/argo-careplan": {
+			"base": "structuredefinition-argo-careplan.html",
+			"defns": "argo-careplandefinitions.html"
+		},
+		"ValueSet/vacc-status": {
+			"base": "valueset-vacc-status.html"
+		},
+		"ValueSet/substance-ndfrt": {
+			"base": "valueset-substance-ndfrt.html"
+		},
+		"ValueSet/detailed-race": {
+			"base": "valueset-detailed-race.html"
+		},
+		"ValueSet/narrative-status": {
+			"base": "valueset-narrative-status.html"
+		},
+		"ValueSet/provider-role": {
+			"base": "valueset-provider-role.html"
+		},
+		"ValueSet/omb-race": {
+			"base": "valueset-omb-race.html"
+		},
+		"ValueSet/observation-ccdasmokingstatus": {
+			"base": "valueset-observation-ccdasmokingstatus.html"
+		},
+		"StructureDefinition/argo-immunization": {
+			"base": "structuredefinition-argo-immunization.html",
+			"defns": "argo-immunizationdefinitions.html"
+		},
+		"StructureDefinition/argo-goal": {
+			"base": "structuredefinition-argo-goal.html",
+			"defns": "argo-goaldefinitions.html"
+		},
+		"StructureDefinition/argo-device": {
+			"base": "structuredefinition-argo-device.html",
+			"defns": "argo-devicedefinitions.html"
+		},
+		"StructureDefinition/argo-condition": {
+			"base": "structuredefinition-argo-condition.html",
+			"defns": "argo-conditiondefinitions.html"
+		},
+		"StructureDefinition/argo-medicationstatement": {
+			"base": "structuredefinition-argo-medicationstatement.html",
+			"defns": "argo-medicationstatementdefinitions.html"
+		},
+		"ValueSet/usrealm-birthsex": {
+			"base": "valueset-usrealm-birthsex.html"
+		},
+		"StructureDefinition/argo-medicationorder": {
+			"base": "structuredefinition-argo-medicationorder.html",
+			"defns": "argo-medicationorderdefinitions.html"
+		},
+		"ValueSet/languages": {
+			"base": "valueset-languages.html"
+		},
+		"StructureDefinition/argo-careteam": {
+			"base": "structuredefinition-argo-careteam.html",
+			"defns": "argo-careteamdefinitions.html"
+		},
+		"ValueSet/ndc-vaccine-codes": {
+			"base": "valueset-ndc-vaccine-codes.html"
+		},
+		"StructureDefinition/argo-diagnosticreport": {
+			"base": "structuredefinition-argo-diagnosticreport.html",
+			"defns": "argo-diagnosticreportdefinitions.html"
+		},
+		"StructureDefinition/argo-procedure": {
+			"base": "structuredefinition-argo-procedure.html",
+			"defns": "argo-proceduredefinitions.html"
+		},
+		"ValueSet/observation-value-codes": {
+			"base": "valueset-observation-value-codes.html"
+		},
+		"ValueSet/device-kind": {
+			"base": "valueset-device-kind.html"
+		},
+		"StructureDefinition/argo-smokingstatus": {
+			"base": "structuredefinition-argo-smokingstatus.html",
+			"defns": "argo-smokingstatusdefinitions.html"
+		},
+		"StructureDefinition/argo-vitalsigns": {
+			"base": "structuredefinition-argo-vitalsigns.html",
+			"defns": "argo-vitalsignsdefinitions.html"
+		},
+		"ValueSet/substance-sct": {
+			"base": "valueset-substance-sct.html"
+		},
+		"StructureDefinition/argo-medication": {
+			"base": "structuredefinition-argo-medication.html",
+			"defns": "argo-medicationdefinitions.html"
+		},
+		"ValueSet/argo-codesystem": {
+			"base": "valueset-argo-codesystem.html"
+		},
+		"ValueSet/medication-codes": {
+			"base": "valueset-medication-codes.html"
+		}
+	},
+	"defaults": {
 		"ConceptMap": {
 			"template-base": "cm.html"
 		},
@@ -29,87 +154,30 @@
 		},
 		"ValueSet": {
 			"template-base": "vs.html"
+		},
+		"StructureDefinition": {
+			"template-mappings": "sd-mappings.html",
+			"template-base": "sd.html",
+			"template-defns": "sd-definitions.html"
 		}
 	},
-	"source": "ig.xml",
 	"canonicalBase": "http://hl7.org/fhir/us/argonaut",
 	"tool": "jekyll",
+	"paths": {
+		"qa": "qa",
+		"resources": [
+			"resources", "examples"
+		],
+		"pages": "pages",
+		"output": "output",
+		"temp": "temp",
+		"txCache": "txCache",
+		"specification": "http://hl7.org/fhir/DSTU2"
+	},
 	"sct-edition": "http://snomed.info/sct/731000124108",
 	"spreadsheets": [
 		"allergyintolerance-argonaut-profile-spreadsheet.xml", "careplan-argonaut-profile-spreadsheet.xml", "careteam-argonaut-profile-spreadsheet.xml", "condition-argonaut-profile-spreadsheet.xml", "device-argonaut-profile-spreadsheet.xml", "diagnosticreport-argonaut-profile-spreadsheet.xml", "documentreference-argonaut-profile-spreadsheet.xml", "goal-argonaut-profile-spreadsheet.xml", "immunization-argonaut-profile-spreadsheet.xml", "medication-argonaut-profile-spreadsheet.xml", "medicationorder-argonaut-profile-spreadsheet.xml", "medicationstatement-argonaut-profile-spreadsheet.xml", "observationresults-argonaut-profile-spreadsheet.xml", "patient-argonaut-profile-spreadsheet.xml", "procedure-argonaut-profile-spreadsheet.xml", "smokingstatus-argonaut-profile-spreadsheet.xml", "vitalsigns-argonaut-profile-spreadsheet.xml"
 	],
-	"resources": {
-		"ValueSet/substance-sct": {
-			"base": "valueset-substance-sct.html"
-		},
-		"ValueSet/substance": {
-			"base": "valueset-substance.html"
-		},
-		"ValueSet/ucum": {
-			"base": "valueset-ucum.html"
-		},
-		"ValueSet/procedure-icd10pcs": {
-			"base": "valueset-procedure-icd10pcs.html"
-		},
-		"ValueSet/argo-codesystem": {
-			"base": "valueset-argo-codesystem.html"
-		},
-		"ValueSet/substance-ndfrt": {
-			"base": "valueset-substance-ndfrt.html"
-		},
-		"ValueSet/ucum-vitals-common": {
-			"base": "valueset-ucum-vitals-common.html"
-		},
-		"ValueSet/device-kind": {
-			"base": "valueset-device-kind.html"
-		},
-		"ValueSet/medication-codes": {
-			"base": "valueset-medication-codes.html"
-		},
-		"ValueSet/condition-category": {
-			"base": "valueset-condition-category.html"
-		},
-		"ValueSet/narrative-status": {
-			"base": "valueset-narrative-status.html"
-		},
-		"ValueSet/provider-role": {
-			"base": "valueset-provider-role.html"
-		},
-		"ValueSet/ndc-vaccine-codes": {
-			"base": "valueset-ndc-vaccine-codes.html"
-		},
-		"ValueSet/substance-rxnorm": {
-			"base": "valueset-substance-rxnorm.html"
-		},
-		"ValueSet/procedure-type": {
-			"base": "valueset-procedure-type.html"
-		},
-		"ValueSet/vacc-status": {
-			"base": "valueset-vacc-status.html"
-		},
-		"ValueSet/observation-ccdasmokingstatus": {
-			"base": "valueset-observation-ccdasmokingstatus.html"
-		},
-		"ValueSet/observation-value-codes": {
-			"base": "valueset-observation-value-codes.html"
-		},
-		"ValueSet/usrealm-birthsex": {
-			"base": "valueset-usrealm-birthsex.html"
-		},
-		"ValueSet/detailed-ethnicity": {
-			"base": "valueset-detailed-ethnicity.html"
-		},
-		"ValueSet/detailed-race": {
-			"base": "valueset-detailed-race.html"
-		},
-		"ValueSet/omb-race": {
-			"base": "valueset-omb-race.html"
-		},
-		"ValueSet/omb-ethnicity": {
-			"base": "valueset-omb-ethnicity.html"
-		},
-		"ValueSet/languages": {
-			"base": "valueset-languages.html"
-		}
-	}
+	"version": "1.0.2",
+	"source": "ig.xml"
 }
