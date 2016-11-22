@@ -1,5 +1,12 @@
+##Definitions, Interpretations and Requirements##
+
+This section outlines important definitions and interpretations used in the this IG.
+
+
 ## Definitions
 -----------
+
+The conformance verbs used in this IG are defined in [FHIR Conformance Rules](http://hl7.org/fhir/conformance-rules.html).
 
 #### Extensible binding for CodeableConcept Datatype
 
