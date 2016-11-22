@@ -40,8 +40,8 @@ for i in range(len(resources)):# run through all the files looking for spreadshe
           igpy['resources']['StructureDefinition/' + sdid[0].text.lower()] =  {'base': 'structuredefinition-'+ sdid[0].text.lower() + '.html'} # concat id into appropriate strings and add sd  base def to resources in def file
           logging.info('adding sd ' + sdid[0].text.lower() +' to resources ig.json')
 
-          igpy['resources']['StructureDefinition/' + sdid[0].text.lower()]['defns'] =  sdid[0].text.lower() + 'definitions.html' # concat id into appropriate strings and add sd defitions to in def file
-          logging.info('adding sd definitions ' + sdid[0].text.lower() +  ' defintions to resources ig.json')
+          igpy['resources']['StructureDefinition/' + sdid[0].text.lower()]['defns'] =  'structuredefinition-' + sdid[0].text.lower() + '-definitions.html' # concat id into appropriate strings and add sd defitions to in def file
+          logging.info('adding sd definitions ' + sdid[0].text.lower() +  ' definitions to resources ig.json')
 
 
 
