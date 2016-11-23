@@ -2,7 +2,7 @@ This profile sets minimum expectations for the [Observation] resource to record,
 
 **Example Usage Scenarios:**
 
-The following are example usage scenarios for the DAF-VitalSigns
+The following are example usage scenarios for the Argonaut VitalSigns
 profile:
 
 -   Query for vital signs of a particular patient
@@ -11,7 +11,7 @@ profile:
 ##### Mandatory Data Elements and Terminology
 
 
-The following data-elements are mandatory (i.e data MUST be present). These are presented below in a simple human-readable explanation.  Profile specific guidance and an [example](#example) are provided as well.  The [**Formal Profile Definition**](#profile) below provides the  formal summary, definitions, and  terminology requirements.  
+The following data-elements are mandatory (i.e data MUST be present). These are presented below in a simple human-readable explanation.  Profile specific guidance and examples are provided as well.  The [**Formal Profile Definition**](#profile) below provides the  formal summary, definitions, and  terminology requirements.  
 
 **Each Observation must have:**
 
@@ -53,7 +53,10 @@ Diastolic blood pressure | 8462-4 | mm[Hg] | Observation.component code for a bl
 * Other profiles may make rules about which vital sign must be present or must be present as part of a panel.
 
 
-[Observation]: http://hl7-fhir.github.io/observation.html
-[extensible]: http://hl7-fhir.github.io/terminologies.html#extensible
+[Observation]: http://hl7.org/fhir/observation.html
+[extensible]: http://hl7.org/fhir/terminologies.html#extensible
 
 
+#### Examples
+   
+   - [AllergyIntolerance-23](AllergyIntolerance-23.html)

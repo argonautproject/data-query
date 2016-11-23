@@ -1,4 +1,4 @@
-#### U.S. Data Access Framework (DAF) Core AllergyIntolerance Profile
+#### U.S. Argonaut AllergyIntolerance Profile
 
 
 ##### Scope and Usage
@@ -7,7 +7,7 @@ This profile sets minimum expectations for the [AllergyIntolerance] resource to 
 
 **Example Usage Scenarios:**
 
-The following are example usage scenarios for the DAF-Core AllergyIntolerance
+The following are example usage scenarios for the Argonaut AllergyIntolerance
 profile:
 
 -   Query for allergies belonging to a Patient
@@ -17,17 +17,22 @@ profile:
 ##### Mandatory Data Elements and Terminology
 
 
-The following data-elements are mandatory (i.e data MUST be present). These are presented below in a simple human-readable explanation.  Profile specific guidance and an [example](#example) are provided as well.  The [**Formal Profile Definition**](#summary) below provides the  formal summary, definitions, and  terminology requirements.  
+The following data-elements are mandatory (i.e data MUST be present). These are presented below in a simple human-readable explanation.  Profile specific guidance and examples are provided as well.  The [**Formal Profile Definition**](#profile) below provides the  formal summary, definitions, and  terminology requirements.  
 
 **Each AllergyIntolerance must have:**
 
 1.  a status of the allergy
-2.  a code which tells you what the patient is allergic to 
+2.  a code which tells you what the patient is allergic to
 3.  a patient
 
 **Profile specific implementation guidance:**
 
-* Representing No Known Allergies: No Known Allergies will be represented using the DAF-AllergyIntolerance profile with appropriate negation code in AllergyIntolerence.code.
+* Representing No Known Allergies: No Known Allergies will be represented using the Argonaut AllergyIntolerance profile with appropriate negation code in AllergyIntolerence.code.
 
-[AllergyIntolerance]: http://hl7-fhir.github.io/allergyintolerance.html
 
+##### Examples
+
+- [AllergyIntolerance-23](AllergyIntolerance-23.html)
+
+
+[AllergyIntolerance]: http://hl7.org/fhir/allergyintolerance.html

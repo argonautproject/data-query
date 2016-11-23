@@ -2,7 +2,7 @@ his profile sets minimum expectations for the [Immunization] resource to record,
 
 **Example Usage Scenarios:**
 
-The following are example usage scenarios for the DAF-Core Immunization
+The following are example usage scenarios for the Argonaut Immunization
 profile:
 
 -   Query for immunizations belonging to a Patient
@@ -11,7 +11,7 @@ profile:
 ##### Mandatory Data Elements and Terminology
 
 
-The following data-elements are mandatory (i.e data MUST be present). These are presented below in a simple human-readable explanation.  Profile specific guidance and an [example](#example) are provided as well.  The [**Formal Profile Definition**](#profile) below provides the  formal summary, definitions, and  terminology requirements.  
+The following data-elements are mandatory (i.e data MUST be present). These are presented below in a simple human-readable explanation.  Profile specific guidance and examples are provided as well.  The [**Formal Profile Definition**](#profile) below provides the  formal summary, definitions, and  terminology requirements.  
 
 **Each Immunization must have:**
 
@@ -25,11 +25,14 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 **Profile specific implementation guidance:**
 
-* **NDC codes as a translational data element**: 
+* **NDC codes as a translational data element**:
 Based upon the 2015 Edition Certification Requirements, [CVX vaccine codes] are required and the [NDC vaccine codes] SHOULD be supported as translations to them.  A NDC to [CVX crosswalk table] is also provided by the CDC.
 
+#### Examples
+
+   - [AllergyIntolerance-23](AllergyIntolerance-23.html)
 
   [CVX vaccine codes]: http://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx
   [NDC vaccine codes]: http://www2a.cdc.gov/vaccines/iis/iisstandards/ndc_crosswalk.asp
   [CVX crosswalk table]: http://www2a.cdc.gov/vaccines/iis/iisstandards/ndc_crosswalk.asp
-[Immunization]:  http://hl7-fhir.github.io/immunization.html
+[Immunization]:  http://hl7.org/fhir/immunization.html

@@ -2,18 +2,18 @@ Both the [MedicationOrder] and [MedicationStatement] resources can be used to re
 
 **Example Usage Scenarios:**
 
-The following are example usage scenarios for the DAF-MedicationOrder
+The following are example usage scenarios for the Argonaut MedicationOrder
 profile:
 
 -   Query for medications that have been prescribed to a particular
     patient
 -   Query for all patients who have been prescribed a particular medication
 -   Query for all patients who were prescribed a particular medication within a particular time period
-    
+
 ##### Mandatory Data Elements and Terminology
 
 
-The following data-elements are mandatory (i.e data MUST be present). These are presented below in a simple human-readable explanation.  Profile specific guidance and an [example](#example) are provided as well.  The [**Formal Profile Definition**](#profile) below provides the  formal summary, definitions, and  terminology requirements.  
+The following data-elements are mandatory (i.e data MUST be present). These are presented below in a simple human-readable explanation.  Profile specific guidance and examples are provided as well.  The [**Formal Profile Definition**](#profile) below provides the  formal summary, definitions, and  terminology requirements.  
 
 **Each MedicationOrder must have:**
 
@@ -29,14 +29,15 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 *  The MedicationStatement and MedicationOrder resources can represent a medication, using either a code or reference to a [Medication] resource.  The server application can choose one way or both methods,  but the client application must support both methods.  More specific guidance is provided in the [conformance](conformance.html) resource for this profile
 
+#### Examples
+
+   - [AllergyIntolerance-23](AllergyIntolerance-23.html)
 
   [Medication Clinical Drug (RxNorm)]: valueset-daf-medication-codes.html
   [MedicationOrderStatus]: http://hl7.org/fhir/us/daf/valueset-medication-order-status.html
 [MedicationStatementStatus]: http://hl7.org/fhir/us/daf/valueset-medication-statement-status.html
-[MedicationStatement]:http://hl7-fhir.github.io/medicationstatement.html
- [MedicationOrder]: http://hl7-fhir.github.io/medicationorder.html
- [Medication]:http://hl7-fhir.github.io/medication.html
+[MedicationStatement]:http://hl7.org/fhir/medicationstatement.html
+ [MedicationOrder]: http://hl7.org/fhir/medicationorder.html
+ [Medication]:http://hl7.org/fhir/medication.html
  [Conformance]: daf-core-medicationstatement-conformance.html
- [boundaries section]: http://hl7-fhir.github.io/medicationorder.html#bnr
-
- 
+ [boundaries section]: http://hl7.org/fhir/medicationorder.html#bnr

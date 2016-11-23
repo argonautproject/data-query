@@ -2,16 +2,16 @@ This profile sets minimum expectations for the [CareTeam] resource for identifyi
 
 **Example Usage Scenarios:**
 
-The following are example usage scenarios for the DAF-CareTeam profile:
+The following are example usage scenarios for the Argonaut CareTeam profile:
 
 -   Query for a Patient's CareTeam
--   Query for all Patient' with a particular careteam member 
+-   Query for all Patient' with a particular careteam member
 
 
 ##### Mandatory Data Elements and Terminology
 
 
-The following data-elements are mandatory (i.e data MUST be present). These are presented below in a simple human-readable explanation.  Profile specific guidance and an [example](#example) are provided as well.  The [**Formal Profile Definition**](#profile) below provides the  formal summary, definitions, and  terminology requirements.  
+The following data-elements are mandatory (i.e data MUST be present). These are presented below in a simple human-readable explanation.  Profile specific guidance and examples are provided as well.  The [**Formal Profile Definition**](#profile) below provides the  formal summary, definitions, and  terminology requirements.  
 
 **Each CareTeam must have:**
 
@@ -29,4 +29,10 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 * none
 
-[CareTeam]:  http://hl7-fhir.github.io/careteam.html
+#### Examples
+
+   - [AllergyIntolerance-23](AllergyIntolerance-23.html)
+
+[CareTeam]:  http://hl7.org/fhir/careteam.html#### Examples
+
+   - [AllergyIntolerance-23](AllergyIntolerance-23.html)

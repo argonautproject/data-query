@@ -2,7 +2,7 @@
 <!--
 Hidden IG for de facto IG publishing
 -->
-<ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file://Mac/Home/Documents/FHIR/FHIR%20tools/DSTU2Schema/implementationguide.xsd">
+<ImplementationGuide xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/Users/Eric/Documents/HL7/FHIR/BUILD_EDIT_FILES/dstu2-fhir-all-xsd/fhir-all.xsd">
 	<id value="ig"/>
 	<url value="http://hl7.org/fhir/us/argonaut/ImplementationGuide/ig"/>
 	<name value="Implementation Guide Template"/>
@@ -180,6 +180,13 @@ Hidden IG for de facto IG publishing
 			<purpose value="example"/>
 			<sourceReference>
 				<reference value="Conformance/client"/>
+			</sourceReference>
+		</resource>
+		<!-- ==============Example==================		-->
+		<resource>
+			<purpose value="example"/>
+			<sourceReference>
+				<reference value="AllergyIntolerance/23"/>
 			</sourceReference>
 		</resource>
 	</package>

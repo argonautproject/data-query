@@ -4,14 +4,14 @@ When referring to medications, The [MedicationStatement] and [MedicationOrder] r
 
 Queries on Medication resource are expected to be within the context of
 a MedicationStatement,  MedicationOrder resource query. The following are
-example usage scenarios for the DAF-Medication profile:
+example usage scenarios for the Argonaut Medication profile:
 
 -   Query for Medications with a particular code
 
 ##### Mandatory Data Elements and Terminology
 
 
-The following data-elements are mandatory (i.e data MUST be present). These are presented below in a simple human-readable explanation.  Profile specific guidance and an [example](#example) are provided as well.  The [**Formal Profile Definition**](#profile) below provides the  formal summary, definitions, and  terminology requirements.  
+The following data-elements are mandatory (i.e data MUST be present). These are presented below in a simple human-readable explanation.  Profile specific guidance and examples are provided as well.  The [**Formal Profile Definition**](#profile) below provides the  formal summary, definitions, and  terminology requirements.  
 
 **Each Medication must have:**
 
@@ -19,9 +19,13 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 
 **Profile specific implementation guidance:**
- 
+
 * none
 
-[MedicationStatement]: http://hl7-fhir.github.io/medicationstatement.html
- [MedicationOrder]: http://hl7-fhir.github.io/medicationorder.html
- [Medication]: http://hl7-fhir.github.io/medication.html
+#### Examples
+
+   - [AllergyIntolerance-23](AllergyIntolerance-23.html)
+
+[MedicationStatement]: http://hl7.org/fhir/medicationstatement.html
+ [MedicationOrder]: http://hl7.org/fhir/medicationorder.html
+ [Medication]: http://hl7.org/fhir/medication.html

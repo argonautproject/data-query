@@ -4,7 +4,7 @@ This profile sets minimum expectations for the [Location] resource for recording
 ##### Mandatory Data Elements and Terminology
 
 
-The following data-elements are mandatory (i.e data MUST be present). These are presented below in a simple human-readable explanation.  Profile specific guidance and an [example](#example) are provided as well.  The [**Formal Profile Definition**](#profile) below provides the  formal summary, definitions, and  terminology requirements.  
+The following data-elements are mandatory (i.e data MUST be present). These are presented below in a simple human-readable explanation.  Profile specific guidance and examples are provided as well.  The [**Formal Profile Definition**](#profile) below provides the  formal summary, definitions, and  terminology requirements.  
 
 **Each Location must have:**
 
@@ -19,7 +19,7 @@ Each Location must have:
  
  * none
 
-[Location]:  http://hl7-fhir.github.io/location.html
+[Location]:  http://hl7.org/fhir/location.html
 
  **Note to Balloters:  the following elements are being considered for inclusion into this profile:**
 
@@ -29,3 +29,6 @@ Each Location must have:
 
 
 
+#### Examples
+   
+   - [AllergyIntolerance-23](AllergyIntolerance-23.html)

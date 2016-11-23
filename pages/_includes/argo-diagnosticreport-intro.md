@@ -2,7 +2,7 @@ Laboratory results are grouped and summarized using the [DiagnosticReport] resou
 
 **Example Usage Scenarios:**
 
-The following are example usage scenarios for the DAF-DiagnosticReport profile:
+The following are example usage scenarios for the Argonaut DiagnosticReport profile:
 
 -   Query for lab reports belonging to a Patient
 -   Query for all patients who have had a specific lab test or panel available
@@ -11,7 +11,7 @@ The following are example usage scenarios for the DAF-DiagnosticReport profile:
 ##### Mandatory Data Elements and Terminology
 
 
-The following data-elements are mandatory (i.e data MUST be present). These are presented below in a simple human-readable explanation.  Profile specific guidance and an [example](#example) are provided as well.  The [**Formal Profile Definition**](#profile) below provides the  formal summary, definitions, and  terminology requirements.  
+The following data-elements are mandatory (i.e data MUST be present). These are presented below in a simple human-readable explanation.  Profile specific guidance and examples are provided as well.  The [**Formal Profile Definition**](#profile) below provides the  formal summary, definitions, and  terminology requirements.  
 
 **Each DiagnosticReport must have:**
 
@@ -31,6 +31,9 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
    -  providing both a local system codes and a LOINC code that it map to
    -  providing a more specific category codes such as “CH” (chemistry) in addition to the "LAB"  category code.
 
+   #### Examples
 
-[Observation]:  http://hl7-fhir.github.io/observation.html
-[DiagnosticReport]:  http://hl7-fhir.github.io/diagnosticreport.html
+      - [AllergyIntolerance-23](AllergyIntolerance-23.html)
+      
+[Observation]:  http://hl7.org/fhir/observation.html
+[DiagnosticReport]:  http://hl7.org/fhir/diagnosticreport.html

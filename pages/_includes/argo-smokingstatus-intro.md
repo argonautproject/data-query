@@ -5,7 +5,7 @@ This profile sets minimum expectations for the [Observation] resource to record,
 
 **Example Usage Scenarios:**
 
-The following are example usage scenarios for the DAF-SmokingStatus
+The following are example usage scenarios for the Argonaut SmokingStatus
 profile:
 
 -   Query for Smoking Status of a particular patient
@@ -19,7 +19,7 @@ profile:
 ##### Mandatory Data Elements and Terminology
 
 
-The following data-elements are mandatory (i.e data MUST be present). These are presented below in a simple human-readable explanation.  Profile specific guidance and an [example](#example) are provided as well.  The [**Formal Profile Definition**](#profile) below provides the  formal summary, definitions, and  terminology requirements.  
+The following data-elements are mandatory (i.e data MUST be present). These are presented below in a simple human-readable explanation.  Profile specific guidance and examples are provided as well.  The [**Formal Profile Definition**](#profile) below provides the  formal summary, definitions, and  terminology requirements.  
 
 **Each Observation must have:**
 
@@ -34,4 +34,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 * none
 
-[Observation]: http://hl7-fhir.github.io/observation.html
+[Observation]: http://hl7.org/fhir/observation.html
+#### Examples
+   
+   - [AllergyIntolerance-23](AllergyIntolerance-23.html)

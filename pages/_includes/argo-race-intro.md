@@ -9,4 +9,6 @@ This Complex Extension for race allows one or more race codes of which:
 - May include additional race codes from CDC Race Codes
 
 
-Context of Use: [Argonaut Patient Profile](http://hl7.org/fhir/us/argonaut/StructureDefinition/Argo-Patient)
+Context of Use: [Argonaut Patient Profile](http://hl7.org/fhir/us/argonaut/StructureDefinition/Argo-Patient)#### Examples
+   
+   - [AllergyIntolerance-23](AllergyIntolerance-23.html)

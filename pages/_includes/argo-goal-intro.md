@@ -2,7 +2,7 @@ This profile sets minimum expectations for the [Goal] resource to record ,search
 
 **Example Usage Scenarios:**
 
-The following are example usage scenarios for the DAF-Goal profile:
+The following are example usage scenarios for the Argonaut Goal profile:
 
 -   Query for a Patient's Goals
 
@@ -10,7 +10,7 @@ The following are example usage scenarios for the DAF-Goal profile:
 ##### Mandatory Data Elements and Terminology
 
 
-The following data-elements are mandatory (i.e data MUST be present). These are presented below in a simple human-readable explanation.  Profile specific guidance and an [example](#example) are provided as well.  The [**Formal Profile Definition**](#profile) below provides the  formal summary, definitions, and  terminology requirements.  
+The following data-elements are mandatory (i.e data MUST be present). These are presented below in a simple human-readable explanation.  Profile specific guidance and examples are provided as well.  The [**Formal Profile Definition**](#profile) below provides the  formal summary, definitions, and  terminology requirements.  
 
 **Each Goal must have:**
 
@@ -22,4 +22,8 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 * none
 
-[Goal]:  http://hl7-fhir.github.io/goal.html
+#### Examples
+
+   - [AllergyIntolerance-23](AllergyIntolerance-23.html)
+
+[Goal]:  http://hl7.org/fhir/goal.html
