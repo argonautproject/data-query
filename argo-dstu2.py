@@ -11,7 +11,8 @@ logging.info('The logging module is working.')
 dir='/Users/ehaas/Documents/FHIR/Argo-DSTU2/'
 namespaces={'o':'urn:schemas-microsoft-com:office:office',
             'x':'urn:schemas-microsoft-com:office:excel',
-            'ss':'urn:schemas-microsoft-com:office:spreadsheet'}
+            'ss':'urn:schemas-microsoft-com:office:spreadsheet',
+            'fhir':'http:/hl7.org/fhir'}
 '''
 ig_template = open(dir +'ig-template.json')  #ig-template  lack spreadsheet and valueset information
 igjson = ig_template.read() # convert to strings
@@ -23,7 +24,7 @@ igpy = {"paths":{"temp":"temp","specification":"http://hl7.org/fhir/DSTU2","qa":
 
 logging.info('create the ig.xml file template as string')
 
-igxml ='''<?xml version="1.0" encoding="UTF-8"?><!--Hidden IG for de facto IG publishing--><ImplementationGuide xmlns="http://hl7.org/fhir"><id value="ig"/><url value="http://hl7.org/fhir/us/argonaut/ImplementationGuide/ig"/><name value="Implementation Guide Template"/><status value="draft"/><experimental value="true"/><publisher value="FHIR Project"/><package><name value="base"/></package><page><source value="index.html"/><title value="blah"/><kind value="page"/></page></ImplementationGuide>'''
+igxml ='''<?xml version="1.0" encoding="UTF-8"?><!--Hidden IG for de facto IG publishing--><ImplementationGuide xmlns="http://hl7.org/fhir"><id value="ig"/><url value="http://hl7.org/fhir/us/argonaut/ImplementationGuide/ig"/><name value="Implementation Guide Template"/><status value="draft"/><experimental value="true"/><publisher value="FHIR Project"/><package><name value="base"/></package><page><source value="index.html"/><name value="blah"/><kind value="page"/></page></ImplementationGuide>'''
 
 
 
@@ -52,7 +53,7 @@ for i in range(len(resources)):# run through all the files looking for spreadshe
           vsid = vsmo.group(1) #get id as string
           igpy['resources']['ValueSet/' + vsid] =  {'base': 'valueset-'+ vsid + '.html'} # concat id into appropriate strings and add valuset base def to resources in def file
           logging.info('adding valueset ' + vsid +' to resources ig.json')
-          vsxml = '<resource><example value="false"/><sourceReference><reference value="ValueSet/' + vsid + '"/></sourceReference></resource>' # concat id into appropriate string
+          vsxml = '<resource><purpose value="terminology"/><sourceReference><reference value="ValueSet/' + vsid + '"/></sourceReference></resource>' # concat id into appropriate string
           igxml = igxml.replace('name value="base"/>','name value="base"/>' + vsxml) # add valuset base def to ig resource
           logging.info('adding valueset ' + vsxml +' to resources in ig.xml')
     if 'capabilitystatement' in resources[i]: # for each cs in /resources open, read id and create and append dict struct to definiions file
@@ -62,9 +63,51 @@ for i in range(len(resources)):# run through all the files looking for spreadshe
           vsid = vsmo.group(1) #get id as string
           igpy['resources']['CapabilityStatement/' + vsid] =  {'base': 'capabilitystatement-'+ vsid + '.html'} # concat id into appropriate strings and add valuset base def to resources in def file
           logging.info('adding capabilitystatement ' + vsid +' to resources ig.json')
-          vsxml = '<resource><example value="true"/><sourceReference><reference value="CapabilityStatement/' + vsid + '"/></sourceReference></resource>' # concat id into appropriate string
+          vsxml = '<resource><purpose value="example"/><sourceReference><reference value="CapabilityStatement/' + vsid + '"/></sourceReference></resource>' # concat id into appropriate string
           igxml = igxml.replace('name value="base"/>','name value="base"/>' + vsxml) # add valuset base def to ig resource
           logging.info('adding capabilitystatement ' + vsxml +' to resources in ig.xml')
+    if 'operationdefinition' in resources[i]: # for each cs in /resources open, read id and create and append dict struct to definiions file
+          vs_file = open(dir + 'resources/'+ resources[i]) # use the same variables as for valuesets...see above
+          vsxml = vs_file.read()  # convert to string
+          vsmo = vsid_re.search(vsxml)  # get match object which contains id
+          vsid = vsmo.group(1) #get id as string
+          igpy['resources']['OperationDefinition/' + vsid] =  {'base': 'operationdefinition-'+ vsid + '.html'} # concat id into appropriate strings and add od base def to resources in def file
+          logging.info('adding operationdefinition ' + vsid +' to resources ig.json')
+          vsxml = '<resource><purpose value="example"/><sourceReference><reference value="OperationDefinition/' + vsid + '"/></sourceReference></resource>' # concat id into appropriate string
+          igxml = igxml.replace('name value="base"/>','name value="base"/>' + vsxml) # add valuset base def to ig resource
+          logging.info('adding operationdefinition ' + vsxml +' to resources in ig.xml')
+
+
+
+#=====adding examples to ig.xml leaving out the ig.json part for know ==============
+examples = os.listdir(dir + 'examples') # get all the examples in the examples directory assuming are in json the xml is causing a codec error so json is easier to process
+for i in range(len(examples)):# run through all the examples and get id and resource type
+    if 'json' in examples[i]:  # for each cs in /resources open, read id and create and append dict struct to definiions file
+          ex_file = open(dir + 'examples/'+ examples[i]) # for each example in /examples open
+          logging.info('load example json file'+ dir + 'examples/'+ examples[i])
+          exjson = json.load(ex_file)
+          extype = exjson['resourceType']
+          ex_id = exjson['id']
+          vsxml = '<resource><purpose value="example"/><sourceReference><reference value="'+ extype +'/' + ex_id + '"/></sourceReference></resource>' # concat id into appropriate string
+          igxml = igxml.replace('name value="base"/>','name value="base"/>' + vsxml) # add example to ig resource
+          logging.info('adding example' + extype+'/' + ex_id +' to resources in ig.xml')
+
+
+'''======= leaving out the xml parsing============\
+          sdxml = etree.parse(sd_file) # lxml module to parse example xml
+          sdid = sdxml.xpath('//fhir:id/@value', namespaces=namespaces)  # use xpath to get the id
+          extype = sdxml.xpath('name(/*)', namespaces=namespaces)  # use xpath to get the type '''
+
+
+'''   ===========leaving out the ig.json part for now=========
+
+       igpy['resources'][ extype + '/' + sdid[0].text] =  {'template-base': null}  # add example base def to resources in def file remove base.html
+          logging.info('adding example' + extype + '/' + sdid[0].text + ' =  {template-base: null} to resources ig.json')
+
+          igpy['resources'][ extype + '/' + sdid[0].text]['example'] = + extype.lower() + '-' + sdid[0].text+ '.html' # concat id into appropriate strings and add example in def file
+          logging.info('adding example:' extype.lower() + '-' + sdid[0].text+ '.html to resources ig.json')
+'''
+
 
 
 # ig_file = open(dir + 'ig.json','w')
