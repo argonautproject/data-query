@@ -27,7 +27,7 @@
 - A server has rejected any unauthorized requests by returning an HTTP 401 Unauthorized response code.
 
 -----------
-`GET [base]/Observation?patient=[id]&category=vital-signs`
+**`GET [base]/Observation?patient=[id]&category=vital-signs`**
 
 *Support:*  Mandatory to support search by category code.
 
@@ -41,13 +41,13 @@
 -   (Status 403): insufficient scope
 
 
-**Example:**
+Example:
 
-GET https://fhir-open-api-dstu2.smarthealthit.org/Observation?patient=1186747&category=vital-signs
+[GET https://fhir-open-api-dstu2.smarthealthit.org/Observation?patient=1186747&category=vital-signs](https://fhir-open-api-dstu2.smarthealthit.org/Observation?patient=1186747&category=vital-signs)
 
 
 -----------
-`GET [base]/Observation?patient=[id]&code=[vital sign LOINC{,LOINC2,LOINC3,...}]`
+**`GET [base]/Observation?patient=[id]&code=[vital sign LOINC{,LOINC2,LOINC3,...}]`**
 
 *Support:*  Mandatory to support search by vital sign LOINC(s) listed above.
 
@@ -62,20 +62,20 @@ GET https://fhir-open-api-dstu2.smarthealthit.org/Observation?patient=1186747&ca
 -   (Status 403): insufficient scope
 
 
-**Example:**
+Example:
 Search for all heart rate observations for a patient:
 
-GET https://fhir-open-api-dstu2.smarthealthit.org/Observation?patient=1186747&code=8867-4
+[GET https://fhir-open-api-dstu2.smarthealthit.org/Observation?patient=1186747&code=8867-4](https://fhir-open-api-dstu2.smarthealthit.org/Observation?patient=1186747&code=8867-4)
 
-**Example:**
+Example:
 Search for all heart rate, respiratory rate and blood pressure observations for a patient
 
-GET https://fhir-open-api-dstu2.smarthealthit.org/Observation?patient=1186747&code=8867-4,9279-1,55284-4
+[GET https://fhir-open-api-dstu2.smarthealthit.org/Observation?patient=1186747&code=8867-4,9279-1,55284-4](https://fhir-open-api-dstu2.smarthealthit.org/Observation?patient=1186747&code=8867-4,9279-1,55284-4)
 
 
 -----------
 
-`GET [base]/Observation?patient=[id]&category=vital-signs&date=[date]{&date=[date]}`
+**`GET [base]/Observation?patient=[id]&category=vital-signs&date=[date]{&date=[date]}`**
 
 *Support:*  Mandatory to support search by category code and date
 
@@ -89,10 +89,10 @@ GET https://fhir-open-api-dstu2.smarthealthit.org/Observation?patient=1186747&co
 -   (Status 403): insufficient scope
 
 
-**Example:**
+Example:
 Find all the blood pressures after 2013-03-14
 
-GET http://fhir2.healthintersections.com.au/open/Observation?patient=555580&code=55284-4&date=ge2015-01-14
+[GET http://fhir2.healthintersections.com.au/open/Observation?patient=555580&code=55284-4&date=ge2015-01-14](http://fhir2.healthintersections.com.au/open/Observation?patient=555580&code=55284-4&date=ge2015-01-14)
 
 --------
 

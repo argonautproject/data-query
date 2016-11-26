@@ -25,6 +25,6 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 #### Examples
 
-   - [AllergyIntolerance-23](AllergyIntolerance-23.html)
+   - [Device-udi-1](device-udi-1.html)
 
 [Device]: http://hl7.org/fhir/device.html

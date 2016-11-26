@@ -31,8 +31,6 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 #### Examples
 
-   - [AllergyIntolerance-23](AllergyIntolerance-23.html)
+   - [CareTeam-1](CarePlan-careteam-1.html)
 
-[CareTeam]:  http://hl7.org/fhir/careteam.html#### Examples
-
-   - [AllergyIntolerance-23](AllergyIntolerance-23.html)
+[CareTeam]:  http://hl7.org/fhir/careteam.html

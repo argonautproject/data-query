@@ -17,7 +17,7 @@
 
 -----------
 
-`GET /MedicationStatement?patient={id}[edit]`
+**`GET /MedicationStatement?patient={id}[edit]`**
 
 *Support:* Mandatory to support search by patient.
 
@@ -32,9 +32,9 @@
 -   (Status 401/4xx): unauthorized request
 -   (Status 403): insufficient scope
 
-**Example:**
+Example:
 
-GET http://fhirtest.uhn.ca/baseDstu2/MedicationStatement?patient=14676
+[GET http://fhirtest.uhn.ca/baseDstu2/MedicationStatement?patient=14676](http://fhirtest.uhn.ca/baseDstu2/MedicationStatement?patient=14676)
 
 -----------
 

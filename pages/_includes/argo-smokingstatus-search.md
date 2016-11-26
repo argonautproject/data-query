@@ -16,7 +16,7 @@
 - A server has rejected any unauthorized requests by returning an HTTP 401 Unauthorized response code.
 
 -----------
-`GET [base]/Observation?patient=[id]&code=72166-2[edit]`
+**`GET [base]/Observation?patient=[id]&code=72166-2[edit]`**
 
 *Support:* Mandatory to support search by patient and LOINC = '72166-2'.
 
@@ -30,9 +30,9 @@
 -   (Status 403): insufficient scope
 
 
-**Example:**
+Example:
 
-GET https://fhir-open-api-dstu2.smarthealthit.org/Observation?patient=1032702&code=72166-2
+[GET https://fhir-open-api-dstu2.smarthealthit.org/Observation?patient=1032702&code=72166-2](https://fhir-open-api-dstu2.smarthealthit.org/Observation?patient=1032702&code=72166-2)
 
 
   [(how to search by reference)]: http://hl7.org/fhir/DSTU2/search.html#reference

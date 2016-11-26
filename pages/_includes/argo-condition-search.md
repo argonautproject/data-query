@@ -14,7 +14,7 @@
 - A server has rejected any unauthorized requests by returning an HTTP 401 Unauthorized response code.
 
 -----------
-`GET /Condition?patient=[id]`
+**`GET /Condition?patient=[id]`**
 
 *Support:* Mandatory to support search by patient.
 
@@ -28,13 +28,13 @@
 -   (Status 403): insufficient scope
 
 
-**Example:**
+Example:
 
-GET https://fhir-open-api-dstu2.smarthealthit.org/Condition?patient=1032702
+[GET https://fhir-open-api-dstu2.smarthealthit.org/Condition?patient=1032702](https://fhir-open-api-dstu2.smarthealthit.org/Condition?patient=1032702)
 
 -----------
 
-`GET /Condition?patient=[id]&clinicalstatus=active,relapse,remission`
+**`GET /Condition?patient=[id]&clinicalstatus=active,relapse,remission`**
 
 *Support:* Optional to support search by status.
 
@@ -50,12 +50,12 @@ GET https://fhir-open-api-dstu2.smarthealthit.org/Condition?patient=1032702
 -   (Status 403): insufficient scope
 
 
-**Example:**
+Example:
 
-GET https://fhir-open-api-dstu2.smarthealthit.org/Condition?patient=1032702&clinicalstatus=active,relapse,remission
+[GET https://fhir-open-api-dstu2.smarthealthit.org/Condition?patient=1032702&clinicalstatus=active,relapse,remission](https://fhir-open-api-dstu2.smarthealthit.org/Condition?patient=1032702&clinicalstatus=active,relapse,remission)
 
 -----------
-`GET /Condition?patient=[id]&category=problem`
+**`GET /Condition?patient=[id]&category=problem`**
 
 *Support:* Optional to support search by patient and category.
 
@@ -70,14 +70,14 @@ GET https://fhir-open-api-dstu2.smarthealthit.org/Condition?patient=1032702&clin
 -   (Status 403): insufficient scope
 
 
-**Example:**
+Example:
 
-GET https://fhir-open-api-dstu2.smarthealthit.org/Condition?patient=1032702&category=problem
+[GET https://fhir-open-api-dstu2.smarthealthit.org/Condition?patient=1032702&category=problem](https://fhir-open-api-dstu2.smarthealthit.org/Condition?patient=1032702&category=problem)
 
 -----------
 
 
-`GET /Condition?patient=[id]&category=health-concern`
+**`GET /Condition?patient=[id]&category=health-concern`**
 
 *Support:* Optional to support search by patient and category.
 
@@ -91,9 +91,9 @@ GET https://fhir-open-api-dstu2.smarthealthit.org/Condition?patient=1032702&cate
 -   (Status 403): insufficient scope
 
 
-**Example:**
+Example:
 
-GET https://fhir-open-api-dstu2.smarthealthit.org/Condition?patient=1032702&category=health-concern
+[GET https://fhir-open-api-dstu2.smarthealthit.org/Condition?patient=1032702&category=health-concern](https://fhir-open-api-dstu2.smarthealthit.org/Condition?patient=1032702&category=health-concern)
 
 -----------
 

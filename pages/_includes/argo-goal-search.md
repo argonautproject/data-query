@@ -19,7 +19,7 @@
 
 -----------
 
-`GET /Goal?patient=[id]`
+**`GET /Goal?patient=[id]`**
 
 *Support:* Mandatory to support search by patient.
 
@@ -34,13 +34,13 @@
 -   (Status 401/4xx): unauthorized request
 -   (Status 403): insufficient scope
 
-**Example:**
+Example:
 
-GET https://fhir-open-api-dstu2.smarthealthit.org/Goal?patient=1137192
+[GET https://fhir-open-api-dstu2.smarthealthit.org/Goal?patient=1137192](https://fhir-open-api-dstu2.smarthealthit.org/Goal?patient=1137192)
 
 -----------
 
-`GET /Goal?patient=[id]&date=[date]{&date=[date]}[edit]`
+**`GET /Goal?patient=[id]&date=[date]{&date=[date]}[edit]`**
 
 *Support:* Mandatory to support search by date.
 
@@ -55,11 +55,11 @@ GET https://fhir-open-api-dstu2.smarthealthit.org/Goal?patient=1137192
 -   (Status 401/4xx): unauthorized request
 -   (Status 403): insufficient scope
 
-**Example:**
+Example:
 
-GET https://fhir-open-api-dstu2.smarthealthit.org/Goal?patient=1137192&date=ge2015-01-14
+[GET https://fhir-open-api-dstu2.smarthealthit.org/Goal?patient=1137192&date=ge2015-01-14](https://fhir-open-api-dstu2.smarthealthit.org/Goal?patient=1137192&date=ge2015-01-14)
 
-GET https://fhir-open-api-dstu2.smarthealthit.org/Goal?patient=1137192&date=ge2015-01-14&date=le2016-01-14
+[GET https://fhir-open-api-dstu2.smarthealthit.org/Goal?patient=1137192&date=ge2015-01-14&date=le2016-01-14](https://fhir-open-api-dstu2.smarthealthit.org/Goal?patient=1137192&date=ge2015-01-14&date=le2016-01-14)
 
 
   [(how to search by reference)]: http://hl7.org/fhir/DSTU2/search.html#reference

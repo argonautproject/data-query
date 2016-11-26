@@ -17,7 +17,7 @@
 
 -----------
 
-`GET /Device?patient=[id]`
+**`GET /Device?patient=[id]`**
 
 *Support:* Mandatory to support search by patient.
 
@@ -32,9 +32,9 @@
 -   (Status 401/4xx): unauthorized request
 -   (Status 403): insufficient scope
 
-**Example:**
+Example:
 
-GET http://fhir2.healthintersections.com.au/open/Device/argo-udi-1
+[GET http://fhir2.healthintersections.com.au/open/Device/argo-udi-1](http://fhir2.healthintersections.com.au/open/Device/argo-udi-1)
 
 
   [(how to search by reference)]: http://hl7.org/fhir/DSTU2/search.html#reference

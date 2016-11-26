@@ -1,0 +1,69 @@
+{
+   "resourceType":"CarePlan",
+   "id":"careteam-1",
+   "meta":{
+      "versionId":"1",
+      "lastUpdated":"2016-06-11T02:25:09Z"
+   },
+   "subject":{
+      "reference":"Patient/1186747"
+   },
+   "status":"active",
+   "category":[
+      {
+         "coding":[
+            {
+               "system":"http://argonaut.hl7.org",
+               "code":"careteam"
+            }
+         ]
+      }
+   ],
+   "participant":[
+      {
+         "role":{
+            "coding":[
+               {
+                  "system":"http://www.nucc.org",
+                  "code":"207RC0000X",
+                  "display":"Allopathic & Osteopathic Physicians:Internal Medicine:Cardiovascular Disease"
+               }
+            ]
+         },
+         "member":{
+            "reference":"Practitioner/COREPRACTITIONER1",
+            "display":"Kurtis Giles, MD"
+         }
+      },
+      {
+         "role":{
+            "coding":[
+               {
+                  "system":"http://www.nucc.org",
+                  "code":"103T00000X",
+                  "display":"Behavioral Health & Social Service Providers:Psychologist"
+               }
+            ]
+         },
+         "member":{
+            "reference":"Practitioner/COREPRACTITIONER4",
+            "display":"Kathy Fielding, MD"
+         }
+      },
+      {
+         "role":{
+            "coding":[
+               {
+                  "system":"http://snomed.info/sct",
+                  "code":"116154003",
+                  "display":"Patient (person)"
+               }
+            ]
+         },
+         "member":{
+            "reference":"Patient/1186747",
+            "display":"Daniel A Johnson"
+         }
+      }
+   ]
+}

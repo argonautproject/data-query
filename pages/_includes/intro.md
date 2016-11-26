@@ -72,7 +72,7 @@ Argonaut uses SMART on FHIR authorization for apps that connect to EHR data. For
      -  DiagnosticReport:  [Argonaut DiagnosticReport Profile](structuredefinition-argo-diagnosticreport.html)
      -  Observation:  [Argonaut Observation Results Profile](structuredefinition-argo-observationresults.html)
   -  Goals:  [Argonaut Goal Profile](structuredefinition-argo-goal.html)
-  -  Immunizations:  [Argponaut Immunization Profile](structuredefinition-argo-immunization.html)
+  -  Immunizations:  [Argonaut Immunization Profile](structuredefinition-argo-immunization.html)
   - Medications:
      -  Medication:  [Argonaut Medication Profile](structuredefinition-argo-medication.html)
      -  MedicationOrder:  [Argonaut MedicationOrder Profile](structuredefinition-argo-medicationorder.html)

@@ -26,7 +26,7 @@
 
 -----------
 
-`GET [base]/Observation?patient=[id]&category=laboratory`
+**`GET [base]/Observation?patient=[id]&category=laboratory`**
 
 *Support:* Mandatory to support search by patient and category code = 'laboratory'.
 
@@ -41,13 +41,13 @@
 -   (Status 401/4xx): unauthorized request
 -   (Status 403): insufficient scope
 
-**Example:**
+Example:
 
-GET https://fhir-open-api-dstu2.smarthealthit.org/Observation?patient=1134281&category=laboratory
+[GET https://fhir-open-api-dstu2.smarthealthit.org/Observation?patient=1134281&category=laboratory](https://fhir-open-api-dstu2.smarthealthit.org/Observation?patient=1134281&category=laboratory)
 
 -----------
 
-`GET [base]/Observation?patient=[id]&code=[LOINC{,LOINC2,LOINC3,...}]`
+**`GET [base]/Observation?patient=[id]&code=[LOINC{,LOINC2,LOINC3,...}]`**
 
 *Support:* Mandatory support search by a laboratory LOINC code. SHOULD support search by multiple LOINC codes.
 
@@ -62,19 +62,19 @@ GET https://fhir-open-api-dstu2.smarthealthit.org/Observation?patient=1134281&ca
 -   (Status 401/4xx): unauthorized request
 -   (Status 403): insufficient scope
 
-**Example:**
+Example:
 Search for all blood glucose lab results for a patient:
 
-GET https://fhir-open-api-dstu2.smarthealthit.org/Observation?patient=1134281&code=2339-0
+[GET https://fhir-open-api-dstu2.smarthealthit.org/Observation?patient=1134281&code=2339-0](https://fhir-open-api-dstu2.smarthealthit.org/Observation?patient=1134281&code=2339-0)
 
-**Example:**
+Example:
 Search for all blood glucose, urine glucose and urine ketones for a patient
 
-GET https://fhir-open-api-dstu2.smarthealthit.org/Observation?patient=1134281&code=2339-0,25428-4,2514-8
+[GET https://fhir-open-api-dstu2.smarthealthit.org/Observation?patient=1134281&code=2339-0,25428-4,2514-8](https://fhir-open-api-dstu2.smarthealthit.org/Observation?patient=1134281&code=2339-0,25428-4,2514-8)
 
 -----------
 
-`GET [base]/Observation?patient=[id]&category=laboratory&date=[date]{&date=[date]}`
+**`GET [base]/Observation?patient=[id]&category=laboratory&date=[date]{&date=[date]}`**
 
 *Support:*  Mandatory support search by category code ="laboratory" and date or period
 
@@ -91,10 +91,10 @@ GET https://fhir-open-api-dstu2.smarthealthit.org/Observation?patient=1134281&co
 -   (Status 401/4xx): unauthorized request
 -   (Status 403): insufficient scope
 
-**Example:**
+Example:
 Find all the laboratory results after 2013-03-14
 
-GET http://fhir2.healthintersections.com.au/open/Observation?patient=555580&category=laboratory&date=ge2015-01-14
+[GET http://fhir2.healthintersections.com.au/open/Observation?patient=555580&category=laboratory&date=ge2015-01-14](http://fhir2.healthintersections.com.au/open/Observation?patient=555580&category=laboratory&date=ge2015-01-14)
 
   [(how to search by reference)]: http://hl7.org/fhir/DSTU2/search.html#reference
   [(how to search by token)]: http://hl7.org/fhir/DSTU2/search.html#token

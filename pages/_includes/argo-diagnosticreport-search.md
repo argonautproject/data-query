@@ -26,7 +26,7 @@
 
 -----------
 
-`GET [base]/DiagnosticReport?patient=[id]&category=LAB`
+**`GET [base]/DiagnosticReport?patient=[id]&category=LAB`**
 
 *Support:* Mandatory to support search by patient and category code = 'LAB'.
 
@@ -41,13 +41,13 @@
 -   (Status 401/4xx): unauthorized request
 -   (Status 403): insufficient scope
 
-**Example:**
+Example:
 
-GET http://spark.furore.com/fhir/DiagnosticReport?patient=f201&category=LAB
+[GET http://spark.furore.com/fhir/DiagnosticReport?patient=f201&category=LAB](http://spark.furore.com/fhir/DiagnosticReport?patient=f201&category=LAB)
 
 -----------
 
-`GET [base]/DiagnosticReport?patient=[id]&code=[LOINC{,LOINC2,LOINC3,...}]`
+**`GET [base]/DiagnosticReport?patient=[id]&code=[LOINC{,LOINC2,LOINC3,...}]`**
 
 *Support:* Mandatory support search by a laboratory order code. SHOULD support search by multiple order codes.
 
@@ -62,20 +62,20 @@ GET http://spark.furore.com/fhir/DiagnosticReport?patient=f201&category=LAB
 -   (Status 401/4xx): unauthorized request
 -   (Status 403): insufficient scope
 
-**Example:**
+Example:
 Search for all metabolic panel reports for a patient
 
-GET https://fhir-open-api-dstu2.smarthealthit.org/DiagnosticReport?patient=1032702&code=24323-8
+[GET https://fhir-open-api-dstu2.smarthealthit.org/DiagnosticReport?patient=1032702&code=24323-8](https://fhir-open-api-dstu2.smarthealthit.org/DiagnosticReport?patient=1032702&code=24323-8)
 
-**Example:**
+Example:
 Search for all cbc, metabolic panel, and urinalysis panels for a patient
 
-GET https://fhir-open-api-dstu2.smarthealthit.org/DiagnosticReport?patient=1032702&code=24323-8,58410-2,24356-8
+[GET https://fhir-open-api-dstu2.smarthealthit.org/DiagnosticReport?patient=1032702&code=24323-8,58410-2,24356-8](https://fhir-open-api-dstu2.smarthealthit.org/DiagnosticReport?patient=1032702&code=24323-8,58410-2,24356-8)
 
 
 -----------
 
-`GET [base]/DiagnosticReport?patient=[id]&category=LAB&date=[date]{&date=[date]}`
+**`GET [base]/DiagnosticReport?patient=[id]&category=LAB&date=[date]{&date=[date]}`**
 
 *Support:*  Mandatory support search by category code = 'LAB' and date or period.
 
@@ -90,10 +90,10 @@ GET https://fhir-open-api-dstu2.smarthealthit.org/DiagnosticReport?patient=10327
 -   (Status 401/4xx): unauthorized request
 -   (Status 403): insufficient scope
 
-**Example:**
+Example:
 Find all the lab reports issued after 2010-01-14
 
-GET http://spark.furore.com/fhir/DiagnosticReport?patient=f201&category=LAB&date=ge2010-01-14
+[GET http://spark.furore.com/fhir/DiagnosticReport?patient=f201&category=LAB&date=ge2010-01-14](http://spark.furore.com/fhir/DiagnosticReport?patient=f201&category=LAB&date=ge2010-01-14)
 
 
   [(how to search by reference)]: http://hl7.org/fhir/DSTU2/search.html#reference

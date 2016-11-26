@@ -28,7 +28,7 @@
 
 -----------
 
-`GET /CarePlan?patient=[id]&category=assess-plan`
+**`GET /CarePlan?patient=[id]&category=assess-plan`**
 
 *Support:* Mandatory to support search by patient.
 
@@ -43,13 +43,13 @@
 -   (Status 401/4xx): unauthorized request
 -   (Status 403): insufficient scope
 
-**Example:**
+Example:
 
-GET https://fhir-open-api-dstu2.smarthealthit.org/CarePlan?patient=1137192&category=assess-plan
+[GET https://fhir-open-api-dstu2.smarthealthit.org/CarePlan?patient=1137192&category=assess-plan](https://fhir-open-api-dstu2.smarthealthit.org/CarePlan?patient=1137192&category=assess-plan)
 
 -----------
 
-`GET /CarePlan?patient=[id]&category=assess-plan&date=[date]`
+**`GET /CarePlan?patient=[id]&category=assess-plan&date=[date]`**
 
 *Support:* Mandatory to support search by date
 
@@ -64,15 +64,15 @@ GET https://fhir-open-api-dstu2.smarthealthit.org/CarePlan?patient=1137192&categ
 -   (Status 401/4xx): unauthorized request
 -   (Status 403): insufficient scope
 
-**Example:**
+Example:
 
-GET https://fhir-open-api-dstu2.smarthealthit.org/CarePlan?patient=1137192&category=assess-plan&date=ge2015-01-14
+[GET https://fhir-open-api-dstu2.smarthealthit.org/CarePlan?patient=1137192&category=assess-plan&date=ge2015-01-14](https://fhir-open-api-dstu2.smarthealthit.org/CarePlan?patient=1137192&category=assess-plan&date=ge2015-01-14)
 
-GET https://fhir-open-api-dstu2.smarthealthit.org/CarePlan?patient=1137192&category=assess-plan&date=ge2015-01-14&date=le2016-01-14
+[GET https://fhir-open-api-dstu2.smarthealthit.org/CarePlan?patient=1137192&category=assess-plan&date=ge2015-01-14&date=le2016-01-14](https://fhir-open-api-dstu2.smarthealthit.org/CarePlan?patient=1137192&category=assess-plan&date=ge2015-01-14&date=le2016-01-14)
 
 -----------
 
-`GET /CarePlan?patient=[id]&category=assess-plan&status=active`
+**`GET /CarePlan?patient=[id]&category=assess-plan&status=active`**
 
 *Support:* SHOULD support search by patient and status = 'active'.
 
@@ -87,14 +87,14 @@ GET https://fhir-open-api-dstu2.smarthealthit.org/CarePlan?patient=1137192&categ
 -   (Status 401/4xx): unauthorized request
 -   (Status 403): insufficient scope
 
-**Example:**
+Example:
 
- GET https://fhir-open-api-dstu2.smarthealthit.org/CarePlan?patient=1137192&status=active
+[GET https://fhir-open-api-dstu2.smarthealthit.org/CarePlan?patient=1137192&status=active](https://fhir-open-api-dstu2.smarthealthit.org/CarePlan?patient=1137192&status=active)
 
 
 -----------
 
-`GET /CarePlan?patient=[id]&category=assess-plan&status=active&date=[date]`
+**`GET /CarePlan?patient=[id]&category=assess-plan&status=active&date=[date]`**
 
 *Support:* SHOULD support search by patient and status = 'active' and date.
 
@@ -108,9 +108,9 @@ GET https://fhir-open-api-dstu2.smarthealthit.org/CarePlan?patient=1137192&categ
 -   (Status 401/4xx): unauthorized request
 -   (Status 403): insufficient scope
 
-**Example:**
+Example:
 
- GET https://fhir-open-api-dstu2.smarthealthit.org/CarePlan?patient=1137192&category=assess-plan&datatus=active&date=ge2015-01-14
+[GET https://fhir-open-api-dstu2.smarthealthit.org/CarePlan?patient=1137192&category=assess-plan&datatus=active&date=ge2015-01-14](https://fhir-open-api-dstu2.smarthealthit.org/CarePlan?patient=1137192&category=assess-plan&datatus=active&date=ge2015-01-14)
 
 
 

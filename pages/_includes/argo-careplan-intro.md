@@ -26,7 +26,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 #### Examples
 
-   - [AllergyIntolerance-23](AllergyIntolerance-23.html)
+   - [CarePlan-colonoscopy](CarePlan-colonoscopy.html)
 
 
 [CarePlan]: http://hl7.org/fhir/careplan.html

@@ -24,6 +24,6 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 #### Examples
 
-   - [AllergyIntolerance-23](AllergyIntolerance-23.html)
+   - [Goal-1](goal-goal-1.html)
 
 [Goal]:  http://hl7.org/fhir/goal.html

@@ -29,7 +29,7 @@ To limit overly broad search results, a client search with gender **SHOULD** inc
 - A server has rejected any unauthorized requests by returning an HTTP 401 Unauthorized response code.
 
 -----------
-`GET [base]/Patient/[id]`
+**`GET [base]/Patient/[id]`**
 
 *Support:* Mandatory
 
@@ -44,13 +44,13 @@ To limit overly broad search results, a client search with gender **SHOULD** inc
 -   (Status 404): unknown resource
 -   (Status 410): deleted resource
 
-**Example:**
+Example:
 
-GET https://fhir-open-api.smarthealthit.org/Patient/1032702
+[GET https://fhir-open-api.smarthealthit.org/Patient/1032702](https://fhir-open-api.smarthealthit.org/Patient/1032702)
 
 -----------
 
-`GET [base]/Patient?name=[string]&birthdate=[date]`
+**`GET [base]/Patient?name=[string]&birthdate=[date]`**
 
 *Support:* Mandatory
 
@@ -66,12 +66,12 @@ GET https://fhir-open-api.smarthealthit.org/Patient/1032702
 -   (Status 404): unknown resource
 -   (Status 410): deleted resource
 
-**Example:**
+Example:
 
-GET https://fhir-open-api-dstu2.smarthealthit.org/Patient?name=Shaw&birthdate=2007-03-20
+[GET https://fhir-open-api-dstu2.smarthealthit.org/Patient?name=Shaw&birthdate=2007-03-20](https://fhir-open-api-dstu2.smarthealthit.org/Patient?name=Shaw&birthdate=2007-03-20)
 
 -----------
-`GET [base]/Patient?name=[string]&gender=[code]`
+**`GET [base]/Patient?name=[string]&gender=[code]`**
 
 *Support:* Mandatory
 
@@ -87,13 +87,13 @@ GET https://fhir-open-api-dstu2.smarthealthit.org/Patient?name=Shaw&birthdate=20
 -   (Status 404): unknown resource
 -   (Status 410): deleted resource
 
-**Example:**
+Example:
 
-GET  https://fhir-open-api-dstu2.smarthealthit.org/Patient?name=Shaw&gender=female
+[GET  https://fhir-open-api-dstu2.smarthealthit.org/Patient?name=Shaw&gender=female]( https://fhir-open-api-dstu2.smarthealthit.org/Patient?name=Shaw&gender=female)
 
 -----------
 
-`GET [base]/Patient?family=[string]&gender=[code]`
+**`GET [base]/Patient?family=[string]&gender=[code]`**
 
 *Support:* SHOULD support Patient search by family name and gender
 
@@ -108,13 +108,13 @@ GET  https://fhir-open-api-dstu2.smarthealthit.org/Patient?name=Shaw&gender=fema
 -   (Status 404): unknown resource
 -   (Status 410): deleted resource
 
-**Example:**
+Example:
 
-GET  https://fhir-open-api-dstu2.smarthealthit.org/Patient?family=shaw&gender=female
+[GET  https://fhir-open-api-dstu2.smarthealthit.org/Patient?family=shaw&gender=female]( https://fhir-open-api-dstu2.smarthealthit.org/Patient?family=shaw&gender=female)
 
 -----------
 
-`GET [base]/Patient?given=[string]&gender=[code]`
+**`GET [base]/Patient?given=[string]&gender=[code]`**
 
 *Support:* SHOULD support Patient search by given name and gender
 
@@ -129,9 +129,9 @@ GET  https://fhir-open-api-dstu2.smarthealthit.org/Patient?family=shaw&gender=fe
 -   (Status 404): unknown resource
 -   (Status 410): deleted resource
 
-**Example:**
+Example:
 
-GET  https://fhir-open-api-dstu2.smarthealthit.org/Patient?given=amy&gender=female
+[GET  https://fhir-open-api-dstu2.smarthealthit.org/Patient?given=amy&gender=female]( https://fhir-open-api-dstu2.smarthealthit.org/Patient?given=amy&gender=female)
 
 -----------
 

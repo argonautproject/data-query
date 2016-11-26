@@ -17,7 +17,7 @@
 
 -----------
 
-`GET /MedicationOrder?patient={id}[edit]`
+**`GET /MedicationOrder?patient={id}[edit]`**
 
 *Support:* Mandatory to support search by patient.
 
@@ -32,9 +32,9 @@
 -   (Status 401/4xx): unauthorized request
 -   (Status 403): insufficient scope
 
-**Example:**
+Example:
 
-GET https://fhir-open-api-dstu2.smarthealthit.org/MedicationOrder?patient=1137192
+[GET https://fhir-open-api-dstu2.smarthealthit.org/MedicationOrder?patient=1137192](https://fhir-open-api-dstu2.smarthealthit.org/MedicationOrder?patient=1137192)
 
 -----------
 
