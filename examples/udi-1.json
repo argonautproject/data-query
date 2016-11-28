@@ -1,18 +1,19 @@
 {
-   "resourceType":"Device",
-   "id":"udi-1",
-    "type":{
-      "coding":[
-         {
-            "system":"http://snomed.info/sct",
-            "code":"468063009",
-            "display":"Coated femoral stem prosthesis, modular"
-         }
-      ]
-   },
-   "status":"available",
-   "udi":"{01}09504000059118{17}141120{10}7654321D{21}10987654d321",
-   "patient":{
-      "reference":"Patient/example"
-   }
+	"resourceType": "Device",
+	"id": "udi-1",
+	"type": {
+		"coding": [
+			{
+				"system": "http://snomed.info/sct",
+				"code": "468063009",
+				"display": "Coated femoral stem prosthesis, modular"
+			}
+		]
+	},
+	"status": "available",
+	"udi": "{01}09504000059118{17}141120{10}7654321D{21}10987654d321",
+	"patient": {
+		"reference": "patient-peter-chalmers.html",
+		"display": "Peter Chalmers"
+	}
 }

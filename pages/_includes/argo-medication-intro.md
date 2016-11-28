@@ -24,7 +24,8 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 #### Examples
 
-   - [AllergyIntolerance-23](AllergyIntolerance-23.html)
+- [medication-argo-med1](medication-argo-med1.html)
+- [medication-argo-med2](medication-argo-med2.html)
 
 [MedicationStatement]: http://hl7.org/fhir/medicationstatement.html
  [MedicationOrder]: http://hl7.org/fhir/medicationorder.html

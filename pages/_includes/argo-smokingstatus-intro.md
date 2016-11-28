@@ -34,7 +34,9 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 * none
 
-[Observation]: http://hl7.org/fhir/observation.html
+
 #### Examples
-   
-   - [AllergyIntolerance-23](AllergyIntolerance-23.html)
+
+   - [Some Day Smoker](observation-some-day-smoker.html)
+
+   [Observation]: http://hl7.org/fhir/observation.html

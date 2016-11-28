@@ -27,6 +27,8 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 #### Examples
 
-   - [AllergyIntolerance-23](AllergyIntolerance-23.html)
+   - [Condition-liveborn-birth](condition-liveborn-birth.html) this is an example of a condition categorized as a "problem"
+   - [Condition-hc1](condition-hc1.html) this is an example of a condition categorized as a "health-concernt"
+
 
 [Condition]: http://hl7.org/fhir/condition.html

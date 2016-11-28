@@ -1,4 +1,4 @@
-Both the [MedicationOrder] and [MedicationStatement] resources can be used to record a patient's medication.  For more information about the context for their usages, refer to the medication domains's [boundaries section].  This profile sets minimum expectations for the MedicationStatement resource to record, search and fetch medications associated with a patient. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile.
+Both the [Medicationstatement] and [MedicationStatement] resources can be used to record a patient's medication.  For msre information about the context for their usages, refer to the medication domains's [boundaries section].  This profile sets minimum expectations for the MedicationStatement resource to record, search and fetch medications associated with a patient. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile.
 
 **Example Usage Scenarios:**
 
@@ -26,17 +26,20 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 **Profile specific implementation guidance:**
 
-*  The MedicationStatement and MedicationOrder resources can represent a medication, using either a code or refer to a [Medication] resource.  The server application can choose one way or both methods,  but the client application must support both methods.  More specific guidance is provided in the [conformance](conformance.html) resource for this profile
+*  The MedicationStatement and Medicationstatement resources can represent a medication, using either a code or refer to a [Medication] resource.  The server application can choose one way or both methods,  but the client application must support both methods.  msre specific guidance is provided in the [conformance](conformance.html) resource for this profile
 
 #### Examples
 
-   - [AllergyIntolerance-23](AllergyIntolerance-23.html)
+- [medicationstatement-argo-ms1](medicationstatement-argo-ms1.html) This example uses an inline medication code to represent  the medication.
+- [medicationstatement-argo-ms2](medicationstatement-argo-ms2.html) This example uses a references a contained Medication resource.
+- [medicationstatement-argo-ms3](bundle-argo-ms3.html) This example is a search [Bundle] with a MedicationStatement and an included Medication resource in the Bundle.
 
   [Medication Clinical Drug (RxNorm)]: valueset-daf-medication-codes.html
-  [MedicationOrderStatus]: http://hl7.org/fhir/us/daf/valueset-medication-order-status.html
+  [MedicationstatementStatus]: http://hl7.org/fhir/us/daf/valueset-medication-statement-status.html
 [MedicationStatementStatus]: http://hl7.org/fhir/us/daf/valueset-medication-statement-status.html
 [MedicationStatement]:http://hl7.org/fhir/medicationstatement.html
- [MedicationOrder]: http://hl7.org/fhir/medicationorder.html
+ [Medicationstatement]: http://hl7.org/fhir/medicationstatement.html
  [Medication]:http://hl7.org/fhir/medication.html
  [Conformance]: daf-core-medicationstatement-conformance.html
- [boundaries section]: http://hl7.org/fhir/medicationorder.html#bnr
+ [boundaries section]: http://hl7.org/fhir/medicationstatement.html#bnr
+ [Bundle]:http://hl7.org/fhir/bundle.html

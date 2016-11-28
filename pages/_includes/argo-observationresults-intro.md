@@ -38,7 +38,37 @@ Each Observation *should* have:
 
 #### Examples
 
-   - [AllergyIntolerance-23](AllergyIntolerance-23.html)
+- [Observation-usg](Observation-usg.html)
+- [Observation-urobilinogen](Observation-urobilinogen.html)
+- [Observation-urine-wbcs](Observation-urine-wbcs.html)
+- [Observation-urine-sediment](Observation-urine-sediment.html)
+- [Observation-urine-rbcs](Observation-urine-rbcs.html)
+- [Observation-urine-protein](Observation-urine-protein.html)
+- [Observation-urine-ph](Observation-urine-ph.html)
+- [Observation-urine-nitrite](Observation-urine-nitrite.html)
+- [Observation-urine-leukocyte-esterase](Observation-urine-leukocyte-esterase.html)
+- [Observation-urine-ketone](Observation-urine-ketone.html)
+- [Observation-urine-hemoglobin](Observation-urine-hemoglobin.html)
+- [Observation-urine-glucose](Observation-urine-glucose.html)
+- [Observation-urine-epi-cells](Observation-urine-epi-cells.html)
+- [Observation-urine-color](Observation-urine-color.html)
+- [Observation-urine-clarity](Observation-urine-clarity.html)
+- [Observation-urine-cells](Observation-urine-cells.html)
+- [Observation-urine-bilirubin](Observation-urine-bilirubin.html)
+- [Observation-urine-bacteria](Observation-urine-bacteria.html)
+- [Observation-serum-total-bilirubin](Observation-serum-total-bilirubin.html)
+- [Observation-serum-sodium](Observation-serum-sodium.html)
+- [Observation-serum-potassium](Observation-serum-potassium.html)
+- [Observation-serum-creatinine](Observation-serum-creatinine.html)
+- [Observation-serum-co2](Observation-serum-co2.html)
+- [Observation-serum-chloride](Observation-serum-chloride.html)
+- [Observation-serum-calcium](Observation-serum-calcium.html)
+- [Observation-neutrophils](Observation-neutrophils.html)
+- [Observation-mchc](Observation-mchc.html)
+- [Observation-hemoglobin](Observation-hemoglobin.html)
+- [Observation-erythrocytes](Observation-erythrocytes.html)
+- [Observation-BUN](Observation-BUN.html)
+- [Observation-blood-glucose](Observation-blood-glucose.html)
 
  [SNOMED CT]: http://snomed.info/sct
   [Observation Value Absent Reason]: http://hl7.org/fhir/valueset-observation-valueabsentreason.html

@@ -42,12 +42,8 @@ def update_sd(i,type):
     sdxml = etree.parse(sd_file)  # lxml module to parse excel xml
     sdid = sdxml.xpath('/ss:Workbook/ss:Worksheet[2]/ss:Table/ss:Row[11]/ss:Cell[2]/ss:Data',
                        namespaces=namespaces)  # use xpath to get the id from the spreadsheet and lower case
-    igpy['resources'][type + '/' + sdid[0].text.lower()] = {'base': type.lower() + '-' + sdid[
-        0].text.lower() + '.html'}  # concat id into appropriate strings and add sd  base def to resources in def file
-    logging.info('adding ' + type + ' ' + sdid[0].text.lower() + ' to resources ig.json')
-    igpy['resources'][type + '/' + sdid[0].text.lower()]['defns'] = type.lower() + '-' + sdid[
-        0].text.lower() + '-definitions.html'  # concat id into appropriate strings and add sd defitions to in def file
-    logging.info('adding ' + type + ' ' + sdid[0].text.lower() + ' definitions to resources ig.json')
+    update_igjson(type, sdid[0].text.lower()) # add base to definitions file
+    update_igjson(type, sdid[0].text.lower(), 'defns') # add base to definitions file
     return
 
 def update_igxml(type, purpose, id):
@@ -58,6 +54,17 @@ def update_igxml(type, purpose, id):
       logging.info('adding ' + type + vsxml + ' to resources in ig.xml')
       return
 
+def update_igjson(type, id, template = 'base'): # add base to ig.json - can extend for other templates if needed with extra 'template' param
+    if template == 'base':
+        igpy['resources'][type + '/' + id] = {
+            template : type.lower() + '-' + id + '.html'}  # concat id into appropriate strings and add valuset base def to resources in def file
+        logging.info('adding ' + type + ' ' + id + ' base to resources ig.json')
+    if template == 'defns':
+        igpy['resources'][type + '/' + id][template] = type.lower() + '-' + id + '-definitions.html'  # concat id into appropriate strings and add sd defitions to in def file
+        logging.info('adding ' + type + ' ' +  id  + ' definitions to resources ig.json')
+    return
+
+
 def update_def(i, type, purpose):
       vsid_re = re.compile(r'<id value="(.*)"/>')  # regex for finding the index in vs
       vs_file = open(
@@ -65,14 +72,13 @@ def update_def(i, type, purpose):
       vsxml = vs_file.read()  # convert to string
       vsmo = vsid_re.search(vsxml)  # get match object which contains id
       vsid = vsmo.group(1)  # get id as string
-      igpy['resources'][type + '/' + vsid] = {
-            'base': type.lower() + '-' + vsid + '.html'}  # concat id into appropriate strings and add valuset base def to resources in def file
-      logging.info('adding ' + type + ' ' + vsid + ' definitions to resources ig.json')
+      update_igjson(type, vsid) # add base to definitions file
       update_igxml(type, purpose, vsid)
       return
 
 def update_example(type, id):
-      update_igxml(type, 'example', id)
+      update_igxml(type, 'example', id)  # add example to ig.xml file
+      update_igjson(type, id )  # add example base to definitions file
       igpy['defaults'][type] = {'template-base': 'ex.html'}  # add example template for type
       logging.info('adding example template to type ' +type + ' in ig.json')
       return
@@ -95,6 +101,12 @@ def get_resources():
               update_def(resources[i], 'Conformance', 'example')
         if 'operationdefinition' in resources[i]: # for each cs in /resources open, read id and create and append dict struct to definiions file
               update_def(resources[i], 'OperationDefinition', 'example')
+        #add extensions
+        extensions = ['argo-ethnicity', 'argo-race','argo-birthsex']
+        for extension in extensions:
+            update_igjson('StructureDefinition',extension, 'base')
+            update_igjson('StructureDefinition', extension, 'defns')
+
     return
 
 

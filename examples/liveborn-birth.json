@@ -1,0 +1,32 @@
+{
+  "resourceType": "Condition",
+  "id": "liveborn-birth",
+
+  "patient": {
+    "reference": "patient-peter-chalmers.html",
+    "display":"Peter Chalmers"
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "442311008",
+        "display": "Single liveborn, born in hospital, delivered without mention of cesarean section"
+      }
+    ],
+    "text": "Single liveborn, born in hospital, delivered without mention of cesarean section"
+  },
+  "category": {
+    "coding": [
+      {
+        "system": "http://argonaut.hl7.org",
+        "code": "problem",
+        "display": "Problem"
+      }
+    ],
+    "text": "Problem"
+  },
+  "clinicalStatus": "active",
+  "verificationStatus": "confirmed",
+  "onsetDateTime": "2007-12-14"
+}

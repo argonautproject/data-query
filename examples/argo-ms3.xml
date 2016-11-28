@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/Users/Eric/Documents/HL7/FHIR/BUILD_EDIT_FILES/dstu2-fhir-all-xsd/fhir-all.xsd">
+	<id value="argo-ms3"/>
+	<type value="searchset"/>
+	<total value="1"/>
+	<link>
+		<relation value="self"/>
+		<url value="https://fhir-open-api-dstu2.smarthealthit.org/MedicationStatement/?_id=argo-ms2&amp;_include=MedicationStatement:medication"/>
+	</link>
+	<entry>
+		<fullUrl value="https://fhir-open-api-dstu2.smarthealthit.org/MedicationStatement/argo-ms2"/>
+		<resource>
+			<MedicationStatement>
+				<!-- this is an example using an external reference to a medication
+ -->
+				<id value="argo-ms2"/>
+				<meta>
+					<versionId value="213289"/>
+					<lastUpdated value="2016-11-28T06:03:26.318+00:00"/>
+					<profile value="http://hl7.org/fhir/StructureDefinition/daf-patient"/>
+				</meta>
+				<!--      The Human readible version of the medication statement     -->
+				<patient>
+					<reference value="Patient/example"/>
+				</patient>
+				<dateAsserted value="2016-05-01T16:13:03Z"/>
+				<status value="active"/>
+				<!--   either a code or a reference to the medication being prescribed. As described earlier, this could be contained, separately
+        within a bundle or simply a reference to a remote server.  -->
+				<effectivePeriod>
+					<start value="2010-05-01"/>
+				</effectivePeriod>
+				<medicationReference>
+					<reference value="Medication/argo-med1"/>
+					<display value="lisinopril oral 10 mg"/>
+				</medicationReference>
+			</MedicationStatement>
+		</resource>
+		<search>
+			<mode value="match"/>
+		</search>
+	</entry>
+	<entry>
+		<fullUrl value="https://fhir-open-api-dstu2.smarthealthit.org/Medication/argo-med1"/>
+		<resource>
+			<Medication>
+				<id value="argo-med1"/>
+				<meta>
+					<versionId value="213296"/>
+					<lastUpdated value="2016-11-28T06:04:11.469+00:00"/>
+				</meta>
+				<code>
+					<coding>
+						<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+						<code value="206765"/>
+						<display value="Lisinopril 10 MG Oral Tablet [Prinivil]"/>
+					</coding>
+					<text value="lisinopril oral 10 mg"/>
+				</code>
+			</Medication>
+		</resource>
+		<search>
+			<mode value="include"/>
+		</search>
+	</entry>
+</Bundle>

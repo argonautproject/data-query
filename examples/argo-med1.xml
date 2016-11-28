@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Medication xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file://Mac/Home/Documents/FHIR/FHIR%20tools/DSTU2Schema/basic.xsd">
+	<id value="argo-med1"/>
+	<code>
+		<coding>
+			<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>
+			<code value="206765"/>
+			<display value="Lisinopril 10 MG Oral Tablet [Prinivil]"/>
+		</coding>
+		<text value="lisinopril oral 10 mg"/>
+	</code>
+</Medication>

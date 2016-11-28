@@ -28,9 +28,9 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
  - Based upon the 2015 Edition Certification Requirements, either SNOMED-CT or CPT-4/HCPC procedure codes are requied and  [ICD-10-PCS codes] MAY be supported as translations to them. If choosing to primarily to dental procedures, the [Code on Dental Procedures and Nomenclature (CDT Code)] may be used.
 
 
- #### Examples
+#### Examples
 
-    - [AllergyIntolerance-23](AllergyIntolerance-23.html)
+- [Procedure-Rehab](procedure-rehab.html)
 
 
   [SNOMED CT]: http://hl7.org/fhir/valueset-procedure-code.html

@@ -6,7 +6,7 @@
       "lastUpdated":"2016-06-11T02:25:09Z"
    },
    "subject":{
-      "reference":"Patient/1186747"
+      "reference":"patient-peter-chalmers.html","display": "Peter Chalmers"
    },
    "status":"active",
    "category":[
@@ -61,8 +61,7 @@
             ]
          },
          "member":{
-            "reference":"Patient/1186747",
-            "display":"Daniel A Johnson"
+            "reference":"patient-peter-chalmers.html","display": "Peter Chalmers"
          }
       }
    ]

@@ -2,4 +2,4 @@
 
 
 
-Context of Use: [Argonaut Patient Profile](http://hl7.org/fhir/us/argonaut/StructureDefinition/Argo-Patient)
+Context of Use: [Argonaut Patient Profile](structuredefinition-argo-patient.html)

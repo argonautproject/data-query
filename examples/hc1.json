@@ -1,0 +1,25 @@
+{
+  "resourceType": "Condition",
+  "id": "hc1",
+
+  "patient": {
+    "reference": "patient-peter-chalmers.html",
+    "display":"Peter Chalmers"
+  },
+  "code": {
+    "text": "Cost of medications"
+  },
+  "category": {
+    "coding": [
+      {
+        "system": "http://argonaut.hl7.org",
+        "code": "additional-concern",
+        "display": "Health Concern"
+      }
+    ],
+    "text": "Health Concern"
+  },
+  "clinicalStatus": "active",
+  "verificationStatus": "confirmed",
+  "onsetDateTime": "2007-12-14"
+}

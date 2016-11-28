@@ -20,7 +20,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 1.  a LOINC code which tells you what is being measured and is taken from the “LOINC Code” column in the table below.
     -   note: If a more specific code is recorded, the generic code and the translated coded must be sent - e.g. method specific LOINC Codes, SNOMED CT concepts, system specific codes
 1.  a patient
-1.  a time indicating when the measurement was taken 
+1.  a time indicating when the measurement was taken
 1.  a numeric result value and standard UCUM unit which is taken from the “LOINC Code” column in the table below.
     -   note: if there is no numeric result then you have to supply a reason
 
@@ -58,5 +58,17 @@ Diastolic blood pressure | 8462-4 | mm[Hg] | Observation.component code for a bl
 
 
 #### Examples
-   
-   - [AllergyIntolerance-23](AllergyIntolerance-23.html)
+
+- [observation-blood-glucose](observation-blood-glucose.html)
+- [observation-blood-pressure](observation-blood-pressure.html)
+- [observation-bmi](observation-bmi.html)
+- [observation-bp-data-absent](observation-bp-data-absent.html)
+- [observation-head-circumference](observation-head-circumference.html)
+- [observation-heart-rate](observation-heart-rate.html)
+- [observation-height](observation-height.html)
+- [observation-length](observation-length.html)
+- [observation-oxygen-saturation](observation-oxygen-saturation.html)
+- [observation-respiratory-rate](observation-respiratory-rate.html)
+- [observation-temperature](observation-temperature.html)
+- [observation-vitals-panel](observation-vitals-panel.html)
+- [observation-weight](observation-weight.html)

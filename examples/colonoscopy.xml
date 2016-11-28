@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<CarePlan  xmlns="http://hl7.org/fhir">
+<CarePlan xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file://Mac/Home/Documents/FHIR/FHIR%20tools/DSTU2Schema/basic.xsd">
 	<id value="colonoscopy"/>
 	<text>
 		<status value="additional"/>
@@ -29,7 +29,8 @@
 		</div>
 	</text>
 	<subject>
-		<reference value="Patient/1186747"/>
+		<reference value="patient-peter-chalmers.html"/>
+		<display value="Peter Chalmers"/>
 	</subject>
 	<status value="active"/>
 	<category>

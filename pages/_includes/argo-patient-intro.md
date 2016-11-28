@@ -44,7 +44,7 @@ In addition, based upon the 2015 Edition Certification Requirements, the followi
 
 #### Examples
 
-   - [AllergyIntolerance-23](AllergyIntolerance-23.html)
+   - [Patient-Peter-Chalmers](patient-peter-chalmers.html)
 
 
 [Patient]: http://hl7.org/fhir/patient.html
