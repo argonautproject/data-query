@@ -9,7 +9,7 @@
 1.  One practitioner in `MedicationOrder.prescriber`
 
 
-  [Medication Clinical Drug (RxNorm)]: valueset-daf-medication-codes.html
+  [Medication Clinical Drug (RxNorm)]: valueset-medication-codes.html
   [MedicationOrderStatus]: http://hl7.org/fhir/valueset-medication-order-status.html
 [MedicationStatementStatus]: http://hl7.org/fhir/valueset-medication-statement-status.html
  

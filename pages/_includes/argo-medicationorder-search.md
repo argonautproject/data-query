@@ -17,9 +17,7 @@
 
 -----------
 
-**`GET /MedicationOrder?patient={id}[edit]`**
-
-*Support:* Mandatory to support search by patient.
+**`GET /MedicationOrder?patient={id}`**
 
 *Implementation Notes:*  Search for all MedicationOrder resources for a patient. Fetches a bundle of all MedicationOrder resources for the specified patient  [(how to search by reference)].
 

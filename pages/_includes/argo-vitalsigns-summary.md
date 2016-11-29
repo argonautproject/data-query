@@ -10,7 +10,7 @@
     -   a fixed `Observation.code.coding.system`=“http://loinc.org”
     -   a LOINC code in `Observation.code.coding.code` which has an [extensible](http://hl7.org/fhir/terminologies.html#extensible) binding to:
          -   [Vital Signs] value set.
-                
+
 1.  One patient in `Observation.subject`
 1.  A date and time in `effectiveDateTime` or `effectivePeriod`
 1.  Either one `Observation.valueQuantity` or, if there is no value, one code in `Observation.DataAbsentReason`
@@ -46,11 +46,9 @@
     to Observations in `Observation.related.target`
     -   a fixed `Observation.related.type`=“has-member”
 
- [Vital Signs]: valueset-daf-observation-CCDAVitalSignResult.html
-  [Vital Signs Units]: http://hl7.org/fhir/valueset-ucum-vitals-common.html
+ [Vital Signs]: valueset-observation-ccdavitalsignresult.html
+  [Vital Signs Units]: valueset-ucum-vitals-common.html
   [extensible bindings]: Implementation_Guide#Extensible_binding_for_CodeableConcept_Datatype "wikilink"
   [using multiple codes]: Implementation_Guide#Using_multiple_codes_with_CodeableConcept_Datatype "wikilink"
   [ObservationStatus]: http://hl7.org/fhir/valueset-observation-status.html
  [Observation Value Absent Reason]: http://hl7.org/fhir/valueset-observation-valueabsentreason.html
-
-  

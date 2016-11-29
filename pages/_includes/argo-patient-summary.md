@@ -15,38 +15,36 @@
     -   Patient.gender is bound to [AdministrativeGender] Value set (Code Set)
 
   [AdministrativeGender]: http://hl7.org/fhir/valueset-administrative-gender.html
-  
-  
-#### Summary of the Must Suport Requirements
 
-Additionally your system must return:
+
+#### Summary of the Must Support Requirements
+
+Additionally the following data-elements must be supported. See the Argonaut definition of [Must Support].
 
 1.  A date of birth in `Patient.birthDate`
 2.  One or more languages spoken in `Patient.communication.language` which has an [required](http://hl7.org/fhir/terminologies.html#required) binding to:
-    -    [Common Languages] 
+    -    [All Languages]
 3.  One or more race codes in  `Patient.extension`= [US Core Race Extension] which:
     - Must include at least one code from [OMB Race Categories]
     - May include additional race codes from [CDC Race Codes]
- 
+
 4.  One or more ethnicity codes in  `Patient.extension`=[US Core ethnicity Extension] which:
     - Must include one code from [OMB Ethnicity Categories]
     - May include additional race codes from [CDC Ethnicity Codes]
- 
+
 5.  One Birth Sex in `Patient.extension`= [US Core Patient Birth Sex] which has an [required](http://hl7.org/fhir/terminologies.html#required) binding to:
     -   [US Core Birth Sex]
-    
+
 
   [Patient.birthDate]: http://hl7.org/fhir/us/daf/daf-patient-definitions.html#daf-patient.Patient.birthDate
-  [Patient.communication.language]: http://hl7.org/fhir/us/daf/daf-patient-definitions.html#daf-patient.Patient.communication.language
-  [Common Languages]: http://hl7.org/fhir/valueset-languages.html
-  [US Core Patient Birth Sex]: http://hl7.org/fhir/extension-us-core-birthsex.html
-  [US Core Birth Sex]: http://hl7.org/fhir/valueset-usrealm-birthsex.html
-  [US Core Patient Race]:  http://hl7.org/fhir/extension-us-core-race.html
-  [OMB Race Categories]: http://hl7.org/fhir/valueset-omb-race.html
-  [US Core Race Extension]: http://hl7.org/fhir/extension-us-core-race.html
-  [CDC Race Codes]:http://hl7.org/fhir/valueset-detailed-race.html
- [CDC Ethnicity Codes]: http://hl7.org/fhir/valueset-detailed-ethnicity.html
- [US Core ethnicity Extension]: http://hl7.org/fhir/extension-us-core-ethnicity.html
- [OMB Ethnicity Categories]: http://hl7.org/fhir/valueset-omb-ethnicity.html
- 
- 
+  [All languages]: valueset-languages.html
+  [US Core Patient Birth Sex]: structuredefinition-argo-birthsex.html
+  [US Core Birth Sex]: valueset-usrealm-birthsex.html
+  [US Core Patient Race]:  structuredefinition-argo-race.html
+  [OMB Race Categories]: valueset-omb-race.html
+  [US Core Race Extension]: structuredefinition-argo-race.html
+  [CDC Race Codes]:valueset-detailed-race.html
+ [CDC Ethnicity Codes]: valueset-detailed-ethnicity.html
+ [US Core ethnicity Extension]: structuredefinition-argo-ethnicity.html
+ [OMB Ethnicity Categories]: valueset-omb-ethnicity.html
+ [Must Support]: definitions.html#mustsupport

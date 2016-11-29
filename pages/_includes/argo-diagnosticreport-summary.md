@@ -14,9 +14,10 @@
 1.  A date and time in `DiagnosticReport.issued`
 1.  A practitioner or organization in `DiagnosticReport.performer`
 1.  One or more `DiagnosticReport.result`
--   `DiagnosticReport.result.reference` reference the [Observation] resources that are part of this report.
+-   `DiagnosticReport.result.reference` referencing the [Argonaut Observation profiles] that are part of this report.
 
 
 [DiagnosticReportStatus]: http://hl7.org/fhir/valueset-diagnostic-report-status.html
 [Observation]: http://hl7.org/fhir/observation.html
 [LOINC Diagnostic Report Codes]: http://hl7.org/fhir/valueset-report-codes.html
+[Argonaut Observation profiles]: structuredefinition-argo-observationresults.html

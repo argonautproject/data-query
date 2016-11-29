@@ -17,7 +17,7 @@
 
 -----------
 
-**`GET /MedicationStatement?patient={id}[edit]`**
+**`GET /MedicationStatement?patient={id}`**
 
 *Support:* Mandatory to support search by patient.
 

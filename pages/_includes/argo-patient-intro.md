@@ -48,4 +48,4 @@ In addition, based upon the 2015 Edition Certification Requirements, the followi
 
 
 [Patient]: http://hl7.org/fhir/patient.html
-[Must Support]: daf-core.html#mustsupport
+[Must Support]: definitions.html#mustsupport

@@ -35,7 +35,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 - [medicationorder-argo-mo2](medicationorder-argo-mo2.html) This example uses a references a contained Medication resource.
 - [medicationorder-argo-mo3](bundle-argo-mo3.html) This example is a search [Bundle] with a MedicationOrder and an included Medication resource in the Bundle.
 
-  [Medication Clinical Drug (RxNorm)]: valueset-daf-medication-codes.html
+  [Medication Clinical Drug (RxNorm)]: valueset-medication-codes.html
   [MedicationOrderStatus]: http://hl7.org/fhir/us/daf/valueset-medication-order-status.html
 [MedicationStatementStatus]: http://hl7.org/fhir/us/daf/valueset-medication-statement-status.html
 [MedicationStatement]:http://hl7.org/fhir/medicationstatement.html

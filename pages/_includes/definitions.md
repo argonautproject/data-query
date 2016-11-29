@@ -1,10 +1,22 @@
-##Definitions, Interpretations and Requirements##
+## Definitions, Interpretations and Requirements
 
 This section outlines important definitions and interpretations used in the this IG.
 
+#### <a id="mustsupport"></a>Must Support
+In the context of Argonaut, Supported on any data element SHALL be interpreted as follows:
 
-## Definitions
------------
+* Argonaut Responders SHALL be capable of including the data element as part of the query results as specified by the Argonaut conformance resources.
+* Argonaut Requestors SHALL be capable of processing resource instances containing the data elements. In other words Argonaut Requestors SHOULD be capable of displaying the data elements for human use or storing it for other purposes.
+* In situations where information on a particular data element is not present and the reason for absence is unknown, Argonaut Responders SHALL NOT include the data elements in the resource instance returned as part of the query results.
+* When querying Argonaut Responders, Argonaut Requestors SHALL interpret missing data elements within resource instances as data not present in the Argonaut Responder's systems.
+* In situations where information on a particular data element is missing and the Argonaut Responder knows the precise reason for the absence of data, Argonaut Responders MAY send the reason for the missing information using values from the value set where they exist or using the dataAbsentReason extension.
+* Argonaut Requestors SHALL be able to process resource instances containing data elements asserting missing information.
+
+* NOTE: Argonaut Responders who do not have the capability to store or return a data element tagged as Supported in Argonaut profiles can still claim conformance to the Argonaut profiles per the Argonaut conformance resources.
+* NOTE: The above definition of Supported is derived from HL7v2 concept "Required by may be empty - RE" described in HL7v2 V28_CH02B_Conformance.doc.
+* NOTE: Readers are advised to understand FHIR Terminology requirements, FHIR RESTful API based on the HTTP protocol, along with FHIR DataTypes, FHIR Search and FHIR Resource formats before implementing Argonaut requirements.
+
+## Conformance Verbs
 
 The conformance verbs used in this IG are defined in [FHIR Conformance Rules](http://hl7.org/fhir/conformance-rules.html).
 

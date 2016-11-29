@@ -4,12 +4,12 @@
 
 **Clients**
 
--  A client has connected to a server and fetched all Unique device identifier(s)(UDI)for a patient’s implantable device(s)using `GET /Device?patient=[id]`.
+-  A client has connected to a server and fetched all Unique device identifiers (UDI) for a patient’s implantable device(s)using `GET /Device?patient=[id]`.
 
 
 **Servers**
 
-- A server is capable of returning all Unique device identifier(s)(UDI) for a patient’s implantable device(s) using `GET /Device?patient=[id]`.
+- A server is capable of returning all Unique device identifiers (UDI) for a patient’s implantable device(s) using `GET /Device?patient=[id]`.
 
 
 - A server has ensured that every API request includes a valid Authorization token, supplied via:Authorization: Bearer {server-specific-token-here}

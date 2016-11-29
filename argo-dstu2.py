@@ -90,58 +90,54 @@ def get_file(e):
     return ex_file
 
 
-def get_resources():
-    resources = os.listdir(dir + 'resources') # get all the files in the resource directory
-    for i in range(len(resources)):# run through all the files looking for spreadsheets and valuesets
-        if 'spreadsheet' in resources[i]: # for spreadsheets  append to the igpy[spreadsheet] array.
-            update_sd(resources[i], 'StructureDefinition')
-        if 'valueset' in resources[i]: # for each vs in /resources open valueset resources and read id and create and append dict struct to definiions file
-              update_def(resources[i],'ValueSet','terminology')
-        if 'conformance' in resources[i]: # for each cs in /resources open, read id and create and append dict struct to definiions file
-              update_def(resources[i], 'Conformance', 'example')
-        if 'operationdefinition' in resources[i]: # for each cs in /resources open, read id and create and append dict struct to definiions file
-              update_def(resources[i], 'OperationDefinition', 'example')
-        #add extensions
-        extensions = ['argo-ethnicity', 'argo-race','argo-birthsex']
-        for extension in extensions:
-            update_igjson('StructureDefinition',extension, 'base')
-            update_igjson('StructureDefinition', extension, 'defns')
-
-    return
-
-
-
-
-
-def get_examples():
-    examples = os.listdir(
-        dir + 'examples')  # get all the examples in the examples directory assuming are in json or xml
-    for i in range(len(examples)):# run through all the examples and get id and resource type
-        if 'json' in examples[i]:  # for each cs in /resources open, read id and create and append dict struct to definiions file
-              exjson = json.load(get_file(examples[i]))
-              extype = exjson['resourceType']
-              ex_id = exjson['id']
-              update_example(extype, ex_id)
-        if 'xml' in examples[i]:  # for each cs in /resources open, read id and create and append dict struct to definiions file
-              ex_xml = etree.parse(get_file(examples[i])) # lxml module to parse example xml
-              ex_id = ex_xml.xpath('//f:id/@value',namespaces = {'f':'http://hl7.org/fhir'})  # use xpath to get the id
-              extype = ex_xml.xpath('name(/*)')  # use xpath to get the type '''
-              update_example(extype, ex_id[0])
-    return
-def write():
-    ig_file = open(dir + 'ig.json','w')
-    ig_file.write(json.dumps(igpy)) # convert dict to json and replace ig.json with this file
-    logging.info('ig.json now looks like : ' + json.dumps(igpy))
-
-    ig_file = open(dir + 'resources/ig.xml','w')
-    ig_file.write(igxml) #replace ig.xml with this file
-    logging.info('ig.xml now looks like : ' + igxml)
-    return
 
 def main():
-    get_resources()
-    get_examples()
-    write()
+    resources = os.listdir(dir + 'resources')  # get all the files in the resource directory
+    for i in range(len(resources)):  # run through all the files looking for spreadsheets and valuesets
+        if 'spreadsheet' in resources[i]:  # for spreadsheets  append to the igpy[spreadsheet] array.
+            update_sd(resources[i], 'StructureDefinition')
+        if 'valueset' in resources[
+            i]:  # for each vs in /resources open valueset resources and read id and create and append dict struct to definiions file
+            update_def(resources[i], 'ValueSet', 'terminology')
+        if 'conceptmap' in resources[
+            i]:  # for each vs in /resources open valueset resources and read id and create and append dict struct to definiions file
+            update_def(resources[i], 'ConceptMap', 'terminology')
+        if 'conformance' in resources[
+            i]:  # for each cs in /resources open, read id and create and append dict struct to definiions file
+            update_def(resources[i], 'Conformance', 'example')
+        if 'operationdefinition' in resources[
+            i]:  # for each cs in /resources open, read id and create and append dict struct to definiions file
+            update_def(resources[i], 'OperationDefinition', 'example')
+        # add extensions
+        extensions = ['argo-ethnicity', 'argo-race', 'argo-birthsex']
+        for extension in extensions:
+            update_igjson('StructureDefinition', extension, 'base')
+            update_igjson('StructureDefinition', extension, 'defns')
+
+    examples = os.listdir(
+        dir + 'examples')  # get all the examples in the examples directory assuming are in json or xml
+    for i in range(len(examples)):  # run through all the examples and get id and resource type
+        if 'json' in examples[
+            i]:  # for each cs in /resources open, read id and create and append dict struct to definiions file
+            exjson = json.load(get_file(examples[i]))
+            extype = exjson['resourceType']
+            ex_id = exjson['id']
+            update_example(extype, ex_id)
+        if 'xml' in examples[
+            i]:  # for each cs in /resources open, read id and create and append dict struct to definiions file
+            ex_xml = etree.parse(get_file(examples[i]))  # lxml module to parse example xml
+            ex_id = ex_xml.xpath('//f:id/@value', namespaces={'f': 'http://hl7.org/fhir'})  # use xpath to get the id
+            extype = ex_xml.xpath('name(/*)')  # use xpath to get the type '''
+            update_example(extype, ex_id[0])
+
+    # write files
+    ig_file = open(dir + 'ig.json', 'w')
+    ig_file.write(json.dumps(igpy))  # convert dict to json and replace ig.json with this file
+    logging.info('ig.json now looks like : ' + json.dumps(igpy))
+
+    ig_file = open(dir + 'resources/ig.xml', 'w')
+    ig_file.write(igxml)  # replace ig.xml with this file
+    logging.info('ig.xml now looks like : ' + igxml)
     return
 
 

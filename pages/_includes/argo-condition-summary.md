@@ -15,12 +15,12 @@
 
 #### problems and health concerns category codes
 
-The [DAF Condition Category Codes] supports the separate concepts of problems and health concerns in `Condition.category` in order for API consumers to be able to separate health concerns and problems. However this is not mandatory for 2015 certification.
+The [Argonaut Condition Category Codes] supports the separate concepts of problems and health concerns in `Condition.category` in order for API consumers to be able to separate health concerns and problems. However this is not mandatory for 2015 certification.
 
-  [extensible]: Implementation_Guide#Extensible_binding_for_CodeableConcept_Datatype "wikilink"
-  [Problem Value Set]: valueset-daf-problem.html
+  [extensible]: http://hl7.org/fhir/terminologies.html#extensible
+  [Problem Value Set]: http://hl7.org/fhir/DSTU2/daf/valueset-daf-problem.html
   [Invariants]: http://hl7.org/fhir/conformance-rules.html#constraints
   [Condition Clinical Status Codes]: http://hl7.org/fhir/valueset-condition-clinical.html
   [ConditionVerificationStatus]: http://hl7.org/fhir/valueset-condition-ver-status.html
-  [DAF Condition Profile]: http://hl7.org/fhir/us/daf/daf-condition.html
- [DAF Condition Category Codes]: valueset-daf-condition-category.html
+  [Argonaut Condition Profile]: http://hl7.org/fhir/us/daf/daf-condition.html
+ [Argonaut Condition Category Codes]: valueset-condition-category.html

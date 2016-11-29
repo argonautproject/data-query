@@ -16,7 +16,7 @@
 - A server has rejected any unauthorized requests by returning an HTTP 401 Unauthorized response code.
 
 -----------
-**`GET [base]/Observation?patient=[id]&code=72166-2[edit]`**
+**`GET [base]/Observation?patient=[id]&code=72166-2`**
 
 *Support:* Mandatory to support search by patient and LOINC = '72166-2'.
 
