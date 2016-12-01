@@ -14,12 +14,10 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 **Each MedicationStatement must have:**
 
-1.  a status
-1.  a medication
 1.  a patient
 1.  a date or date range
-
-
+1.  a status
+1.  a medication
 
 **Profile specific implementation guidance:**
 

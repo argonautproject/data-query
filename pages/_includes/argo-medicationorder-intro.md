@@ -17,12 +17,11 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 **Each MedicationOrder must have:**
 
-1.  a status
-1.  a medication
-1.  a patient
 1.  a date for when written
+1.  a status
+1.  a patient
 1.  a prescriber
-
+1.  a medication
 
 
 **Profile specific implementation guidance:**

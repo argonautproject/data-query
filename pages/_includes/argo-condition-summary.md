@@ -1,5 +1,7 @@
 #### Complete Summary of the Mandatory Requirements
 
+1.  One patient reference in `Condition.patient`
+1.  One Identification of the problem or health concern in `Condition.code`which has an [extensible](http://hl7.org/fhir/terminologies.html#extensible) binding to:
 1.  Conditionally One clinical status in `Condition.clinicalStatus`
     -   [Invariants]
         -   required if `Condition.verificationStatus != ‘entered-in-error‘`
@@ -7,9 +9,7 @@
     -   Condition.clinicalStatus is bound to [Condition Clinical Status Codes] value set
 1.  One code in `Condition.verificationStatus`
     -   Condition.clnicalStatus is bound to [ConditionVerificationStatus] value set
-1.  One Identification of the problem or health concern in `Condition.code`which has an [extensible](http://hl7.org/fhir/terminologies.html#extensible) binding to:
     -   [Problem Value Set] value set.
-1.  One patient reference in `Condition.patient`
 
 
 
