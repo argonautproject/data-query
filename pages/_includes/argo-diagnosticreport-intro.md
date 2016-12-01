@@ -5,8 +5,7 @@ Laboratory results are grouped and summarized using the [DiagnosticReport] resou
 The following are example usage scenarios for the Argonaut DiagnosticReport profile:
 
 -   Query for lab reports belonging to a Patient
--   Query for all patients who have had a specific lab test or panel available
--   Query for all patients with a lab test or panel issued by a particular provider
+-   Record a lab report for a specific Patient
 
 ##### Mandatory Data Elements and Terminology
 

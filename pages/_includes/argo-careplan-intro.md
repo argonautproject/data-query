@@ -4,7 +4,7 @@ This profile sets minimum expectations for the [CarePlan] resource to record sea
 
 The following are example usage scenarios for the Argonaut CarePlan profile:
 
--   Query for a careplan for a Patient
+-   Record or query for a careplan for a Patient
 
 
 ##### Mandatory Data Elements and Terminology

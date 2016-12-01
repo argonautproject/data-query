@@ -7,6 +7,7 @@ The following are example usage scenarios for the Argonaut Practitioner profile:
 -   Query for an practitioner by name or specialty
 -   Query for a practitioner within a city or state
 -   Query for a practitiioner by orgnaizational relationships
+-   Reference from other Resources
 
 
 ##### Mandatory Data Elements and Terminology

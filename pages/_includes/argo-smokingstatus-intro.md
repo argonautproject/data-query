@@ -8,13 +8,8 @@ This profile sets minimum expectations for the [Observation] resource to record,
 The following are example usage scenarios for the Argonaut SmokingStatus
 profile:
 
--   Query for Smoking Status of a particular patient
--   Query for all patients who have had a history of smoking
--   Query for all patients who have never had tobacco
--   Query for all patients who have smoked during a time period of
-    interest
--   Query for all patients who have a smoking history and are in an age
-    group
+- Query for Smoking Status of a particular patient
+- Record Smoking Status of a particular patient  
 
 ##### Mandatory Data Elements and Terminology
 

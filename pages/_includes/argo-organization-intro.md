@@ -4,8 +4,7 @@ This profile sets minimum expectations for the [Organization] resource to search
 
 The following are example usage scenarios for the Argonaut Organization profile:
 
--   Query for an address or telephone number by organization name
--   Query for an organization by name or address
+-   Query by organization name or NPI
 
 
 ##### Mandatory Data Elements and Terminology

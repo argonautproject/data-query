@@ -5,7 +5,7 @@
 	<dateWritten value="2008-04-05"/>
 	<status value="active"/>
 	<patient>
-		<reference value="Patient/1032702"/>
+		<reference value="patient-peter-chalmers.html"/><display value="Peter Chalmers"/>
 	</patient>
 	<prescriber>
 		<reference value="Practitioner/1234"/>

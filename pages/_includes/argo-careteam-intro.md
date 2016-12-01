@@ -5,7 +5,7 @@ This profile sets minimum expectations for the [CarePlan] resource for identifyi
 The following are example usage scenarios for the Argonaut CareTeam profile:
 
 -   Query for a Patient's CareTeam
--   Query for all Patient' with a particular careteam member
+-   Record or update a Patient's CareTeam
 
 
 ##### Mandatory Data Elements and Terminology

@@ -6,7 +6,7 @@ The following are example usage scenarios for the Argonaut VitalSigns
 profile:
 
 -   Query for vital signs of a particular patient
--   Query for patients with a particular type of vital sign measurement
+-   Record vital signs of a particular patient
 
 ##### Mandatory Data Elements and Terminology
 

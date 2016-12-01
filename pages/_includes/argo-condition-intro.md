@@ -5,9 +5,7 @@ This profile sets minimum expectations for the [Condition] resource to record, s
 The following are example usage scenarios for the Argonaut Condition profile:
 
 -   Query for a Patient’s problems
--   Query for all patients who have had a specific condition,problem or
-    finding
-
+-   Record a Patient’s problem
 
 ##### Mandatory Data Elements and Terminology
 

@@ -10,8 +10,8 @@ This profile sets minimum expectations for the [AllergyIntolerance] resource to 
 The following are example usage scenarios for the Argonaut AllergyIntolerance
 profile:
 
--   Query for allergies belonging to a Patient
--   Query for all patients who have a specific allergy
+-   Query for Allergies belonging to a Patient
+-   Record a Patient Allergy
 
 
 ##### Mandatory Data Elements and Terminology

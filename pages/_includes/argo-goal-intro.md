@@ -4,7 +4,7 @@ This profile sets minimum expectations for the [Goal] resource to record ,search
 
 The following are example usage scenarios for the Argonaut Goal profile:
 
--   Query for a Patient's Goals
+-   Record or query for a Patient's Goals
 
 
 ##### Mandatory Data Elements and Terminology

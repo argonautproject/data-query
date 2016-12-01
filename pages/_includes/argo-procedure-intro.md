@@ -5,9 +5,7 @@ This profile sets minimum expectations for the [Procedure] resource to record, s
 The following are example usage scenarios for the Argonaut Procedure profile:
 
 -   Query for procedures performed on a Patient
--   Query for all patients who have had a specific procedure
--   Query for procedures performed during a time period
-
+-   Record a procedure performed on a Patient
 
 ##### Mandatory Data Elements and Terminology
 

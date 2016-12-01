@@ -11,9 +11,8 @@ The following are example usage scenarios for the Argonaut AllergyIntolerance
 profile:
 
 -   Query for all documents belonging to a Patient
--   Query for clinical summary information about patients (access a patient's Continuity of Care Document (CCD)
-
-
+-   Query for clinical summary information about a patient (access a patient's Continuity of Care Document (CCD))
+ 
 ##### Mandatory Data Elements and Terminology
 
 

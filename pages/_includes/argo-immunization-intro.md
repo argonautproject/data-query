@@ -6,7 +6,7 @@ The following are example usage scenarios for the Argonaut Immunization
 profile:
 
 -   Query for immunizations belonging to a Patient
--   Query for all patients who have had a specific vaccine administered
+-   Record immunizations belonging to a Patient
 
 ##### Mandatory Data Elements and Terminology
 

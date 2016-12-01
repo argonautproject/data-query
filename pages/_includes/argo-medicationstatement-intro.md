@@ -5,10 +5,7 @@ Both the [Medicationstatement] and [MedicationStatement] resources can be used t
 The following are example usage scenarios for the
 Argonaut MedicationStatement profile:
 
--   Query for active medications being taken by a patient
--   Query for all patients who are taking a particular medication
--   Query for all patients who are/were taking a particular medication
-    within a particular time period
+-   Record or Query active medications being taken by a patient
 
 ##### Mandatory Data Elements and Terminology
 

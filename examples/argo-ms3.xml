@@ -21,7 +21,7 @@
 				</meta>
 				<!--      The Human readible version of the medication statement     -->
 				<patient>
-					<reference value="Patient/example"/>
+					<reference value="patient-peter-chalmers.html"/><display value="Peter Chalmers"/>
 				</patient>
 				<dateAsserted value="2016-05-01T16:13:03Z"/>
 				<status value="active"/>

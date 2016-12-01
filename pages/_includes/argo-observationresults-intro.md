@@ -5,9 +5,7 @@ Laboratory results are grouped and summarized using the [DiagnosticReport] resou
 The following are example usage scenarios for the Argonaut Results profile:
 
 -   Query for lab results belonging to a Patient
--   Query for all patients who have had a specific lab result available
--   Query for all patients with a lab test (e.g HbA1c) beyond the
-    acceptable reference range
+-   Record lab results belonging to a Patient
 
 ##### Mandatory Data Elements and Terminology
 
