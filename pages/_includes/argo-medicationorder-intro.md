@@ -26,7 +26,11 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 **Profile specific implementation guidance:**
 
-*  The MedicationStatement and MedicationOrder resources can represent a medication, using either a code or reference to a [Medication] resource.  The server application can choose one way or both methods,  but the client application must support both methods.  More specific guidance is provided in the [conformance](conformance.html) resource for this profile
+*  The MedicationStatement and MedicationRequest resources can represent a medication, using either a code or refer to a [Medication] resource.
+    *  When referencing a Medication resource,  the resource may be [contained] or an external resource.
+    *  The server application can choose any one way or more than one method,  but if the an external reference to Medication is used, the server SHALL support the [include] parameter for searching this element.
+    *  The client application must support both methods.  
+    *  Additional guidance is provided below in the Search section and in the [conformance](conformance.html) resource for this profile
 
 #### Examples
 
@@ -42,3 +46,5 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
  [Medication]:http://hl7.org/fhir/medication.html
  [boundaries section]: http://hl7.org/fhir/medicationorder.html#bnr
  [Bundle]: http://hl7.org/fhir/bundle.html
+ [include]: http://build.fhir.org/search.html#include
+ [contained]: http://build.fhir.org/references.html#contained

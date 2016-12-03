@@ -1,4 +1,4 @@
-Laboratory results are grouped and summarized using the [DiagnosticReport] resource which reference [Observation] resource(s).  When lab test or lab panel, such as CBC, is ordered, a DiagnosticReport represents the order fulfillment and references each of the resulting discrete Observations within that panel.  Each Observation resource represents an individual laboratory test and result value, a “nested” panel (such as a microbial susceptibility panel) which references other observations, or rarely a laboratory test with component result values.  This profile sets minimum expectations for the DiagnosticReport resource to record, search and fetch laboratory results associated with a patient. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile.
+Laboratory results are grouped and summarized using the [DiagnosticReport] resource which typically reference [Observation] resource(s).  When lab test or lab panel, such as CBC, is ordered, a DiagnosticReport represents the order fulfillment and references each of the resulting discrete Observations within that panel.  Each Observation resource represents an individual laboratory test and result value, a “nested” panel (such as a microbial susceptibility panel) which references other observations, or rarely a laboratory test with component result values.  They can also be presented in report form or as free text. This profile sets minimum expectations for the DiagnosticReport resource to record, search and fetch laboratory results associated with a patient. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile.
 
 **Example Usage Scenarios:**
 
@@ -21,7 +21,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 1.   a time indicating when the measurement was taken
 1.   a time indicating when the measurement was reported
 1.   who issues the report
-1.   at least one result (an Observation reference)
+1.   at least one result
 
 
 **Profile specific implementation guidance:**
@@ -29,6 +29,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 * Additional codes that translate or map to the DiagnosticReport codes or category codes are allowed.  For example:
    -  providing both a local system codes and a LOINC code that it map to
    -  providing a more specific category codes such as “CH” (chemistry) in addition to the "LAB"  category code.
+* Results represented purely by free text or report form may be represented using the valueAttachment element in Observation or alternatively using the presentedForm element in DiagnosticReport.
 
 #### Examples
 
