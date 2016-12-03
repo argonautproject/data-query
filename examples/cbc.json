@@ -24,12 +24,18 @@
 			}
 		]
 	},
-		"subject": {
-		"reference": "patient-peter-chalmers.html","display": "Peter Chalmers"
+	"subject": {
+		"reference": "patient-peter-chalmers.html",
+		"display": "Peter Chalmers"
 	},
 	"effectiveDateTime": "2005-07-05",
 	"issued": "2005-07-06T11:45:33+11:00",
-
+	"performer": [
+		{
+			"reference": "organization-acmelab.html",
+			"display": "Acme Laboratory, Inc"
+		}
+	],
 	"result": [
 		{
 			"reference": "observation-neutrophils.html",

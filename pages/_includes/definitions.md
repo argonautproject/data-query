@@ -104,6 +104,40 @@ Example of translation of NDC vaccine code to CVX code.
         ]
       },
 
+####  Using UCUM in the [Quantity] datatype
+
+The [Argonaut Vital Signs Profile] and [Argonaut Result Observation Profile] require using [UCUM] units. This guidance specifies how to represent the Quantity datatype when the ccorrect UCUM units are missing or the units are missing altogether which will likely occur in the real world.  If the wrong UCUM units are used for the vitals signs listed in the Vital Signs Profile, that should lead to a validation failure.
+
+**UCUM code provided**
+
+```
+ "valueQuantity": {
+    "value": 26.0,
+    "unit": "g/mL",
+   "system": "http://unitsofmeasure.org",
+   "code": "g/mL"
+  }
+```
+
+**free text units (no UCUM units)**: if have no UCUM units then represent units only in `units` element.  if there is another Units codesystem they would go here as well.
+
+```
+ "valueQuantity": {
+    "value": 26.0,
+    "unit": "RR",
+     }
+```
+
+**no units**
+
+```
+      "valueQuantity": {
+    "value": 26.0
+ }
+```
+
+
+
 #### Read(Fetch) resource notation:
 
 The interactions on IG page are defined like this:
@@ -176,3 +210,6 @@ In order to manage the number of search results returned, the server may choose 
   [core specification]: http://hl7.org/fhir/extensibility.html#2.20.0.2.2
   [DataAbsentReason Extension]: http://hl7.org/fhir/extension-data-absent-reason.html
   [http://hl7.org/fhir/StructureDefinition/data-absent-reason]: http://hl7.org/fhir/StructureDefinition/data-absent-reason
+[Argonaut Vital Signs Profile]: structuredefinition-argo-vitalsigns.html
+[Argonaut Result Observation Profile]: structuredefinition-argo-observationresults.html
+[UCUM]: http://unitsofmeasure.org

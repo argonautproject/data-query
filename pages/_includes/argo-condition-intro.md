@@ -26,7 +26,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 #### Examples
 
    - [Condition-liveborn-birth](condition-liveborn-birth.html) this is an example of a condition categorized as a "problem"
-   - [Condition-hc1](condition-hc1.html) this is an example of a condition categorized as a "health-concernt"
+   - [Condition-hc1](condition-hc1.html) this is an example of a condition categorized as a "health-concern"
 
 
 [Condition]: http://hl7.org/fhir/condition.html

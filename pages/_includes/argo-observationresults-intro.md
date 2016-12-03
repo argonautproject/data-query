@@ -33,6 +33,7 @@ Each Observation *should* have:
    -  providing both a local system codes and a LOINC code that it map to
    -  providing a more specific category codes such as "chemistry', [SNOMED CT] concepts, or system specific codes in addition to the "laboratory" category code.
 * If there is no result then you have to supply a reason unless Observation is being used to group other results then there is no value. Instead, it includes composite values or references to other Observations
+* See the [General Guidance Section] for further guidance on using UCUM
 
 #### Examples
 
@@ -74,3 +75,4 @@ Each Observation *should* have:
   [LOINC]: http://loinc.org
 [Observation]:  http://hl7.org/fhir/observation.html
 [DiagnosticReport]:  http://hl7.org/fhir/diagnosticreport.html
+[General Guidance Section]: definitions.html

@@ -5,10 +5,7 @@
 		"versionId": "209563",
 		"lastUpdated": "2016-04-19T17:28:11.308+00:00"
 	},
-	"text": {
-		"status": "generated",
-		"div": "<div>2005-07-05:Complete Urinalysis</div>"
-	},
+
 	"status": "final",
 	"category": {
 		"coding": [
@@ -30,10 +27,17 @@
 		"text": "Complete Urinalysis"
 	},
 	"subject": {
-		"reference": "patient-peter-chalmers.html","display": "Peter Chalmers"
+		"reference": "patient-peter-chalmers.html",
+		"display": "Peter Chalmers"
 	},
 	"effectiveDateTime": "2005-07-05",
 	"issued": "2005-07-06T11:45:33+11:00",
+	"performer": [
+		{
+			"reference": "organization-acmelab.html",
+			"display": "Acme Laboratory, Inc"
+		}
+	],
 	"result": [
 		{
 			"reference": "observation-urine-color.html",
