@@ -22,8 +22,8 @@
 Additionally the following data-elements must be supported. See the Argonaut definition of [Must Support].
 
 1.  A date of birth in `Patient.birthDate`
-2.  One or more languages spoken in `Patient.communication.language` which has an [required](http://hl7.org/fhir/terminologies.html#required) binding to:
-    -    [All Languages]
+2.  One or more languages spoken in `Patient.communication.language` which has an [extensible](http://hl7.org/fhir/terminologies.html#rextensible) binding to:
+    -    [Common Languages] Note: The extensibility is limited to [All Languages]
 3.  One or more race codes in  `Patient.extension`= [US Core Race Extension] which:
     - Must include at least one code from [OMB Race Categories]
     - May include additional race codes from [CDC Race Codes]
@@ -36,8 +36,8 @@ Additionally the following data-elements must be supported. See the Argonaut def
     -   [US Core Birth Sex]
 
 
-  [Patient.birthDate]: http://hl7.org/fhir/us/daf/daf-patient-definitions.html#daf-patient.Patient.birthDate
-  [All languages]: valueset-languages.html
+  [Common Languages]: http://build.fhir.org/valueset-languages.html
+  [All Languages]: http://build.fhir.org/all-languages.html
   [US Core Patient Birth Sex]: structuredefinition-argo-birthsex.html
   [US Core Birth Sex]: valueset-usrealm-birthsex.html
   [US Core Patient Race]:  structuredefinition-argo-race.html
