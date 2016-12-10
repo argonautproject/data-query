@@ -14,6 +14,6 @@
 
 
 
-  [ObservationStatus]: http://hl7.org/fhir/valueset-observation-status.html
+  [ObservationStatus]: http://hl7.org/fhir/ValueSet-observation-status.html
   [instant]: http://hl7.org/fhir/datatypes.html#instant
-  [Smoking Status]: valueset-observation-ccdasmokingstatus.html
+  [Smoking Status]: ValueSet-observation-ccdasmokingstatus.html

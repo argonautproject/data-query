@@ -5,4 +5,4 @@
 1.  A status in `Goal.status` which has an [required](http://hl7.org/fhir/terminologies.html#required) binding to:
     -   [GoalStatus] value set.
 
-  [GoalStatus]: http://hl7.org/fhir/valueset-goal-status.html
+  [GoalStatus]: http://hl7.org/fhir/ValueSet-goal-status.html

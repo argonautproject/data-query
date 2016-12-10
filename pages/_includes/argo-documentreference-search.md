@@ -140,4 +140,4 @@ Example:
 [(how to search by token)]: http://hl7.org/fhir/DSTU2/search.html#token
 [(how to search by date)]: http://hl7.org/fhir/DSTU2/search.html#date
 [IHE XDS]: http://wiki.ihe.net/index.php?title=Cross-Enterprise_Document_Sharing
-[$docref operation]: operationdefinition-get-docref.html
+[$docref operation]: OperationDefinition-get-docref.html

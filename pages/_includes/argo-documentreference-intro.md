@@ -12,7 +12,7 @@ profile:
 
 -   Query for all documents belonging to a Patient
 -   Query for clinical summary information about a patient (access a patient's Continuity of Care Document (CCD))
- 
+
 ##### Mandatory Data Elements and Terminology
 
 
@@ -39,7 +39,7 @@ In addition it should have ( if available) :
 
 #### Examples
 
-   - [DocumentReference-episode-summary](documentreference-episode-summary.html) Retrieve a URL for a CCD for an episode summary note.
+   - [DocumentReference-episode-summary](Documentreference-episode-summary.html) Retrieve a URL for a CCD for an episode summary note.
 
 [DocumentReference Resource]: http://hl7.org/fhir/documentreference.html
 [IHE MHD]: http://ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_MHD.pdf

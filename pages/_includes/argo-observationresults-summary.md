@@ -22,9 +22,9 @@ Each Observation *SHOULD* have:
 1.  A date and time in `effectiveDateTime` or `effectivePeriod`
 1.  A reference range if applicable in `Observation.referenceRange`
 
-  [Observation Value Codes (SNOMED-CT)]: valueset-observation-value-codes.html
-  [Observation Value Absent Reason]: http://hl7.org/fhir/valueset-observation-valueabsentreason.html
-  [UCUM units]: valueset-ucum.html
+  [Observation Value Codes (SNOMED-CT)]: ValueSet-observation-value-codes.html
+  [Observation Value Absent Reason]: http://hl7.org/fhir/ValueSet-observation-valueabsentreason.html
+  [UCUM units]: ValueSet-ucum.html
   [LOINC]: http://loinc.org
-  [LOINC Observation Codes]: http://hl7.org/fhir/valueset-observation-codes.html
-  [ObservationStatus]: http://hl7.org/fhir/valueset-observation-status.html
+  [LOINC Observation Codes]: http://hl7.org/fhir/ValueSet-observation-codes.html
+  [ObservationStatus]: http://hl7.org/fhir/ValueSet-observation-status.html

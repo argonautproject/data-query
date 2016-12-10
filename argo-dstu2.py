@@ -28,6 +28,17 @@ logging.info('create the ig.xml file template as string')
 
 igxml ='''<?xml version="1.0" encoding="UTF-8"?><!--Hidden IG for de facto IG publishing--><ImplementationGuide xmlns="http://hl7.org/fhir"><id value="ig"/><url value="http://hl7.org/fhir/us/argonaut/ImplementationGuide/ig"/><name value="Implementation Guide Template"/><status value="draft"/><experimental value="true"/><publisher value="FHIR Project"/><package><name value="base"/></package><page><source value="index.html"/><name value="blah"/><kind value="page"/></page></ImplementationGuide>'''
 
+# extension in spreadsheet - these need to be manually listed here
+
+extensions = ['argo-ethnicity', 'argo-race', 'argo-birthsex']
+
+# operation in spreadsheet - these need to be manually listed here
+
+operations = []
+
+# search in spreadsheet - these need to be manually listed here
+
+searches = []
 
 
 
@@ -57,10 +68,10 @@ def update_igxml(type, purpose, id):
 def update_igjson(type, id, template = 'base'): # add base to ig.json - can extend for other templates if needed with extra 'template' param
     if template == 'base':
         igpy['resources'][type + '/' + id] = {
-            template : type.lower() + '-' + id + '.html'}  # concat id into appropriate strings and add valuset base def to resources in def file
+            template : type + '-' + id + '.html'}  # concat id into appropriate strings and add valuset base def to resources in def file
         logging.info('adding ' + type + ' ' + id + ' base to resources ig.json')
     if template == 'defns':
-        igpy['resources'][type + '/' + id][template] = type.lower() + '-' + id + '-definitions.html'  # concat id into appropriate strings and add sd defitions to in def file
+        igpy['resources'][type + '/' + id][template] = type + '-' + id + '-definitions.html'  # concat id into appropriate strings and add sd defitions to in def file
         logging.info('adding ' + type + ' ' +  id  + ' definitions to resources ig.json')
     return
 
@@ -109,10 +120,20 @@ def main():
             i]:  # for each cs in /resources open, read id and create and append dict struct to definiions file
             update_def(resources[i], 'OperationDefinition', 'example')
         # add extensions
-        extensions = ['argo-ethnicity', 'argo-race', 'argo-birthsex']
-        for extension in extensions:
-            update_igjson('StructureDefinition', extension, 'base')
-            update_igjson('StructureDefinition', extension, 'defns')
+
+   # add spreadsheet extensions
+    for extension in extensions:
+        update_igjson('StructureDefinition', extension, 'base')
+        update_igjson('StructureDefinition', extension, 'defns')
+    # add spreadsheet operations
+    for operation in operations:
+       update_igjson('OperationDefinition', operation, 'base')
+       update_igjson('OperationDefinition', operation, 'defns')
+    # add spreadsheet search parameters
+    for search in searches:
+       update_igjson('SearchParameter', search, 'base')
+       update_igjson('SearchParameter', search, 'defns')
+
 
     examples = os.listdir(
         dir + 'examples')  # get all the examples in the examples directory assuming are in json or xml

@@ -11,5 +11,5 @@
 Value Set] value set.
 1.  Careteam members in `CareTeam.participant.member`
 
- [CareTeam Provider Role Value Set]: valueset-provider-role.html
-[http://argonaut.hl7.org/]: valueset-argo-codesystem.html
+ [CareTeam Provider Role Value Set]: ValueSet-provider-role.html
+[http://argonaut.hl7.org/]: ValueSet-argo-codesystem.html

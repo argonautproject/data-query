@@ -13,6 +13,6 @@
 
 
 
-  [CarePlan.text.status]: http://hl7.org/fhir/valueset-narrative-status.html
-  [CarePlanStatus]: http://hl7.org/fhir/valueset-care-plan-status.html
- [http://argonaut.hl7.org]: valueset-argo-codesystem.html
+  [CarePlan.text.status]: http://hl7.org/fhir/ValueSet-narrative-status.html
+  [CarePlanStatus]: http://hl7.org/fhir/ValueSet-care-plan-status.html
+ [http://argonaut.hl7.org]: ValueSet-argo-codesystem.html

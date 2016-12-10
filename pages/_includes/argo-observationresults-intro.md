@@ -70,7 +70,7 @@ Each Observation *should* have:
 - [Observation-blood-glucose](Observation-blood-glucose.html)
 
  [SNOMED CT]: http://snomed.info/sct
-  [Observation Value Absent Reason]: http://hl7.org/fhir/valueset-observation-valueabsentreason.html
+  [Observation Value Absent Reason]: http://hl7.org/fhir/ValueSet-observation-valueabsentreason.html
   [UCUM]: http://unitsofmeasure.org
   [LOINC]: http://loinc.org
 [Observation]:  http://hl7.org/fhir/observation.html

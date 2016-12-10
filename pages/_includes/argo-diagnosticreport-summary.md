@@ -16,6 +16,6 @@
 1.  One or more `DiagnosticReport.result` and/or one or more `DiagnosticReport.presentedForm`
 
 
-[DiagnosticReportStatus]: http://hl7.org/fhir/valueset-diagnostic-report-status.html
+[DiagnosticReportStatus]: http://hl7.org/fhir/ValueSet-diagnostic-report-status.html
 [Observation]: http://hl7.org/fhir/observation.html
-[LOINC Diagnostic Report Codes]: http://hl7.org/fhir/valueset-report-codes.html
+[LOINC Diagnostic Report Codes]: http://hl7.org/fhir/ValueSet-report-codes.html

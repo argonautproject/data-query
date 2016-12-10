@@ -5,10 +5,6 @@
     "versionId": "206635",
     "lastUpdated": "2016-04-18T04:25:02.064+00:00"
   },
-  "text": {
-    "status": "generated",
-    "div": "<div>2005-07-05:WBC = 20 -30  cells/HPF</div>"
-  },
   "status": "final",
   "category": {
     "coding": [
@@ -31,7 +27,7 @@
     "text": "WBC"
   },
   "subject": {
-    "reference": "patient-peter-chalmers.html","display": "Peter Chalmers"
+    "reference": "Patient/peter-chalmers.html","display": "Peter Chalmers"
   },
   "effectiveDateTime": "2005-07-05",
   "valueRange": {

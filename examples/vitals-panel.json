@@ -24,7 +24,7 @@
     "text": "Vital signs panel (respiratory rate, heart rate, blood pressure)"
   },
   "subject": {
-    "reference": "patient-peter-chalmers.html","display": "Peter Chalmers"
+    "reference": "Patient/peter-chalmers.html","display": "Peter Chalmers"
   },
   "encounter": {
     "reference": "Encounter/691"

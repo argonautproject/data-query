@@ -63,24 +63,24 @@ Argonaut uses SMART on FHIR authorization for apps that connect to EHR data. For
 
   The Argonaut Profiles for each of the data element queries is listed below.  Each profile defines the minimum mandatory elements, extensions and terminology requirements that **MUST** be present. For each profile requirements and guidance are given in a simple narrative summary. A formal hierarchical table that presents a [logical view] of the content in both a differential and snapshot view is also provided along with references to appropriate terminologies and examples.
 
-  - Allergies:  [Argonaut AllergyIntolerance Profile](structuredefinition-argo-allergyintolerance.html)
-  -  Assessment and Plan of Treatment:  [Argonaut CarePlan Profile](structuredefinition-argo-careplan.html)
-  -  Care Team:  [Argonaut CareTeam Profile](structuredefinition-argo-careteam.html)
-  -  Problems and Health Concerns:  [Argonaut Condition Profile](structuredefinition-argo-condition.html)
-  -  Implantable Devices/UDI:  [Argonaut Device Profile](structuredefinition-argo-device.html)
+  - Allergies:  [Argonaut AllergyIntolerance Profile](StructureDefinition-argo-allergyintolerance.html)
+  -  Assessment and Plan of Treatment:  [Argonaut CarePlan Profile](StructureDefinition-argo-careplan.html)
+  -  Care Team:  [Argonaut CareTeam Profile](StructureDefinition-argo-careteam.html)
+  -  Problems and Health Concerns:  [Argonaut Condition Profile](StructureDefinition-argo-condition.html)
+  -  Implantable Devices/UDI:  [Argonaut Device Profile](StructureDefinition-argo-device.html)
   - Laboratory Tests and Results:
-     -  DiagnosticReport:  [Argonaut DiagnosticReport Profile](structuredefinition-argo-diagnosticreport.html)
-     -  Observation:  [Argonaut Observation Results Profile](structuredefinition-argo-observationresults.html)
-  -  Goals:  [Argonaut Goal Profile](structuredefinition-argo-goal.html)
-  -  Immunizations:  [Argonaut Immunization Profile](structuredefinition-argo-immunization.html)
+     -  DiagnosticReport:  [Argonaut DiagnosticReport Profile](StructureDefinition-argo-diagnosticreport.html)
+     -  Observation:  [Argonaut Observation Results Profile](StructureDefinition-argo-observationresults.html)
+  -  Goals:  [Argonaut Goal Profile](StructureDefinition-argo-goal.html)
+  -  Immunizations:  [Argonaut Immunization Profile](StructureDefinition-argo-immunization.html)
   - Medications:
-     -  Medication:  [Argonaut Medication Profile](structuredefinition-argo-medication.html)
-     -  MedicationOrder:  [Argonaut MedicationOrder Profile](structuredefinition-argo-medicationorder.html)
-     -  MedicationStatement:  [Argonaut MedicationStatement Profile](structuredefinition-argo-medicationstatement.html)
-  -  Patient:  [Argonaut Patient Profile](structuredefinition-argo-patient.html)
-  -  Procedures:  [Argonaut Procedure Profile](structuredefinition-argo-procedure.html)
-  -  Smoking Status:  [Argonaut Smoking Status Observation Profile](structuredefinition-argo-smokingstatus.html)
-  -  Vital Signs:  [Argonaut Vital Signs Observation Profile](structuredefinition-argo-vitalsigns.html)
+     -  Medication:  [Argonaut Medication Profile](StructureDefinition-argo-medication.html)
+     -  MedicationOrder:  [Argonaut MedicationOrder Profile](StructureDefinition-argo-medicationorder.html)
+     -  MedicationStatement:  [Argonaut MedicationStatement Profile](StructureDefinition-argo-medicationstatement.html)
+  -  Patient:  [Argonaut Patient Profile](StructureDefinition-argo-patient.html)
+  -  Procedures:  [Argonaut Procedure Profile](StructureDefinition-argo-procedure.html)
+  -  Smoking Status:  [Argonaut Smoking Status Observation Profile](StructureDefinition-argo-smokingstatus.html)
+  -  Vital Signs:  [Argonaut Vital Signs Observation Profile](StructureDefinition-argo-vitalsigns.html)
 
   *Note on Searches based on a date or date range:*
 
@@ -114,7 +114,7 @@ Argonaut uses SMART on FHIR authorization for apps that connect to EHR data. For
 
 **Requirements**
 
-The [Argonaut DocumentReference Profile](structuredefinition-argo-documentreference.html) defines the minimum mandatory elements, extensions and terminology requirements that **MUST** be present.  Requirements and Guidance are given in a simple narrative summary. A formal hierarchical table
+The [Argonaut DocumentReference Profile](StructureDefinition-argo-documentreference.html) defines the minimum mandatory elements, extensions and terminology requirements that **MUST** be present.  Requirements and Guidance are given in a simple narrative summary. A formal hierarchical table
 that presents a [logical view:  of the content in both a differential and snapshot view is also provided along with references to appropriate terminologies and examples.
 
 

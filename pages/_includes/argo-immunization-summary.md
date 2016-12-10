@@ -10,6 +10,6 @@
 1.  One boolean value in `Immunization.wasNotGiven`
 1.  One boolean value in `Immunization.reported`
 
-  [Immunization Status]: valueset-daf-core-immunization-status.html
-  [CVX]: valueset-daf-cvx.html
-  [NDC]: valueset-daf-ndc-vaccine-codes.html
+  [Immunization Status]: ValueSet-daf-core-immunization-status.html
+  [CVX]: ValueSet-daf-cvx.html
+  [NDC]: ValueSet-daf-ndc-vaccine-codes.html

@@ -25,7 +25,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
     *  When referencing a Medication resource,  the resource may be [contained] or an external resource.
     *  The server application can choose any one way or more than one method,  but if the an external reference to Medication is used, the server SHALL support the [include] parameter for searching this element.
     *  The client application must support both methods.  
-    *  Additional guidance is provided below in the Search section and in the [conformance](conformance.html) resource for this profile
+    *  Additional guidance is provided below in the Search section and in the [conformance](capstmnts.html) resource for this profile
 
 #### Examples
 
@@ -33,9 +33,9 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 - [medicationstatement-argo-ms2](medicationstatement-argo-ms2.html) This example uses a references a contained Medication resource.
 - [medicationstatement-argo-ms3](bundle-argo-ms3.html) This example is a search [Bundle] with a MedicationStatement and an included Medication resource in the Bundle.
 
-  [Medication Clinical Drug (RxNorm)]: valueset-medication-codes.html
-  [MedicationstatementStatus]: http://hl7.org/fhir/us/daf/valueset-medication-statement-status.html
-[MedicationStatementStatus]: http://hl7.org/fhir/us/daf/valueset-medication-statement-status.html
+  [Medication Clinical Drug (RxNorm)]: ValueSet-medication-codes.html
+  [MedicationstatementStatus]: http://hl7.org/fhir/us/daf/ValueSet-medication-statement-status.html
+[MedicationStatementStatus]: http://hl7.org/fhir/us/daf/ValueSet-medication-statement-status.html
 [MedicationStatement]:http://hl7.org/fhir/medicationstatement.html
  [Medicationstatement]: http://hl7.org/fhir/medicationstatement.html
  [Medication]:http://hl7.org/fhir/medication.html

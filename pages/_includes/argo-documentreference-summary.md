@@ -16,9 +16,9 @@ SHOULD have:
 1.  One dateTime value in `DocumentReference.created`
 1.  One time period value in `DocumentReference.context.period`
 
-  [Document Type Value Set]: http://hl7.org/fhir/valueset-c80-doc-typecodes.html
-  [DocumentReferenceStatus]: http://hl7.org/fhir/valueset-document-reference-status.html
+  [Document Type Value Set]: http://hl7.org/fhir/ValueSet-c80-doc-typecodes.html
+  [DocumentReferenceStatus]: http://hl7.org/fhir/ValueSet-document-reference-status.html
   [MimeType]: http://www.rfc-editor.org/bcp/bcp13.txt#
   [extensible]: Implementation_Guide#Extensible_binding_for_CodeableConcept_Datatype "wikilink"
-  [DocumentReference Format Code Set]: http://hl7.org/fhir/valueset-formatcodes.html
+  [DocumentReference Format Code Set]: http://hl7.org/fhir/ValueSet-formatcodes.html
   [FHIR Binary Resource]: http://hl7.org/fhir/binary.html

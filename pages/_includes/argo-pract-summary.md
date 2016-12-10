@@ -18,5 +18,5 @@
     
 
 
-[NUCC - Classification]: valueset-daf-provider-role.html
-[NUCC - Specialization]: valueset-daf-provider-specialty.html
+[NUCC - Classification]: ValueSet-daf-provider-role.html
+[NUCC - Specialization]: ValueSet-daf-provider-specialty.html

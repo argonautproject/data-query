@@ -9,4 +9,4 @@ This Complex Extension for race allows one or more race codes of which:
 - May include additional race codes from CDC Race Codes
 
 
-Context of Use: [Argonaut Patient Profile](structuredefinition-argo-patient.html)
+Context of Use: [Argonaut Patient Profile](StructureDefinition-argo-patient.html)

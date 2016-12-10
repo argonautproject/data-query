@@ -14,7 +14,7 @@
 3.  One administrative gender in `Patient.gender`
     -   Patient.gender is bound to [AdministrativeGender] Value set (Code Set)
 
-  [AdministrativeGender]: http://hl7.org/fhir/valueset-administrative-gender.html
+  [AdministrativeGender]: http://hl7.org/fhir/ValueSet-administrative-gender.html
 
 
 #### Summary of the Must Support Requirements
@@ -36,15 +36,15 @@ Additionally the following data-elements must be supported. See the Argonaut def
     -   [US Core Birth Sex]
 
 
-  [Common Languages]: http://build.fhir.org/valueset-languages.html
+  [Common Languages]: http://build.fhir.org/ValueSet-languages.html
   [All Languages]: http://build.fhir.org/all-languages.html
-  [US Core Patient Birth Sex]: structuredefinition-argo-birthsex.html
-  [US Core Birth Sex]: valueset-usrealm-birthsex.html
-  [US Core Patient Race]:  structuredefinition-argo-race.html
-  [OMB Race Categories]: valueset-omb-race.html
-  [US Core Race Extension]: structuredefinition-argo-race.html
-  [CDC Race Codes]:valueset-detailed-race.html
- [CDC Ethnicity Codes]: valueset-detailed-ethnicity.html
- [US Core ethnicity Extension]: structuredefinition-argo-ethnicity.html
- [OMB Ethnicity Categories]: valueset-omb-ethnicity.html
+  [US Core Patient Birth Sex]: StructureDefinition-argo-birthsex.html
+  [US Core Birth Sex]: ValueSet-usrealm-birthsex.html
+  [US Core Patient Race]:  StructureDefinition-argo-race.html
+  [OMB Race Categories]: ValueSet-omb-race.html
+  [US Core Race Extension]: StructureDefinition-argo-race.html
+  [CDC Race Codes]:ValueSet-detailed-race.html
+ [CDC Ethnicity Codes]: ValueSet-detailed-ethnicity.html
+ [US Core ethnicity Extension]: StructureDefinition-argo-ethnicity.html
+ [OMB Ethnicity Categories]: ValueSet-omb-ethnicity.html
  [Must Support]: definitions.html#mustsupport

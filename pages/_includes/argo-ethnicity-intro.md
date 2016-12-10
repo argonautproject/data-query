@@ -9,4 +9,4 @@ This Complex Extension for ethnicity allows one or more ethnicity codes of which
 - May include additional race codes from CDC Ethnicity Codes
 
 
-Context of Use: [Argonaut Patient Profile](structuredefinition-argo-patient.html)
+Context of Use: [Argonaut Patient Profile](StructureDefinition-argo-patient.html)

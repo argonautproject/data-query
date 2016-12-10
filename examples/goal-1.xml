@@ -2,7 +2,7 @@
 <Goal xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<id value="goal-1"/>
 	<subject>
-		<reference value="patient-peter-chalmers.html"/>
+		<reference value="Patient/peter-chalmers.html"/>
 		<display value="Peter Chalmers"/>
 	</subject>
 	<description value="Patient is targeting a pulse oximetry of 92% and a weight of 195 lbs"/>

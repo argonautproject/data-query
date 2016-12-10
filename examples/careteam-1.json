@@ -6,7 +6,7 @@
       "lastUpdated":"2016-06-11T02:25:09Z"
    },
    "subject":{
-      "reference":"patient-peter-chalmers.html","display": "Peter Chalmers"
+      "reference":"Patient/peter-chalmers.html","display": "Peter Chalmers"
    },
    "status":"active",
    "category":[
@@ -61,7 +61,7 @@
             ]
          },
          "member":{
-            "reference":"patient-peter-chalmers.html","display": "Peter Chalmers"
+            "reference":"Patient/peter-chalmers.html","display": "Peter Chalmers"
          }
       }
    ]

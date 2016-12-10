@@ -12,7 +12,7 @@
 			<p>
 				<b>masterIdentifier</b>: urn:oid:2.16.840.1.113883.19.5.99999.1</p>
 			<p>
-				<b>subject</b>: <a href="patient-peter-chalmers.html">Peter Chalmers</a>
+				<b>subject</b>: <a href="Patient/peter-chalmers.html">Peter Chalmers</a>
 			</p>
 			<p>
 				<b>type</b>: CCD Document <span style="background: LightGoldenRodYellow">(Details : {LOINC code '34133-9' = 'Summary of episode note', given as 'Summary of episode note'})</span>
@@ -61,7 +61,7 @@
 		<value value="urn:oid:2.16.840.1.113883.19.5.99999.1"/>
 	</masterIdentifier>
 	<subject>
-		<reference value="patient-peter-chalmers.html"/>
+		<reference value="Patient/peter-chalmers.html"/>
 		<display value="Peter Chalmers"/>
 	</subject>
 	<type>

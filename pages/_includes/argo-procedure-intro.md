@@ -28,12 +28,12 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 #### Examples
 
-- [Procedure-Rehab](procedure-rehab.html)
+- [Procedure-Rehab](Procedure-rehab.html)
 
 
-  [SNOMED CT]: http://hl7.org/fhir/valueset-procedure-code.html
-  [CPT-4/HCPC for procedures]: http://hl7.org/fhir/valueset-procedure-code.html
+  [SNOMED CT]: http://hl7.org/fhir/ValueSet-procedure-code.html
+  [CPT-4/HCPC for procedures]: http://hl7.org/fhir/ValueSet-procedure-code.html
   [ICD-10-PCS codes]: http://www.icd10data.com/icd10pcs
   [Code on Dental Procedures and Nomenclature (CDT Code)]: http://www.ada.org/en/publications/cdt/
-  [ProcedureStatus]: http://hl7.org/fhir/valueset-procedure-status.html
+  [ProcedureStatus]: http://hl7.org/fhir/ValueSet-procedure-status.html
   [Procedure]: http://hl7.org/fhir/procedure.html

@@ -3,7 +3,7 @@
 	<id value="rehab"/>
 
 	<subject>
-		<reference value="patient-peter-chalmers.html"/>
+		<reference value="Patient/peter-chalmers.html"/>
 		<display value="Peter Chalmers"/>
 	</subject>
 	<status value="completed"/>

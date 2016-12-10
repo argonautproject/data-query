@@ -210,6 +210,6 @@ In order to manage the number of search results returned, the server may choose 
   [core specification]: http://hl7.org/fhir/extensibility.html#2.20.0.2.2
   [DataAbsentReason Extension]: http://hl7.org/fhir/extension-data-absent-reason.html
   [http://hl7.org/fhir/StructureDefinition/data-absent-reason]: http://hl7.org/fhir/StructureDefinition/data-absent-reason
-[Argonaut Vital Signs Profile]: structuredefinition-argo-vitalsigns.html
-[Argonaut Result Observation Profile]: structuredefinition-argo-observationresults.html
+[Argonaut Vital Signs Profile]: StructureDefinition-argo-vitalsigns.html
+[Argonaut Result Observation Profile]: StructureDefinition-argo-observationresults.html
 [UCUM]: http://unitsofmeasure.org

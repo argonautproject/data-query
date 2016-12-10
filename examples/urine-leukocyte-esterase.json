@@ -28,7 +28,7 @@
     "text": "LEUK ESTERASE"
   },
   "subject": {
-    "reference": "patient-peter-chalmers.html","display": "Peter Chalmers"
+    "reference": "Patient/peter-chalmers.html","display": "Peter Chalmers"
   },
   "effectiveDateTime": "2005-07-05",
   "valueCodeableConcept": {

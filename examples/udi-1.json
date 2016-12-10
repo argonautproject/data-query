@@ -13,7 +13,7 @@
 	"status": "available",
 	"udi": "{01}09504000059118{17}141120{10}7654321D{21}10987654d321",
 	"patient": {
-		"reference": "patient-peter-chalmers.html",
+		"reference": "Patient/peter-chalmers.html",
 		"display": "Peter Chalmers"
 	}
 }

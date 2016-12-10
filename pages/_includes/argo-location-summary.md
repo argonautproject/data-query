@@ -8,4 +8,4 @@
 1. A `Location.managingOrganization`
 
 
-[LocationStatus]: http://hl7.org/fhir/valueset-location-status.html
+[LocationStatus]: http://hl7.org/fhir/ValueSet-location-status.html
