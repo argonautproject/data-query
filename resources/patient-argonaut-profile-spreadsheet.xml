@@ -1008,7 +1008,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s74"><Data ss:Type="String">extension.uri</Data></Cell>
     <Cell ss:StyleID="s81" ss:HRef="http://hl7.org/fhir/StructureDefinition/patient-argo"><Data
-      ss:Type="String">http://hl7.org/fhir/us/argonaut/StructureDefinition/argo-</Data></Cell>
+      ss:Type="String">http://fhir.org/guides/argonaut/StructureDefinition/argo-</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s82"><Data ss:Type="String">introduction</Data></Cell>
@@ -7952,7 +7952,7 @@
     <Cell ss:StyleID="s107"/>
     <Cell ss:StyleID="s158"><Data ss:Type="String">value set</Data></Cell>
     <Cell ss:StyleID="s140"><Data ss:Type="String">required</Data></Cell>
-    <Cell ss:StyleID="s130"><Data ss:Type="String">http://hl7.org/fhir/us/argonaut/ValueSet/languages</Data></Cell>
+    <Cell ss:StyleID="s130"><Data ss:Type="String">http://fhir.org/guides/argonaut/ValueSet/languages</Data></Cell>
     <Cell ss:StyleID="s140"/>
     <Cell ss:StyleID="s140"/>
     <Cell ss:StyleID="s140"/>
@@ -7967,7 +7967,7 @@
     <Cell ss:StyleID="s107"><Data ss:Type="String">Code for sex assigned at birth</Data></Cell>
     <Cell ss:StyleID="s140"><Data ss:Type="String">value set</Data></Cell>
     <Cell ss:StyleID="s140"><Data ss:Type="String">required</Data></Cell>
-    <Cell ss:StyleID="s130"><Data ss:Type="String">http://hl7.org/fhir/us/argonaut/ValueSet/usrealm-birthsex</Data></Cell>
+    <Cell ss:StyleID="s130"><Data ss:Type="String">http://fhir.org/guides/argonaut/ValueSet/usrealm-birthsex</Data></Cell>
     <Cell ss:StyleID="s140"/>
     <Cell ss:StyleID="s140"/>
     <Cell ss:StyleID="s140"/>
@@ -7982,7 +7982,7 @@
     <Cell ss:StyleID="s107"><Data ss:Type="String">The 5 race category codes according to the [OMB Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity, Statistical Policy Directive No. 15, as revised, October 30, 1997](https://www.whitehouse.gov/omb/fedreg_1997standards).</Data></Cell>
     <Cell ss:StyleID="s140"><Data ss:Type="String">value set</Data></Cell>
     <Cell ss:StyleID="s140"><Data ss:Type="String">required</Data></Cell>
-    <Cell ss:StyleID="s130"><Data ss:Type="String">http://hl7.org/fhir/us/argonaut/ValueSet/omb-race</Data></Cell>
+    <Cell ss:StyleID="s130"><Data ss:Type="String">http://fhir.org/guides/argonaut/ValueSet/omb-race</Data></Cell>
     <Cell ss:StyleID="s140"/>
     <Cell ss:StyleID="s140"/>
     <Cell ss:StyleID="s140"/>
@@ -7997,7 +7997,7 @@
     <Cell ss:StyleID="s107"><Data ss:Type="String">The [900+ CDC Race codes](http://www.cdc.gov/phin/resources/vocabulary/index.html) that are grouped under one of the 5 OMB race category codes.</Data></Cell>
     <Cell ss:StyleID="s140"><Data ss:Type="String">value set</Data></Cell>
     <Cell ss:StyleID="s140"><Data ss:Type="String">required</Data></Cell>
-    <Cell ss:StyleID="s140"><Data ss:Type="String">http://hl7.org/fhir/us/argonaut/ValueSet/detailed-race</Data></Cell>
+    <Cell ss:StyleID="s140"><Data ss:Type="String">http://fhir.org/guides/argonaut/ValueSet/detailed-race</Data></Cell>
     <Cell ss:StyleID="s140"/>
     <Cell ss:StyleID="s140"/>
     <Cell ss:StyleID="s140"/>
@@ -8012,7 +8012,7 @@
     <Cell ss:StyleID="s107"><Data ss:Type="String">The 2 ethnicity category codes according to the [OMB Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity, Statistical Policy Directive No. 15, as revised, October 30, 1997](https://www.whitehouse.gov/omb/fedreg_1997standards).</Data></Cell>
     <Cell ss:StyleID="s140"><Data ss:Type="String">value set</Data></Cell>
     <Cell ss:StyleID="s140"><Data ss:Type="String">required</Data></Cell>
-    <Cell ss:StyleID="s140"><Data ss:Type="String">http://hl7.org/fhir/us/argonaut/ValueSet/omb-ethnicity</Data></Cell>
+    <Cell ss:StyleID="s140"><Data ss:Type="String">http://fhir.org/guides/argonaut/ValueSet/omb-ethnicity</Data></Cell>
     <Cell ss:StyleID="s140"/>
     <Cell ss:StyleID="s140"/>
     <Cell ss:StyleID="s140"/>
@@ -8027,7 +8027,7 @@
     <Cell ss:StyleID="s107"><Data ss:Type="String">The 41 [CDC ethnicity codes](http://www.cdc.gov/phin/resources/vocabulary/index.html) that are grouped under one of the 2 OMB ethnicity category codes.</Data></Cell>
     <Cell ss:StyleID="s140"><Data ss:Type="String">value set</Data></Cell>
     <Cell ss:StyleID="s140"><Data ss:Type="String">required</Data></Cell>
-    <Cell ss:StyleID="s140"><Data ss:Type="String">http://hl7.org/fhir/us/argonaut/ValueSet/detailed-ethnicity</Data></Cell>
+    <Cell ss:StyleID="s140"><Data ss:Type="String">http://fhir.org/guides/argonaut/ValueSet/detailed-ethnicity</Data></Cell>
     <Cell ss:StyleID="s140"/>
     <Cell ss:StyleID="s140"/>
     <Cell ss:StyleID="s140"/>

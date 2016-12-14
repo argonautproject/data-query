@@ -981,7 +981,7 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s74"><Data ss:Type="String">extension.uri</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">http://hl7.org/fhir/us/argonaut/StructureDefinition/Procedure</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">http://fhir.org/guides/argonaut/StructureDefinition/Procedure</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s82"><Data ss:Type="String">introduction</Data></Cell>
@@ -7983,7 +7983,7 @@
     <Cell ss:StyleID="s109"><Data ss:Type="String">Codes describing the Procedure Type</Data></Cell>
     <Cell ss:StyleID="s136"><Data ss:Type="String">value set</Data></Cell>
     <Cell ss:StyleID="s133"><Data ss:Type="String">required</Data></Cell>
-    <Cell ss:StyleID="s136"><Data ss:Type="String">http://hl7.org/fhir/us/argonaut/ValueSet/procedure-type</Data></Cell>
+    <Cell ss:StyleID="s136"><Data ss:Type="String">http://fhir.org/guides/argonaut/ValueSet/procedure-type</Data></Cell>
     <Cell ss:StyleID="s136"><Data ss:Type="String">This value set identifies a set of procedure types.</Data></Cell>
     <Cell ss:StyleID="s136"/>
     <Cell ss:StyleID="s136"/>
@@ -7998,7 +7998,7 @@
     <Cell ss:StyleID="s109"><Data ss:Type="String">Optional ICD-10PCS Code translations describing the Procedure Type</Data></Cell>
     <Cell ss:StyleID="s136"><Data ss:Type="String">value set</Data></Cell>
     <Cell ss:StyleID="s136"><Data ss:Type="String">required</Data></Cell>
-    <Cell ss:StyleID="s136"><Data ss:Type="String">http://hl7.org/fhir/us/argonaut/ValueSet/procedure-icd10pcs</Data></Cell>
+    <Cell ss:StyleID="s136"><Data ss:Type="String">http://fhir.org/guides/argonaut/ValueSet/procedure-icd10pcs</Data></Cell>
     <Cell ss:StyleID="s136"/>
     <Cell ss:StyleID="s136"/>
     <Cell ss:StyleID="s136"/>

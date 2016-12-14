@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file://Mac/Home/Documents/FHIR/FHIR%20tools/DSTU2Schema/valueset.xsd">
 	<id value="condition-category"/>
-	<url value="http://hl7.org/fhir/us/argonaut/ValueSet/condition-category"/>
+	<url value="http://fhir.org/guides/argonaut/ValueSet/condition-category"/>
 	<name value="Argonaut Condition Category Codes"/>
 	<status value="draft"/>
 	<publisher value="Argonaut Project"/>

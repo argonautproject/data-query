@@ -9,7 +9,7 @@
 		</xhtml:div>
 	</text>
 -->
-	<url value="http://hl7.org/fhir/us/argonaut/ConceptMap/ndc-cvx"/>
+	<url value="http://fhir.org/guides/argonaut/ConceptMap/ndc-cvx"/>
 	<name value="Argonaut NDC to CVX Code Mapping"/>
 	<status value="active"/>
 	<publisher value="Argonaut Project"/>
@@ -17,7 +17,7 @@
 	<description value="Unit of Use [NDC code] (https://www2a.cdc.gov/vaccines/iis/iisstandards/ndc_crosswalk.asp) mapping  to the [CVX Vaccine codes](https://www2a.cdc.gov/vaccines/iis/iisstandards/vaccines.asp?rpt=cvx).  Note: source = NDC and target = CVX"/>
 	<requirements value="Based upon the 2015 Edition Certification Requirements, the NDC vaccine codes SHOULD be supported as translations to the CVX vaccine codes."/>
 	<sourceReference>
-		<reference value="http://hl7.org/fhir/us/argonaut/ValueSet/ndc-vaccine-codes"/>
+		<reference value="http://fhir.org/guides/argonaut/ValueSet/ndc-vaccine-codes"/>
 		<display value="NDC Codes"></display>
 	</sourceReference>
 	<targetReference>

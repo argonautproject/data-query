@@ -981,7 +981,7 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s74"><Data ss:Type="String">extension.uri</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">http://hl7.org/fhir/us/argonaut/StructureDefinition/Medication</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">http://fhir.org/guides/argonaut/StructureDefinition/Medication</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s82"><Data ss:Type="String">introduction</Data></Cell>
@@ -7967,7 +7967,7 @@
     <Cell ss:StyleID="s109"><Data ss:Type="String">Prescribable medications</Data></Cell>
     <Cell ss:StyleID="s136"><Data ss:Type="String">value set</Data></Cell>
     <Cell ss:StyleID="s136"><Data ss:Type="String">extensible</Data></Cell>
-    <Cell ss:StyleID="s136"><Data ss:Type="String">http://hl7.org/fhir/us/argonaut/ValueSet/medication-codes</Data></Cell>
+    <Cell ss:StyleID="s136"><Data ss:Type="String">http://fhir.org/guides/argonaut/ValueSet/medication-codes</Data></Cell>
     <Cell ss:Index="7" ss:StyleID="s136"><Data ss:Type="String">2.16.840.1.113762.1.4.1010.4</Data></Cell>
     <Cell ss:StyleID="s136"/>
     <Cell ss:StyleID="s136"/>

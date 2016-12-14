@@ -3,7 +3,7 @@
 	<id value="substance-rxnorm"/>
 
 
-	<url value="http://hl7.org/fhir/us/argonaut/ValueSet/substance-rxnorm"/>
+	<url value="http://fhir.org/guides/argonaut/ValueSet/substance-rxnorm"/>
 	<name value="DAF Substance RxNorm Codes"/>
 	<status value="draft"/>
 	<publisher value="Argonaut Project"/>

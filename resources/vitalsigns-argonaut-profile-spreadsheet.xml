@@ -1013,7 +1013,7 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s74"><Data ss:Type="String">extension.uri</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">http://hl7.org/fhir/us/argonaut/StructureDefinition/VitalSigns</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">http://fhir.org/guides/argonaut/StructureDefinition/VitalSigns</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s82"><Data ss:Type="String">introduction</Data></Cell>
@@ -8020,7 +8020,7 @@
     <Cell ss:StyleID="s98"><Data ss:Type="String">This identifies the vital sign result type.</Data></Cell>
     <Cell ss:StyleID="s137"><Data ss:Type="String">value set</Data></Cell>
     <Cell ss:StyleID="s137"><Data ss:Type="String">extensible</Data></Cell>
-    <Cell ss:StyleID="s158"><Data ss:Type="String">http://hl7.org/fhir/us/argonaut/ValueSet/observation-ccdavitalsignresult</Data></Cell>
+    <Cell ss:StyleID="s158"><Data ss:Type="String">http://fhir.org/guides/argonaut/ValueSet/observation-ccdavitalsignresult</Data></Cell>
     <Cell ss:StyleID="s140"/>
     <Cell ss:StyleID="s140"/>
     <Cell ss:StyleID="s140"/>
@@ -8035,7 +8035,7 @@
     <Cell ss:StyleID="s109"><Data ss:Type="String">Common UCUM units for recording Vital Signs</Data></Cell>
     <Cell ss:StyleID="s140"><Data ss:Type="String">value set</Data></Cell>
     <Cell ss:StyleID="s137"><Data ss:Type="String">extensible</Data></Cell>
-    <Cell ss:StyleID="s158"><Data ss:Type="String">http://hl7.org/fhir/us/argonaut/ValueSet/ucum-vitals-common</Data></Cell>
+    <Cell ss:StyleID="s158"><Data ss:Type="String">http://fhir.org/guides/argonaut/ValueSet/ucum-vitals-common</Data></Cell>
     <Cell ss:StyleID="s140"/>
     <Cell ss:StyleID="s140"/>
     <Cell ss:StyleID="s140"/>

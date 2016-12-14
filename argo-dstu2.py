@@ -22,11 +22,11 @@ logging.info('create the ig.json file template as dictionary')
 
 dir='/Users/ehaas/Documents/FHIR/Argo-DSTU2/'
 
-igpy = {"paths":{"temp":"temp","specification":"http://hl7.org/fhir/DSTU2","qa":"qa","txCache":"txCache","output":"output","pages":"pages","resources":["resources","examples"]},"version":"1.0.2","extraTemplates":["mappings"],"defaults":{"StructureDefinition":{"template-base":"sd.html","template-defns":"sd-definitions.html","template-mappings":"sd-mappings.html"},"ConceptMap":{"template-base":"cm.html"},"Any":{"template-format":"format.html","template-base":"base.html"},"ValueSet":{"template-base":"vs.html"}},"source":"ig.xml","canonicalBase":"http://hl7.org/fhir/us/argonaut","tool":"jekyll","sct-edition":"http://snomed.info/sct/731000124108","spreadsheets":[],"resources":{}}
+igpy = {"paths":{"temp":"temp","specification":"http://hl7.org/fhir/DSTU2","qa":"qa","txCache":"txCache","output":"output","pages":"pages","resources":["resources","examples"]},"version":"1.0.2","extraTemplates":["mappings"],"defaults":{"StructureDefinition":{"template-base":"sd.html","template-defns":"sd-definitions.html","template-mappings":"sd-mappings.html"},"ConceptMap":{"template-base":"cm.html"},"Any":{"template-format":"format.html","template-base":"base.html"},"ValueSet":{"template-base":"vs.html"}},"source":"ig.xml","canonicalBase":"http://fhir.org/guides/argonaut","tool":"jekyll","sct-edition":"http://snomed.info/sct/731000124108","spreadsheets":[],"resources":{}}
 
 logging.info('create the ig.xml file template as string')
 
-igxml ='''<?xml version="1.0" encoding="UTF-8"?><!--Hidden IG for de facto IG publishing--><ImplementationGuide xmlns="http://hl7.org/fhir"><id value="ig"/><url value="http://hl7.org/fhir/us/argonaut/ImplementationGuide/ig"/><name value="Implementation Guide Template"/><status value="draft"/><experimental value="true"/><publisher value="FHIR Project"/><package><name value="base"/></package><page><source value="index.html"/><name value="blah"/><kind value="page"/></page></ImplementationGuide>'''
+igxml ='''<?xml version="1.0" encoding="UTF-8"?><!--Hidden IG for de facto IG publishing--><ImplementationGuide xmlns="http://hl7.org/fhir"><id value="ig"/><url value="http://fhir.org/guides/argonaut/ImplementationGuide/ig"/><name value="Implementation Guide Template"/><status value="draft"/><experimental value="true"/><publisher value="FHIR Project"/><package><name value="base"/></package><page><source value="index.html"/><name value="blah"/><kind value="page"/></page></ImplementationGuide>'''
 
 # extension in spreadsheet - these need to be manually listed here
 

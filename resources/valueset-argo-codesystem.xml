@@ -40,7 +40,7 @@
 			</table>
 		</div>
 	</text>
-	<url value="http://hl7.org/fhir/us/argonaut/ValueSet/argo-codesystem"/>
+	<url value="http://fhir.org/guides/argonaut/ValueSet/argo-codesystem"/>
 	<name value="Argonaut Extension Codes"/>
 	<status value="draft"/>
 <publisher value="Argonaut Project"/>

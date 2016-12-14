@@ -333,7 +333,7 @@
 			</table>
 			<p>
 				<b>Operations:</b>
-				<a title="" href="http://hl7.org/fhir/OperationDefinition/patient-everything">patient-everything</a> MAY, <a title="" href="http://hl7.org/fhir/us/argonaut/OperationDefinition/get-docref.html">docref</a> SHOULD</p>
+				<a title="" href="http://hl7.org/fhir/OperationDefinition/patient-everything">patient-everything</a> MAY, <a title="" href="http://fhir.org/guides/argonaut/OperationDefinition/get-docref.html">docref</a> SHOULD</p>
 			<br/>
 			<br/>
 			<h3>
@@ -2489,7 +2489,7 @@
 			</extension>
 			<name value="docref"/>
 			<definition>
-				<reference value="http://hl7.org/fhir/us/argonaut/OperationDefinition/get-docref.html"/>
+				<reference value="http://fhir.org/guides/argonaut/OperationDefinition/get-docref.html"/>
 			</definition>
 		</operation>
 	</rest>

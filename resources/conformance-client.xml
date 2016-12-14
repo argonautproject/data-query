@@ -45,7 +45,7 @@
 				</thead>
 				<tbody>
 					<tr>
-						<th>Patient (<a href="http://hl7.org/fhir/us/argonaut/StructureDefinition/argo-patient.html">Profile</a>)</th>
+						<th>Patient (<a href="http://fhir.org/guides/argonaut/StructureDefinition/argo-patient.html">Profile</a>)</th>
 						<td>
 							<a title="Allows discovery of existing Argonaut Data Query patient resources using different search criteria" href="#Patient-search-type">SHOULD</a>
 						</td>
@@ -64,7 +64,7 @@
 						<td/>
 					</tr>
 					<tr>
-						<th>AllergyIntolerance (<a href="http://hl7.org/fhir/us/argonaut/StructureDefinition/argo-allergyintolerance.html">Profile</a>)</th>
+						<th>AllergyIntolerance (<a href="http://fhir.org/guides/argonaut/StructureDefinition/argo-allergyintolerance.html">Profile</a>)</th>
 						<td>
 							<a title="Allows discovery of existing Argonaut Data Query AllergyIntolerance resources using different search criteria" href="#AllergyIntolerance-search-type">SHOULD</a>
 						</td>
@@ -83,7 +83,7 @@
 						<td/>
 					</tr>
 					<tr>
-						<th>CarePlan (<a href="http://hl7.org/fhir/us/argonaut/StructureDefinition/argo-careplan.html">Profile</a>)</th>
+						<th>CarePlan (<a href="http://fhir.org/guides/argonaut/StructureDefinition/argo-careplan.html">Profile</a>)</th>
 						<td>
 							<a title="Allows discovery of existing Argonaut Data Query careplan resources using different search criteria" href="#CarePlan-search-type">SHOULD</a>
 						</td>
@@ -102,7 +102,7 @@
 						<td/>
 					</tr>
 					<tr>
-						<th>CarePlan (<a href="http://hl7.org/fhir/us/argonaut/StructureDefinition/argo-careteam.html">Profile</a>)</th>
+						<th>CarePlan (<a href="http://fhir.org/guides/argonaut/StructureDefinition/argo-careteam.html">Profile</a>)</th>
 						<td>
 							<a title="Allows discovery of existing Argonaut Data Query careteam resources using different search criteria" href="#CarePlan-search-type">SHOULD</a>
 						</td>
@@ -121,7 +121,7 @@
 						<td/>
 					</tr>
 					<tr>
-						<th>Condition (<a href="http://hl7.org/fhir/us/argonaut/StructureDefinition/argo-condition.html">Profile</a>)</th>
+						<th>Condition (<a href="http://fhir.org/guides/argonaut/StructureDefinition/argo-condition.html">Profile</a>)</th>
 						<td>
 							<a title="Allows discovery of existing Argonaut Data Query condition resources using different search criteria" href="#Condition-search-type">SHOULD</a>
 						</td>
@@ -140,7 +140,7 @@
 						<td/>
 					</tr>
 					<tr>
-						<th>Device (<a href="http://hl7.org/fhir/us/argonaut/StructureDefinition/argo-device.html">Profile</a>)</th>
+						<th>Device (<a href="http://fhir.org/guides/argonaut/StructureDefinition/argo-device.html">Profile</a>)</th>
 						<td>
 							<a title="Allows discovery of existing Argonaut Data Query device resources using different search criteria" href="#Device-search-type">SHOULD</a>
 						</td>
@@ -159,7 +159,7 @@
 						<td/>
 					</tr>
 					<tr>
-						<th>Goal (<a href="http://hl7.org/fhir/us/argonaut/StructureDefinition/argo-goal.html">Profile</a>)</th>
+						<th>Goal (<a href="http://fhir.org/guides/argonaut/StructureDefinition/argo-goal.html">Profile</a>)</th>
 						<td>
 							<a title="Allows discovery of existing Argonaut Data Query goal resources using different search criteria" href="#Goal-search-type">SHOULD</a>
 						</td>
@@ -178,7 +178,7 @@
 						<td/>
 					</tr>
 					<tr>
-						<th>Immunization (<a href="http://hl7.org/fhir/us/argonaut/StructureDefinition/argo-immunization.html">Profile</a>)</th>
+						<th>Immunization (<a href="http://fhir.org/guides/argonaut/StructureDefinition/argo-immunization.html">Profile</a>)</th>
 						<td>
 							<a title="Allows discovery of existing Argonaut Data Query immunization resources using different search criteria" href="#Immunization-search-type">SHOULD</a>
 						</td>
@@ -197,7 +197,7 @@
 						<td/>
 					</tr>
 					<tr>
-						<th>DiagnosticReport (<a href="http://hl7.org/fhir/us/argonaut/StructureDefinition/argo-diagnosticreport.html">Profile</a>)</th>
+						<th>DiagnosticReport (<a href="http://fhir.org/guides/argonaut/StructureDefinition/argo-diagnosticreport.html">Profile</a>)</th>
 						<td>
 							<a title="Allows discovery of existing Argonaut Data Query diagnosticreport resources using different search criteria" href="#DiagnosticReport-search-type">SHOULD</a>
 						</td>
@@ -216,7 +216,7 @@
 						<td/>
 					</tr>
 					<tr>
-						<th>Observation (<a href="http://hl7.org/fhir/us/argonaut/StructureDefinition/argo-resultobs.html">Profile</a>)</th>
+						<th>Observation (<a href="http://fhir.org/guides/argonaut/StructureDefinition/argo-resultobs.html">Profile</a>)</th>
 						<td>
 							<a title="Allows discovery of existing Argonaut Data Query resultobs resources using different search criteria" href="#Observation-search-type">SHOULD</a>
 						</td>
@@ -235,7 +235,7 @@
 						<td/>
 					</tr>
 					<tr>
-						<th>Medication (<a href="http://hl7.org/fhir/us/argonaut/StructureDefinition/argo-medication.html">Profile</a>)</th>
+						<th>Medication (<a href="http://fhir.org/guides/argonaut/StructureDefinition/argo-medication.html">Profile</a>)</th>
 						<td>
 							<a title="Allows discovery of existing Argonaut Data Query medicationstatement resources using different search criteria" href="#Medication-search-type">SHOULD</a>
 						</td>
@@ -254,7 +254,7 @@
 						<td/>
 					</tr>
 					<tr>
-						<th>MedicationStatement (<a href="http://hl7.org/fhir/us/argonaut/StructureDefinition/argo-medicationstatement.html">Profile</a>)</th>
+						<th>MedicationStatement (<a href="http://fhir.org/guides/argonaut/StructureDefinition/argo-medicationstatement.html">Profile</a>)</th>
 						<td>
 							<a title="Allows discovery of existing Argonaut Data Query medicationstatement resources using different search criteria" href="#MedicationStatement-search-type">SHOULD</a>
 						</td>
@@ -273,7 +273,7 @@
 						<td/>
 					</tr>
 					<tr>
-						<th>MedicationRequest (<a href="http://hl7.org/fhir/us/argonaut/StructureDefinition/argo-medicationrequest.html">Profile</a>)</th>
+						<th>MedicationRequest (<a href="http://fhir.org/guides/argonaut/StructureDefinition/argo-medicationrequest.html">Profile</a>)</th>
 						<td>
 							<a title="Allows discovery of existing Argonaut Data Query medicationrequest resources using different search criteria" href="#MedicationRequest-search-type">SHOULD</a>
 						</td>
@@ -292,7 +292,7 @@
 						<td/>
 					</tr>
 					<tr>
-						<th>Observation (<a href="http://hl7.org/fhir/us/argonaut/StructureDefinition/argo-smokingstatus.html">Profile</a>)</th>
+						<th>Observation (<a href="http://fhir.org/guides/argonaut/StructureDefinition/argo-smokingstatus.html">Profile</a>)</th>
 						<td>
 							<a title="Allows discovery of existing Argonaut Data Query smokingstatus resources using different search criteria" href="#Observation-search-type">SHOULD</a>
 						</td>
@@ -311,7 +311,7 @@
 						<td/>
 					</tr>
 					<tr>
-						<th>Observation (<a href="http://hl7.org/fhir/us/argonaut/StructureDefinition/argo-vitalsigns.html">Profile</a>)</th>
+						<th>Observation (<a href="http://fhir.org/guides/argonaut/StructureDefinition/argo-vitalsigns.html">Profile</a>)</th>
 						<td>
 							<a title="Allows discovery of existing Argonaut Data Query vitalsigns resources using different search criteria" href="#Observation-search-type">SHOULD</a>
 						</td>
@@ -330,7 +330,7 @@
 						<td/>
 					</tr>
 					<tr>
-						<th>Procedure (<a href="http://hl7.org/fhir/us/argonaut/StructureDefinition/argo-procedure.html">Profile</a>)</th>
+						<th>Procedure (<a href="http://fhir.org/guides/argonaut/StructureDefinition/argo-procedure.html">Profile</a>)</th>
 						<td>
 							<a title="Allows discovery of existing Argonaut Data Query procedure resources using different search criteria" href="#Procedure-search-type">SHOULD</a>
 						</td>
@@ -352,7 +352,7 @@
 			</table>
 			<p>
 				<b>Operations:</b>
-				<a title="" href="http://hl7.org/fhir/OperationDefinition/patient-everything">patient-everything</a> MAY, <a title="" href="http://hl7.org/fhir/us/argonaut/OperationDefinition/get-docref.html">docref</a> SHOULD</p>
+				<a title="" href="http://hl7.org/fhir/OperationDefinition/patient-everything">patient-everything</a> MAY, <a title="" href="http://fhir.org/guides/argonaut/OperationDefinition/get-docref.html">docref</a> SHOULD</p>
 			<br/>
 			<br/>
 			<h3>
@@ -1294,7 +1294,7 @@
 		<resource>
 			<type value="Patient"/>
 			<profile>
-				<reference value="http://hl7.org/fhir/us/argonaut/StructureDefinition/argo-patient.html"/>
+				<reference value="http://fhir.org/guides/argonaut/StructureDefinition/argo-patient.html"/>
 			</profile>
 			<interaction>
 				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
@@ -1328,7 +1328,7 @@
 		<resource>
 			<type value="AllergyIntolerance"/>
 			<profile>
-				<reference value="http://hl7.org/fhir/us/argonaut/StructureDefinition/argo-allergyintolerance.html"/>
+				<reference value="http://fhir.org/guides/argonaut/StructureDefinition/argo-allergyintolerance.html"/>
 			</profile>
 			<interaction>
 				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
@@ -1362,7 +1362,7 @@
 		<resource>
 			<type value="CarePlan"/>
 			<profile>
-				<reference value="http://hl7.org/fhir/us/argonaut/StructureDefinition/argo-careplan.html"/>
+				<reference value="http://fhir.org/guides/argonaut/StructureDefinition/argo-careplan.html"/>
 			</profile>
 			<interaction>
 				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
@@ -1396,7 +1396,7 @@
 		<resource>
 			<type value="CarePlan"/>
 			<profile>
-				<reference value="http://hl7.org/fhir/us/argonaut/StructureDefinition/argo-careteam.html"/>
+				<reference value="http://fhir.org/guides/argonaut/StructureDefinition/argo-careteam.html"/>
 			</profile>
 			<interaction>
 				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
@@ -1430,7 +1430,7 @@
 		<resource>
 			<type value="Condition"/>
 			<profile>
-				<reference value="http://hl7.org/fhir/us/argonaut/StructureDefinition/argo-condition.html"/>
+				<reference value="http://fhir.org/guides/argonaut/StructureDefinition/argo-condition.html"/>
 			</profile>
 			<interaction>
 				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
@@ -1464,7 +1464,7 @@
 		<resource>
 			<type value="Device"/>
 			<profile>
-				<reference value="http://hl7.org/fhir/us/argonaut/StructureDefinition/argo-device.html"/>
+				<reference value="http://fhir.org/guides/argonaut/StructureDefinition/argo-device.html"/>
 			</profile>
 			<interaction>
 				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
@@ -1498,7 +1498,7 @@
 		<resource>
 			<type value="Goal"/>
 			<profile>
-				<reference value="http://hl7.org/fhir/us/argonaut/StructureDefinition/argo-goal.html"/>
+				<reference value="http://fhir.org/guides/argonaut/StructureDefinition/argo-goal.html"/>
 			</profile>
 			<interaction>
 				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
@@ -1532,7 +1532,7 @@
 		<resource>
 			<type value="Immunization"/>
 			<profile>
-				<reference value="http://hl7.org/fhir/us/argonaut/StructureDefinition/argo-immunization.html"/>
+				<reference value="http://fhir.org/guides/argonaut/StructureDefinition/argo-immunization.html"/>
 			</profile>
 			<interaction>
 				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
@@ -1566,7 +1566,7 @@
 		<resource>
 			<type value="DiagnosticReport"/>
 			<profile>
-				<reference value="http://hl7.org/fhir/us/argonaut/StructureDefinition/argo-diagnosticreport.html"/>
+				<reference value="http://fhir.org/guides/argonaut/StructureDefinition/argo-diagnosticreport.html"/>
 			</profile>
 			<interaction>
 				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
@@ -1600,7 +1600,7 @@
 		<resource>
 			<type value="Observation"/>
 			<profile>
-				<reference value="http://hl7.org/fhir/us/argonaut/StructureDefinition/argo-resultobs.html"/>
+				<reference value="http://fhir.org/guides/argonaut/StructureDefinition/argo-resultobs.html"/>
 			</profile>
 			<interaction>
 				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
@@ -1634,7 +1634,7 @@
 				<resource>
 			<type value="Medication"/>
 			<profile>
-				<reference value="http://hl7.org/fhir/us/argonaut/StructureDefinition/argo-medication.html"/>
+				<reference value="http://fhir.org/guides/argonaut/StructureDefinition/argo-medication.html"/>
 			</profile>
 			<interaction>
 				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
@@ -1668,7 +1668,7 @@
 		<resource>
 			<type value="MedicationStatement"/>
 			<profile>
-				<reference value="http://hl7.org/fhir/us/argonaut/StructureDefinition/argo-medicationstatement.html"/>
+				<reference value="http://fhir.org/guides/argonaut/StructureDefinition/argo-medicationstatement.html"/>
 			</profile>
 			<interaction>
 				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
@@ -1702,7 +1702,7 @@
 		<resource>
 			<type value="MedicationRequest"/>
 			<profile>
-				<reference value="http://hl7.org/fhir/us/argonaut/StructureDefinition/argo-medicationrequest.html"/>
+				<reference value="http://fhir.org/guides/argonaut/StructureDefinition/argo-medicationrequest.html"/>
 			</profile>
 			<interaction>
 				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
@@ -1736,7 +1736,7 @@
 		<resource>
 			<type value="Observation"/>
 			<profile>
-				<reference value="http://hl7.org/fhir/us/argonaut/StructureDefinition/argo-smokingstatus.html"/>
+				<reference value="http://fhir.org/guides/argonaut/StructureDefinition/argo-smokingstatus.html"/>
 			</profile>
 			<interaction>
 				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
@@ -1770,7 +1770,7 @@
 		<resource>
 			<type value="Observation"/>
 			<profile>
-				<reference value="http://hl7.org/fhir/us/argonaut/StructureDefinition/argo-vitalsigns.html"/>
+				<reference value="http://fhir.org/guides/argonaut/StructureDefinition/argo-vitalsigns.html"/>
 			</profile>
 			<interaction>
 				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
@@ -1804,7 +1804,7 @@
 		<resource>
 			<type value="Procedure"/>
 			<profile>
-				<reference value="http://hl7.org/fhir/us/argonaut/StructureDefinition/argo-procedure.html"/>
+				<reference value="http://fhir.org/guides/argonaut/StructureDefinition/argo-procedure.html"/>
 			</profile>
 			<interaction>
 				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
@@ -1850,7 +1850,7 @@
 			</extension>
 			<name value="docref"/>
 			<definition>
-				<reference value="http://hl7.org/fhir/us/argonaut/OperationDefinition/get-docref.html"/>
+				<reference value="http://fhir.org/guides/argonaut/OperationDefinition/get-docref.html"/>
 			</definition>
 		</operation>
 	</rest>

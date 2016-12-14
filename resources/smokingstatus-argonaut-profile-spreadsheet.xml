@@ -984,7 +984,7 @@
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s74"><Data ss:Type="String">extension.uri</Data></Cell>
-    <Cell ss:StyleID="Default"><Data ss:Type="String">http://hl7.org/fhir/us/argonaut/StructureDefinition/SmokingStatus</Data></Cell>
+    <Cell ss:StyleID="Default"><Data ss:Type="String">http://fhir.org/guides/argonaut/StructureDefinition/SmokingStatus</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s82"><Data ss:Type="String">introduction</Data></Cell>
@@ -7875,7 +7875,7 @@
     <Cell ss:StyleID="s98"><Data ss:Type="String">This value set indicates the current smoking status of a patient </Data></Cell>
     <Cell ss:StyleID="s133"><Data ss:Type="String">value set</Data></Cell>
     <Cell ss:StyleID="s136"><Data ss:Type="String">required</Data></Cell>
-    <Cell ss:StyleID="s98"><Data ss:Type="String">http://hl7.org/fhir/us/argonaut/ValueSet/observation-ccdasmokingstatus</Data></Cell>
+    <Cell ss:StyleID="s98"><Data ss:Type="String">http://fhir.org/guides/argonaut/ValueSet/observation-ccdasmokingstatus</Data></Cell>
     <Cell><Data ss:Type="String">Smoking Status value set</Data></Cell>
     <Cell ss:StyleID="s133"><Data ss:Type="String">2.16.840.1.113883.4.642.2.0</Data></Cell>
     <Cell ss:StyleID="s136"/>

@@ -1,6 +1,6 @@
 <ValueSet xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file://Mac/Home/Documents/FHIR/FHIR%20tools/DSTU2Schema/basic.xsd">
 	<id value="observation-ccdavitalsignresult"/>
-	<url value="http://hl7.org/fhir/us/argonaut/ValueSet/observation-ccdavitalsignresult"/>
+	<url value="http://fhir.org/guides/argonaut/ValueSet/observation-ccdavitalsignresult"/>
 	<identifier>
 		<system value="urn:ietf:rfc:3986"/>
 		<value value="urn:oid:2.16.840.1.113883.3.88.12.80.62"/>

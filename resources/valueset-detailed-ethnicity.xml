@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ValueSet xmlns:xhtml="http://www.w3.org/1999/xhtml" xsi:schemaLocation="http://hl7.org/fhir file:///C:/Users/Eric/Documents/HL7/FHIR/BUILD_EDIT_FILES/dstu2-fhir-all-xsd/valueset-stripped-notext.xsd" xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<id value="detailed-ethnicity"/>
-	<url value="http://hl7.org/fhir/us/argonaut/ValueSet/detailed-ethnicity"/>
+	<url value="http://fhir.org/guides/argonaut/ValueSet/detailed-ethnicity"/>
 	<name value="US-Core Detailed ethnicity"/>
 	<status value="draft"/>
 	<publisher value="Argonaut Project"/>

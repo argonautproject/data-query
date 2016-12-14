@@ -1012,7 +1012,7 @@
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s74"><Data ss:Type="String">extension.uri</Data></Cell>
     <Cell ss:StyleID="s81" ss:HRef="http://hl7.org/fhir/StructureDefinition/allergyintolerance-daf"><Data
-      ss:Type="String">http://hl7.org/fhir/us/argonaut/StructureDefinition/Device</Data></Cell>
+      ss:Type="String">http://fhir.org/guides/argonaut/StructureDefinition/Device</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s82"><Data ss:Type="String">introduction</Data></Cell>
@@ -1307,7 +1307,7 @@
     <Cell ss:StyleID="s109"><Data ss:Type="String">1..1</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s109"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s109"><Data ss:Type="String">Reference(Patient){http://hl7.org/fhir/us/argonaut/StructureDefinition/argo-patient}</Data><NamedCell
+    <Cell ss:StyleID="s109"><Data ss:Type="String">Reference(Patient){http://fhir.org/guides/argonaut/StructureDefinition/argo-patient}</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s109"><Data ss:Type="String">Y</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -8026,7 +8026,7 @@
     <Cell ss:StyleID="s98"><Data ss:Type="String">Codes to identify medical devices</Data></Cell>
     <Cell ss:StyleID="s135"><Data ss:Type="String">value set</Data></Cell>
     <Cell ss:StyleID="s135"><Data ss:Type="String">extensible</Data></Cell>
-    <Cell ss:StyleID="s135"><Data ss:Type="String">http://hl7.org/fhir/us/argonaut/ValueSet/device-kind</Data></Cell>
+    <Cell ss:StyleID="s135"><Data ss:Type="String">http://fhir.org/guides/argonaut/ValueSet/device-kind</Data></Cell>
     <Cell ss:Index="7" ss:StyleID="s138"/>
     <Cell ss:StyleID="s138"/>
     <Cell ss:StyleID="s138"/>
