@@ -1,5 +1,11 @@
-# Healthedata1/Argo-DSTU2 profiles
-This is the repository for Argo-DSTU2 profiles.
+
+#  Welcome to the Argonaut-DSTU2 Implemenation Guide Repository
+
+Authors:  Eric Haas, Brett Marquard
+
+
+-----
+FHIR DSTU2 Implementation Guide
 
 
 GitHub will automatically trigger a new build whenever you commit changes.
@@ -8,16 +14,13 @@ GitHub will automatically trigger a new build whenever you commit changes.
 
 *Note: a build takes 2-3 minutes to complete. Then you can...*
 
-
-###The CI build is currently not working a recent version of the IG is available at
-
-http://healthedatainc.com/go-ftp/Argo-DSTU2
+(If the CI Build is unavailable a recent version of the build is available here : http://healthedatainc.com/go-ftp/Argo-DSTU2/)
 
 
 ### Find your rendered IG automatically available at
 
-http://ig.fhir.me/Healthedata1/Argo-DSTU2
+http://build.fhir.org/Healthedata1/Argo-DSTU2
 
 ### Find debugging info about the build
 
-http://ig.fhir.me/Healthedata1/Argo-DSTU2/debug.tgz
+http://build.fhir.org/Healthedata1/Argo-DSTU2/debug.tgz
