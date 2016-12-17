@@ -27,7 +27,7 @@
      "text": "Sodium SerPl-sCnc"
    },
    "subject": {
-     "reference": "Patient/peter-chalmers.html","display": "Peter Chalmers"
+     "reference": "Patient-peter-chalmers.html","display": "Peter Chalmers"
    },
    "effectiveDateTime": "2005-07-05",
    "valueQuantity": {

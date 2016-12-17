@@ -27,7 +27,7 @@
 		"text": "Complete Urinalysis"
 	},
 	"subject": {
-		"reference": "Patient/peter-chalmers.html",
+		"reference": "Patient-peter-chalmers.html",
 		"display": "Peter Chalmers"
 	},
 	"effectiveDateTime": "2005-07-05",
@@ -40,55 +40,55 @@
 	],
 	"result": [
 		{
-			"reference": "Observation/urine-color.html",
+			"reference": "Observation-urine-color.html",
 			"display": "COLOR=Yellow "
 		}, {
-			"reference": "Observation/urine-clarity.html",
+			"reference": "Observation-urine-clarity.html",
 			"display": "APPEARANCE=Hazy "
 		}, {
-			"reference": "Observation/urine-glucose.html",
+			"reference": "Observation-urine-glucose.html",
 			"display": "GLUCOSE=Negative "
 		}, {
-			"reference": "Observation/urine-bilirubin.html",
+			"reference": "Observation-urine-bilirubin.html",
 			"display": "BILIRUBIN=Negative "
 		}, {
-			"reference": "Observation/urine-ketone.html",
+			"reference": "Observation-urine-ketone.html",
 			"display": "KETONE=Negative "
 		}, {
-			"reference": "Observation/usg.html",
+			"reference": "Observation-usg.html",
 			"display": "SPEC GRAV=1.0169999999999999 "
 		}, {
-			"reference": "Observation/urine-ph.html",
+			"reference": "Observation-urine-ph.html",
 			"display": "PH=6 (pH)"
 		}, {
-			"reference": "Observation/urine-protein.html",
+			"reference": "Observation-urine-protein.html",
 			"display": "PROTEIN=Negative "
 		}, {
-			"reference": "Observation/urobilinogen.html",
+			"reference": "Observation-urobilinogen.html",
 			"display": "UROBILINOGEN=0.3 mg/dL"
 		}, {
-			"reference": "Observation/urine-nitrite.html",
+			"reference": "Observation-urine-nitrite.html",
 			"display": "NITRITE=Positive "
 		}, {
-			"reference": "Observation/urine-hemoglobin.html",
+			"reference": "Observation-urine-hemoglobin.html",
 			"display": "BLOOD=Trace "
 		}, {
-			"reference": "Observation/urine-leukocute-esterase.html",
+			"reference": "Observation-urine-leukocute-esterase.html",
 			"display": "LEUK ESTERASE=2+ "
 		}, {
-			"reference": "Observation/urine-sediment.html",
+			"reference": "Observation-urine-sediment.html",
 			"display": "COMMENT=Recommend Urine Culture "
 		}, {
-			"reference": "Observation/urine-bacteria.html",
+			"reference": "Observation-urine-bacteria.html",
 			"display": "BACTERIA=4+ "
 		}, {
-			"reference": "Observation/urine-epi-cells.html",
+			"reference": "Observation-urine-epi-cells.html",
 			"display": "EPITHELIAL CELLS=1-5 cells/HPF"
 		}, {
-			"reference": "Observation/urine-wbcs.html",
+			"reference": "Observation-urine-wbcs.html",
 			"display": "WBC=20-30 cells/HPF"
 		}, {
-			"reference": "Observation/urine-rbcs.html",
+			"reference": "Observation-urine-rbcs.html",
 			"display": "RBC=Occasional cells/HPF"
 		}
 	]

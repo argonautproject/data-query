@@ -25,7 +25,7 @@
 		]
 	},
 	"subject": {
-		"reference": "Patient/peter-chalmers.html",
+		"reference": "Patient-peter-chalmers.html",
 		"display": "Peter Chalmers"
 	},
 
@@ -39,31 +39,31 @@
 	],
 	"result": [
 		{
-			"reference": "Observation/serum-total-bilirubin.html",
+			"reference": "Observation-serum-total-bilirubin.html",
 			"display": "TOTAL BILIRUBIN"
 		}, {
-			"reference": "Observation/serum-sodium.html",
+			"reference": "Observation-serum-sodium.html",
 			"display": "SODIUM"
 		}, {
-			"reference": "Observation/serum-potassium.html",
+			"reference": "Observation-serum-potassium.html",
 			"display": "Potassium"
 		}, {
-			"reference": "Observation/serum-creatinine.html",
+			"reference": "Observation-serum-creatinine.html",
 			"display": "CREATININE"
 		}, {
-			"reference": "Observation/serum-co2.html",
+			"reference": "Observation-serum-co2.html",
 			"display": "TOTAL CO2"
 		}, {
-			"reference": "Observation/serum-chloride.html",
+			"reference": "Observation-serum-chloride.html",
 			"display": "CHLORIDE"
 		}, {
-			"reference": "Observation/serum-calcium.html",
+			"reference": "Observation-serum-calcium.html",
 			"display": "CALCIUM"
 		}, {
-			"reference": "Observation/BUN.html",
+			"reference": "Observation-bun.html",
 			"display": "BUN"
 		}, {
-			"reference": "Observation/blood-glucose.html",
+			"reference": "Observation-blood-glucose.html",
 			"display": "GLUCOSE"
 		}
 	]

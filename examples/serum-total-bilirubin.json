@@ -28,7 +28,7 @@
     "text": "Bilirub SerPl-mCnc"
   },
   "subject": {
-    "reference": "Patient/peter-chalmers.html","display": "Peter Chalmers"
+    "reference": "Patient-peter-chalmers.html","display": "Peter Chalmers"
   },
   "effectiveDateTime": "2005-07-07",
   "valueQuantity": {

@@ -24,7 +24,7 @@
     "text": "bmi"
   },
   "subject": {
-    "reference": "Patient/peter-chalmers.html","display": "Peter Chalmers"
+    "reference": "Patient-peter-chalmers.html","display": "Peter Chalmers"
   },
   "encounter": {
     "reference": "Encounter/691"

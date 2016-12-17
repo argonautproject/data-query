@@ -3,7 +3,7 @@
   "id": "liveborn-birth",
 
   "patient": {
-    "reference": "Patient/peter-chalmers.html",
+    "reference": "Patient-peter-chalmers.html",
     "display":"Peter Chalmers"
   },
   "code": {
