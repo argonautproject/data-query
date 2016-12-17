@@ -1,6 +1,6 @@
  {
    "resourceType": "Observation",
-   "id": "BUN",
+   "id": "bun",
    "meta": {
      "versionId": "1237",
      "lastUpdated": "2016-03-09T15:29:58.597+00:00"
@@ -62,4 +62,3 @@
      }
    ]
 }
- 
