@@ -19,8 +19,8 @@ GitHub will automatically trigger a new build whenever you commit changes.
 
 ### Find your rendered IG automatically available at
 
-http://build.fhir.org/Healthedata1/Argo-DSTU2
+http://build.fhir.org/ig/Healthedata1/Argo-DSTU2
 
 ### Find debugging info about the build
 
-http://build.fhir.org/Healthedata1/Argo-DSTU2/debug.tgz
+http://build.fhir.org/Healthedata1/ig/Argo-DSTU2/debug.tgz
