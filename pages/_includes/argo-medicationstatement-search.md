@@ -1,27 +1,10 @@
-
-
--------------------------
-**Clients**
-
--  A client has connected to a server and fetched a patient's medications using:
-
-1. `GET /MedicationStatement?patient=[id]` or
-1. `GET /MedicationStatement?patient=[id]&_include=MedicationStatement:medication`
-
-**Servers**
-
-- A server is capable of returning a patient's medications using one of or both
-
-1. `GET /MedicationStatement?patient=[id]`
-1. `GET /MedicationStatement?patient=[id]&_include=MedicationStatement:medication`
-
-
-- A server has ensured that every API request includes a valid Authorization token, supplied via:Authorization: Bearer {server-specific-token-here}
-- A server has rejected any unauthorized requests by returning an HTTP 401 Unauthorized response code.
-
 -----------
 
 `GET /MedicationStatement?patient={id}`
+
+**Example:**
+
+[GET http://fhirtest.uhn.ca/baseDstu2/MedicationStatement?patient=14676](http://fhirtest.uhn.ca/baseDstu2/MedicationStatement?patient=14676)
 
 *Support:* Mandatory for client to support search by patient.  Optional for server to support.
 
@@ -34,13 +17,14 @@
 -   (Status 401/4xx): unauthorized request
 -   (Status 403): insufficient scope
 
-**Example:**
-
-[GET http://fhirtest.uhn.ca/baseDstu2/MedicationStatement?patient=14676](http://fhirtest.uhn.ca/baseDstu2/MedicationStatement?patient=14676)
-
 -----------
 
 `GET /MedicationStatement?patient={id}&_include=MedicationStatement:medication`
+
+**Example:**
+
+[GET http://fhirtest.uhn.ca/baseDstu2/MedicationStatement?patient=14676&_include=MedicationStatement:medication](http://fhirtest.uhn.ca/baseDstu2/MedicationStatement?patient=14676&_include=MedicationStatement:medication)
+
 
 *Support:* Mandatory for client to support search by patient using the include parameter.  Optional for server to support.
 
@@ -52,10 +36,6 @@
 -   (Status 400): invalid parameter
 -   (Status 401/4xx): unauthorized request
 -   (Status 403): insufficient scope
-
-**Example:**
-
-[GET http://fhirtest.uhn.ca/baseDstu2/MedicationStatement?patient=14676&_include=MedicationStatement:medication](http://fhirtest.uhn.ca/baseDstu2/MedicationStatement?patient=14676&_include=MedicationStatement:medication)
 
 -------
 

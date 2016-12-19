@@ -1,34 +1,20 @@
 
 
-Typically, DocumentReference resources are used with document indexing systems, such as [IHE XDS]. However, document references may also may be created "on-the-fly" in response to a Document Query request.  In other words there MAY NOT be pre-existing indes of references to a patient's documents at the FHIR endpoint. This results in an empty bundle being returned when searching using a normal FHIR Query.  Therefore, the [$docref operation] has been defined to both create and fetch patient DocumentReference Resources.
+Typically, DocumentReference resources are used with document indexing systems, such as [IHE XDS]. However, document references may also may be created "on-the-fly" in response to a Document Query request.  In other words there MAY NOT be pre-existing index of references to a patient's documents at the FHIR endpoint. This results in an empty bundle being returned when searching using a normal FHIR Query.  Therefore, the [$docref operation] has been defined to both create and fetch patient DocumentReference Resources.
 
 
 The following search criteria describe fetching pre-indexed documents and those created "on-the-fly".
 
-
 **Searching pre-indexed documents:**
-
-*Clients*
-
-A client has connected to a server and fetched references to documents for a patient using `GET [base]/DocumentReference?patient=[id]`
-
-A client **SHOULD** be capable of connecting to a server and fetching references to documents for a patient searched by type and/or date using:`GET [base]/DocumentReference?patient=[id]{&type=[type]}{&period=[date]}`
-
-
-*Servers*
-
-
-A server is capable of returning at references to documents for a patient using:`GET [base]/DocumentReference?patient=[id]`
-
- A server **SHOULD** be capable of connecting to a server and fetching references to documents for a patient searched by type and/or date using:`GET [base]/DocumentReference?patient=[id]{&type=[type]}{&period=[date]}`
-
-
-- A server has ensured that every API request includes a valid Authorization token, supplied via:Authorization: Bearer {server-specific-token-here}
-- A server has rejected any unauthorized requests by returning an HTTP 401 Unauthorized response code.
 
 ----
 
 **`GET [base]/DocumentReference?patient=[id]`**
+
+Example:
+
+[GET https://fhir-open-api-dstu2.smarthealthit.org/DocumentReference?patient=2169591](https://fhir-open-api-dstu2.smarthealthit.org/DocumentReference?patient=2169591)
+
 
 *Support:* Mandatory to support search by patient.
 
@@ -41,13 +27,13 @@ A server is capable of returning at references to documents for a patient using:
 - (Status 401/4xx): unauthorized request
 - (Status 403): insufficient scope
 
-Example:
-
-[GET https://fhir-open-api-dstu2.smarthealthit.org/DocumentReference?patient=2169591](https://fhir-open-api-dstu2.smarthealthit.org/DocumentReference?patient=2169591)
-
 ------
 
 **`GET [base]/DocumentReference?patient=[id]&type=[type]&period=[date]`**
+
+Example:
+
+[GET https://fhir-open-api-dstu2.smarthealthit.org/DocumentReference?patient=2169591&type=34133-9&period=ge2016-01-01](https://fhir-open-api-dstu2.smarthealthit.org/DocumentReference?patient=2169591&type=34133-9&period=ge2016-01-01)
 
 *Support:* Optional to support search by patient and type and date range.
 
@@ -60,9 +46,6 @@ Example:
  - (Status 401/4xx): unauthorized request
  - (Status 403): insufficient scope
 
-Example:
-
-[GET https://fhir-open-api-dstu2.smarthealthit.org/DocumentReference?patient=2169591&type=34133-9&period=ge2016-01-01](https://fhir-open-api-dstu2.smarthealthit.org/DocumentReference?patient=2169591&type=34133-9&period=ge2016-01-01)
 
 -----
 
@@ -75,31 +58,14 @@ Functional behavior of Server when responding to the $docref operation:
 3. If no date range is supplied, then the server SHALL provide references to last or current encounter
 
 
-*Clients*
-
-A client has connected to a server and fetches document references for a patient:
- - `GET [base]/DocumentReference/$docref?patient=[id]`
-
-A client **SHOULD** be capable of connecting to a server and fetching references for a patient searched by type and/or date using:
- - `GET [base]/DocumentReference/$docref?patient=[id]{&type=[type]}{&period=[date]
- }`
-
-
-*Servers*
-
- A server is capable of returning at at least the most recent CCD document references and **MAY** provide most recent references to other document for a patient using:`GET [base]/DocumentReference/$docref?patient=[id]`
-
-
- A server **SHOULD** be capable of returning references to CCD documents and **MAY** provide references to other document types for a patient searched by type and/or date using:`GET [base]/DocumentReference/$docref?patient=[id]{&type=[type]}{&period=[date]
-  }`
-
-
-- A server has ensured that every API request includes a valid Authorization token, supplied via:Authorization: Bearer {server-specific-token-here}
-- A server has rejected any unauthorized requests by returning an HTTP 401 Unauthorized response code.
-
 -----
 
 **`GET [base]/DocumentReference/$docref?patient=[id]`**
+
+Example:
+
+[todo](#.html)
+
 
 *Support:* Mandatory to support search by patient.
 
@@ -120,6 +86,10 @@ Example:
 
 **`GET [base]/DocumentReference?patient=[id]&type=[type]&period=[date]`**
 
+Example:
+
+[todo](#.html)
+
 *Support:* Optional to support search by patient and type and date range.
 
 *Implementation Notes:* Search for the specified document types from the context period for a patient. Server returns at least CCD document references and MAY search for other document types as well. Fetches a bundle of all DocumentReference resources for the specified patient for a given time period and document type.  [(how to search by reference)], [(how to search by token)], and [(how to search by date)].
@@ -131,13 +101,10 @@ Example:
  - (Status 401/4xx): unauthorized request
  - (Status 403): insufficient scope
 
-Example:
-
-[todo](#.html)
 
 
 [(how to search by reference)]: http://hl7.org/fhir/DSTU2/search.html#reference
 [(how to search by token)]: http://hl7.org/fhir/DSTU2/search.html#token
 [(how to search by date)]: http://hl7.org/fhir/DSTU2/search.html#date
 [IHE XDS]: http://wiki.ihe.net/index.php?title=Cross-Enterprise_Document_Sharing
-[$docref operation]: OperationDefinition-get-docref.html
+[$docref operation]: OperationDefinition-docref.html
