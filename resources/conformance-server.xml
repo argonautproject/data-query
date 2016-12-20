@@ -1781,7 +1781,7 @@
 		</resource>
 		<resource>
 			<extension url="resourceDocumentation">
-				<valueMarkdown value="&lt;p&gt;&lt;strong&gt;Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-careplan&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;A server is capable of returning all of a patient’s Assessment and Plan of Treatment information using GET /CarePlan?patient=[id]&amp;amp;category=assess-plan.&lt;/li&gt; &lt;li&gt;&lt;p&gt;A server is capable of returning a patient’s Assessment and Plan of Treatment information over a specified time period using GET /CarePlan?patient=[id]&amp;amp;category=assess-plan&amp;amp;date=[date].&lt;/p&gt;&lt;/li&gt; &lt;li&gt;A server &lt;strong&gt;SHOULD&lt;/strong&gt; be capable returning all of a patient’s active Assessment and Plan of Treatment information using GET /CarePlan?patient=[id]&amp;amp;category=assess-plan&amp;amp;status=active.&lt;/li&gt; &lt;li&gt;&lt;p&gt;A server &lt;strong&gt;SHOULD&lt;/strong&gt; be capable returning a patient’s active Assessment and Plan of Treatment information over a specified time period using GET /CarePlan?patient=[id]&amp;amp;category=assess-plan&amp;amp;status=active&amp;amp;date=[date].&lt;/p&gt;&lt;/li&gt; &lt;/ul&gt;       &lt;h4 id=&quot;summary-of-argonaut-search-criteria-for-structuredefinition-argo-careteam&quot;&gt;Summary of Argonaut Search Criteria for StructureDefinition-argo-careteam&lt;/h4&gt;      &lt;ul&gt;      &lt;li&gt;A server is capable of returning a patients current care team members using GET[base]/CarePlan?patient=[id]&amp;amp;category=careteam&amp;amp;status=active&lt;/li&gt;      &lt;/ul&gt;"/>
+				<valueMarkdown value="&lt;p&gt;&lt;strong&gt;Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-careplan&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;A server is capable of returning all of a patient’s Assessment and Plan of Treatment information using GET /CarePlan?patient=[id]&amp;amp;category=assess-plan.&lt;/li&gt; &lt;li&gt;&lt;p&gt;A server &lt;strong&gt;SHOULD&lt;/strong&gt; be capable of returning a patient’s Assessment and Plan of Treatment information over a specified time period using GET /CarePlan?patient=[id]&amp;amp;category=assess-plan&amp;amp;date=[date].&lt;/p&gt;&lt;/li&gt; &lt;li&gt;A server &lt;strong&gt;SHOULD&lt;/strong&gt; be capable returning all of a patient’s active Assessment and Plan of Treatment information using GET /CarePlan?patient=[id]&amp;amp;category=assess-plan&amp;amp;status=active.&lt;/li&gt; &lt;li&gt;&lt;p&gt;A server &lt;strong&gt;SHOULD&lt;/strong&gt; be capable returning a patient’s active Assessment and Plan of Treatment information over a specified time period using GET /CarePlan?patient=[id]&amp;amp;category=assess-plan&amp;amp;status=active&amp;amp;date=[date].&lt;/p&gt;&lt;/li&gt; &lt;/ul&gt;       &lt;h4 id=&quot;summary-of-argonaut-search-criteria-for-structuredefinition-argo-careteam&quot;&gt;Summary of Argonaut Search Criteria for StructureDefinition-argo-careteam&lt;/h4&gt;      &lt;ul&gt;      &lt;li&gt;A server is capable of returning a patients current care team members using GET[base]/CarePlan?patient=[id]&amp;amp;category=careteam&amp;amp;status=active&lt;/li&gt;      &lt;/ul&gt;"/>
 			</extension>
 			<extension url="http://hl7.org/fhir/StructureDefinition/conformance-search-parameter-combination">
 				<extension url="required">
@@ -1874,7 +1874,7 @@
 			</searchParam>
 			<searchParam>
 				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
-					<valueCode value="SHALL"/>
+					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="status"/>
 				<definition value="http://hl7.org/fhir/SearchParameter/CarePlan-Status"/>
@@ -1882,7 +1882,7 @@
 			</searchParam>
 			<searchParam>
 				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
-					<valueCode value="SHALL"/>
+					<valueCode value="SHOULD"/>
 				</extension>
 				<name value="date"/>
 				<definition value="http://hl7.org/fhir/SearchParameter/CarePlan-Date"/>

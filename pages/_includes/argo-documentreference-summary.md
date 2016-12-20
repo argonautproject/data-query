@@ -1,6 +1,5 @@
 #### Summary of the Mandatory Requirements
 
-1.  One identifier in `DocumentReference.masterIdentifier`
 1.  One reference to a patient in `DocumentReference.subject`
 1.  One document type code in `DocumentReference.type` which is bound to [Document Type Value Set]
 1.  One dateTime value in `DocumentReference.indexed`
@@ -13,6 +12,7 @@
 
 SHOULD have:
 
+1.  One identifier in `DocumentReference.identifier`
 1.  One dateTime value in `DocumentReference.created`
 1.  One time period value in `DocumentReference.context.period`
 

@@ -172,16 +172,16 @@ There are three ways to search for resources associated with a specific patient 
 
 Note that all the search interactions in this IG are published using the above syntax.
 
-However there are several variations to this syntax: (see [Issue \#39])
+However there are several variations to this syntax:
 
--   GET \[base\]/\[Resource-type\]?Subject=\[id\]{&other parameters}
--   GET \[base\]/\[Resource-type\]?Subject=Patient/\[id\]{&other parameters}
--   GET \[base\]/\[Resource-type\]?Subject.\_id=\[id\]{&other parameters}
--   GET \[base\]/\[Resource-type\]?subject:Patient=\[id\]{&other parameters}
--   GET \[base\]/\[Resource-type\]?subject:Patient=Patient/\[id\]{&other parameters}
--   GET \[base\]/\[Resource-type\]?subject:Patient=<https://%5Burl%5D/Patient/id>{&other parameters}
--   GET \[base\]/\[Resource-type\]?subject:Patient.\_id=\[id\]{&other parameters}
--   GET \[base\]/\[Resource-type\]?patient:Patient=<https://%5Burl%5D/Patient/id>{&other parameters}
+-   `GET [base]/[Resource-type]?Subject=[id]{&other parameters}`
+-   `GET [base]/[Resource-type]?Subject=Patient/[id]{&other parameters}`
+-   `GET [base]/[Resource-type]?Subject._id=[id]{&other parameters}`
+-   `GET [base]/[Resource-type]?subject:Patient=[id]{&other parameters}`
+-   `GET [base]/[Resource-type]?subject:Patient=Patient/[id]{&other parameters}`
+-   `GET [base]/[Resource-type]?subject:Patient=https://[url]/Patient/id{&other parameters}`
+-   `GET [base]/[Resource-type]?subject:Patient._id=[id]{&other parameters}`
+-   `GET [base]/[Resource-type]?patient:Patient=https://[url]/Patient/id{&other parameters}`
 
 2. if the patient is implicit in the context (e.g. UC-1 above or using SMART), then this search applies:
 

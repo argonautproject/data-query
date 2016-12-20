@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<DocumentReference xmlns="http://hl7.org/fhir">
+<DocumentReference xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file://ERICS-AIR-2/ehaas/Documents/FHIR/FHIR%20tools/DSTU2Schema/conformance.xsd">
 	<id value="episode-summary"/>
 	<text>
 		<status value="generated"/>
@@ -38,7 +38,9 @@
 				</tr>
 				<tr>
 					<td>Uri where where the document can be retrieved: </td>
-					<td><a href="#.html">[base]/Binary/doc-1</a></td>
+					<td>
+						<a href="#.html">[base]/Binary/doc-1</a>
+					</td>
 				</tr>
 			</table>
 			<h3>Contexts</h3>
@@ -56,10 +58,10 @@
 			</table>
 		</div>
 	</text>
-	<masterIdentifier>
+	<identifier>
 		<system value="urn:ietf:rfc:3986"/>
 		<value value="urn:oid:2.16.840.1.113883.19.5.99999.1"/>
-	</masterIdentifier>
+	</identifier>
 	<subject>
 		<reference value="Patient/peter-chalmers.html"/>
 		<display value="Peter Chalmers"/>

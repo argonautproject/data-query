@@ -20,20 +20,23 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 **Each DocumentReference must have:**
 
-1.  an identifier for the document
-2.  a patient
-3.  a code describing the type of document
-4.  when the reference was created
-5.  a status
-6.  an https address where the document can be retrieved
-7.  a code identifying the specific details about the format of the document — over and above the content's MIME type
+1.  a patient
+1.  a code describing the type of document
+1.  when the reference was created
+1.  a status
+1.  an https address where the document can be retrieved
+1.  a code identifying the specific details about the format of the document — over and above the content's MIME type
 
 In addition it should have ( if available) :
 
+1.  an identifier
 1.  a document creation date
+1.  the patient encounter date that is being referenced
+
 
 **Profile specific implementation guidance:**
 
+- The LOINC code for a C-CDA Clinical Summary of Care (CCD) is [34133-9](http://s.details.loinc.org/LOINC/34133-9.html?sections=Comprehensive) (Summary of episode note).
 - The https address may refer to a FHIR Binary Resource (i.e. [base]/Binary/[id]) address on the server
 - The https address may have a parameter that identifies the patient (e.g. GET [url]?patient=[id]). Argonaut servers SHOULD not require this parameter, but for IHE compatibility reasons SHALL allow it to be provided, and SHALL check that it is correct if it is provided.
 

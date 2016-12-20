@@ -29,7 +29,7 @@ Example:
 
 [GET https://fhir-open-api-dstu2.smarthealthit.org/CarePlan?patient=1137192&category=assess-plan&date=ge2015-01-14&date=le2016-01-14](https://fhir-open-api-dstu2.smarthealthit.org/CarePlan?patient=1137192&category=assess-plan&date=ge2015-01-14&date=le2016-01-14)
 
-*Support:* Mandatory to support search by date
+*Support:* SHOULD to support search by date
 
 *Implementation Notes:* Search for all assessment and plan of treatment for a patient within a time period. Fetches a bundle of all CarePlan resources for the specified patient for a specified time period.  [(how to search by reference)], [(how to search by token)] and [(how to search by date)].
 
@@ -39,6 +39,7 @@ Example:
 -   (Status 400): invalid parameter
 -   (Status 401/4xx): unauthorized request
 -   (Status 403): insufficient scope
+
 -----------
 
 **`GET /CarePlan?patient=[id]&category=assess-plan&status=active`**

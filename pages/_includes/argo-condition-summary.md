@@ -1,7 +1,8 @@
 #### Complete Summary of the Mandatory Requirements
 
 1.  One patient reference in `Condition.patient`
-1.  One Identification of the problem or health concern in `Condition.code`which has an [extensible](http://hl7.org/fhir/terminologies.html#extensible) binding to:
+1.  One Identification of the problem or health concern in `Condition.code`which has an [extensible](http://hl7.org/fhir/terminologies.html#extensible) binding to [Condition Clinical Status Codes].
+1.  One category code in `Condition.category` which has a [preferred](http://hl7.org/fhir/terminologies.html#preferred) binding to [Argonaut Condition Category Codes].
 1.  Conditionally One clinical status in `Condition.clinicalStatus`
     -   [Invariants]
         -   required if `Condition.verificationStatus != ‘entered-in-error‘`

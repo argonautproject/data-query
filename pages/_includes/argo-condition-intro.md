@@ -16,6 +16,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 1.  a patient
 1.  a code that identifies the problem
+1.  a category
 1.  a status of the problem
 1.  a verification status
 
