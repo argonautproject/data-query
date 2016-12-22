@@ -30,7 +30,7 @@ For this IG, we have defined the Extensible + Max-ValueSet binding to allow for 
 
 Example: Immunization resource vaccineCode's CVX coding - the source only has the text "4-way Influenza" and no CVX code.
 
-    {
+    /{
       "resourceType": "Immunization",
     ...
       "vaccineCode": {
@@ -52,10 +52,10 @@ Note that is will still be ambiguous when using a status based queries
 Example: AllergyIntolerance resource with a status that is text only or cannot be mapped to the status value set.
 
 
-    {
+    /{
        "resourceType”:“AllergyIntolerance”,
        ...
-       “status”:{
+       “_status”:{
         “url” : “[http://hl7.org/fhir/StructureDefinition/data-absent-reason]”,
        “valueCode” : “unsupported”
         ...
