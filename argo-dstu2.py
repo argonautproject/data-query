@@ -119,7 +119,9 @@ def main():
         if 'operationdefinition' in resources[
             i]:  # for each cs in /resources open, read id and create and append dict struct to definiions file
             update_def(resources[i], 'OperationDefinition', 'example')
-        # add extensions
+        if 'searchparameter' in resources[
+            i]:  # for each cs in /resources open, read id and create and append dict struct to definiions file
+            update_def(resources[i], 'SearchParameter', 'example')        # add extensions
 
    # add spreadsheet extensions
     for extension in extensions:
