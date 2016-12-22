@@ -30,7 +30,7 @@ igxml ='''<?xml version="1.0" encoding="UTF-8"?><!--Hidden IG for de facto IG pu
 
 # extension in spreadsheet - these need to be manually listed here
 
-extensions = ['argo-ethnicity', 'argo-race', 'argo-birthsex']
+extensions = ['argo-ethnicity', 'argo-race', 'argo-birthsex', 'argo-fromResource', 'argo-conformanceDocumentation']
 
 # operation in spreadsheet - these need to be manually listed here
 
