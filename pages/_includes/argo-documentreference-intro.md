@@ -42,7 +42,7 @@ In addition it should have ( if available) :
 
 #### Examples
 
-   - [DocumentReference-episode-summary](Documentreference-episode-summary.html) Retrieve a URL for a CCD for an episode summary note.
+   - [DocumentReference-episode-summary](DocumentReference-episode-summary.html) Retrieve a URL for an episode summary note (CCD).
 
 [DocumentReference Resource]: http://hl7.org/fhir/documentreference.html
 [IHE MHD]: http://ihe.net/uploadedFiles/Documents/ITI/IHE_ITI_Suppl_MHD.pdf

@@ -8,7 +8,7 @@
 
    "recordedDate":"2000",
    "patient":{
-      "reference":"Patient/1137192"
+      "reference":"Patient/peter-chalmers"
    },
    "substance":{
       "coding":[

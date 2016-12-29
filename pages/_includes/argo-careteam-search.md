@@ -3,7 +3,7 @@
 
 Example:
 
-[GET https://fhir-open-api-dstu2.smarthealthit.org/CarePlan?patient=1137192&category=careteam](#.html)
+[GET https://fhir-open-api-dstu2.smarthealthit.org/CarePlan?patient=1137192&category=careteam](todo.html)
 
 *Support:* Mandatory to support search by patient, category and status.
 

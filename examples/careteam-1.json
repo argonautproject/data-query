@@ -6,7 +6,7 @@
       "lastUpdated":"2016-06-11T02:25:09Z"
    },
    "subject":{
-      "reference":"Patient/peter-chalmers.html","display": "Peter Chalmers"
+      "reference":"Patient/peter-chalmers","display": "Peter Chalmers"
    },
    "status":"active",
    "category":[
@@ -31,8 +31,8 @@
             ]
          },
          "member":{
-            "reference":"Practitioner/COREPRACTITIONER1",
-            "display":"Kurtis Giles, MD"
+            "reference":"Practitioner/1234",
+            "display":"Kathy Fielding, MD"
          }
       },
       {
@@ -46,8 +46,8 @@
             ]
          },
          "member":{
-            "reference":"Practitioner/COREPRACTITIONER4",
-            "display":"Kathy Fielding, MD"
+            "reference":"Practitioner/5678",
+            "display":"Adam Careful, MD"
          }
       },
       {
@@ -61,7 +61,7 @@
             ]
          },
          "member":{
-            "reference":"Patient/peter-chalmers.html","display": "Peter Chalmers"
+            "reference":"Patient/peter-chalmers","display": "Peter Chalmers"
          }
       }
    ]

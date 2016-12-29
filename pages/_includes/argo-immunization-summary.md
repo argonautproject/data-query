@@ -10,6 +10,6 @@ F#### Complete Summary of the Mandatory Requirements
 1.  One boolean value in `Immunization.wasNotGiven`
 1.  One boolean value in `Immunization.reported`
 
-  [Immunization Status]: ValueSet-daf-core-immunization-status.html
-  [CVX]: ValueSet-daf-cvx.html
-  [NDC]: ValueSet-daf-ndc-vaccine-codes.html
+  [Immunization Status]: ValueSet-vacc-status.html
+  [CVX]: http://hl7.org/fhir/DSTU2/daf/valueset-daf-cvx.html
+  [NDC]: ValueSet-ndc-vaccine-codes.html

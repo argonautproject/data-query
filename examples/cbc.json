@@ -25,7 +25,7 @@
 		]
 	},
 	"subject": {
-		"reference": "Patient-peter-chalmers.html",
+		"reference": "Patient/peter-chalmers",
 		"display": "Peter Chalmers"
 	},
 	"effectiveDateTime": "2005-07-05",

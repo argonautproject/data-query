@@ -24,7 +24,7 @@
     "text": "Vital signs panel (respiratory rate, heart rate, blood pressure)"
   },
   "subject": {
-    "reference": "Patient-peter-chalmers.html","display": "Peter Chalmers"
+    "reference": "Patient/peter-chalmers","display": "Peter Chalmers"
   },
   "encounter": {
     "reference": "Encounter/691"
@@ -34,21 +34,21 @@
     {
       "type": "has-member",
       "target": {
-        "reference": "/Observation/691-respiratoryrate",
+        "reference": "Observation/respiratory-rate",
         "display": "Respiratory Rate"
       }
     },
     {
       "type": "has-member",
       "target": {
-        "reference": "/Observation/691-heartrate",
+        "reference": "Observation/heart-rate",
         "display": "Heart Rate"
       }
     },
     {
       "type": "has-member",
       "target": {
-        "reference": "/Observation/691-bp",
+        "reference": "Observation/blood-pressure",
         "display": "Blood Pressure"
       }
     }

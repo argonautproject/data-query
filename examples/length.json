@@ -24,7 +24,7 @@
     "text": "length"
   },
   "subject": {
-    "reference": "Patient-peter-chalmers.html","display": "Peter Chalmers"
+    "reference": "Patient/peter-chalmers","display": "Peter Chalmers"
   },
   "encounter": {
     "reference": "Encounter/691"

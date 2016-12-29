@@ -19,7 +19,7 @@
 The [Argonaut Condition Category Codes] supports the separate concepts of problems and health concerns in `Condition.category` in order for API consumers to be able to separate health concerns and problems. However this is not mandatory for 2015 certification.
 
   [extensible]: http://hl7.org/fhir/terminologies.html#extensible
-  [Problem Value Set]: http://hl7.org/fhir/DSTU2/daf/ValueSet-daf-problem.html
+  [Problem Value Set]: http://hl7.org/fhir/DSTU2/daf/valueset-daf-problem.html
   [Invariants]: http://hl7.org/fhir/conformance-rules.html#constraints
   [Condition Clinical Status Codes]: http://hl7.org/fhir/ValueSet-condition-clinical.html
   [ConditionVerificationStatus]: http://hl7.org/fhir/ValueSet-condition-ver-status.html

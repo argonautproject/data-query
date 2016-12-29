@@ -24,10 +24,10 @@
     "text": "head_circumference"
   },
   "subject": {
-    "reference": "Patient/99912345"
+    "reference": "Patient/peter-chalmers"
   },
   "encounter": {
-    "reference": "Encounter/1036"
+    "reference": "Encounter/691"
   },
   "effectiveDateTime": "2010-08-12",
   "valueQuantity": {

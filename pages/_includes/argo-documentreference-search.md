@@ -64,7 +64,7 @@ Functional behavior of Server when responding to the $docref operation:
 
 Example:
 
-[todo](#.html)
+[todo](todo.html)
 
 
 *Support:* Mandatory to support search by patient.
@@ -80,7 +80,7 @@ Example:
 
 Example:
 
-[todo](#.html)
+[todo](todo.html)
 
 ----
 
@@ -88,7 +88,7 @@ Example:
 
 Example:
 
-[todo](#.html)
+[todo](todo.html)
 
 *Support:* Optional to support search by patient and type and date range.
 

@@ -27,7 +27,7 @@
 		"text": "Complete Urinalysis"
 	},
 	"subject": {
-		"reference": "Patient-peter-chalmers.html",
+		"reference": "Patient/peter-chalmers",
 		"display": "Peter Chalmers"
 	},
 	"effectiveDateTime": "2005-07-05",
@@ -73,7 +73,7 @@
 			"reference": "Observation-urine-hemoglobin.html",
 			"display": "BLOOD=Trace "
 		}, {
-			"reference": "Observation-urine-leukocute-esterase.html",
+			"reference": "Observation-urine-leukocyte-esterase.html",
 			"display": "LEUK ESTERASE=2+ "
 		}, {
 			"reference": "Observation-urine-sediment.html",

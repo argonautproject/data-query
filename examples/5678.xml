@@ -1,0 +1,13 @@
+<Practitioner xmlns="http://hl7.org/fhir">
+	<id value="1234"/>
+	<identifier>
+		<system value="http://www.acme.org/practitioners"/>
+		<value value="23"/>
+	</identifier>
+	<active value="true"/>
+	<name>
+		<family value="Careful"/>
+		<given value="Adam"/>
+		<prefix value="Dr"/>
+	</name>
+</Practitioner>

@@ -123,5 +123,5 @@ that presents a [logical view:  of the content in both a differential and snapsh
 [CCD documents]: https://en.wikipedia.org/wiki/Continuity_of_Care_Document
 [FHIR]: http://hl7.org/fhir
 [Data Access Framework]: http://hl7.org/fhir/daf/daf.html
-[logical view]: (http://hl7.org/fhir/formats.html)
-[Data Access Framework (DAF) FHIR DSTU2 Implementation Guide]: (http://hl7.org/fhir/daf/daf.html)
+[logical view]: http://hl7.org/fhir/formats.html
+[Data Access Framework (DAF) FHIR DSTU2 Implementation Guide]: http://hl7.org/fhir/daf/daf.html

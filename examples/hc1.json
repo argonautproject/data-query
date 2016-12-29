@@ -3,7 +3,7 @@
   "id": "hc1",
 
   "patient": {
-    "reference": "Patient-peter-chalmers.html",
+    "reference": "Patient/peter-chalmers",
     "display":"Peter Chalmers"
   },
   "code": {
