@@ -1,4 +1,4 @@
-#### Complete Summary of the Mandatory Requirements
+﻿#### Complete Summary of the Mandatory Requirements
 
 
 1.  One status in `DiagnosticReport.status` which has an [required](http://hl7.org/fhir/terminologies.html#required) binding to:
@@ -8,7 +8,7 @@
     -   a fixed `DiagnosticReport.category.coding.code`= "LAB"
 1.  One code in `DiagnosticReport.code` which has an [extensible](http://hl7.org/fhir/terminologies.html#extensible) binding to:
     -   [LOINC Diagnostic Report Codes]
-    -   Other additional codes are allowed - e.g. system specific codes. All codes *SHALL* have an system value
+    -   Other additional codes are allowed - e.g. system specific codes. All codes *SHALL* have a system value
 1.  One patient in `DiagnosticReport.subject`
 1.  A date and time in `DiagnosticReport.effectiveDateTime` or `DiagnosticReport.effectivePeriod`
 1.  A date and time in `DiagnosticReport.issued`

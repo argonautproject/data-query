@@ -20,7 +20,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 1.  a vaccine code that identifies the kind of vaccine administered
 1.  a patient
 1.  a flag to indicate whether vaccine was given
-1.  a flag to indicate whether the vaccine was reported by patient rather than directly administered.
+1.  a flag to indicate whether the vaccine was reported by patient rather than directly administered
 
 
 **Profile specific implementation guidance:**

@@ -1,4 +1,4 @@
-F#### Complete Summary of the Mandatory Requirements
+#### Complete Summary of the Mandatory Requirements
 
 1.  One status in `Immunization.status` which has an [required](http://hl7.org/fhir/terminologies.html#required) binding to:
 -  [Immunization Status] value set.

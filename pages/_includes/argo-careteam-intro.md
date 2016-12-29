@@ -1,4 +1,4 @@
-This profile sets minimum expectations for the [CarePlan] resource for identifying the Care team members associated with a patient. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile.
+This profile sets minimum expectations for the [CarePlan] resource for identifying the Care team members associated with a patient. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. **Note:** in FHIR STU3 the new [CareTeam] resource is recommended. 
 
 **Example Usage Scenarios:**
 
@@ -33,3 +33,5 @@ Since we are using the CarePlan Resource for identifying the Care team members, 
    - [CareTeam-1](CarePlan-careteam-1.html)
 
 [CarePlan]:  http://hl7.org/fhir/careplan.html
+
+[CareTeam]:  http://hl7.org/fhir/2017Jan/careteam.html

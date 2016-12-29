@@ -1,4 +1,4 @@
-## Argonaut Data Query Implementation Guide
+﻿## Argonaut Data Query Implementation Guide
 
 The Argonaut Data Query Implementation Guide is based upon the core [FHIR] API and documents the:
 
@@ -63,24 +63,24 @@ Argonaut uses SMART on FHIR authorization for apps that connect to EHR data. For
 
   The Argonaut Profiles for each of the data element queries is listed below.  Each profile defines the minimum mandatory elements, extensions and terminology requirements that **MUST** be present. For each profile requirements and guidance are given in a simple narrative summary. A formal hierarchical table that presents a [logical view] of the content in both a differential and snapshot view is also provided along with references to appropriate terminologies and examples.
 
-  - Allergies:  [Argonaut AllergyIntolerance Profile](StructureDefinition-argo-allergyintolerance.html)
-  -  Assessment and Plan of Treatment:  [Argonaut CarePlan Profile](StructureDefinition-argo-careplan.html)
-  -  Care Team:  [Argonaut CareTeam Profile](StructureDefinition-argo-careteam.html)
-  -  Problems and Health Concerns:  [Argonaut Condition Profile](StructureDefinition-argo-condition.html)
-  -  Implantable Devices/UDI:  [Argonaut Device Profile](StructureDefinition-argo-device.html)
-  - Laboratory Tests and Results:
-     -  DiagnosticReport:  [Argonaut DiagnosticReport Profile](StructureDefinition-argo-diagnosticreport.html)
-     -  Observation:  [Argonaut Observation Results Profile](StructureDefinition-argo-observationresults.html)
-  -  Goals:  [Argonaut Goal Profile](StructureDefinition-argo-goal.html)
-  -  Immunizations:  [Argonaut Immunization Profile](StructureDefinition-argo-immunization.html)
-  - Medications:
-     -  Medication:  [Argonaut Medication Profile](StructureDefinition-argo-medication.html)
-     -  MedicationOrder:  [Argonaut MedicationOrder Profile](StructureDefinition-argo-medicationorder.html)
-     -  MedicationStatement:  [Argonaut MedicationStatement Profile](StructureDefinition-argo-medicationstatement.html)
-  -  Patient:  [Argonaut Patient Profile](StructureDefinition-argo-patient.html)
-  -  Procedures:  [Argonaut Procedure Profile](StructureDefinition-argo-procedure.html)
-  -  Smoking Status:  [Argonaut Smoking Status Observation Profile](StructureDefinition-argo-smokingstatus.html)
-  -  Vital Signs:  [Argonaut Vital Signs Observation Profile](StructureDefinition-argo-vitalsigns.html)
+  -  [Argonaut AllergyIntolerance Profile](StructureDefinition-argo-allergyintolerance.html)
+  -  [Argonaut CarePlan Profile](StructureDefinition-argo-careplan.html)
+  -  [Argonaut CareTeam Profile](StructureDefinition-argo-careteam.html)
+  -  [Argonaut Condition Profile](StructureDefinition-argo-condition.html)
+  -  [Argonaut Device Profile](StructureDefinition-argo-device.html)
+  - Laboratory Tests and Results
+     -  [Argonaut DiagnosticReport Profile](StructureDefinition-argo-diagnosticreport.html)
+     -  [Argonaut Observation Results Profile](StructureDefinition-argo-observationresults.html)
+  -  [Argonaut Goal Profile](StructureDefinition-argo-goal.html)
+  -  [Argonaut Immunization Profile](StructureDefinition-argo-immunization.html)
+  - Medications
+     -  [Argonaut Medication Profile](StructureDefinition-argo-medication.html)
+     -  [Argonaut MedicationOrder Profile](StructureDefinition-argo-medicationorder.html)
+     -  [Argonaut MedicationStatement Profile](StructureDefinition-argo-medicationstatement.html)
+  -  [Argonaut Patient Profile](StructureDefinition-argo-patient.html)
+  -  [Argonaut Procedure Profile](StructureDefinition-argo-procedure.html)
+  -  [Argonaut Smoking Status Observation Profile](StructureDefinition-argo-smokingstatus.html)
+  -  [Argonaut Vital Signs Observation Profile](StructureDefinition-argo-vitalsigns.html)
 
   *Note on Searches based on a date or date range:*
 

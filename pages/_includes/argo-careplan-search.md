@@ -70,7 +70,6 @@ Example:
 *Support:* SHOULD support search by patient and status = 'active' and date.
 
 *Implementation Notes:* Search for all active assessment and plan of treatment for a patient within a time period. Fetches a bundle of all active (careplan = "active") CarePlan resources for the specified patient for a specified time period.  [(how to search by reference)], [(how to search by token)] and [(how to search by date)].
-.
 
 *Response Class:*
 

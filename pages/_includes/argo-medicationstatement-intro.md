@@ -5,7 +5,9 @@ Both the [Medicationstatement] and [MedicationStatement] resources can be used t
 The following are example usage scenarios for the
 Argonaut MedicationStatement profile:
 
--   Record or Query active medications being taken by a patient
+-   Query for active medications belonging to a Patient
+-   Record active medications belonging to a Patient
+
 
 ##### Mandatory Data Elements and Terminology
 
@@ -22,8 +24,8 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 **Profile specific implementation guidance:**
 
 *  The MedicationStatement and MedicationRequest resources can represent a medication, using either a code or refer to a [Medication] resource.
-    *  When referencing a Medication resource,  the resource may be [contained] or an external resource.
-    *  The server application can choose any one way or more than one method,  but if the an external reference to Medication is used, the server SHALL support the [include] parameter for searching this element.
+    *  When referencing a Medication resource, the resource may be [contained] or an external resource.
+    *  The server application can support one or both methods, but if the an external reference to Medication is used, the server SHALL support the [include] parameter for searching this element.
     *  The client application must support both methods.  
     *  Additional guidance is provided below in the Search section and in the [conformance](capstmnts.html) resource for this profile
 

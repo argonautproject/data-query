@@ -22,7 +22,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 **Each AllergyIntolerance must have:**
 
 1.  a status of the allergy
-2.  a code which tells you what the patient is allergic to
+2.  a code which indicates the substance responsible for an adverse reaction
 3.  a patient
 
 **Profile specific implementation guidance:**
