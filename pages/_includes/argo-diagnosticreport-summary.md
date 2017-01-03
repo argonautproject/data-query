@@ -1,5 +1,5 @@
-﻿#### Complete Summary of the Mandatory Requirements
 
+#### Complete Summary of the Mandatory Requirements
 
 1.  One status in `DiagnosticReport.status` which has an [required](http://hl7.org/fhir/terminologies.html#required) binding to:
     -   [DiagnosticReportStatus] value set.
@@ -17,7 +17,6 @@
 Each DiagnosticReport *SHOULD* have:
 
 1.  One or more `DiagnosticReport.result` and/or `DiagnosticReport.image` and/or `DiagnosticReport.presentedForm`
-
 
 [DiagnosticReportStatus]: http://hl7.org/fhir/ValueSet-diagnostic-report-status.html
 [Observation]: http://hl7.org/fhir/observation.html
