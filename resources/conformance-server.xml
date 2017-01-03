@@ -2139,9 +2139,6 @@
 			<extension url="resourceDocumentation">
 				<valueMarkdown value="&lt;p&gt;&lt;strong&gt;Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-immunization&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;A client has connected to a server and fetched all immunizations for a patient using GET /Immunization?patient=[id].&lt;/li&gt; &lt;/ul&gt;     "/>
 			</extension>
-			<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-associated-profile">
-				<valueString value="7"/>
-			</extension>
 			<type value="Immunization"/>
 			<interaction>
 				<extension url="http://hl7.org/fhir/StructureDefinition/conformance-expectation">
@@ -2422,9 +2419,6 @@
 		<resource>
 			<extension url="resourceDocumentation">
 				<valueMarkdown value=".  &lt;p&gt;&lt;strong&gt;Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-observationresults&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;A server is capable of returning all of a patient’s laboratory results queried by category using GET [base]/Observation?patient=[id]&amp;amp;category=laboratory.&lt;br /&gt; A server is capable of returning all of a patient’s laboratory results queried by category code and date range usingGET [base]/Observation?patient=[id]&amp;amp;category=laboratory&amp;amp;date=[date]{&amp;amp;date=[date]}.&lt;br /&gt; A server is capable of returning all of a patient’s laboratory results queried by category and code using GET [base]/Observation?patient=[id]&amp;amp;category=laboratory&amp;amp;code=[LOINC].&lt;/p&gt; &lt;p&gt;A server SHOULD be capable of returning all of a patient’s laboratory results queried by category and one or more codes and date range using GET [base]/Observation?patient=[id]&amp;amp;category=laboratory&amp;amp;code=[LOINC1{,LOINC2,LOINC3,…}]&amp;amp;date=[date]{&amp;amp;date=[date]}.&lt;/p&gt; &lt;p&gt;&lt;strong&gt;Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-smokingstatus&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;A server is capable of returning a a patient’s smoking status using GET [base]/Observation?patient=[id]&amp;amp;code=72166-2&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;strong&gt;Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-vitalsigns&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;A server is capable of returning all of a patient’s vital signs that it supports using GET [base]/Observation?patient=[id]&amp;amp;category=vital-signs.&lt;/li&gt; &lt;li&gt;A server is capable of returning all of a patient’s vital signs queried by date range using GET [base]/Observation?patient=[id]&amp;amp;category=vital-signs&amp;amp;date=[date]{&amp;amp;date=[date]}.&lt;/li&gt; &lt;li&gt;&lt;p&gt;A server is capable of returning any of a patient’s vital signs queried by one or more of the codes listed below using GET [base]/Observation?patient=[id]&amp;amp;code[vital sign LOINC{,LOINC2,LOINC3,…}].&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;A server &lt;strong&gt;SHOULD&lt;/strong&gt; be capable of returning any of a patient’s vital signs queried by one or more of the codes listed below and date range using GET [base]/Observation?patient=[id]&amp;amp;code=[LOINC{,LOINC2…}]vital-signs&amp;amp;date=[date]{&amp;amp;date=[date]}.&lt;/p&gt;&lt;/li&gt; &lt;/ul&gt;     "/>
-			</extension>
-			<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-associated-profile">
-				<valueString value="18"/>
 			</extension>
 			<extension url="http://hl7.org/fhir/StructureDefinition/conformance-search-parameter-combination">
 				<extension url="required">
