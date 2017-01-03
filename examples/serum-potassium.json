@@ -1,10 +1,6 @@
 {
    "resourceType": "Observation",
-   "id": "serum-potassium",
-   "meta": {
-     "versionId": "938",
-     "lastUpdated": "2016-03-09T15:29:57.376+00:00"
-   },
+   "id": "serum-potassium", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"]},
    "status": "final",
    "category": {
      "coding": [

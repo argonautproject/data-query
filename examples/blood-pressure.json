@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "blood-pressure",
+  "id": "blood-pressure", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-vitalsigns"]},
   "status": "final",
   "category": {
     "coding": [
@@ -68,4 +68,3 @@
     }
   ]
 }
-

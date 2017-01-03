@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "respiratory-rate",
+  "id": "respiratory-rate", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-vitalsigns"]},
 
   "status": "final",
   "category": {

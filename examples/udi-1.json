@@ -1,6 +1,6 @@
 {
 	"resourceType": "Device",
-	"id": "udi-1",
+	"id": "udi-1", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-device"]},
 	"type": {
 		"coding": [
 			{

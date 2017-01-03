@@ -1,6 +1,6 @@
 {
 	"resourceType": "Observation",
-	"id": "some-day-smoker",
+	"id": "some-day-smoker", 
 	"status": "final",
 	"category": {
 		"coding": [

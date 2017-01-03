@@ -1,11 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "urine-protein",
-  "meta": {
-    "versionId": "206480",
-    "lastUpdated": "2016-04-18T03:40:36.404+00:00"
-  },
-
+  "id": "urine-protein", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"]},
   "status": "final",
   "category": {
     "coding": [
@@ -47,4 +42,3 @@
     }
   ]
 }
- 

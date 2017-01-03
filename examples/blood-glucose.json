@@ -1,11 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "blood-glucose",
-  "meta": {
-    "versionId": "1165",
-    "lastUpdated": "2016-03-09T15:29:58.328+00:00"
-  },
-
+  "id": "blood-glucose", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"]},
   "status": "final",
   "category": {
     "coding": [

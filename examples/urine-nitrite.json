@@ -1,11 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "urine-nitrite",
-  "meta": {
-    "versionId": "206492",
-    "lastUpdated": "2016-04-18T03:42:34.440+00:00"
-  },
-
+  "id": "urine-nitrite", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"]},
   "status": "final",
   "category": {
     "coding": [

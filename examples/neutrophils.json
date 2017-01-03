@@ -1,11 +1,6 @@
 {
    "resourceType": "Observation",
-   "id": "neutrophils",
-   "meta": {
-     "versionId": "1106",
-     "lastUpdated": "2016-03-09T15:29:58.052+00:00"
-   },
-
+   "id": "neutrophils", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"]},
    "status": "final",
    "category": {
      "coding": [
@@ -63,4 +58,3 @@
      }
    ]
 }
- 

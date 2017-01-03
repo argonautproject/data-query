@@ -1,11 +1,6 @@
 {
    "resourceType": "Observation",
-   "id": "serum-co2",
-   "meta": {
-     "versionId": "962",
-     "lastUpdated": "2016-03-09T15:29:57.477+00:00"
-   },
-
+   "id": "serum-co2", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"]},
    "status": "final",
    "category": {
      "coding": [
@@ -63,4 +58,3 @@
      }
    ]
 }
- 

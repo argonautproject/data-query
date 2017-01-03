@@ -24,7 +24,7 @@ The conformance verbs used in this IG are defined in [FHIR Conformance Rules](ht
 
 Extensible binding to a value set definition for this IG means that if the data type is CodeableConcept, then one of the coding values SHALL be from the specified value set if a code applies, but if no suitable code exists in the value set, alternate code(s) may be provided in its place. If only text available, then just text may be used.
 
-### Extensible + Max-ValueSet binding for CodeableConcept Datatype
+#### Extensible + Max-ValueSet binding for CodeableConcept Datatype
 
 For this IG, we have defined the Extensible + Max-ValueSet binding to allow for either a code from the defined value set or text if the code is not available.  (for example, legacy data). This means,unlike a regular extensible binding, alternate code(s) are not permitted and a text value SHALL be supplied if the code is not available.  However, multiple codings (translations) are allowed as is discussed below.
 
@@ -62,7 +62,7 @@ Example: AllergyIntolerance resource with a status that is text only or cannot b
       },
      }
 
-### Required binding for CodeableConcept Datatype
+#### Required binding for CodeableConcept Datatype
 
 Required binding to a value set definition means that one of the codes from the specified value set SHALL be used and using only text is not valid. In this IG, we have defined the Extensible + Max-ValueSet binding to allow for either a code from the specified value set or text. Multiple codings (translations) are permitted as is discussed below.
 

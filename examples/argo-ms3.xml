@@ -17,7 +17,7 @@
 				<meta>
 					<versionId value="213289"/>
 					<lastUpdated value="2016-11-28T06:03:26.318+00:00"/>
-					<profile value="http://hl7.org/fhir/StructureDefinition/daf-patient"/>
+					<profile value="http://fhir.org/guides/argonaut/StructureDefinition/argo-medicationstatement"/>
 				</meta>
 				<!--      The Human readible version of the medication statement     -->
 				<patient>

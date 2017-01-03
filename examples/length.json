@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "length",
+  "id": "length", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-vitalsigns"]},
 
   "status": "final",
   "category": {

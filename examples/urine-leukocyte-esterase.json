@@ -1,11 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "urine-leukocyte-esterase",
-  "meta": {
-    "versionId": "206552",
-    "lastUpdated": "2016-04-18T03:58:45.747+00:00"
-  },
-
+  "id": "urine-leukocyte-esterase", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"]},
   "status": "final",
   "category": {
     "coding": [

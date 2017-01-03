@@ -1,10 +1,6 @@
 {
    "resourceType": "Observation",
-   "id": "serum-creatinine",
-   "meta": {
-     "versionId": "926",
-     "lastUpdated": "2016-03-09T15:29:57.327+00:00"
-   },
+   "id": "serum-creatinine", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"]},
    "status": "final",
    "category": {
      "coding": [

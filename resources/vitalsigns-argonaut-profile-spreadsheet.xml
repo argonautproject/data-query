@@ -9,8 +9,8 @@
   <Author>Grahame</Author>
   <LastAuthor>Eric Haas</LastAuthor>
   <Created>2012-03-19T11:12:07Z</Created>
-  <LastSaved>2016-10-21T16:51:33Z</LastSaved>
-  <Version>16.00</Version>
+  <LastSaved>2017-01-03T07:56:25Z</LastSaved>
+  <Version>12.00</Version>
  </DocumentProperties>
  <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
   <AllowPNG/>
@@ -1598,7 +1598,7 @@
     <Cell ss:StyleID="s108"><Data ss:Type="String">Observation.related</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s109"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s109"><Data ss:Type="String">0..1</Data><NamedCell
+    <Cell ss:StyleID="s109"><Data ss:Type="String">0..*</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s109"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s109"><Data ss:Type="String"></Data><NamedCell
@@ -1693,7 +1693,7 @@
     <Cell ss:StyleID="s108"><Data ss:Type="String">Observation.component</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s109"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s109"><Data ss:Type="String">0..1</Data><NamedCell
+    <Cell ss:StyleID="s109"><Data ss:Type="String">0..*</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s109"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s109"><Data ss:Type="String"></Data><NamedCell
@@ -2600,8 +2600,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>5</ActiveRow>
-     <ActiveCol>7</ActiveCol>
+     <ActiveRow>26</ActiveRow>
+     <ActiveCol>3</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -5376,7 +5376,7 @@
    <Column ss:StyleID="s122" ss:Width="165"/>
    <Column ss:StyleID="s122" ss:AutoFitWidth="0" ss:Width="204.75"/>
    <Column ss:StyleID="s122" ss:AutoFitWidth="0" ss:Width="198.75"/>
-   <Column ss:StyleID="s122" ss:AutoFitWidth="0" ss:Width="188.25"/>
+   <Column ss:StyleID="s122" ss:AutoFitWidth="0" ss:Width="420"/>
    <Row ss:AutoFitHeight="0" ss:StyleID="s89">
     <Cell ss:StyleID="s90"><Data ss:Type="String">Id</Data><Comment ss:Author=""><ss:Data
        xmlns="http://www.w3.org/TR/REC-html40">        <Font html:Face="Tahoma"
@@ -5423,7 +5423,7 @@
     <Cell ss:StyleID="s112"><Data ss:Type="String">Observation</Data></Cell>
     <Cell ss:StyleID="s112"><Data ss:Type="String">If there is no component or related element then either a value[x] or a data absent reason must be present</Data></Cell>
     <Cell ss:StyleID="s112"><Data ss:Type="String">(component.empty() or related.empty()) implies (value.exists() or dataAbsentReason.exists())</Data></Cell>
-    <Cell ss:StyleID="s124"><Data ss:Type="String">exists(f:component) or exists(f:related) or exists(f:*[starts-with(local-name(.), 'value)]) or exists(f:dataAbsentReason)</Data></Cell>
+    <Cell ss:StyleID="s128"><Data ss:Type="String">exists(f:component) or exists(f:related) or exists(f:*[starts-with(local-name(.), 'value')]) or exists(f:dataAbsentReason)</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s125"><Data ss:Type="String">arg-3</Data></Cell>
@@ -5432,7 +5432,7 @@
     <Cell ss:StyleID="s126"><Data ss:Type="String">Observation.component</Data></Cell>
     <Cell ss:StyleID="s126"><Data ss:Type="String">If there is no a value a data absent reason must be present</Data></Cell>
     <Cell ss:StyleID="s127"><Data ss:Type="String">value.exists() or dataAbsentReason.exists()</Data></Cell>
-    <Cell ss:StyleID="s128"><Data ss:Type="String">exists(f:*[starts-with(local-name(.), 'value)]) or exists(f:dataAbsentReason)</Data></Cell>
+    <Cell ss:StyleID="s128"><Data ss:Type="String">exists(f:*[starts-with(local-name(.), 'value')]) or exists(f:dataAbsentReason)</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
     <Cell ss:StyleID="s123"/>
@@ -5863,8 +5863,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>8</ActiveRow>
-     <ActiveCol>0</ActiveCol>
+     <ActiveRow>3</ActiveRow>
+     <ActiveCol>6</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>

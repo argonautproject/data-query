@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Medication xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file://Mac/Home/Documents/FHIR/FHIR%20tools/DSTU2Schema/basic.xsd">
+<Medication xmlns="http://hl7.org/fhir">
 	<id value="argo-med1"/>
+		<meta>
+		<profile value="http://fhir.org/guides/argonaut/StructureDefinition/argo-medication"/>
+	</meta>
 	<code>
 		<coding>
 			<system value="http://www.nlm.nih.gov/research/umls/rxnorm"/>

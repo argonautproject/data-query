@@ -4,7 +4,7 @@
 -->
 	<id value="argo-ms1"/>
 	<meta>
-		<profile value="http://hl7.org/fhir/StructureDefinition/daf-patient"/>
+		<profile value="http://fhir.org/guides/argonaut/StructureDefinition/argo-medicationstatement"/>
 	</meta>
 	<!--     The Human readible version of the medication statement    -->
 

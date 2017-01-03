@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Goal xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<id value="goal-1"/>
+	<meta xmlns="http://hl7.org/fhir">
+		<profile value="http://fhir.org/guides/argonaut/StructureDefinition/argo-goal"/>
+	</meta>
 	<subject>
 		<reference value="Patient/peter-chalmers"/>
 		<display value="Peter Chalmers"/>

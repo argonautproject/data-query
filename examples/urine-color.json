@@ -1,11 +1,6 @@
  {
    "resourceType": "Observation",
-   "id": "urine-color",
-   "meta": {
-     "versionId": "206419",
-     "lastUpdated": "2016-04-18T03:27:43.203+00:00"
-   },
-
+   "id": "urine-color", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"]},
    "status": "final",
    "category": {
      "coding": [
@@ -47,4 +42,3 @@
      }
    ]
 }
- 

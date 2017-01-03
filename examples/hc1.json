@@ -1,6 +1,6 @@
 {
   "resourceType": "Condition",
-  "id": "hc1",
+  "id": "hc1", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-condition"]},
 
   "patient": {
     "reference": "Patient/peter-chalmers",

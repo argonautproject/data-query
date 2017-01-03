@@ -1,11 +1,6 @@
 {
    "resourceType": "Observation",
-   "id": "serum-calcium",
-   "meta": {
-     "versionId": "902",
-     "lastUpdated": "2016-03-09T15:29:57.227+00:00"
-   },
-
+   "id": "serum-calcium", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"]},
    "status": "final",
    "category": {
      "coding": [
@@ -63,4 +58,3 @@
      }
    ]
 }
- 

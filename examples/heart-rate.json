@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "heart-rate",
+  "id": "heart-rate", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-vitalsigns"]},
 
   "status": "final",
   "category": {

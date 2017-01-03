@@ -6,8 +6,7 @@
 -    a fixed `Careplan.category.coding.system` = "[http://argonaut.hl7.org/]"
 -    a fixed `Careplan.category.coding.code` = "careteam"
 1.  One participant role for each careteam member in
-    `CareTeam.participant.role`
-    -  CarePlan.participant.role is bound to the [CareTeam Provider Role
+    `CareTeam.participant.role` which has an [extensible + max valueset](definitions.html#extensible--max-valueset-binding-for-codeableconcept-datatype) binding to the to the [CareTeam Provider Role
 Value Set] value set.
 1.  Careteam members in `CareTeam.participant.member`
 

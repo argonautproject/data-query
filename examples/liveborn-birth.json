@@ -1,6 +1,6 @@
 {
   "resourceType": "Condition",
-  "id": "liveborn-birth",
+  "id": "liveborn-birth", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-condition"]},
 
   "patient": {
     "reference": "Patient/peter-chalmers",

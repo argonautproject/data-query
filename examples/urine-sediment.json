@@ -1,11 +1,6 @@
  {
   "resourceType": "Observation",
-  "id": "urine-sediment",
-  "meta": {
-    "versionId": "206577",
-    "lastUpdated": "2016-04-18T04:07:12.383+00:00"
-  },
-
+  "id": "urine-sediment", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"]},
   "status": "final",
   "category": {
     "coding": [

@@ -1,11 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "urine-cells",
-  "meta": {
-    "versionId": "206624",
-    "lastUpdated": "2016-04-18T04:23:12.123+00:00"
-  },
-
+  "id": "urine-cells", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"]},
   "status": "final",
   "category": {
     "coding": [
@@ -35,13 +30,13 @@
     "low": {
       "value": 1,
       "unit": "cells/HPF",
-      "system": " http://unitsofmeasure.org",
+      "system": "http://unitsofmeasure.org",
       "code": "/[HPF]"
     },
     "high": {
       "value": 5,
       "unit": "cells/HPF",
-      "system": " http://unitsofmeasure.org",
+      "system": "http://unitsofmeasure.org",
       "code": "/[HPF]"
     }
   },

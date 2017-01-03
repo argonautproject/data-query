@@ -1,11 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "urine-hemoglobin",
-  "meta": {
-    "versionId": "206504",
-    "lastUpdated": "2016-04-18T03:45:25.300+00:00"
-  },
-
+  "id": "urine-hemoglobin", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"]},
   "status": "final",
   "category": {
     "coding": [

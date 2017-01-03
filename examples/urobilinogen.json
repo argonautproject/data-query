@@ -1,11 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "urobilinogen",
-  "meta": {
-    "versionId": "206612",
-    "lastUpdated": "2016-04-18T04:20:46.618+00:00"
-  },
-
+  "id": "urobilinogen", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"]},
   "status": "final",
   "category": {
     "coding": [

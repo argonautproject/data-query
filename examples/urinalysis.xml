@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+	<id value="urinalysis"/>
+	<meta>
+		<profile value="http://fhir.org/guides/argonaut/StructureDefinition/argo-diagnosticreport"/>
+	</meta>
+	<status value="final"/>
+	<category>
+		<coding>
+			<system value="http://hl7.org/fhir/v2/0074"/>
+			<code value="LAB"/>
+			<display value="Laboratory"/>
+		</coding>
+	</category>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="24356-8"/>
+			<display value="Urinalysis complete panel - Urine"/>
+		</coding>
+		<text value="Complete Urinalysis"/>
+	</code>
+	<subject>
+		<reference value="Patient/peter-chalmers"/>
+		<display value="Peter Chalmers"/>
+	</subject>
+	<effectiveDateTime value="2005-07-05"/>
+	<issued value="2005-07-06T11:45:33+11:00"/>
+	<performer>
+		<reference value="Practitioner/1234"/>
+		<display value="Adam Careful, MD"/>
+	</performer>
+	<result>
+		<reference value="Observation-urine-color.html"/>
+		<display value="COLOR=Yellow "/>
+	</result>
+	<result>
+		<reference value="Observation-urine-clarity.html"/>
+		<display value="APPEARANCE=Hazy "/>
+	</result>
+	<result>
+		<reference value="Observation-urine-glucose.html"/>
+		<display value="GLUCOSE=Negative "/>
+	</result>
+	<result>
+		<reference value="Observation-urine-bilirubin.html"/>
+		<display value="BILIRUBIN=Negative "/>
+	</result>
+	<result>
+		<reference value="Observation-urine-ketone.html"/>
+		<display value="KETONE=Negative "/>
+	</result>
+	<result>
+		<reference value="Observation-usg.html"/>
+		<display value="SPEC GRAV=1.0169999999999999 "/>
+	</result>
+	<result>
+		<reference value="Observation-urine-ph.html"/>
+		<display value="PH=6 (pH)"/>
+	</result>
+	<result>
+		<reference value="Observation-urine-protein.html"/>
+		<display value="PROTEIN=Negative "/>
+	</result>
+	<result>
+		<reference value="Observation-urobilinogen.html"/>
+		<display value="UROBILINOGEN=0.3 mg/dL"/>
+	</result>
+	<result>
+		<reference value="Observation-urine-nitrite.html"/>
+		<display value="NITRITE=Positive "/>
+	</result>
+	<result>
+		<reference value="Observation-urine-hemoglobin.html"/>
+		<display value="BLOOD=Trace "/>
+	</result>
+	<result>
+		<reference value="Observation-urine-leukocyte-esterase.html"/>
+		<display value="LEUK ESTERASE=2+ "/>
+	</result>
+	<result>
+		<reference value="Observation-urine-sediment.html"/>
+		<display value="COMMENT=Recommend Urine Culture "/>
+	</result>
+	<result>
+		<reference value="Observation-urine-bacteria.html"/>
+		<display value="BACTERIA=4+ "/>
+	</result>
+	<result>
+		<reference value="Observation-urine-epi-cells.html"/>
+		<display value="EPITHELIAL CELLS=1-5 cells/HPF"/>
+	</result>
+	<result>
+		<reference value="Observation-urine-wbcs.html"/>
+		<display value="WBC=20-30 cells/HPF"/>
+	</result>
+	<result>
+		<reference value="Observation-urine-rbcs.html"/>
+		<display value="RBC=Occasional cells/HPF"/>
+	</result>
+</DiagnosticReport>

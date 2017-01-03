@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Patient xmlns="http://hl7.org/fhir">
+<Patient xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/Users/Eric/Documents/HL7/FHIR/BUILD_EDIT_FILES/dstu2-fhir-all-xsd/appointment.xsd">
 	<id value="peter-chalmers"/>
+	<meta>
+    <profile
+             value="http://fhir.org/guides/argonaut/StructureDefinition/argo-patient"/>
+  </meta>
 	<text>
 		<status value="generated"/>
 		<div xmlns="http://www.w3.org/1999/xhtml">
@@ -88,6 +92,18 @@
 	<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-birthsex">
 		<valueCode value="M"/>
 	</extension>
+	<identifier>
+		<type>
+			<coding>
+				<system value="http://hl7.org/fhir/v2/0203"/>
+				<code value="MR"/>
+				<display value="Medical Record Number"/>
+			</coding>
+			<text value="Medical Record Number"/>
+		</type>
+		<system value="http://hospital.smarthealthit.org"/>
+		<value value="1032702"/>
+	</identifier>
 	<active value="true"/>
 	<!--    Peter James Chalmers, but called "Jim"    -->
 	<name>
@@ -109,6 +125,7 @@
 		<value value="person@example.org"/>
 		<use value="work"/>
 	</telecom>
+	<gender value="male"/>
 	<address>
 		<use value="home"/>
 		<line value="534 Erewhon St"/>

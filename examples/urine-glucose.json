@@ -1,11 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "urine-glucose",
-  "meta": {
-    "versionId": "206444",
-    "lastUpdated": "2016-04-18T03:35:42.751+00:00"
-  },
-
+  "id": "urine-glucose", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"]},
   "status": "final",
   "category": {
     "coding": [

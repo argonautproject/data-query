@@ -1,11 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "urine-bacteria",
-  "meta": {
-    "versionId": "206540",
-    "lastUpdated": "2016-04-18T03:56:41.250+00:00"
-  },
-
+  "id": "urine-bacteria", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"]},
   "status": "final",
   "category": {
     "coding": [

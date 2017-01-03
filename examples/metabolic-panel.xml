@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+	<id value="metabolic-panel"/>
+	<meta>
+		<profile value="http://fhir.org/guides/argonaut/StructureDefinition/argo-diagnosticreport"/>
+	</meta>
+	<status value="final"/>
+	<category>
+		<coding>
+			<system value="http://hl7.org/fhir/v2/0074"/>
+			<code value="LAB"/>
+			<display value="Laboratory"/>
+		</coding>
+	</category>
+	<code>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="24323-8"/>
+			<display value="Comprehensive metabolic 2000 panel - Serum or Plasma"/>
+		</coding>
+	</code>
+	<subject>
+		<reference value="Patient/peter-chalmers"/>
+		<display value="Peter Chalmers"/>
+	</subject>
+	<effectiveDateTime value="2005-07-04"/>
+	<issued value="2005-07-06T11:45:33+11:00"/>
+	<performer>
+		<reference value="Practitioner/1234"/>
+		<display value="Adam Careful, MD"/>
+	</performer>
+	<result>
+		<reference value="Observation-serum-total-bilirubin.html"/>
+		<display value="TOTAL BILIRUBIN"/>
+	</result>
+	<result>
+		<reference value="Observation-serum-sodium.html"/>
+		<display value="SODIUM"/>
+	</result>
+	<result>
+		<reference value="Observation-serum-potassium.html"/>
+		<display value="Potassium"/>
+	</result>
+	<result>
+		<reference value="Observation-serum-creatinine.html"/>
+		<display value="CREATININE"/>
+	</result>
+	<result>
+		<reference value="Observation-serum-co2.html"/>
+		<display value="TOTAL CO2"/>
+	</result>
+	<result>
+		<reference value="Observation-serum-chloride.html"/>
+		<display value="CHLORIDE"/>
+	</result>
+	<result>
+		<reference value="Observation-serum-calcium.html"/>
+		<display value="CALCIUM"/>
+	</result>
+	<result>
+		<reference value="Observation-bun.html"/>
+		<display value="BUN"/>
+	</result>
+	<result>
+		<reference value="Observation-blood-glucose.html"/>
+		<display value="GLUCOSE"/>
+	</result>
+</DiagnosticReport>

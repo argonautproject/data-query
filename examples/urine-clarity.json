@@ -1,11 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "urine-clarity",
-  "meta": {
-    "versionId": "206432",
-    "lastUpdated": "2016-04-18T03:33:00.502+00:00"
-  },
-
+  "id": "urine-clarity", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"]},
   "status": "final",
   "category": {
     "coding": [
@@ -47,4 +42,3 @@
     }
   ]
 }
- 

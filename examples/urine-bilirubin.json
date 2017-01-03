@@ -1,11 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "urine-bilirubin",
-  "meta": {
-    "versionId": "206456",
-    "lastUpdated": "2016-04-18T03:37:21.259+00:00"
-  },
-
+  "id": "urine-bilirubin", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"]},
   "status": "final",
   "category": {
     "coding": [

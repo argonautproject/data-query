@@ -1,11 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "usg",
-  "meta": {
-    "versionId": "206588",
-    "lastUpdated": "2016-04-18T04:10:12.426+00:00"
-  },
-
+  "id": "usg", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"]},
   "status": "final",
   "category": {
     "coding": [

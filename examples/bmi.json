@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "bmi",
+  "id": "bmi", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-vitalsigns"]},
 
   "status": "final",
   "category": {

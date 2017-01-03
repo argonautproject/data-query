@@ -1,11 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "serum-total-bilirubin",
-  "meta": {
-    "versionId": "1364",
-    "lastUpdated": "2016-03-09T15:29:59.089+00:00"
-  },
-
+  "id": "serum-total-bilirubin", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"]},
   "status": "final",
   "category": {
     "coding": [
@@ -62,4 +57,4 @@
       }
     }
   ]
-} 
+}

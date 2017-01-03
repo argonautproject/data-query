@@ -1,11 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "urine-ketone",
-  "meta": {
-    "versionId": "206468",
-    "lastUpdated": "2016-04-18T03:39:00.812+00:00"
-  },
-
+  "id": "urine-ketone", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"]},
   "status": "final",
   "category": {
     "coding": [

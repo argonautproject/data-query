@@ -1,10 +1,6 @@
  {
    "resourceType": "Observation",
-   "id": "bun",
-   "meta": {
-     "versionId": "1237",
-     "lastUpdated": "2016-03-09T15:29:58.597+00:00"
-   },
+   "id": "bun", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"]},
    "status": "final",
    "category": {
      "coding": [

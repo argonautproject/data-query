@@ -1,11 +1,6 @@
 {
    "resourceType": "Observation",
-   "id": "mchc",
-   "meta": {
-     "versionId": "879",
-     "lastUpdated": "2016-03-09T15:29:57.124+00:00"
-   },
-
+   "id": "mchc", "meta": {"profile": ["http://fhir.org/guides/argonaut/StructureDefinition/argo-observationresults"]},
    "status": "final",
    "category": {
      "coding": [

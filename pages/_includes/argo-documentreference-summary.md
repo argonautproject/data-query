@@ -8,7 +8,7 @@
 1.  One url of the document in `DocumentReference.content.attachment`
     -   a mime type in `DocumentReference.content.attachment.contentType` which is bound to [MimeType] value set (code set)
     -   a url of the document in `DocumentReference.content.attachment.url`
-1.  One format code in `DocumentReference.content.format` with an [extensible](http://hl7.org/fhir/terminologies.html#extensible) binding to `[DocumentReference Format Code Set]`
+1.  One format code in `DocumentReference.content.format` with an [extensible](http://hl7.org/fhir/terminologies.html#extensible) binding to [DocumentReference Format Code Set]
 
 SHOULD have:
 
