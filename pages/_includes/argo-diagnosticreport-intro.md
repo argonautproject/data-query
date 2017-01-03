@@ -21,8 +21,10 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 1.   a time indicating when the measurement was taken
 1.   a time indicating when the measurement was reported
 1.   who issues the report
-1.   at least one result
 
+Each DiagnosticReport *SHOULD* have:
+
+1.   at least one result (discrete observation or image or text representation of the entire result)
 
 **Profile specific implementation guidance:**
 

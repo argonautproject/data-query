@@ -1,6 +1,11 @@
 {
 	"resourceType": "Observation",
-	"id": "some-day-smoker", 
+	"id": "some-day-smoker",
+			"meta": {
+		"profile": [
+			"http://fhir.org/guides/argonaut/StructureDefinition/argo-smokingstatus"
+		]
+	}, 
 	"status": "final",
 	"category": {
 		"coding": [

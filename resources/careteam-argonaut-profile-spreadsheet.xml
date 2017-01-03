@@ -16,12 +16,12 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>13635</WindowHeight>
-  <WindowWidth>26955</WindowWidth>
-  <WindowTopX>20325</WindowTopX>
-  <WindowTopY>-14385</WindowTopY>
+  <WindowHeight>4095</WindowHeight>
+  <WindowWidth>25260</WindowWidth>
+  <WindowTopX>-15</WindowTopX>
+  <WindowTopY>-15</WindowTopY>
   <TabRatio>774</TabRatio>
-  <ActiveSheet>2</ActiveSheet>
+  <ActiveSheet>8</ActiveSheet>
   <FirstVisibleSheet>1</FirstVisibleSheet>
   <RefModeR1C1/>
   <ProtectStructure>False</ProtectStructure>
@@ -2897,7 +2897,6 @@
     <HorizontalResolution>600</HorizontalResolution>
     <VerticalResolution>600</VerticalResolution>
    </Print>
-   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
@@ -2918,7 +2917,7 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>11</ActiveRow>
+     <ActiveRow>7</ActiveRow>
      <ActiveCol>7</ActiveCol>
     </Pane>
    </Panes>
@@ -8274,8 +8273,9 @@
    <Column ss:StyleID="s134" ss:AutoFitWidth="0" ss:Width="186.75"/>
    <Column ss:StyleID="s134" ss:AutoFitWidth="0" ss:Width="275.25"/>
    <Column ss:StyleID="s134" ss:Width="51"/>
-   <Column ss:StyleID="s134" ss:Width="68.25" ss:Span="1"/>
-   <Column ss:Index="6" ss:StyleID="s134" ss:AutoFitWidth="0" ss:Width="293.25"/>
+   <Column ss:StyleID="s134" ss:Width="68.25"/>
+   <Column ss:StyleID="s134" ss:AutoFitWidth="0" ss:Width="141"/>
+   <Column ss:StyleID="s134" ss:AutoFitWidth="0" ss:Width="293.25"/>
    <Column ss:StyleID="s134" ss:Width="173.25"/>
    <Column ss:StyleID="s134" ss:AutoFitWidth="0" ss:Width="98.25"/>
    <Column ss:StyleID="s134" ss:AutoFitWidth="0" ss:Width="173.25"/>
@@ -8360,7 +8360,7 @@
     <Cell ss:StyleID="s109"/>
     <Cell ss:StyleID="s140"><Data ss:Type="String">value set</Data></Cell>
     <Cell ss:StyleID="s140"><Data ss:Type="String">extensible</Data></Cell>
-    <Cell ss:StyleID="s140"><Data ss:Type="String">yes</Data></Cell>
+    <Cell ss:StyleID="s159"><Data ss:Type="String">http://fhir.org/guides/argonaut/ValueSet/provider-role</Data></Cell>
     <Cell ss:StyleID="s159"><Data ss:Type="String">http://fhir.org/guides/argonaut/ValueSet/provider-role</Data></Cell>
     <Cell ss:StyleID="s140"/>
     <Cell ss:StyleID="s140"/>
@@ -8704,6 +8704,7 @@
     <HorizontalResolution>600</HorizontalResolution>
     <VerticalResolution>600</VerticalResolution>
    </Print>
+   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
@@ -8724,8 +8725,7 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>14</ActiveRow>
-     <ActiveCol>5</ActiveCol>
+     <ActiveRow>7</ActiveRow>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>

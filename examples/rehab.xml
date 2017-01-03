@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Procedure xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/Users/Eric/Documents/HL7/FHIR/BUILD_EDIT_FILES/dstu2-fhir-all-xsd/procedure.xsd" xmlns="http://hl7.org/fhir">
 	<id value="rehab"/>
-
+	<meta>
+		<profile value="http://fhir.org/guides/argonaut/StructureDefinition/argo-procedure"/>
+	</meta>
 	<subject>
 		<reference value="Patient/peter-chalmers"/>
 		<display value="Peter Chalmers"/>

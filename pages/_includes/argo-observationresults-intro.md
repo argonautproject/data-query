@@ -21,7 +21,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 1.   a result value and, if the result value is a numeric quantity, a standard [UCUM] unit
 
 
-Each Observation *should* have:
+Each Observation *SHOULD* have:
 
 1.   a time indicating when the measurement was taken
 1.   a reference range if available

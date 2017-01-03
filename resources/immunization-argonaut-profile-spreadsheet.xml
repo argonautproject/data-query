@@ -8157,7 +8157,7 @@
     <Cell ss:StyleID="s109"><Data ss:Type="String">The CVX (vaccine administered) code system</Data></Cell>
     <Cell ss:StyleID="s138"><Data ss:Type="String">value set</Data></Cell>
     <Cell ss:StyleID="s138"><Data ss:Type="String">extensible</Data></Cell>
-    <Cell ss:StyleID="s138"><Data ss:Type="String">yes</Data></Cell>
+    <Cell ss:StyleID="s156"><Data ss:Type="String">http://hl7.org/fhir/ValueSet/daf-cvx</Data></Cell>
     <Cell ss:StyleID="s156"><Data ss:Type="String">http://hl7.org/fhir/ValueSet/daf-cvx</Data></Cell>
     <Cell ss:StyleID="s138"><Data ss:Type="String">This value set binds to the CDC  Vaccines administered (CVX) 2.16.840.1.113883.12.292 code system.</Data></Cell>
     <Cell ss:StyleID="s138"><Data ss:Type="String">2.16.840.1.113883.3.88.12.80.22</Data></Cell>
@@ -8506,8 +8506,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>5</ActiveRow>
-     <ActiveCol>4</ActiveCol>
+     <ActiveRow>6</ActiveRow>
+     <ActiveCol>5</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>

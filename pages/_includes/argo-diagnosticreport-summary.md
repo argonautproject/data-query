@@ -13,7 +13,10 @@
 1.  A date and time in `DiagnosticReport.effectiveDateTime` or `DiagnosticReport.effectivePeriod`
 1.  A date and time in `DiagnosticReport.issued`
 1.  A practitioner or organization in `DiagnosticReport.performer`
-1.  One or more `DiagnosticReport.result` and/or one or more `DiagnosticReport.presentedForm`
+
+Each DiagnosticReport *SHOULD* have:
+
+1.  One or more `DiagnosticReport.result` and/or `DiagnosticReport.image` and/or `DiagnosticReport.presentedForm`
 
 
 [DiagnosticReportStatus]: http://hl7.org/fhir/ValueSet-diagnostic-report-status.html
