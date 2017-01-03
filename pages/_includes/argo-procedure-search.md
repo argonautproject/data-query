@@ -1,7 +1,7 @@
 
 -----------
 
-**GET /Procedure?patient=[id][edit]**
+**GET /Procedure?patient=[id]**
 
 *Example:*
 
