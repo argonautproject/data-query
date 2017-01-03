@@ -21,7 +21,7 @@
   <WindowTopX>20325</WindowTopX>
   <WindowTopY>-14385</WindowTopY>
   <TabRatio>774</TabRatio>
-  <ActiveSheet>8</ActiveSheet>
+  <ActiveSheet>2</ActiveSheet>
   <FirstVisibleSheet>1</FirstVisibleSheet>
   <RefModeR1C1/>
   <ProtectStructure>False</ProtectStructure>
@@ -1108,7 +1108,7 @@
    <Column ss:StyleID="s87" ss:AutoFitWidth="0" ss:Width="77.25"/>
    <Column ss:StyleID="s87" ss:Width="29.25"/>
    <Column ss:StyleID="s87" ss:Width="35.25"/>
-   <Column ss:StyleID="s87" ss:AutoFitWidth="0" ss:Width="119.25"/>
+   <Column ss:StyleID="s87" ss:AutoFitWidth="0" ss:Width="300"/>
    <Column ss:StyleID="s87" ss:AutoFitWidth="0" ss:Width="29.25"/>
    <Column ss:StyleID="s87" ss:AutoFitWidth="0" ss:Width="141.75"/>
    <Column ss:StyleID="s87" ss:AutoFitWidth="0" ss:Width="60" ss:Span="1"/>
@@ -1430,7 +1430,7 @@
     <Cell ss:StyleID="s109"><Data ss:Type="String">1..1</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s109"><NamedCell ss:Name="_FilterDatabase"/></Cell>
-    <Cell ss:StyleID="s109"><Data ss:Type="String">Reference(Patient){http://fhir.org/guides/argonaut/StructureDefinition/argo-patient}</Data><NamedCell
+    <Cell ss:StyleID="s109"><Data ss:Type="String">Reference(Patient){http://fhir.org/guides/argonaut/StructureDefinition/argo-patient}|Reference(Practitioner | RelatedPerson | Organization)</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s109"><Data ss:Type="String">Y</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -2897,12 +2897,13 @@
     <HorizontalResolution>600</HorizontalResolution>
     <VerticalResolution>600</VerticalResolution>
    </Print>
+   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
    <TopRowBottomPane>1</TopRowBottomPane>
    <SplitVertical>4</SplitVertical>
-   <LeftColumnRightPane>20</LeftColumnRightPane>
+   <LeftColumnRightPane>4</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
    <Panes>
     <Pane>
@@ -2917,8 +2918,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>6</ActiveRow>
-     <ActiveCol>0</ActiveCol>
+     <ActiveRow>11</ActiveRow>
+     <ActiveCol>7</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>
@@ -8703,7 +8704,6 @@
     <HorizontalResolution>600</HorizontalResolution>
     <VerticalResolution>600</VerticalResolution>
    </Print>
-   <Selected/>
    <FreezePanes/>
    <FrozenNoSplit/>
    <SplitHorizontal>1</SplitHorizontal>
