@@ -30,39 +30,39 @@
 		<display value="Adam Careful, MD"/>
 	</performer>
 	<result>
-		<reference value="Observation-serum-total-bilirubin.html"/>
+		<reference value="Observation/serum-total-bilirubin"/>
 		<display value="TOTAL BILIRUBIN"/>
 	</result>
 	<result>
-		<reference value="Observation-serum-sodium.html"/>
+		<reference value="Observation/serum-sodium"/>
 		<display value="SODIUM"/>
 	</result>
 	<result>
-		<reference value="Observation-serum-potassium.html"/>
+		<reference value="Observation/serum-potassium"/>
 		<display value="Potassium"/>
 	</result>
 	<result>
-		<reference value="Observation-serum-creatinine.html"/>
+		<reference value="Observation/serum-creatinine"/>
 		<display value="CREATININE"/>
 	</result>
 	<result>
-		<reference value="Observation-serum-co2.html"/>
+		<reference value="Observation/serum-co2"/>
 		<display value="TOTAL CO2"/>
 	</result>
 	<result>
-		<reference value="Observation-serum-chloride.html"/>
+		<reference value="Observation/serum-chloride"/>
 		<display value="CHLORIDE"/>
 	</result>
 	<result>
-		<reference value="Observation-serum-calcium.html"/>
+		<reference value="Observation/serum-calcium"/>
 		<display value="CALCIUM"/>
 	</result>
 	<result>
-		<reference value="Observation-bun.html"/>
+		<reference value="Observation/bun"/>
 		<display value="BUN"/>
 	</result>
 	<result>
-		<reference value="Observation-blood-glucose.html"/>
+		<reference value="Observation/blood-glucose"/>
 		<display value="GLUCOSE"/>
 	</result>
 </DiagnosticReport>

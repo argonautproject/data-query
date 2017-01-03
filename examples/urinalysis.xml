@@ -31,71 +31,71 @@
 		<display value="Adam Careful, MD"/>
 	</performer>
 	<result>
-		<reference value="Observation-urine-color.html"/>
+		<reference value="Observation/urine-color"/>
 		<display value="COLOR=Yellow "/>
 	</result>
 	<result>
-		<reference value="Observation-urine-clarity.html"/>
+		<reference value="Observation/urine-clarity"/>
 		<display value="APPEARANCE=Hazy "/>
 	</result>
 	<result>
-		<reference value="Observation-urine-glucose.html"/>
+		<reference value="Observation/urine-glucose"/>
 		<display value="GLUCOSE=Negative "/>
 	</result>
 	<result>
-		<reference value="Observation-urine-bilirubin.html"/>
+		<reference value="Observation/urine-bilirubin"/>
 		<display value="BILIRUBIN=Negative "/>
 	</result>
 	<result>
-		<reference value="Observation-urine-ketone.html"/>
+		<reference value="Observation/urine-ketone"/>
 		<display value="KETONE=Negative "/>
 	</result>
 	<result>
-		<reference value="Observation-usg.html"/>
+		<reference value="Observation/usg"/>
 		<display value="SPEC GRAV=1.0169999999999999 "/>
 	</result>
 	<result>
-		<reference value="Observation-urine-ph.html"/>
+		<reference value="Observation/urine-ph"/>
 		<display value="PH=6 (pH)"/>
 	</result>
 	<result>
-		<reference value="Observation-urine-protein.html"/>
+		<reference value="Observation/urine-protein"/>
 		<display value="PROTEIN=Negative "/>
 	</result>
 	<result>
-		<reference value="Observation-urobilinogen.html"/>
+		<reference value="Observation/urobilinogen"/>
 		<display value="UROBILINOGEN=0.3 mg/dL"/>
 	</result>
 	<result>
-		<reference value="Observation-urine-nitrite.html"/>
+		<reference value="Observation/urine-nitrite"/>
 		<display value="NITRITE=Positive "/>
 	</result>
 	<result>
-		<reference value="Observation-urine-hemoglobin.html"/>
+		<reference value="Observation/urine-hemoglobin"/>
 		<display value="BLOOD=Trace "/>
 	</result>
 	<result>
-		<reference value="Observation-urine-leukocyte-esterase.html"/>
+		<reference value="Observation/urine-leukocyte-esterase"/>
 		<display value="LEUK ESTERASE=2+ "/>
 	</result>
 	<result>
-		<reference value="Observation-urine-sediment.html"/>
+		<reference value="Observation/urine-sediment"/>
 		<display value="COMMENT=Recommend Urine Culture "/>
 	</result>
 	<result>
-		<reference value="Observation-urine-bacteria.html"/>
+		<reference value="Observation/urine-bacteria"/>
 		<display value="BACTERIA=4+ "/>
 	</result>
 	<result>
-		<reference value="Observation-urine-epi-cells.html"/>
+		<reference value="Observation/urine-epi-cells"/>
 		<display value="EPITHELIAL CELLS=1-5 cells/HPF"/>
 	</result>
 	<result>
-		<reference value="Observation-urine-wbcs.html"/>
+		<reference value="Observation/urine-wbcs"/>
 		<display value="WBC=20-30 cells/HPF"/>
 	</result>
 	<result>
-		<reference value="Observation-urine-rbcs.html"/>
+		<reference value="Observation/urine-rbcs"/>
 		<display value="RBC=Occasional cells/HPF"/>
 	</result>
 </DiagnosticReport>

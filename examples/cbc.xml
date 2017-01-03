@@ -74,19 +74,19 @@
 		<display value="Adam Careful, MD"/>
 	</performer>
 	<result>
-		<reference value="Observation-neutrophils.html"/>
+		<reference value="Observation/neutrophils"/>
 		<display value="NEUTROPHILS"/>
 	</result>
 	<result>
-		<reference value="Observation-mchc.html"/>
+		<reference value="Observation/mchc"/>
 		<display value="MCHC"/>
 	</result>
 	<result>
-		<reference value="Observation-hemoglobin.html"/>
+		<reference value="Observation/hemoglobin"/>
 		<display value="HEMOGLOBIN"/>
 	</result>
 	<result>
-		<reference value="Observation-erythrocytes.html"/>
+		<reference value="Observation/erythrocytes"/>
 		<display value="ERYTHROCYTES"/>
 	</result>
 </DiagnosticReport>
