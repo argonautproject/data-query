@@ -22,7 +22,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 1.   a time indicating when the measurement was reported
 1.   who issues the report
 
-Each DiagnosticReport *SHOULD* have:
+Each DiagnosticReport [Must Support](definitions.html#mustsupport):
 
 1.   at least one result (discrete observation or image or text representation of the entire result)
 

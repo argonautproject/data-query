@@ -1,4 +1,5 @@
-﻿## Argonaut Data Query Implementation Guide
+
+## Argonaut Data Query Implementation Guide
 
 The Argonaut Data Query Implementation Guide is based upon the core [FHIR] API and documents the:
 
