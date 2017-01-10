@@ -16,10 +16,10 @@
   <AllowPNG/>
  </OfficeDocumentSettings>
  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
-  <WindowHeight>6150</WindowHeight>
-  <WindowWidth>25260</WindowWidth>
+  <WindowHeight>6000</WindowHeight>
+  <WindowWidth>19260</WindowWidth>
   <WindowTopX>-15</WindowTopX>
-  <WindowTopY>-15</WindowTopY>
+  <WindowTopY>5940</WindowTopY>
   <TabRatio>774</TabRatio>
   <ActiveSheet>5</ActiveSheet>
   <FirstVisibleSheet>1</FirstVisibleSheet>
@@ -5778,7 +5778,7 @@
     <Cell ss:StyleID="s113"><NamedCell ss:Name="_FilterDatabase"/></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s132"><Data ss:Type="String">race</Data><NamedCell
+    <Cell ss:StyleID="s132"><Data ss:Type="String">!race</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><Data ss:Type="String">Resource</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -5812,7 +5812,7 @@
       ss:Name="_FilterDatabase"/></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s132"><Data ss:Type="String">race.ombCategory</Data><NamedCell
+    <Cell ss:StyleID="s132"><Data ss:Type="String">!race.ombCategory</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -5845,7 +5845,7 @@
     <Cell ss:StyleID="s113"><NamedCell ss:Name="_FilterDatabase"/></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s134"><Data ss:Type="String">race.detailed</Data><NamedCell
+    <Cell ss:StyleID="s134"><Data ss:Type="String">!race.detailed</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s98"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s98"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -5878,7 +5878,7 @@
     <Cell ss:StyleID="s105"><NamedCell ss:Name="_FilterDatabase"/></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s132"><Data ss:Type="String">race.text</Data><NamedCell
+    <Cell ss:StyleID="s132"><Data ss:Type="String">!race.text</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><NamedCell ss:Name="_FilterDatabase"/></Cell>
@@ -6882,7 +6882,7 @@
    <SplitHorizontal>1</SplitHorizontal>
    <TopRowBottomPane>2</TopRowBottomPane>
    <SplitVertical>1</SplitVertical>
-   <LeftColumnRightPane>3</LeftColumnRightPane>
+   <LeftColumnRightPane>1</LeftColumnRightPane>
    <ActivePane>0</ActivePane>
    <Panes>
     <Pane>
@@ -6890,7 +6890,6 @@
     </Pane>
     <Pane>
      <Number>1</Number>
-     <ActiveCol>1</ActiveCol>
     </Pane>
     <Pane>
      <Number>2</Number>
@@ -6898,8 +6897,8 @@
     </Pane>
     <Pane>
      <Number>0</Number>
-     <ActiveRow>11</ActiveRow>
-     <ActiveCol>14</ActiveCol>
+     <ActiveRow>8</ActiveRow>
+     <ActiveCol>0</ActiveCol>
     </Pane>
    </Panes>
    <ProtectObjects>False</ProtectObjects>

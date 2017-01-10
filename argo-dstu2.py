@@ -30,7 +30,7 @@ igxml ='''<?xml version="1.0" encoding="UTF-8"?><!--Hidden IG for de facto IG pu
 
 # extension in spreadsheet - these need to be manually listed here
 
-extensions = ['argo-ethnicity', 'argo-race', 'argo-birthsex', 'argo-fromResource', 'argo-conformanceDocumentation']
+extensions = ['argo-ethnicity', 'argo-birthsex', 'argo-fromResource', 'argo-conformanceDocumentation']
 
 # operation in spreadsheet - these need to be manually listed here
 
@@ -84,6 +84,9 @@ def update_def(i, type, purpose):
       vsmo = vsid_re.search(vsxml)  # get match object which contains id
       vsid = vsmo.group(1)  # get id as string
       update_igjson(type, vsid) # add base to definitions file
+      if purpose == 'profile':
+        update_igjson(type, vsid, 'defns')  # add base to definitions file
+
       update_igxml(type, purpose, vsid)
       return
 
@@ -118,10 +121,13 @@ def main():
             update_def(resources[i], 'Conformance', 'example')
         if 'operationdefinition' in resources[
             i]:  # for each cs in /resources open, read id and create and append dict struct to definiions file
-            update_def(resources[i], 'OperationDefinition', 'example')
+            update_def(resources[i], 'OperationDefinition', 'profile')
+        if 'structuredefinition' in resources[
+            i]:  # for each cs in /resources open, read id and create and append dict struct to definiions file
+            update_def(resources[i], 'StructureDefinition', 'profile')
         if 'searchparameter' in resources[
             i]:  # for each cs in /resources open, read id and create and append dict struct to definiions file
-            update_def(resources[i], 'SearchParameter', 'example')        # add extensions
+            update_def(resources[i], 'SearchParameter', 'profile')        # add extensions
 
    # add spreadsheet extensions
     for extension in extensions:
