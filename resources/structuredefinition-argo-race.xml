@@ -666,7 +666,7 @@
 			<type>
 				<code value="Extension"/>
 			</type>
-			<maxLength value="0"/>
+	
 			<mustSupport value="true"/>
 			<isModifier value="false"/>
 			<isSummary value="false"/>
@@ -736,7 +736,7 @@
 			</type>
 			<fixedUri value="detailed"/>
 		</element>
-		<element id="Extension:race.extension:detailed.valuecoding">
+		<element id="Extension:race.extension:detailed.valueCoding">
 			<path value="Extension.extension.valueCoding"/>
 			<name value="Extension:race.extension:detailed.valueCoding"/>
 			<min value="1"/>
@@ -744,7 +744,6 @@
 			<type>
 				<code value="Coding"/>
 			</type>
-			<maxLength value="0"/>
 			<mustSupport value="false"/>
 			<isModifier value="false"/>
 			<isSummary value="false"/>

@@ -84,9 +84,8 @@ def update_def(i, type, purpose):
       vsmo = vsid_re.search(vsxml)  # get match object which contains id
       vsid = vsmo.group(1)  # get id as string
       update_igjson(type, vsid) # add base to definitions file
-      if purpose == 'profile':
+      if type == 'StructureDefinition':
         update_igjson(type, vsid, 'defns')  # add base to definitions file
-
       update_igxml(type, purpose, vsid)
       return
 
