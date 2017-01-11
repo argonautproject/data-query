@@ -1,0 +1,811 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StructureDefinition xmlns="http://hl7.org/fhir">
+	<id value="argo-ethnicity"/>
+	<url value="http://fhir.org/guides/argonaut/StructureDefinition/argo-ethnicity"/>
+	<name value="Argonaut ethnicity Extension"/>
+	<display value="Argonaut ethnicity Extension"/>
+	<status value="draft"/>
+	<publisher value="Argonaut Project"/>
+	<contact>
+		<telecom>
+			<system value="other"/>
+			<value value="http://argonautwiki.hl7.org"/>
+			<rank value="0"/>
+		</telecom>
+	</contact>
+	<date value="2016-10-18T00:00:00+11:00"/>
+	<description value="Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories:
+- Hispanic or Latino
+- Not Hispanic or Latino."/>
+	<requirements value="Complies with 2015 Edition Common Clinical Data Set for patient race."/>
+	<fhirVersion value="1.9.0"/>
+	<mapping>
+		<identity value="rim"/>
+		<uri value="http://hl7.org/v3"/>
+		<name value="RIM"/>
+	</mapping>
+	<kind value="datatype"/>
+	<constrainedType value="Extension"/>
+	<abstract value="false"/>
+	<contextType value="resource"/>
+	<context value="Patient"/>
+	<base value="http://hl7.org/fhir/StructureDefinition/Extension"/>
+	<snapshot>
+		<element id="Extension:ethnicity">
+			<path value="Extension"/>
+			<name value="ethnicity"/>
+			<short value="Argonaut ethnicity Extension"/>
+			<definition value="Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories:
+- Hispanic or Latino
+- Not Hispanic or Latino."/>
+			<min value="0"/>
+			<max value="1"/>
+			<base>
+				<path value="Extension"/>
+				<min value="0"/>
+				<max value="*"/>
+			</base>
+			<type>
+				<code value="Extension"/>
+			</type>
+			<maxLength value="0"/>
+			<mustSupport value="false"/>
+			<isModifier value="false"/>
+			<isSummary value="false"/>
+		</element>
+		<element id="Extension:ethnicity.id">
+			<path value="Extension.id"/>
+			<representation value="xmlAttr"/>
+			<name value="Extension:ethnicity.id"/>
+			<short value="xml:id (or equivalent in JSON)"/>
+			<definition value="unique id for the element within a resource (for internal references)."/>
+			<min value="0"/>
+			<max value="1"/>
+			<base>
+				<path value="Extension.id"/>
+				<min value="0"/>
+				<max value="1"/>
+			</base>
+			<type>
+				<code value="id"/>
+			</type>
+			<maxLength value="0"/>
+			<mustSupport value="false"/>
+			<isModifier value="false"/>
+			<isSummary value="false"/>
+			<mapping>
+				<identity value="rim"/>
+				<map value="n/a"/>
+			</mapping>
+		</element>
+		<element id="Extension:ethnicity.extension">
+			<path value="Extension.extension"/>
+			<name value="Extension:ethnicity.extension"/>
+			<slicing id="2">
+				<discriminator value="url"/>
+				<ordered value="false"/>
+				<rules value="open"/>
+			</slicing>
+			<short value="Extension"/>
+			<definition value="An Extension"/>
+			<min value="0"/>
+			<max value="*"/>
+			<base>
+				<path value="Extension.extension"/>
+				<min value="0"/>
+				<max value="*"/>
+			</base>
+			<type>
+				<code value="Extension"/>
+			</type>
+			<maxLength value="0"/>
+			<mustSupport value="false"/>
+			<isModifier value="false"/>
+			<isSummary value="false"/>
+		</element>
+		<element id="Extension:ethnicity.extension:ombcategory">
+			<path value="Extension.extension"/>
+			<name value="ombCategory"/>
+			<short value="Hispanic or Latino|Not Hispanic or Latino"/>
+			<definition value="The 2 ethnicity category codes according to the [OMB Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity, Statistical Policy Directive No. 15, as revised, October 30, 1997](https://www.whitehouse.gov/omb/fedreg_1997standards)."/>
+			<min value="0"/>
+			<max value="1"/>
+			<base>
+				<path value="Extension.extension"/>
+				<min value="0"/>
+				<max value="*"/>
+			</base>
+			<type>
+				<code value="Extension"/>
+			</type>
+			<maxLength value="0"/>
+			<mustSupport value="false"/>
+			<isModifier value="false"/>
+			<isSummary value="false"/>
+		</element>
+		<element id="Extension:ethnicity.extension:ombcategory.id">
+			<path value="Extension.extension.id"/>
+			<representation value="xmlAttr"/>
+			<name value="Extension:ethnicity.extension:ombcategory.id"/>
+			<short value="xml:id (or equivalent in JSON)"/>
+			<definition value="unique id for the element within a resource (for internal references)."/>
+			<min value="0"/>
+			<max value="1"/>
+			<base>
+				<path value="Extension.id"/>
+				<min value="0"/>
+				<max value="1"/>
+			</base>
+			<type>
+				<code value="id"/>
+			</type>
+			<maxLength value="0"/>
+			<mustSupport value="false"/>
+			<isModifier value="false"/>
+			<isSummary value="false"/>
+			<mapping>
+				<identity value="rim"/>
+				<map value="n/a"/>
+			</mapping>
+		</element>
+		<element id="Extension:ethnicity.extension:ombcategory.extension">
+			<path value="Extension.extension.extension"/>
+			<name value="Extension:ethnicity.extension:ombcategory.extension"/>
+			<short value="Additional Content defined by implementations"/>
+			<definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+			<comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+			<alias value="extensions"/>
+			<alias value="user content"/>
+			<min value="0"/>
+			<max value="*"/>
+			<base>
+				<path value="Extension.extension"/>
+				<min value="0"/>
+				<max value="*"/>
+			</base>
+			<type>
+				<code value="Extension"/>
+			</type>
+			<maxLength value="0"/>
+			<mustSupport value="false"/>
+			<isModifier value="false"/>
+			<isSummary value="false"/>
+			<mapping>
+				<identity value="rim"/>
+				<map value="n/a"/>
+			</mapping>
+		</element>
+		<element id="Extension:ethnicity.extension:ombcategory.url">
+			<path value="Extension.extension.url"/>
+			<representation value="xmlAttr"/>
+			<name value="Extension:ethnicity.extension:ombcategory.url"/>
+			<short value="identifies the meaning of the extension"/>
+			<definition value="Source of the definition for the extension code - a logical name or a URL."/>
+			<comments value="The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition should be version specific.  This will ideally be the URI for the Resource Profile defining the extension, with the code for the extension after a #."/>
+			<min value="1"/>
+			<max value="1"/>
+			<base>
+				<path value="Extension.url"/>
+				<min value="1"/>
+				<max value="1"/>
+			</base>
+			<type>
+				<code value="uri"/>
+			</type>
+			<maxLength value="0"/>
+			<mustSupport value="false"/>
+			<isModifier value="false"/>
+			<isSummary value="false"/>
+			<mapping>
+				<identity value="rim"/>
+				<map value="N/A"/>
+			</mapping>
+		</element>
+		<element id="Extension:ethnicity.extension:ombcategory.valueCoding">
+			<path value="Extension.extension.valueCoding"/>
+			<name value="Extension:ethnicity.extension:ombcategory.valueCoding"/>
+			<short value="Value of extension"/>
+			<definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
+			<min value="0"/>
+			<max value="1"/>
+			<base>
+				<path value="Extension.value[x]"/>
+				<min value="0"/>
+				<max value="1"/>
+			</base>
+			<type>
+				<code value="Coding"/>
+			</type>
+			<maxLength value="0"/>
+			<mustSupport value="false"/>
+			<isModifier value="false"/>
+			<isSummary value="false"/>
+			<binding>
+				<strength value="extensible"/>
+				<description value="The 2 ethnicity category codes according to the [OMB Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity, Statistical Policy Directive No. 15, as revised, October 30, 1997](https://www.whitehouse.gov/omb/fedreg_1997standards)."/>
+				<valueSetReference>
+					<reference value="http://fhir.org/guides/argonaut/ValueSet/omb-ethnicity"/>
+				</valueSetReference>
+			</binding>
+			<mapping>
+				<identity value="rim"/>
+				<map value="N/A"/>
+			</mapping>
+		</element>
+		<element id="Extension:ethnicity.extension:detailed">
+			<path value="Extension.extension"/>
+			<name value="detailed"/>
+			<short value="Extended ethnicity codes"/>
+			<definition value="The 41 CDC ethnicity codes that are grouped under one of the 2 OMB ethnicity category codes."/>
+			<min value="0"/>
+			<max value="*"/>
+			<base>
+				<path value="Extension.extension"/>
+				<min value="0"/>
+				<max value="*"/>
+			</base>
+			<type>
+				<code value="Extension"/>
+			</type>
+			<maxLength value="0"/>
+			<mustSupport value="false"/>
+			<isModifier value="false"/>
+			<isSummary value="false"/>
+		</element>
+		<element id="Extension:ethnicity.extension:detailed.id">
+			<path value="Extension.extension.id"/>
+			<representation value="xmlAttr"/>
+			<name value="Extension:ethnicity.extension:detailed.id"/>
+			<short value="xml:id (or equivalent in JSON)"/>
+			<definition value="unique id for the element within a resource (for internal references)."/>
+			<min value="0"/>
+			<max value="1"/>
+			<base>
+				<path value="Extension.id"/>
+				<min value="0"/>
+				<max value="1"/>
+			</base>
+			<type>
+				<code value="id"/>
+			</type>
+			<maxLength value="0"/>
+			<mustSupport value="false"/>
+			<isModifier value="false"/>
+			<isSummary value="false"/>
+			<mapping>
+				<identity value="rim"/>
+				<map value="n/a"/>
+			</mapping>
+		</element>
+		<element id="Extension:ethnicity.extension:detailed.extension">
+			<path value="Extension.extension.extension"/>
+			<name value="Extension:ethnicity.extension:detailed.extension"/>
+			<short value="Additional Content defined by implementations"/>
+			<definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+			<comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+			<alias value="extensions"/>
+			<alias value="user content"/>
+			<min value="0"/>
+			<max value="*"/>
+			<base>
+				<path value="Extension.extension"/>
+				<min value="0"/>
+				<max value="*"/>
+			</base>
+			<type>
+				<code value="Extension"/>
+			</type>
+			<maxLength value="0"/>
+			<mustSupport value="false"/>
+			<isModifier value="false"/>
+			<isSummary value="false"/>
+			<mapping>
+				<identity value="rim"/>
+				<map value="n/a"/>
+			</mapping>
+		</element>
+		<element id="Extension:ethnicity.extension:detailed.url">
+			<path value="Extension.extension.url"/>
+			<representation value="xmlAttr"/>
+			<name value="Extension:ethnicity.extension:detailed.url"/>
+			<short value="identifies the meaning of the extension"/>
+			<definition value="Source of the definition for the extension code - a logical name or a URL."/>
+			<comments value="The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition should be version specific.  This will ideally be the URI for the Resource Profile defining the extension, with the code for the extension after a #."/>
+			<min value="1"/>
+			<max value="1"/>
+			<base>
+				<path value="Extension.url"/>
+				<min value="1"/>
+				<max value="1"/>
+			</base>
+			<type>
+				<code value="uri"/>
+			</type>
+			<maxLength value="0"/>
+			<mustSupport value="false"/>
+			<isModifier value="false"/>
+			<isSummary value="false"/>
+			<mapping>
+				<identity value="rim"/>
+				<map value="N/A"/>
+			</mapping>
+		</element>
+		<element id="Extension:ethnicity.extension:detailed.valueCoding">
+			<path value="Extension.extension.valueCoding"/>
+			<name value="Extension:ethnicity.extension:detailed.valueCoding"/>
+			<short value="Value of extension"/>
+			<definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
+			<min value="0"/>
+			<max value="1"/>
+			<base>
+				<path value="Extension.value[x]"/>
+				<min value="0"/>
+				<max value="1"/>
+			</base>
+			<type>
+				<code value="Coding"/>
+			</type>
+			<maxLength value="0"/>
+			<mustSupport value="false"/>
+			<isModifier value="false"/>
+			<isSummary value="false"/>
+			<binding>
+				<strength value="required"/>
+				<description value="The 41 [CDC ethnicity codes](http://www.cdc.gov/phin/resources/vocabulary/index.html) that are grouped under one of the 2 OMB ethnicity category codes."/>
+				<valueSetReference>
+					<reference value="http://fhir.org/guides/argonaut/ValueSet/detailed-ethnicity"/>
+				</valueSetReference>
+			</binding>
+			<mapping>
+				<identity value="rim"/>
+				<map value="N/A"/>
+			</mapping>
+		</element>
+		<element id="Extension:ethnicity.extension:text">
+			<path value="Extension.extension"/>
+			<name value="text"/>
+			<short value="ethnicity Text"/>
+			<definition value="Plain text representation of the ethnicity concept(s)."/>
+			<min value="1"/>
+			<max value="1"/>
+			<base>
+				<path value="Extension.extension"/>
+				<min value="0"/>
+				<max value="*"/>
+			</base>
+			<type>
+				<code value="Extension"/>
+			</type>
+			<maxLength value="0"/>
+			<mustSupport value="false"/>
+			<isModifier value="false"/>
+			<isSummary value="false"/>
+		</element>
+		<element id="Extension:ethnicity.extension:text.id">
+			<path value="Extension.extension.id"/>
+			<representation value="xmlAttr"/>
+			<name value="Extension:ethnicity.extension:text.id"/>
+			<short value="xml:id (or equivalent in JSON)"/>
+			<definition value="unique id for the element within a resource (for internal references)."/>
+			<min value="0"/>
+			<max value="1"/>
+			<base>
+				<path value="Extension.id"/>
+				<min value="0"/>
+				<max value="1"/>
+			</base>
+			<type>
+				<code value="id"/>
+			</type>
+			<maxLength value="0"/>
+			<mustSupport value="false"/>
+			<isModifier value="false"/>
+			<isSummary value="false"/>
+			<mapping>
+				<identity value="rim"/>
+				<map value="n/a"/>
+			</mapping>
+		</element>
+		<element id="Extension:ethnicity.extension:text.extension">
+			<path value="Extension.extension.extension"/>
+			<name value="Extension:ethnicity.extension:text.extension"/>
+			<short value="Additional Content defined by implementations"/>
+			<definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
+			<comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
+			<alias value="extensions"/>
+			<alias value="user content"/>
+			<min value="0"/>
+			<max value="*"/>
+			<base>
+				<path value="Extension.extension"/>
+				<min value="0"/>
+				<max value="*"/>
+			</base>
+			<type>
+				<code value="Extension"/>
+			</type>
+			<maxLength value="0"/>
+			<mustSupport value="false"/>
+			<isModifier value="false"/>
+			<isSummary value="false"/>
+			<mapping>
+				<identity value="rim"/>
+				<map value="n/a"/>
+			</mapping>
+		</element>
+		<element id="Extension:ethnicity.extension:text.url">
+			<path value="Extension.extension.url"/>
+			<representation value="xmlAttr"/>
+			<name value="Extension:ethnicity.extension:text.url"/>
+			<short value="identifies the meaning of the extension"/>
+			<definition value="Source of the definition for the extension code - a logical name or a URL."/>
+			<comments value="The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition should be version specific.  This will ideally be the URI for the Resource Profile defining the extension, with the code for the extension after a #."/>
+			<min value="1"/>
+			<max value="1"/>
+			<base>
+				<path value="Extension.url"/>
+				<min value="1"/>
+				<max value="1"/>
+			</base>
+			<type>
+				<code value="uri"/>
+			</type>
+			<maxLength value="0"/>
+			<mustSupport value="false"/>
+			<isModifier value="false"/>
+			<isSummary value="false"/>
+			<mapping>
+				<identity value="rim"/>
+				<map value="N/A"/>
+			</mapping>
+		</element>
+		<element id="Extension:ethnicity.extension:text.valueString">
+			<path value="Extension.extension.valueString"/>
+			<name value="Extension:ethnicity.extension:text.valueString"/>
+			<short value="Value of extension"/>
+			<definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
+			<min value="0"/>
+			<max value="1"/>
+			<base>
+				<path value="Extension.value[x]"/>
+				<min value="0"/>
+				<max value="1"/>
+			</base>
+			<type>
+				<code value="string"/>
+			</type>
+			<maxLength value="0"/>
+			<mustSupport value="false"/>
+			<isModifier value="false"/>
+			<isSummary value="false"/>
+			<mapping>
+				<identity value="rim"/>
+				<map value="N/A"/>
+			</mapping>
+		</element>
+		<element id="Extension:ethnicity.url">
+			<path value="Extension.url"/>
+			<representation value="xmlAttr"/>
+			<name value="Extension:ethnicity.url"/>
+			<short value="identifies the meaning of the extension"/>
+			<definition value="Source of the definition for the extension code - a logical name or a URL."/>
+			<comments value="The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition should be version specific.  This will ideally be the URI for the Resource Profile defining the extension, with the code for the extension after a #."/>
+			<min value="1"/>
+			<max value="1"/>
+			<base>
+				<path value="Extension.url"/>
+				<min value="1"/>
+				<max value="1"/>
+			</base>
+			<type>
+				<code value="uri"/>
+			</type>
+			<fixedUri value="http://fhir.org/guides/argonaut/StructureDefinition/argo-ethnicity"/>
+			<maxLength value="0"/>
+			<mustSupport value="false"/>
+			<isModifier value="false"/>
+			<isSummary value="false"/>
+			<mapping>
+				<identity value="rim"/>
+				<map value="N/A"/>
+			</mapping>
+		</element>
+		<element id="Extension:ethnicity.value[x]">
+			<path value="Extension.value[x]"/>
+			<name value="Extension:ethnicity.value[x]"/>
+			<short value="Value of extension"/>
+			<definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
+			<min value="0"/>
+			<max value="0"/>
+			<base>
+				<path value="Extension.value[x]"/>
+				<min value="0"/>
+				<max value="1"/>
+			</base>
+			<type>
+				<code value="boolean"/>
+			</type>
+			<type>
+				<code value="integer"/>
+			</type>
+			<type>
+				<code value="decimal"/>
+			</type>
+			<type>
+				<code value="base64Binary"/>
+			</type>
+			<type>
+				<code value="instant"/>
+			</type>
+			<type>
+				<code value="string"/>
+			</type>
+			<type>
+				<code value="uri"/>
+			</type>
+			<type>
+				<code value="date"/>
+			</type>
+			<type>
+				<code value="dateTime"/>
+			</type>
+			<type>
+				<code value="time"/>
+			</type>
+			<type>
+				<code value="code"/>
+			</type>
+			<type>
+				<code value="oid"/>
+			</type>
+			<type>
+				<code value="id"/>
+			</type>
+			<type>
+				<code value="unsignedInt"/>
+			</type>
+			<type>
+				<code value="positiveInt"/>
+			</type>
+			<type>
+				<code value="markdown"/>
+			</type>
+			<type>
+				<code value="Annotation"/>
+			</type>
+			<type>
+				<code value="Attachment"/>
+			</type>
+			<type>
+				<code value="Identifier"/>
+			</type>
+			<type>
+				<code value="CodeableConcept"/>
+			</type>
+			<type>
+				<code value="Coding"/>
+			</type>
+			<type>
+				<code value="Quantity"/>
+			</type>
+			<type>
+				<code value="Range"/>
+			</type>
+			<type>
+				<code value="Period"/>
+			</type>
+			<type>
+				<code value="Ratio"/>
+			</type>
+			<type>
+				<code value="SampledData"/>
+			</type>
+			<type>
+				<code value="Signature"/>
+			</type>
+			<type>
+				<code value="HumanName"/>
+			</type>
+			<type>
+				<code value="Address"/>
+			</type>
+			<type>
+				<code value="ContactPoint"/>
+			</type>
+			<type>
+				<code value="Timing"/>
+			</type>
+			<type>
+				<code value="Reference"/>
+			</type>
+			<type>
+				<code value="Meta"/>
+			</type>
+			<maxLength value="0"/>
+			<mustSupport value="false"/>
+			<isModifier value="false"/>
+			<isSummary value="false"/>
+			<mapping>
+				<identity value="rim"/>
+				<map value="N/A"/>
+			</mapping>
+		</element>
+	</snapshot>
+	<differential>
+		<element id="Extension:ethnicity">
+			<path value="Extension"/>
+			<name value="ethnicity"/>
+			<short value="Argonaut ethnicity Extension"/>
+			<definition value="Concepts classifying the person into a named category of humans sharing common history, traits, geographical origin or nationality.  The ethnicity codes used to represent these concepts are based upon the [CDC ethnicity and Ethnicity Code Set Version 1.0](http://www.cdc.gov/phin/resources/vocabulary/index.html) which includes over 900 concepts for representing race and ethnicity of which 43 reference ethnicity.  The ethnicity concepts are grouped by and pre-mapped to the 2 OMB ethnicity categories:
+- Hispanic or Latino
+- Not Hispanic or Latino."/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+			</type>
+			<maxLength value="0"/>
+			<mustSupport value="false"/>
+			<isModifier value="false"/>
+			<isSummary value="false"/>
+		</element>
+		<element id="Extension:ethnicity.extension:ombcategory">
+			<path value="Extension.extension"/>
+			<name value="ombCategory"/>
+			<short value="Hispanic or Latino|Not Hispanic or Latino"/>
+			<definition value="The 2 ethnicity category codes according to the [OMB Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity, Statistical Policy Directive No. 15, as revised, October 30, 1997](https://www.whitehouse.gov/omb/fedreg_1997standards)."/>
+			<min value="0"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+			</type>
+			<maxLength value="0"/>
+			<mustSupport value="true"/>
+			<isModifier value="false"/>
+			<isSummary value="false"/>
+		</element>
+		<element id="Extension:ethnicity.extension:ombcategory.extension">
+			<path value="Extension.extension.extension"/>
+			<name value="Extension:ethnicity.extension:ombcategory.extension"/>
+			<max value="0"/>
+		</element>
+		<element id="Extension:ethnicity.extension:ombcategory.url">
+			<path value="Extension.extension.url"/>
+			<name value="Extension:ethnicity.extension:ombcategory.url"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="uri"/>
+			</type>
+			<fixedUri value="ombCategory"/>
+		</element>
+		<element id="Extension:ethnicity.extension:ombcategory.valueCoding">
+			<path value="Extension.extension.valueCoding"/>
+			<name value="Extension:ethnicity.extension:ombcategory.valueCoding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="Coding"/>
+			</type>
+			<mustSupport value="false"/>
+			<isModifier value="false"/>
+			<isSummary value="false"/>
+			<binding>
+				<strength value="extensible"/>
+				<description value="The 2 ethnicity category codes according to the [OMB Standards for Maintaining, Collecting, and Presenting Federal Data on Race and Ethnicity, Statistical Policy Directive No. 15, as revised, October 30, 1997](https://www.whitehouse.gov/omb/fedreg_1997standards)."/>
+				<valueSetReference>
+					<reference value="http://fhir.org/guides/argonaut/ValueSet/omb-ethnicity"/>
+				</valueSetReference>
+			</binding>
+		</element>
+		<element id="Extension:ethnicity.extension:detailed">
+			<path value="Extension.extension"/>
+			<name value="detailed"/>
+			<short value="Extended ethnicity codes"/>
+			<definition value="The 41 CDC ethnicity codes that are grouped under one of the 2 OMB ethnicity category codes."/>
+			<min value="0"/>
+			<max value="*"/>
+			<type>
+				<code value="Extension"/>
+			</type>
+			<maxLength value="0"/>
+			<mustSupport value="false"/>
+			<isModifier value="false"/>
+			<isSummary value="false"/>
+		</element>
+		<element id="Extension:ethnicity.extension:detailed.extension">
+			<path value="Extension.extension.extension"/>
+			<name value="Extension:ethnicity.extension:detailed.extension"/>
+			<max value="0"/>
+		</element>
+		<element id="Extension:ethnicity.extension:detailed.url">
+			<path value="Extension.extension.url"/>
+			<name value="Extension:ethnicity.extension:detailed.url"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="uri"/>
+			</type>
+			<fixedUri value="detailed"/>
+		</element>
+		<element id="Extension:ethnicity.extension:detailed.valueCoding">
+			<path value="Extension.extension.valueCoding"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="Coding"/>
+			</type>
+			<mustSupport value="false"/>
+			<isModifier value="false"/>
+			<isSummary value="false"/>
+			<binding>
+				<strength value="required"/>
+				<description value="The 41 [CDC ethnicity codes](http://www.cdc.gov/phin/resources/vocabulary/index.html) that are grouped under one of the 2 OMB ethnicity category codes."/>
+				<valueSetReference>
+					<reference value="http://fhir.org/guides/argonaut/ValueSet/detailed-ethnicity"/>
+				</valueSetReference>
+			</binding>
+		</element>
+		<element id="Extension:ethnicity.extension:text">
+			<path value="Extension.extension"/>
+			<name value="text"/>
+			<short value="ethnicity Text"/>
+			<definition value="Plain text representation of the ethnicity concept(s)."/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="Extension"/>
+			</type>
+			<maxLength value="0"/>
+			<mustSupport value="true"/>
+			<isModifier value="false"/>
+			<isSummary value="false"/>
+		</element>
+		<element id="Extension:ethnicity.extension:text.extension">
+			<path value="Extension.extension.extension"/>
+			<name value="Extension:ethnicity.extension:text.extension"/>
+			<max value="0"/>
+		</element>
+		<element id="Extension:ethnicity.extension:text.url">
+			<path value="Extension.extension.url"/>
+			<name value="Extension:ethnicity.extension:text.url"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="uri"/>
+			</type>
+			<fixedUri value="text"/>
+		</element>
+		<element id="Extension:ethnicity.extension:text.valueString">
+			<path value="Extension.extension.valueString"/>
+			<name value="Extension:ethnicity.extension:text.valueString"/>
+			<min value="1"/>
+			<max value="1"/>
+			<type>
+				<code value="string"/>
+			</type>
+			<mustSupport value="false"/>
+			<isModifier value="false"/>
+			<isSummary value="false"/>
+		</element>
+		<element id="Extension:ethnicity.url">
+			<path value="Extension.url"/>
+			<name value="Extension:ethnicity.url"/>
+	      <min value="1"/>
+      <max value="1"/>
+			<fixedUri value="http://fhir.org/guides/argonaut/StructureDefinition/argo-ethnicity"/>
+			<mustSupport value="false"/>
+			<isModifier value="false"/>
+			<isSummary value="false"/>
+		</element>
+		<element id="Extension:ethnicity.value[x]">
+			<path value="Extension.value[x]"/>
+			<name value="Extension:ethnicity.value[x]"/>
+			<min value="0"/>
+			<max value="0"/>
+			<mustSupport value="true"/>
+			<isModifier value="false"/>
+			<isSummary value="false"/>
+		</element>
+	</differential>
+</StructureDefinition>
