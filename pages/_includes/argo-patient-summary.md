@@ -47,4 +47,4 @@ Additionally the following data-elements must be supported. See the Argonaut def
  [CDC Ethnicity Codes]: ValueSet-detailed-ethnicity.html
  [US Core ethnicity Extension]: StructureDefinition-argo-ethnicity.html
  [OMB Ethnicity Categories]: ValueSet-omb-ethnicity.html
- [Must Support]: definitions.html#mustsupport
+ [Must Support]: definitions.html#must-support

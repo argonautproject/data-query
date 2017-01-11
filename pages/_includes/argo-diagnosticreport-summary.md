@@ -14,7 +14,7 @@
 1.  A date and time in `DiagnosticReport.issued`
 1.  A practitioner or organization in `DiagnosticReport.performer`
 
-Each DiagnosticReport [Must Support](definitions.html#mustsupport):
+Each DiagnosticReport [Must Support](definitions.html#must-support):
 
 1.  One or more `DiagnosticReport.result` and/or `DiagnosticReport.image` and/or `DiagnosticReport.presentedForm`
 

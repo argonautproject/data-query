@@ -2,7 +2,7 @@
 
 This section outlines important definitions and interpretations used in the this IG.
 
-#### <a id="mustsupport"></a>Must Support
+#### Must Support
 In the context of Argonaut, Supported on any data element SHALL be interpreted as follows:
 
 * Argonaut Responders SHALL be capable of including the data element as part of the query results as specified by the Argonaut conformance resources.

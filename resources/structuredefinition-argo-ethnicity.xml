@@ -48,7 +48,7 @@
 			<type>
 				<code value="Extension"/>
 			</type>
-			<maxLength value="0"/>
+			
 			<mustSupport value="false"/>
 			<isModifier value="false"/>
 			<isSummary value="false"/>
@@ -69,7 +69,7 @@
 			<type>
 				<code value="id"/>
 			</type>
-			<maxLength value="0"/>
+			
 			<mustSupport value="false"/>
 			<isModifier value="false"/>
 			<isSummary value="false"/>
@@ -98,7 +98,7 @@
 			<type>
 				<code value="Extension"/>
 			</type>
-			<maxLength value="0"/>
+			
 			<mustSupport value="false"/>
 			<isModifier value="false"/>
 			<isSummary value="false"/>
@@ -118,8 +118,8 @@
 			<type>
 				<code value="Extension"/>
 			</type>
-			<maxLength value="0"/>
-			<mustSupport value="false"/>
+			
+			<mustSupport value="true"/>
 			<isModifier value="false"/>
 			<isSummary value="false"/>
 		</element>
@@ -139,7 +139,7 @@
 			<type>
 				<code value="id"/>
 			</type>
-			<maxLength value="0"/>
+			
 			<mustSupport value="false"/>
 			<isModifier value="false"/>
 			<isSummary value="false"/>
@@ -157,7 +157,7 @@
 			<alias value="extensions"/>
 			<alias value="user content"/>
 			<min value="0"/>
-			<max value="*"/>
+			<max value="0"/>
 			<base>
 				<path value="Extension.extension"/>
 				<min value="0"/>
@@ -166,7 +166,7 @@
 			<type>
 				<code value="Extension"/>
 			</type>
-			<maxLength value="0"/>
+			
 			<mustSupport value="false"/>
 			<isModifier value="false"/>
 			<isSummary value="false"/>
@@ -191,8 +191,8 @@
 			</base>
 			<type>
 				<code value="uri"/>
-			</type>
-			<maxLength value="0"/>
+			</type><fixedUri value="ombCategory"/>
+			
 			<mustSupport value="false"/>
 			<isModifier value="false"/>
 			<isSummary value="false"/>
@@ -206,7 +206,7 @@
 			<name value="Extension:ethnicity.extension:ombcategory.valueCoding"/>
 			<short value="Value of extension"/>
 			<definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
-			<min value="0"/>
+			<min value="1"/>
 			<max value="1"/>
 			<base>
 				<path value="Extension.value[x]"/>
@@ -216,7 +216,7 @@
 			<type>
 				<code value="Coding"/>
 			</type>
-			<maxLength value="0"/>
+			
 			<mustSupport value="false"/>
 			<isModifier value="false"/>
 			<isSummary value="false"/>
@@ -247,7 +247,7 @@
 			<type>
 				<code value="Extension"/>
 			</type>
-			<maxLength value="0"/>
+			
 			<mustSupport value="false"/>
 			<isModifier value="false"/>
 			<isSummary value="false"/>
@@ -268,7 +268,7 @@
 			<type>
 				<code value="id"/>
 			</type>
-			<maxLength value="0"/>
+			
 			<mustSupport value="false"/>
 			<isModifier value="false"/>
 			<isSummary value="false"/>
@@ -286,7 +286,7 @@
 			<alias value="extensions"/>
 			<alias value="user content"/>
 			<min value="0"/>
-			<max value="*"/>
+			<max value="0"/>
 			<base>
 				<path value="Extension.extension"/>
 				<min value="0"/>
@@ -295,7 +295,7 @@
 			<type>
 				<code value="Extension"/>
 			</type>
-			<maxLength value="0"/>
+			
 			<mustSupport value="false"/>
 			<isModifier value="false"/>
 			<isSummary value="false"/>
@@ -320,8 +320,8 @@
 			</base>
 			<type>
 				<code value="uri"/>
-			</type>
-			<maxLength value="0"/>
+			</type><fixedUri value="detailed"/>
+			
 			<mustSupport value="false"/>
 			<isModifier value="false"/>
 			<isSummary value="false"/>
@@ -335,7 +335,7 @@
 			<name value="Extension:ethnicity.extension:detailed.valueCoding"/>
 			<short value="Value of extension"/>
 			<definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
-			<min value="0"/>
+			<min value="1"/>
 			<max value="1"/>
 			<base>
 				<path value="Extension.value[x]"/>
@@ -345,7 +345,7 @@
 			<type>
 				<code value="Coding"/>
 			</type>
-			<maxLength value="0"/>
+			
 			<mustSupport value="false"/>
 			<isModifier value="false"/>
 			<isSummary value="false"/>
@@ -376,8 +376,8 @@
 			<type>
 				<code value="Extension"/>
 			</type>
-			<maxLength value="0"/>
-			<mustSupport value="false"/>
+			
+			<mustSupport value="true"/>
 			<isModifier value="false"/>
 			<isSummary value="false"/>
 		</element>
@@ -397,7 +397,7 @@
 			<type>
 				<code value="id"/>
 			</type>
-			<maxLength value="0"/>
+			
 			<mustSupport value="false"/>
 			<isModifier value="false"/>
 			<isSummary value="false"/>
@@ -415,7 +415,7 @@
 			<alias value="extensions"/>
 			<alias value="user content"/>
 			<min value="0"/>
-			<max value="*"/>
+			<max value="0"/>
 			<base>
 				<path value="Extension.extension"/>
 				<min value="0"/>
@@ -424,7 +424,7 @@
 			<type>
 				<code value="Extension"/>
 			</type>
-			<maxLength value="0"/>
+			
 			<mustSupport value="false"/>
 			<isModifier value="false"/>
 			<isSummary value="false"/>
@@ -449,8 +449,8 @@
 			</base>
 			<type>
 				<code value="uri"/>
-			</type>
-			<maxLength value="0"/>
+			</type><fixedUri value="text"/>
+			
 			<mustSupport value="false"/>
 			<isModifier value="false"/>
 			<isSummary value="false"/>
@@ -464,7 +464,7 @@
 			<name value="Extension:ethnicity.extension:text.valueString"/>
 			<short value="Value of extension"/>
 			<definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
-			<min value="0"/>
+			<min value="1"/>
 			<max value="1"/>
 			<base>
 				<path value="Extension.value[x]"/>
@@ -474,7 +474,7 @@
 			<type>
 				<code value="string"/>
 			</type>
-			<maxLength value="0"/>
+			
 			<mustSupport value="false"/>
 			<isModifier value="false"/>
 			<isSummary value="false"/>
@@ -501,7 +501,7 @@
 				<code value="uri"/>
 			</type>
 			<fixedUri value="http://fhir.org/guides/argonaut/StructureDefinition/argo-ethnicity"/>
-			<maxLength value="0"/>
+			
 			<mustSupport value="false"/>
 			<isModifier value="false"/>
 			<isSummary value="false"/>
@@ -621,7 +621,7 @@
 			<type>
 				<code value="Meta"/>
 			</type>
-			<maxLength value="0"/>
+			
 			<mustSupport value="false"/>
 			<isModifier value="false"/>
 			<isSummary value="false"/>
@@ -644,7 +644,7 @@
 			<type>
 				<code value="Extension"/>
 			</type>
-			<maxLength value="0"/>
+			
 			<mustSupport value="false"/>
 			<isModifier value="false"/>
 			<isSummary value="false"/>
@@ -659,16 +659,12 @@
 			<type>
 				<code value="Extension"/>
 			</type>
-			<maxLength value="0"/>
+			
 			<mustSupport value="true"/>
 			<isModifier value="false"/>
 			<isSummary value="false"/>
 		</element>
-		<element id="Extension:ethnicity.extension:ombcategory.extension">
-			<path value="Extension.extension.extension"/>
-			<name value="Extension:ethnicity.extension:ombcategory.extension"/>
-			<max value="0"/>
-		</element>
+
 		<element id="Extension:ethnicity.extension:ombcategory.url">
 			<path value="Extension.extension.url"/>
 			<name value="Extension:ethnicity.extension:ombcategory.url"/>
@@ -708,16 +704,12 @@
 			<type>
 				<code value="Extension"/>
 			</type>
-			<maxLength value="0"/>
+			
 			<mustSupport value="false"/>
 			<isModifier value="false"/>
 			<isSummary value="false"/>
 		</element>
-		<element id="Extension:ethnicity.extension:detailed.extension">
-			<path value="Extension.extension.extension"/>
-			<name value="Extension:ethnicity.extension:detailed.extension"/>
-			<max value="0"/>
-		</element>
+
 		<element id="Extension:ethnicity.extension:detailed.url">
 			<path value="Extension.extension.url"/>
 			<name value="Extension:ethnicity.extension:detailed.url"/>
@@ -756,16 +748,12 @@
 			<type>
 				<code value="Extension"/>
 			</type>
-			<maxLength value="0"/>
+			
 			<mustSupport value="true"/>
 			<isModifier value="false"/>
 			<isSummary value="false"/>
 		</element>
-		<element id="Extension:ethnicity.extension:text.extension">
-			<path value="Extension.extension.extension"/>
-			<name value="Extension:ethnicity.extension:text.extension"/>
-			<max value="0"/>
-		</element>
+
 		<element id="Extension:ethnicity.extension:text.url">
 			<path value="Extension.extension.url"/>
 			<name value="Extension:ethnicity.extension:text.url"/>
@@ -798,14 +786,6 @@
 			<isModifier value="false"/>
 			<isSummary value="false"/>
 		</element>
-		<element id="Extension:ethnicity.value[x]">
-			<path value="Extension.value[x]"/>
-			<name value="Extension:ethnicity.value[x]"/>
-			<min value="0"/>
-			<max value="0"/>
-			<mustSupport value="true"/>
-			<isModifier value="false"/>
-			<isSummary value="false"/>
-		</element>
+
 	</differential>
 </StructureDefinition>
