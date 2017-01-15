@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Patient xmlns="http://hl7.org/fhir" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://hl7.org/fhir file:///C:/Users/Eric/Documents/HL7/FHIR/BUILD_EDIT_FILES/dstu2-fhir-all-xsd/appointment.xsd">
+<Patient xmlns="http://hl7.org/fhir">
 	<id value="peter-chalmers"/>
 	<meta>
-    <profile
-             value="http://fhir.org/guides/argonaut/StructureDefinition/argo-patient"/>
-  </meta>
+		<profile value="http://fhir.org/guides/argonaut/StructureDefinition/argo-patient"/>
+	</meta>
 	<text>
 		<status value="generated"/>
 		<div xmlns="http://www.w3.org/1999/xhtml">
@@ -16,7 +15,11 @@
 			<p>
 				<b>active</b>: true</p>
 			<p>
+				<b>http://hospital.smarthealthit.org MRN</b>: 1032702 </p>
+			<p>
 				<b>birthsex</b>: Male</p>
+			<p>
+				<b>birthdate</b>: June 19, 1964</p>
 			<p>
 				<b>name</b>: Peter James Chalmers (OFFICIAL)</p>
 			<p>
@@ -27,6 +30,8 @@
 				<b>race</b>: White, American Indian or Alaska Native, Asian, Shoshone, Filipino</p>
 			<p>
 				<b>ethnicity</b>: Hispanic or Latino, Dominican, Mexican</p>
+			<p>
+				<b>Communication Language</b>: English</p>
 		</div>
 	</text>
 	<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-race">
@@ -126,6 +131,7 @@
 		<use value="work"/>
 	</telecom>
 	<gender value="male"/>
+	<birthDate value="1964-06-19"/>
 	<address>
 		<use value="home"/>
 		<line value="534 Erewhon St"/>
@@ -134,4 +140,14 @@
 		<state value="CA"/>
 		<postalCode value="96666"/>
 	</address>
+	<communication>
+		<language>
+			<coding>
+				<system value="urn:ietf:bcp:47"/>
+				<code value="en"/>
+				<display value="English"/>
+			</coding>
+			<text value="English"/>
+		</language>
+	</communication>
 </Patient>

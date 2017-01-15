@@ -97,9 +97,9 @@ def update_example(type, id):
       return
 
 
-def get_file(e):
-    ex_file = open(dir + 'examples/' + e)  # for each example in /examples open
-    logging.info('load example xml file ' + dir + 'examples/' + e)
+def get_file(e,f):
+    ex_file = open(dir + f +'/' + e)  # for each example in /examples open
+    logging.info('load example xml file ' + dir + f +'/' + e)
     return ex_file
 
 
@@ -141,23 +141,35 @@ def main():
        update_igjson('SearchParameter', search, 'base')
        update_igjson('SearchParameter', search, 'defns')
 
-
+    folder = 'examples'
     examples = os.listdir(
-        dir + 'examples')  # get all the examples in the examples directory assuming are in json or xml
+        dir + folder)  # get all the examples in the examples directory assuming are in json or xml
     for i in range(len(examples)):  # run through all the examples and get id and resource type
         if 'json' in examples[
             i]:  # for each cs in /resources open, read id and create and append dict struct to definiions file
-            exjson = json.load(get_file(examples[i]))
+            exjson = json.load(get_file(examples[i],folder))
             extype = exjson['resourceType']
             ex_id = exjson['id']
             update_example(extype, ex_id)
         if 'xml' in examples[
             i]:  # for each cs in /resources open, read id and create and append dict struct to definiions file
-            ex_xml = etree.parse(get_file(examples[i]))  # lxml module to parse example xml
+            ex_xml = etree.parse(get_file(examples[i],folder))  # lxml module to parse example xml
             ex_id = ex_xml.xpath('//f:id/@value', namespaces={'f': 'http://hl7.org/fhir'})  # use xpath to get the id
             extype = ex_xml.xpath('name(/*)')  # use xpath to get the type '''
             update_example(extype, ex_id[0])
 
+    '''
+    folder = 'validateme'
+    if os.path.exists(dir + folder):
+        examples = os.listdir(
+            dir + folder)  # get all the examples in the examples directory assuming are xml
+        for i in range(len(examples)):  # run through all the examples and get id and resource type
+                ex_xml = etree.parse(get_file(examples[i],folder))  # lxml module to parse example xml
+                ex_id = ex_xml.xpath('//f:id/@value',
+                                     namespaces={'f': 'http://hl7.org/fhir'})  # use xpath to get the id
+                extype = ex_xml.xpath('name(/*)')  # use xpath to get the type
+                update_example(extype, ex_id[0])
+    '''
     # write files
     ig_file = open(dir + 'ig.json', 'w')
     ig_file.write(json.dumps(igpy))  # convert dict to json and replace ig.json with this file
