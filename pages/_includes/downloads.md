@@ -1,12 +1,17 @@
 ## Downloads
 
-**Definitions:** All the value sets, profiles, extensions etc defined as part of the this Implementation Guides:
+**Validator Pack and Definitions:**
 
+The following file contains all the value sets, profiles, extensions, list of pages and urls in the IG, etc defined as part of the this Implementation Guides.:
+
+- [Validator Pack](validator.pack)
+
+In addition there are format specific definitions files.
 - [XML](definitions.xml.zip)
 - [JSON](definitions.json.zip)
 - [TTL](definitions.ttl.zip)
 
-These definitions should be the first choice whenever generating any implementation artifacts since they contain all of the rules about what makes these Argonaut profiles valid. Implementers will still need to be familiar with the content of the specification and profiles that apply in order to make a conformant implementation.  See the overview in [FHIR STU3](http://build.fhir.org/validation.html) on validating FHIR profiles and resources for more information about validating profiles and how to use these artifacts
+These files should be the first choice whenever generating any implementation artifacts since they contain all of the rules about what makes these Argonaut profiles valid. Implementers will still need to be familiar with the content of the specification and profiles that apply in order to make a conformant implementation.  See the overview in [FHIR STU3](http://build.fhir.org/validation.html) on validating FHIR profiles and resources for more information about validating profiles and how to use these artifacts
 
 **Schematrons** are also available and listed below:
 

@@ -28,9 +28,9 @@ logging.info('create the ig.xml file template as string')
 
 igxml ='''<?xml version="1.0" encoding="UTF-8"?><!--Hidden IG for de facto IG publishing--><ImplementationGuide xmlns="http://hl7.org/fhir"><id value="ig"/><url value="http://fhir.org/guides/argonaut/ImplementationGuide/ig"/><name value="Implementation Guide Template"/><status value="draft"/><experimental value="true"/><publisher value="FHIR Project"/><package><name value="base"/></package><page><source value="index.html"/><name value="blah"/><kind value="page"/></page></ImplementationGuide>'''
 
-# extension in spreadsheet - these need to be manually listed here
+# extension in spreadsheet - these need to be manually listed here  NOTE: as of 1/2016 IG publisher not rendering them correctly
 
-extensions = ['argo-birthsex', 'argo-fromResource', 'argo-csonformanceDocumentation']
+extensions = []
 
 # operation in spreadsheet - these need to be manually listed here
 
@@ -105,7 +105,7 @@ def get_file(e,f):
 
 
 def main():
-    resources = os.listdir(dir + 'resources')  # get all the files in the resource directory
+    resources = sorted(os.listdir(dir + 'resources'))  # get all the files in the resource directory
     for i in range(len(resources)):  # run through all the files looking for spreadsheets and valuesets
         if 'spreadsheet' in resources[i]:  # for spreadsheets  append to the igpy[spreadsheet] array.
             update_sd(resources[i], 'StructureDefinition')

@@ -35,10 +35,11 @@
 			<url value="/Binary/1-note"/>
 			<title value="Uri where the data can be found: [base]/Binary/1-note"/>
 		</attachment>
+		<!-- http://wiki.hl7.org/index.php?title=CDA_Format_Codes_for_IHE_XDS  -->
 		<format>
 			<system value="urn:oid:1.3.6.1.4.1.19376.1.2.3"/>
-			<code value="urn:ihe:pcc:xphr:2007"/>
-			<display value="HL7 CCD Document"/>
+			<code value="urn:hl7-org:sdwg:ccda-structuredBody:2.1"/>
+			<display value="Documents following C-CDA constraints using a structured body"/>
 		</format>
 	</content>
 	<context>
