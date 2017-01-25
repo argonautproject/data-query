@@ -41,6 +41,7 @@ Search for all blood glucose, urine glucose and urine ketones for a patient
 -   (Status 400): invalid parameter
 -   (Status 401/4xx): unauthorized request
 -   (Status 403): insufficient scope
+
 -----------
 
 **`GET [base]/Observation?patient=[id]&category=laboratory&date=[date]{&date=[date]}`**

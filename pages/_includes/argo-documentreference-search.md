@@ -57,7 +57,6 @@ Functional behavior of Server when responding to the $docref operation:
 2. If a context date range is supplied the server SHOULD provide references to any document that falls within the date range
 3. If no date range is supplied, then the server SHALL provide references to last or current encounter
 
-
 -----
 
 **`GET [base]/DocumentReference/$docref?patient=[id]`**

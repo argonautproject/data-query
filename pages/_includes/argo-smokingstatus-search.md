@@ -1,4 +1,5 @@
 -----------
+
 **`GET [base]/Observation?patient=[id]&code=72166-2`**
 
 Example:

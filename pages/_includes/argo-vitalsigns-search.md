@@ -1,4 +1,5 @@
 -----------
+
 **`GET [base]/Observation?patient=[id]&category=vital-signs`**
 
 *Support:*  Mandatory to support search by category code.
@@ -12,8 +13,8 @@
 -   (Status 401/4xx): unauthorized request
 -   (Status 403): insufficient scope
 
-
 -----------
+
 **`GET [base]/Observation?patient=[id]&code=[vital sign LOINC{,LOINC2,LOINC3,...}]`**
 
 Example:
@@ -58,7 +59,6 @@ Find all the blood pressures after 2013-03-14
 -   (Status 403): insufficient scope
 
 --------
-
 
   [(how to search by reference)]: http://hl7.org/fhir/DSTU2/search.html#reference
   [(how to search by token)]: http://hl7.org/fhir/DSTU2/search.html#token

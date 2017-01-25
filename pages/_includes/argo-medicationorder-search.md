@@ -15,6 +15,7 @@ Example:
 -   (Status 400): invalid parameter
 -   (Status 401/4xx): unauthorized request
 -   (Status 403): insufficient scope
+
 -----------
 
 `GET /MedicationOrder?patient={id}&_include=MedicationOrder:medication`

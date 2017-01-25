@@ -44,6 +44,7 @@ Search for all cbc, metabolic panel, and urinalysis panels for a patient
 -   (Status 400): invalid parameter
 -   (Status 401/4xx): unauthorized request
 -   (Status 403): insufficient scope
+
 -----------
 
 **`GET [base]/DiagnosticReport?patient=[id]&category=LAB&date=[date]{&date=[date]}`**
