@@ -270,119 +270,119 @@
 	<format value="xml"/>
 	<format value="json"/>
 	<profile>
-		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profilelink">
+		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profile-link">
 			<valueCode value="AllergyIntolerance"/>
 		</extension>
 		<reference value="http://fhir.org/guides/argonaut/StructureDefinition-argo-allergyintolerance.html"/>
 		<display value="Argonaut Data Query AllergyIntolerance Profile"/>
 	</profile>
 	<profile>
-		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profilelink">
+		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profile-link">
 			<valueCode value="CarePlan"/>
 		</extension>
 		<reference value="http://fhir.org/guides/argonaut/StructureDefinition-argo-careplan.html"/>
 		<display value="Argonaut Data Query CarePlan Profile"/>
 	</profile>
 	<profile>
-		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profilelink">
+		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profile-link">
 			<valueCode value="CarePlan"/>
 		</extension>
 		<reference value="http://fhir.org/guides/argonaut/StructureDefinition-argo-careteam.html"/>
 		<display value="Argonaut Data Query CareTeam Profile"/>
 	</profile>
 	<profile>
-		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profilelink">
+		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profile-link">
 			<valueCode value="Condition"/>
 		</extension>
 		<reference value="http://fhir.org/guides/argonaut/StructureDefinition-argo-condition.html"/>
 		<display value="Argonaut Data Query Condition Profile"/>
 	</profile>
 	<profile>
-		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profilelink">
+		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profile-link">
 			<valueCode value="DocumentReference"/>
 		</extension>
 		<reference value="http://fhir.org/guides/argonaut/StructureDefinition-argo-documentreference.html"/>
 		<display value="Argonaut Data Query Document Reference Profile"/>
 	</profile>
 	<profile>
-		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profilelink">
+		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profile-link">
 			<valueCode value="Device"/>
 		</extension>
 		<reference value="http://fhir.org/guides/argonaut/StructureDefinition-argo-device.html"/>
 		<display value="Argonaut Data Query Device Profile"/>
 	</profile>
 	<profile>
-		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profilelink">
+		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profile-link">
 			<valueCode value="Goal"/>
 		</extension>
 		<reference value="http://fhir.org/guides/argonaut/StructureDefinition-argo-goal.html"/>
 		<display value="Argonaut Data Query Goal Profile"/>
 	</profile>
 	<profile>
-		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profilelink">
+		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profile-link">
 			<valueCode value="Immunization"/>
 		</extension>
 		<reference value="http://fhir.org/guides/argonaut/StructureDefinition-argo-immunization.html"/>
 		<display value="Argonaut Data Query Immunization Profile"/>
 	</profile>
 	<profile>
-		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profilelink">
+		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profile-link">
 			<valueCode value="DiagnosticReport"/>
 		</extension>
 		<reference value="http://fhir.org/guides/argonaut/StructureDefinition-argo-diagnosticreport.html"/>
 		<display value="Argonaut Data Query DiagnosticReport Profile"/>
 	</profile>
 	<profile>
-		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profilelink">
+		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profile-link">
 			<valueCode value="Observation"/>
 		</extension>
 		<reference value="http://fhir.org/guides/argonaut/StructureDefinition-argo-observationresults.html"/>
 		<display value="Argonaut Data Query Result Observation Profile"/>
 	</profile>
 	<profile>
-		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profilelink">
+		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profile-link">
 			<valueCode value="Medication"/>
 		</extension>
 		<reference value="http://fhir.org/guides/argonaut/StructureDefinition-argo-medication.html"/>
 		<display value="Argonaut Data Query Medication Profile"/>
 	</profile>
 	<profile>
-		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profilelink">
+		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profile-link">
 			<valueCode value="MedicationOrder"/>
 		</extension>
 		<reference value="http://fhir.org/guides/argonaut/StructureDefinition-argo-MedicationOrder.html"/>
 		<display value="Argonaut Data Query MedicationOrder Profile"/>
 	</profile>
 	<profile>
-		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profilelink">
+		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profile-link">
 			<valueCode value="MedicationStatement"/>
 		</extension>
 		<reference value="http://fhir.org/guides/argonaut/StructureDefinition-argo-medicationstatement.html"/>
 		<display value="Argonaut Data Query MedicationStatement Profile"/>
 	</profile>
 	<profile>
-		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profilelink">
+		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profile-link">
 			<valueCode value="Observation"/>
 		</extension>
 		<reference value="http://fhir.org/guides/argonaut/StructureDefinition-argo-vitalsigns.html"/>
 		<display value="Argonaut Data Query Vital Signs Profile"/>
 	</profile>
 	<profile>
-		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profilelink">
+		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profile-link">
 			<valueCode value="Observation"/>
 		</extension>
 		<reference value="http://fhir.org/guides/argonaut/StructureDefinition-argo-smokingstatus.html"/>
 		<display value="Argonaut Data Query Smoking Status Observation Profile"/>
 	</profile>
 	<profile>
-		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profilelink">
+		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profile-link">
 			<valueCode value="Patient"/>
 		</extension>
 		<reference value="http://fhir.org/guides/argonaut/StructureDefinition-argo-patient.html"/>
 		<display value="Argonaut Data Query Patient Profile"/>
 	</profile>
 	<profile>
-		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profilelink">
+		<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-profile-link">
 			<valueCode value="Procedure"/>
 		</extension>
 		<reference value="http://fhir.org/guides/argonaut/StructureDefinition-argo-procedure.html"/>
@@ -395,7 +395,7 @@
 			<description value="  &lt;p&gt;&lt;strong&gt;Argonaut Data Query clients SHALL&lt;/strong&gt; implement the &lt;a href=&quot;index.html#security&quot;&gt;security requirements&lt;/a&gt; documented in this guide &lt;/p&gt;  "/>
 		</security>
 		<resource>
-			<extension url="resdoc">
+			<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-resource-documentation">
 				<valueMarkdown value="    &lt;h4&gt;Summary of Argonaut Search Criteria for StructureDefinition-us-core-patient&lt;/h4&gt; &lt;ul&gt; &lt;li&gt;A client has connected to a server and fetched a patient using GET [base]/Patient/[id].&lt;/li&gt; &lt;li&gt;A client has connected to a server and searched through available Patients using at least 2 (example name and gender) of the following search parameters: &lt;ul&gt; &lt;li&gt;name&lt;/li&gt; &lt;li&gt;gender&lt;/li&gt; &lt;li&gt;birthdate&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt; &lt;/ul&gt; &lt;p&gt;To limit overly broad search results, a client search with gender &lt;strong&gt;SHOULD&lt;/strong&gt; include family and given name search parameters.&lt;/p&gt;           "/>
 			</extension>
 			<type value="Patient"/>
@@ -429,7 +429,7 @@
 			</interaction>
 		</resource>
 		<resource>
-			<extension url="resdoc">
+			<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-resource-documentation">
 				<valueMarkdown value="    &lt;h4&gt;Summary of Argonaut Search Criteria for StructureDefinition-us-core-allergintolerance&lt;/h4&gt; &lt;ul&gt; &lt;li&gt;A client has connected to a server and fetched a patient's allergies using GET /AllergyIntolerance?patient=[id].&lt;/li&gt; &lt;/ul&gt;            "/>
 			</extension>
 			<type value="AllergyIntolerance"/>
@@ -463,7 +463,7 @@
 			</interaction>
 		</resource>
 		<resource>
-			<extension url="resdoc">
+			<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-resource-documentation">
 				<valueMarkdown value="   &lt;h4&gt;Summary of Argonaut Search Criteria for StructureDefinition-us-core-careplan&lt;/h4&gt; &lt;ul&gt; &lt;li&gt;c of a patient&apos;s Assessment and Plan of Treatment information using GET /CarePlan?patient=[id]&amp;amp;category=assess-plan.&lt;/li&gt; &lt;li&gt;A client  &lt;strong&gt;SHOULD&lt;/strong&gt; be capable of connecting to a server and fetched all of a patient&apos;s Assessment and Plan of Treatment information over a specified time period using GET /CarePlan?patient=[id]&amp;amp;category=assess-plan&amp;amp;date=[date].&lt;/li&gt; &lt;/ul&gt; &lt;ul&gt; &lt;li&gt;A client &lt;strong&gt;SHOULD&lt;/strong&gt; be capable of connecting to a server and fetching all of a patient&apos;s active Assessment and Plan of Treatment information using GET /CarePlan?patient=[id]&amp;amp;category=assess-plan&amp;amp;status=active.&lt;/li&gt; &lt;li&gt;A client &lt;strong&gt;SHOULD&lt;/strong&gt; be capable of connecting to a server and fetching all of a patient&apos;s active Assessment and Plan of Treatment information over a specified time period using GET /CarePlan?patient=[id]&amp;amp;category=assess-plan&amp;amp;status=active&amp;amp;date=[date].&lt;/li&gt; &lt;/ul&gt;     &lt;h4 id=&quot;summary-of-argonaut-search-criteria-for-structuredefinition-argo-careteam&quot;&gt;Summary of Argonaut Search Criteria for StructureDefinition-argo-careteam&lt;/h4&gt;      &lt;ul&gt;      &lt;li&gt;A client has connected to a server and fetched a patients current care team members using GET[base]/CarePlan?patient=[id]&amp;amp;category=careteam&amp;amp;status=active&lt;/li&gt;      &lt;/ul&gt;       "/>
 			</extension>
 			<type value="CarePlan"/>
@@ -497,7 +497,7 @@
 			</interaction>
 		</resource>
 		<resource>
-			<extension url="resdoc">
+			<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-resource-documentation">
 				<valueMarkdown value="  &lt;h4&gt;Summary of Argonaut Search Criteria for StructureDefinition-us-core-condition&lt;/h4&gt; &lt;ul&gt; &lt;li&gt;A client connected to a server and fetched all problems and health concerns for a patient, including current as well as historical problems and health concerns using GET/Condition?patient=[id]&lt;/li&gt; &lt;/ul&gt;        "/>
 			</extension>
 			<type value="Condition"/>
@@ -531,7 +531,7 @@
 			</interaction>
 		</resource>
 		<resource>
-			<extension url="resdoc">
+			<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-resource-documentation">
 				<valueMarkdown value="   &lt;h4&gt;Summary of Argonaut Search Criteria for StructureDefinition-us-core-device&lt;/h4&gt; &lt;ul&gt; &lt;li&gt;A client has connected to a server and fetched all Unique device identifier(s)(UDI)for a patient's implantable device(s)using GET /Device?patient=[id].&lt;/li&gt; &lt;/ul&gt;    "/>
 			</extension>
 			<type value="Device"/>
@@ -565,7 +565,7 @@
 			</interaction>
 		</resource>
 		<resource>
-<extension url="resdoc">
+<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-resource-documentation">
 				<valueMarkdown value=" &lt;h4&gt;Search Criteria for StructureDefinition-argo-documentreference&lt;/h4&gt;     &lt;p&gt; The Server &lt;strong&gt;SHALL&lt;/strong&gt; support fetching document references using either the direct query for DocumentReference resources as described here or the &lt;a href=&quot;OperationDefinition-docref.html&quot;&gt;$docref operation&lt;/a&gt;.  The Client &lt;strong&gt;SHALL&lt;/strong&gt; support both methods.&lt;/p&gt;  &lt;p&gt;A client has connected to a server and fetches document references for a patient:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;code&gt;GET [base]/DocumentReference/$docref?patient=[id]&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;A client &lt;strong&gt;SHOULD&lt;/strong&gt; be capable of connecting to a server and fetching references for a patient searched by type and/or date using:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;code&gt;GET [base]/DocumentReference/$docref?patient=[id]{&amp;amp;type=[type]}{&amp;amp;period=[date]}&lt;/code&gt;&lt;/li&gt;&lt;/ul&gt;     "/>
 			</extension>
 		<extension url="http://hl7.org/fhir/StructureDefinition/conformance-search-parameter-combination">
@@ -611,7 +611,7 @@
 		</resource>
 
 		<resource>
-			<extension url="resdoc">
+			<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-resource-documentation">
 				<valueMarkdown value="         &lt;h4&gt;Summary of US Core Search Criteria for StructureDefinition-us-core-goal&lt;/h4&gt; &lt;ul&gt; &lt;li&gt;A client has connected to a server and fetched all of a patient's goals using GET [base]/Goal?patient=[id].&lt;/li&gt; &lt;li&gt;A client has connected to a server and fetched all of a patient's goals over a specified time period using GET [base]/Goal?patient=[id]&amp;amp;date=[date]{&amp;amp;date=[date]}.&lt;/li&gt; &lt;/ul&gt;      "/>
 			</extension>
 			<type value="Goal"/>
@@ -645,7 +645,7 @@
 			</interaction>
 		</resource>
 		<resource>
-			<extension url="resdoc">
+			<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-resource-documentation">
 				<valueMarkdown value="     &lt;h4&gt;Summary of Argonaut Search Criteria for StructureDefinition-us-core-immunization&lt;/h4&gt; &lt;ul&gt; &lt;li&gt;A client has connected to a server and fetched all immunizations for a patient using GET /Immunization?patient=[id].&lt;/li&gt; &lt;/ul&gt;         "/>
 			</extension>
 			<type value="Immunization"/>
@@ -679,7 +679,7 @@
 			</interaction>
 		</resource>
 		<resource>
-			<extension url="resdoc">
+			<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-resource-documentation">
 				<valueMarkdown value="      &lt;h4&gt;Summary of Argonaut Search Criteria for StructureDefinition-us-core-diagnosticreport&lt;/h4&gt; &lt;ul&gt; &lt;li&gt;A client has connected to a server and fetched all of a patient's laboratory diagnostic reports by searching by category using GET [base]/DiagnosticReport?patient=[id]&amp;amp;category=LAB.&lt;/li&gt; &lt;li&gt;A client has connected to a server and fetched all of a patient's laboratory diagnostic reports searching by category code and date range using GET [base]/DiagnosticReport?patient=[id]&amp;amp;category=LAB&amp;amp;date=[date]{&amp;amp;date=[date]}.&lt;/li&gt; &lt;li&gt;A client has connected to a server and fetched all of all of a patient's laboratory diagnostic reports searching by category and code using GET [base]/DiagnosticReport?patient=[id]&amp;amp;category=LAB&amp;amp;code=[LOINC].&lt;/li&gt; &lt;/ul&gt; &lt;ul&gt; &lt;li&gt;A client &lt;strong&gt;SHOULD&lt;/strong&gt; be capable of connecting to a server and fetching any of a patient's laboratory diagnostic reports searching by category and one or more codes and date range using GET [base]/DiagnosticReport?patient=[id]&amp;amp;category=LAB&amp;amp;code=[LOINC1{,LOINC2,LOINC3,...}]&amp;amp;date=[date]{&amp;amp;date=[date]}.&lt;/li&gt; &lt;/ul&gt;        "/>
 			</extension>
 			<type value="DiagnosticReport"/>
@@ -713,7 +713,7 @@
 			</interaction>
 		</resource>
 		<resource>
-			<extension url="resdoc">
+			<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-resource-documentation">
 				<valueMarkdown value="       &lt;h4&gt;Summary of Argonaut Search Criteria for StructureDefinition-us-core-observationresults&lt;/h4&gt; &lt;ul&gt; &lt;li&gt;A client has connected to a server and fetched all of a patient's laboratory results by searching by category using GET [base]/Observation?patient=[id]&amp;amp;category=laboratory.&lt;/li&gt; &lt;li&gt;A client has connected to a server and fetched all of a patient's laboratory results searching by category code and date range using GET [base]/Observation?patient=[id]&amp;amp;category=laboratory&amp;amp;date=[date]{&amp;amp;date=[date]}.&lt;/li&gt; &lt;li&gt;A client has connected to a server and fetched all of all of a patient's laboratory results searching by category and code using GET [base]/Observation?patient=[id]&amp;amp;category=laboratory&amp;amp;code=[LOINC].&lt;/li&gt; &lt;/ul&gt; &lt;ul&gt; &lt;li&gt;A client &lt;strong&gt;SHOULD&lt;/strong&gt; be capable of connecting to a server and fetching any of a patient's laboratory results searching by category and one or more codes and date range using GET [base]/Observation?patient=[id]&amp;amp;category=laboratory&amp;amp;code=[LOINC1{,LOINC2,LOINC3,...}]&amp;amp;date=[date]{&amp;amp;date=[date]}.&lt;/li&gt; &lt;/ul&gt; &lt;h4&gt;Summary of Argonaut Search Criteria for StructureDefinition-us-core-smokingstatus&lt;/h4&gt; &lt;ul&gt; &lt;li&gt;A client has connected to a server and fetched a patient's smoking status using GET [base]/Observation?patient=[id]&amp;amp;code=72166-2.&lt;/li&gt; &lt;/ul&gt; &lt;h4&gt;Summary of Argonaut Search Criteria for StructureDefinition-us-core-vitalsigns&lt;/h4&gt; &lt;ul&gt; &lt;li&gt;A client has connected to a server and fetched all of a patient's vital signs by searching by category using GET [base]/Observation?patient=[id]&amp;amp;category=vital-signs.&lt;/li&gt; &lt;li&gt;A client has connected to a server and fetched all of a patient's vital signs searching by category code and date range using GET [base]/Observation?patient=[id]&amp;amp;category=vital-signs&amp;amp;date=[date]{&amp;amp;date=[date]}.&lt;/li&gt; &lt;li&gt;A client has connected to a server and fetched any of a patient's vital signs by searching by one or more of the codes listed below using GET [base]/Observation?patient=[id]&amp;amp;code[vital sign LOINC{,LOINC2,LOINC3,...}].&lt;/li&gt; &lt;/ul&gt; &lt;ul&gt; &lt;li&gt;A client &lt;strong&gt;SHOULD&lt;/strong&gt; be capable of connecting to a server and fetching any of a patient's vital signs searching by one or more of the codes listed below and date range using GET [base]/Observation?patient=[id]&amp;amp;code=[LOINC{,LOINC2...}]vital-signs&amp;amp;date=[date]{&amp;amp;date=[date]}.&lt;/li&gt; &lt;/ul&gt;      "/>
 			</extension>
 			<type value="Observation"/>
@@ -747,7 +747,7 @@
 			</interaction>
 		</resource>
 		<resource>
-			<extension url="resdoc">
+			<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-resource-documentation">
 				<valueMarkdown value="    &lt;p&gt;The MedicationStatement and MedicationOrder resources can represent a medication, using either a code or refer to a [Medication] resource.  If the Medication Resource is used in a MedicationStatement or a MedicationOrder,  then the READ and SEARCH Criteria &lt;strong&gt;SHALL&lt;/strong&gt; be supported.&lt;/p&gt;       "/>
 			</extension>
 			<type value="Medication"/>
@@ -781,7 +781,7 @@
 			</interaction>
 		</resource>
 		<resource>
-			<extension url="resdoc">
+			<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-resource-documentation">
 				<valueMarkdown value="     &lt;p&gt;&lt;strong&gt;Summary of US Core Search Criteria for StructureDefinition-us-core-medicationstatement&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;The MedicationStatement and MedicationOrder resources can represent a medication, using either a code or refer to a Medication resource. When referencing a Medication resource, the resource may be &lt;a href=&quot;http://hl7.org/fhir/2017Jan/references.html#contained&quot;&gt;contained&lt;/a&gt; or an external resource. The server application can choose any one way or more than one method, but &lt;strong&gt;IF&lt;/strong&gt; the an external reference to Medication is used, the server &lt;strong&gt;SHALL&lt;/strong&gt; support the &lt;a href=&quot;http://hl7.org/fhir/2017Jan/references.html#include&quot;&gt;include&lt;/a&gt; parameter for searching this element. The client application &lt;strong&gt;SHALL&lt;/strong&gt; support both methods.&lt;/p&gt; &lt;ul&gt; &lt;li&gt;A client has connected to a server and fetched a patient's medications using:&lt;/li&gt; &lt;/ul&gt; &lt;ol&gt; &lt;li&gt;GET /MedicationStatement?patient=[id]&lt;/li&gt; &lt;li&gt;GET /MedicationStatement?patient=[id]&amp;amp;_include=MedicationStatement:medication&lt;/li&gt; &lt;/ol&gt;        "/>
 			</extension>
 			<type value="MedicationStatement"/>
@@ -815,7 +815,7 @@
 			</interaction>
 		</resource>
 		<resource>
-			<extension url="resdoc">
+			<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-resource-documentation">
 				<valueMarkdown value="   &lt;p&gt;&lt;strong&gt;Summary of US Core Search Criteria for StructureDefinition-us-core-medicationorder&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;The MedicationStatement and MedicationOrder resources can represent a medication, using either a code or refer to a Medication resource. When referencing a Medication resource, the resource may be &lt;a href=&quot;http://hl7.org/fhir/references.html#contained&quot;&gt;contained&lt;/a&gt; or an external resource. The server application can choose any one way or more than one method, but &lt;strong&gt;IF&lt;/strong&gt; the an external reference to Medication is used, the server &lt;strong&gt;SHALL&lt;/strong&gt; support the &lt;a href=&quot;http://hl7.org/fhir/references.html#include&quot;&gt;include&lt;/a&gt; parameter for searching this element. The client application &lt;strong&gt;SHALL&lt;/strong&gt; support both methods.&lt;/p&gt; &lt;ul&gt; &lt;li&gt;A client has connected to a server and fetched a patient's medications using:&lt;/li&gt; &lt;/ul&gt; &lt;ol&gt; &lt;li&gt;GET /MedicationOrder?patient=[id]&lt;/li&gt; &lt;li&gt;GET /MedicationOrder?patient=[id]&amp;amp;_include=MedicationOrder:medication&lt;/li&gt; &lt;/ol&gt;        "/>
 			</extension>
 			<type value="MedicationOrder"/>
@@ -849,7 +849,7 @@
 			</interaction>
 		</resource>
 		<resource>
-			<extension url="resdoc">
+			<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-resource-documentation">
 				<valueMarkdown value="   &lt;h4&gt;Summary of US Core Search Criteria for StructureDefinition-us-core-procedure&lt;/h4&gt; &lt;ul&gt; &lt;li&gt;A client connected to a server and fetched all procedures for a patient, including current as well as historical Procedures GET/Procedure?patient=[id].&lt;/li&gt; &lt;li&gt;A client has connected to a server and fetched all of a patient's procedures over a specified time period using GET /Procedure?patient=[id]&amp;amp;date=[date]{&amp;amp;date=[date]}.&lt;/li&gt; &lt;/ul&gt;          "/>
 			</extension>
 			<type value="Procedure"/>

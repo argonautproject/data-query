@@ -1,9 +1,31 @@
 
 -----------
 **`GET [base]/Patient/[id]`**
+
 Example:
 
 [GET https://fhir-open-api.smarthealthit.org/Patient/1032702](https://fhir-open-api.smarthealthit.org/Patient/1032702)
+
+*Support:* Mandatory
+
+*Implementation Notes:*  Fetches a single Patient
+
+*Response Class:*
+
+-   (Status 200): successful operation
+-   (Status 400): invalid parameter
+-   (Status 401/4xx): unauthorized request
+-   (Status 403): insufficient scope
+-   (Status 404): unknown resource
+-   (Status 410): deleted resource
+
+-----------
+
+**`GET [base]/Patient/identifier=[system]|[code]`**
+
+Example:
+
+[GET https://fhir-open-api.smarthealthit.org/Patient?identifier=http://hospital.smarthealthit.org|1032702](https://fhir-open-api.smarthealthit.org/Patient?identifier=http://hospital.smarthealthit.org|1032702)
 
 *Support:* Mandatory
 
@@ -40,7 +62,6 @@ Example:
 -   (Status 404): unknown resource
 -   (Status 410): deleted resource
 
-
 -----------
 **`GET [base]/Patient?name=[string]&gender=[code]`**
 
@@ -60,6 +81,7 @@ Example:
 -   (Status 403): insufficient scope
 -   (Status 404): unknown resource
 -   (Status 410): deleted resource
+
 -----------
 
 **`GET [base]/Patient?family=[string]&gender=[code]`**

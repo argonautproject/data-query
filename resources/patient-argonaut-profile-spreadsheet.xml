@@ -6038,7 +6038,7 @@
     <Cell ss:StyleID="s113"><NamedCell ss:Name="_FilterDatabase"/></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s132"><Data ss:Type="String">!profilelink</Data><NamedCell
+    <Cell ss:StyleID="s132"><Data ss:Type="String">!profile-link</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><Data ss:Type="String">Resource</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
@@ -6077,7 +6077,7 @@
     <Cell ss:StyleID="s113"><Data ss:Type="String">to enable publishing of US-Core profile search params using CapSttmnts</Data></Cell>
    </Row>
    <Row ss:AutoFitHeight="0">
-    <Cell ss:StyleID="s132"><Data ss:Type="String">!resdoc</Data><NamedCell
+    <Cell ss:StyleID="s132"><Data ss:Type="String">!resource-documentation</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>
     <Cell ss:StyleID="s107"><Data ss:Type="String">Resource</Data><NamedCell
       ss:Name="_FilterDatabase"/></Cell>

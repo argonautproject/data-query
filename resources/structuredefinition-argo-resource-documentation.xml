@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <StructureDefinition xmlns="http://hl7.org/fhir">
-  <id value="argo-profilelink"/>
-
-  <url value="http://fhir.org/guides/argonaut/StructureDefinition/argo-profilelink"/>
-  <name value="Profile-resource association extension"/>
-  <display value="Profile-Resource  Association"/>
+  <id value="argo-resource-documentation"/>
+  <text>
+    <status value="generated"/>
+  </text>
+  <url value="http://fhir.org/guides/argonaut/StructureDefinition/argo-resource-documentation"/>
+  <name value="Conformance Statement Documentation Extension"/>
+  <display value="Resource level Documentation"/>
   <status value="draft"/>
   <publisher value="Argonaut Project"/>
   <contact>
@@ -16,8 +18,8 @@
     </telecom>
   </contact>
   <date value="2016-10-18T00:00:00+00:00"/>
-  <description value="Used in the Conformance resource to link profiles to the resources they are based upon for the purpose of describing profile specific capababilties such as specific search criteria or operations which are supported on a profile by profile bases.  It is a code that references a  resource listed in Conformance.rest.resource.  For more information on how the Conformance resource describes profiles on resources, see [Two uses of Profiles] (http://hl7.org/fhir/profiling.html#profile-uses)."/>
-  <requirements value="To allow profiles to be associated with resources in CapabilityStatements."/>
+  <description value="Used in the Conformance resource to add additional information about the resource type being used by the system and allows for further documentation of server capabilities on a resource by resource basis."/>
+  <requirements value="To allow for further documentation of server capabilities on a resource by resource basis."/>
   <fhirVersion value="1.9.0"/>
   <mapping>
     <identity value="rim"/>
@@ -28,17 +30,18 @@
   <constrainedType value="Extension"/>
   <abstract value="false"/>
   <contextType value="resource"/>
-  <context value="Conformance.profile"/>
+  <context value="Conformance.rest.resource"/>
+  <context value="Conformance.rest.operation"/>
   <base value="http://hl7.org/fhir/StructureDefinition/Extension"/>
   <snapshot>
-    <element id="Extension:profilelink">
+    <element id="Extension:resource-documentation">
       <path value="Extension"/>
-      <name value="profilelink"/>
-      <short value="Profile-resource association extension"/>
-      <definition value="Used in the Conformance resource to link profiles to the resources they are based upon for the purpose of describing profile specific capababilties such as specific search criteria or operations which are supported on a profile by profile bases.  It is a code that references a  resource listed in Conformance.rest.resource.  For more information on how the Conformance resource describes profiles on resources, see [Two uses of Profiles] (http://hl7.org/fhir/profiling.html#profile-uses)."/>
+      <name value="resource-documentation"/>
+      <short value="Addtitional conformance documentation extension"/>
+      <definition value="Used in the Conformance resource to add additional information about the resource type being used by the system and allows for further documentation of server capabilities on a resource by resource basis."/>
       <comments value="This is helpful for publishing the CapabilityResource narrative."/>
       <min value="0"/>
-      <max value="*"/>
+      <max value="1"/>
       <base>
         <path value="Extension"/>
         <min value="0"/>
@@ -51,19 +54,11 @@
       <mustSupport value="false"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
-      <mapping>
-        <identity value="v2"/>
-        <map value="No v2 equivalent"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="No RIM equivalent"/>
-      </mapping>
     </element>
-    <element id="Extension:profilelink.id">
+    <element id="Extension:resource-documentation.id">
       <path value="Extension.id"/>
       <representation value="xmlAttr"/>
-      <name value="Extension:profilelink.id"/>
+      <name value="Extension:resource-documentation.id"/>
       <short value="xml:id (or equivalent in JSON)"/>
       <definition value="unique id for the element within a resource (for internal references)."/>
       <min value="0"/>
@@ -85,9 +80,9 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Extension:profilelink.extension">
+    <element id="Extension:resource-documentation.extension">
       <path value="Extension.extension"/>
-      <name value="Extension:profilelink.extension"/>
+      <name value="Extension:resource-documentation.extension"/>
       <short value="Additional Content defined by implementations"/>
       <definition value="May be used to represent additional information that is not part of the basic definition of the element. In order to make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer is allowed to define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension."/>
       <comments value="There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone."/>
@@ -112,10 +107,10 @@
         <map value="n/a"/>
       </mapping>
     </element>
-    <element id="Extension:profilelink.url">
+    <element id="Extension:resource-documentation.url">
       <path value="Extension.url"/>
       <representation value="xmlAttr"/>
-      <name value="Extension:profilelink.url"/>
+      <name value="Extension:resource-documentation.url"/>
       <short value="identifies the meaning of the extension"/>
       <definition value="Source of the definition for the extension code - a logical name or a URL."/>
       <comments value="The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition should be version specific.  This will ideally be the URI for the Resource Profile defining the extension, with the code for the extension after a #."/>
@@ -129,7 +124,7 @@
       <type>
         <code value="uri"/>
       </type>
-      <fixedUri value="http://fhir.org/guides/argonaut/StructureDefinition/argo-profilelink"/>
+      <fixedUri value="http://fhir.org/guides/argonaut/StructureDefinition/argo-resource-documentation"/>
       <maxLength value="0"/>
       <mustSupport value="false"/>
       <isModifier value="false"/>
@@ -139,9 +134,9 @@
         <map value="N/A"/>
       </mapping>
     </element>
-    <element id="Extension:profilelink.valueCode">
-      <path value="Extension.valueCode"/>
-      <name value="Extension:profilelink.valueCode"/>
+    <element id="Extension:resource-documentation.valueMarkdown">
+      <path value="Extension.valueMarkdown"/>
+      <name value="Extension:resource-documentation.valueMarkdown"/>
       <short value="Value of extension"/>
       <definition value="Value of extension - may be a resource or one of a constrained set of the data types (see Extensibility in the spec for list)."/>
       <min value="0"/>
@@ -152,18 +147,12 @@
         <max value="1"/>
       </base>
       <type>
-        <code value="code"/>
+        <code value="markdown"/>
       </type>
       <maxLength value="0"/>
       <mustSupport value="false"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
-      <binding>
-        <strength value="required"/>
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/resource-types"/>
-        </valueSetReference>
-      </binding>
       <mapping>
         <identity value="rim"/>
         <map value="N/A"/>
@@ -171,14 +160,14 @@
     </element>
   </snapshot>
   <differential>
-    <element id="Extension:profilelink">
+    <element id="Extension:resource-documentation">
       <path value="Extension"/>
-      <name value="profilelink"/>
-      <short value="Profile-resource association extension"/>
-      <definition value="Used in the Conformance resource to link profiles to the resources they are based upon for the purpose of describing profile specific capababilties such as specific search criteria or operations which are supported on a profile by profile bases.  It is a code that references a  resource listed in Conformance.rest.resource.  For more information on how the Conformance resource describes profiles on resources, see [Two uses of Profiles] (http://hl7.org/fhir/profiling.html#profile-uses)."/>
+      <name value="resource-documentation"/>
+      <short value="Addtitional conformance documentation extension"/>
+      <definition value="Used in the Conformance resource to add additional information about the resource type being used by the system and allows for further documentation of server capabilities on a resource by resource basis."/>
       <comments value="This is helpful for publishing the CapabilityResource narrative."/>
       <min value="0"/>
-      <max value="*"/>
+      <max value="1"/>
       <type>
         <code value="Extension"/>
       </type>
@@ -186,42 +175,28 @@
       <mustSupport value="false"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
-      <mapping>
-        <identity value="v2"/>
-        <map value="No v2 equivalent"/>
-      </mapping>
-      <mapping>
-        <identity value="rim"/>
-        <map value="No RIM equivalent"/>
-      </mapping>
     </element>
-    <element id="Extension:profilelink.url">
+    <element id="Extension:resource-documentation.url">
       <path value="Extension.url"/>
-      <name value="Extension:profilelink.url"/>
+      <name value="Extension:resource-documentation.url"/>
       <min value="0"/>
-      <fixedUri value="http://fhir.org/guides/argonaut/StructureDefinition/argo-profilelink"/>
+      <fixedUri value="http://fhir.org/guides/argonaut/StructureDefinition/argo-resource-documentation"/>
       <maxLength value="0"/>
       <mustSupport value="false"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
     </element>
-      <element id="Extension:profilelink.valueCode">
-      <path value="Extension.valueCode"/>
-      <name value="Extension:profilelink.valueCode"/>
+  <element id="Extension:resource-documentation.valueMarkdown">
+      <path value="Extension.valueMarkdown"/>
+      <name value="Extension:resource-documentation.valueMarkdown"/>
       <min value="0"/>
       <type>
-        <code value="code"/>
+        <code value="markdown"/>
       </type>
       <maxLength value="0"/>
       <mustSupport value="false"/>
       <isModifier value="false"/>
       <isSummary value="false"/>
-      <binding>
-        <strength value="required"/>
-        <valueSetReference>
-          <reference value="http://hl7.org/fhir/ValueSet/resource-types"/>
-        </valueSetReference>
-      </binding>
     </element>
   </differential>
 </StructureDefinition>

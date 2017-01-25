@@ -100,6 +100,8 @@
 							</a>
 						</td>
 						<td>
+							<span>Argonaut Data Query Patient Profile</span>
+							<br/>
 							<br/>
 						</td>
 						<td style="text-align:center; ">
@@ -140,6 +142,8 @@
 							</a>
 						</td>
 						<td>
+							<span>Argonaut Data Query AllergyIntolerance Profile</span>
+							<br/>
 							<br/>
 						</td>
 						<td style="text-align:center; ">
@@ -155,6 +159,10 @@
 							</a>
 						</td>
 						<td>
+							<span>Argonaut Data Query CarePlan Profile</span>
+							<br/>
+							<span>Argonaut Data Query CareTeam Profile</span>
+							<br/>
 							<br/>
 						</td>
 						<td style="text-align:center; ">
@@ -199,6 +207,8 @@
 							</a>
 						</td>
 						<td>
+							<span>Argonaut Data Query Condition Profile</span>
+							<br/>
 							<br/>
 						</td>
 						<td style="text-align:center; ">
@@ -225,6 +235,8 @@
 							</a>
 						</td>
 						<td>
+							<span>Argonaut Data Query Device Profile</span>
+							<br/>
 							<br/>
 						</td>
 						<td style="text-align:center; ">
@@ -240,6 +252,8 @@
 							</a>
 						</td>
 						<td>
+							<span>Argonaut Data Query Document Reference Profile</span>
+							<br/>
 							<br/>
 						</td>
 						<td style="text-align:center; ">
@@ -264,6 +278,8 @@
 							</a>
 						</td>
 						<td>
+							<span>Argonaut Data Query Goal Profile</span>
+							<br/>
 							<br/>
 						</td>
 						<td style="text-align:center; ">
@@ -284,6 +300,8 @@
 							</a>
 						</td>
 						<td>
+							<span>Argonaut Data Query Immunization Profile</span>
+							<br/>
 							<br/>
 						</td>
 						<td style="text-align:center; ">
@@ -299,6 +317,8 @@
 							</a>
 						</td>
 						<td>
+							<span>Argonaut Data Query DiagnosticReport Profile</span>
+							<br/>
 							<br/>
 						</td>
 						<td style="text-align:center; ">
@@ -343,6 +363,8 @@
 							</a>
 						</td>
 						<td>
+							<span>Argonaut Data Query Medication Profile</span>
+							<br/>
 							<br/>
 						</td>
 						<td style="text-align:center; ">
@@ -357,6 +379,8 @@
 							</a>
 						</td>
 						<td>
+							<span>Argonaut Data Query MedicationStatement Profile</span>
+							<br/>
 							<br/>
 						</td>
 						<td style="text-align:center; ">
@@ -374,6 +398,8 @@
 							</a>
 						</td>
 						<td>
+							<span>Argonaut Data Query MedicationOrder Profile</span>
+							<br/>
 							<br/>
 						</td>
 						<td style="text-align:center; ">
@@ -391,6 +417,12 @@
 							</a>
 						</td>
 						<td>
+							<span>Argonaut Data Query Result Observation Profile</span>
+							<br/>
+							<span>Argonaut Data Query Vital Signs Profile</span>
+							<br/>
+							<span>Argonaut Data Query Smoking Status Observation Profile</span>
+							<br/>
 							<br/>
 						</td>
 						<td style="text-align:center; ">
@@ -435,6 +467,8 @@
 							</a>
 						</td>
 						<td>
+							<span>Argonaut Data Query Procedure Profile</span>
+							<br/>
 							<br/>
 						</td>
 						<td style="text-align:center; ">
@@ -463,6 +497,10 @@
 					</a>
 					<p>
 						<span>Supported Profiles:  </span>
+						<a href="http://fhir.org/guides/argonaut/StructureDefinition-argo-patient.html">
+							<span>Argonaut Data Query Patient Profile</span>
+							<br/>
+						</a>
 						<br/>
 					</p><p><strong>Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-patient</strong></p> <ul> <li>A server is capable of returning a patient using GET [base]/Patient/[id].</li> <li>A server returns valid FHIR Patient resources according to the Data Access Framework (DAF) Patient Profile..</li> <li>A server has exposed a FHIR Patient search endpoint supporting at a minimum the following search parameters: <ul> <li>identifier</li> </ul></li> <li>A server has exposed a FHIR Patient search endpoint supporting at a minimum the following search parameters when at least 2 (example name and gender) are present: <ul> <li>name</li> <li>gender</li> <li>birthdate</li> </ul></li> </ul>   <p/><span>Search Parameters:</span><table border="1">
 						<thead>
@@ -580,6 +618,10 @@
 					</a>
 					<p>
 						<span>Supported Profiles:  </span>
+						<a href="http://fhir.org/guides/argonaut/StructureDefinition-argo-allergyintolerance.html">
+							<span>Argonaut Data Query AllergyIntolerance Profile</span>
+							<br/>
+						</a>
 						<br/>
 					</p><p><strong>Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-allergyintolerance</strong></p> <ul> <li>A server is capable of returning a patient’s allergies using GET /AllergyIntolerance?patient=[id].</li> </ul> <p/><span>Search Parameters:</span><table border="1">
 						<thead>
@@ -620,8 +662,16 @@
 					</a>
 					<p>
 						<span>Supported Profiles:  </span>
+						<a href="http://fhir.org/guides/argonaut/StructureDefinition-argo-careplan.html">
+							<span>Argonaut Data Query CarePlan Profile</span>
+							<br/>
+						</a>
+						<a href="http://fhir.org/guides/argonaut/StructureDefinition-argo-careteam.html">
+							<span>Argonaut Data Query CareTeam Profile</span>
+							<br/>
+						</a>
 						<br/>
-					</p><p><strong>Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-careplan</strong></p> <ul> <li>A server is capable of returning all of a patient’s Assessment and Plan of Treatment information using GET /CarePlan?patient=[id]&amp;category=assess-plan.</li> <li><p>A server <strong>SHOULD</strong> be capable of returning a patient’s Assessment and Plan of Treatment information over a specified time period using GET /CarePlan?patient=[id]&amp;category=assess-plan&amp;date=[date].</p></li> <li>A server <strong>SHOULD</strong> be capable returning all of a patient’s active Assessment and Plan of Treatment information using GET /CarePlan?patient=[id]&amp;category=assess-plan&amp;status=active.</li> <li><p>A server <strong>SHOULD</strong> be capable returning a patient’s active Assessment and Plan of Treatment information over a specified time period using GET /CarePlan?patient=[id]&amp;category=assess-plan&amp;status=active&amp;date=[date].</p></li> </ul>       <h4 id="summary-of-argonaut-search-criteria-for-structuredefinition-argo-careteam">Summary of Argonaut Search Criteria for StructureDefinition-argo-careteam</h4>      <ul>      <li>A server is capable of returning a patients current care team members using GET[base]/CarePlan?patient=[id]&amp;category=careteam&amp;status=active</li>      </ul><p/><span>Search Parameters:</span><table border="1">
+					</p><p><strong>Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-careplan</strong></p> <ul> <li>A server is capable of returning all of a patient’s Assessment and Plan of Treatment information using GET /CarePlan?patient=[id]&amp;category=assess-plan.</li> <li><p>A server is capable of returning a patient’s Assessment and Plan of Treatment information over a specified time period using GET /CarePlan?patient=[id]&amp;category=assess-plan&amp;date=[date].</p></li> <li>A server <strong>SHOULD</strong> be capable returning all of a patient’s active Assessment and Plan of Treatment information using GET /CarePlan?patient=[id]&amp;category=assess-plan&amp;status=active.</li> <li><p>A server <strong>SHOULD</strong> be capable returning a patient’s active Assessment and Plan of Treatment information over a specified time period using GET /CarePlan?patient=[id]&amp;category=assess-plan&amp;status=active&amp;date=[date].</p></li> </ul>       <h4 id="summary-of-argonaut-search-criteria-for-structuredefinition-argo-careteam">Summary of Argonaut Search Criteria for StructureDefinition-argo-careteam</h4>      <ul>      <li>A server is capable of returning a patients current care team members using GET[base]/CarePlan?patient=[id]&amp;category=careteam&amp;status=active</li>      </ul><p/><span>Search Parameters:</span><table border="1">
 						<thead>
 							<tr>
 								<th style="width:2.71in; ">
@@ -665,7 +715,7 @@
 							</tr>
 							<tr>
 								<td style="width:2.71in; ">
-									<span>SHOULD</span>
+									<span>SHALL</span>
 								</td>
 								<td>
 									<span>status</span>
@@ -677,7 +727,7 @@
 							</tr>
 							<tr>
 								<td style="width:2.71in; ">
-									<span>SHOULD</span>
+									<span>SHALL</span>
 								</td>
 								<td>
 									<span>date</span>
@@ -721,6 +771,10 @@
 					</a>
 					<p>
 						<span>Supported Profiles:  </span>
+						<a href="http://fhir.org/guides/argonaut/StructureDefinition-argo-condition.html">
+							<span>Argonaut Data Query Condition Profile</span>
+							<br/>
+						</a>
 						<br/>
 					</p><p><strong>Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-condition</strong></p> <ul> <li><p>A server is capable of returning a patient’s conditions list using GET/Condition?patient=[id].</p></li> <li>A server <strong>SHOULD</strong> be capable returning all of a patient’s active problems and health concerns using ‘GET /Condition?patient=[id]&amp;clinicalstatus=active,recurrance,remission’</li> <li><p>A server <strong>SHOULD</strong> be capable returning all of a patient’s problems or all of patient’s health concerns using ‘GET /Condition?patient=[id]&amp;category=[problem|health-concern]’</p></li> </ul>     <p/><span>Search Parameters:</span><table border="1">
 						<thead>
@@ -794,6 +848,10 @@
 					</a>
 					<p>
 						<span>Supported Profiles:  </span>
+						<a href="http://fhir.org/guides/argonaut/StructureDefinition-argo-device.html">
+							<span>Argonaut Data Query Device Profile</span>
+							<br/>
+						</a>
 						<br/>
 					</p><p><strong>Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-device</strong></p> <ul> <li>A server is capable of returning all Unique device identifier(s)(UDI) for a patient’s implanted device(s) using GET /Device?patient=[id].</li> </ul>    <p/><span>Search Parameters:</span><table border="1">
 						<thead>
@@ -834,8 +892,12 @@
 					</a>
 					<p>
 						<span>Supported Profiles:  </span>
+						<a href="http://fhir.org/guides/argonaut/StructureDefinition-argo-documentreference.html">
+							<span>Argonaut Data Query Document Reference Profile</span>
+							<br/>
+						</a>
 						<br/>
-					</p> <h4>Search Criteria for StructureDefinition-argo-documentreference</h4> <ul> <li>To fetch document references, the Server <strong>SHALL</strong> support <strong>either</strong>: <ul> <li>a direct query for DocumentReference resources as described here</li> <li>or the <a href="OperationDefinition-docref.html">$docref operation</a>operation</li> </ul> </li> </ul> <p style="padding-left: 60px;">The Client <strong>SHALL</strong> support both methods.</p> <ul> <li>If supporting a direct query, a server <strong>SHALL</strong> be capable of returning at least the most recent CCD document references and <strong>MAY</strong> provide most recent references to other document types for a patient using:GET [base]/DocumentReference/$docref?patient=[id]</li> <li>If supporting a direct query, A server <strong>SHOULD</strong> be capable of returning references to CCD documents and <strong>MAY</strong> provide references to other document types for a patient searched by type and/or date using:GET [base]/DocumentReference/$docref?patient=[id]{&amp;type=[type]}{&amp;period=[date]}</li> </ul><p/><span>Search Parameters:</span><table border="1">
+					</p> <h4>Search Criteria for StructureDefinition-argo-documentreference</h4>     <p> The Server <strong>SHALL</strong> support fetching document references using either the direct query for DocumentReference resources as described here or the <a href="OperationDefinition-docref.html">$docref operation</a>.  The Client <strong>SHALL</strong> support both methods.</p>     <p> A server <strong>MAY</strong> be capable of returning at at least the most recent CCD document references and <strong>MAY</strong> provide most recent references to other document for a patient using:GET [base]/DocumentReference/$docref?patient=[id]</p>     <p> A server <strong>MAY</strong> be capable of returning references to CCD documents and <strong>MAY</strong> provide references to other document types for a patient searched by type and/or date using:GET [base]/DocumentReference/$docref?patient=[id]{&amp;type=[type]}{&amp;period=[date]}</p><p/><span>Search Parameters:</span><table border="1">
 						<thead>
 							<tr>
 								<th style="width:2.71in; ">
@@ -905,6 +967,10 @@
 					</a>
 					<p>
 						<span>Supported Profiles:  </span>
+						<a href="http://fhir.org/guides/argonaut/StructureDefinition-argo-goal.html">
+							<span>Argonaut Data Query Goal Profile</span>
+							<br/>
+						</a>
 						<br/>
 					</p><p><strong>Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-device</strong></p> <ul> <li>A server is capable of returning all of a patient’s goals using GET [base]/Goal?patient=[id].</li> <li>A server is capable of returning all of all of a patient’s goals over a specified time period using GET [base]/Goal?patient=[id]&amp;date=[date]{&amp;date=[date]}.</li> </ul>     <p/><span>Search Parameters:</span><table border="1">
 						<thead>
@@ -962,6 +1028,10 @@
 					</a>
 					<p>
 						<span>Supported Profiles:  </span>
+						<a href="http://fhir.org/guides/argonaut/StructureDefinition-argo-immunization.html">
+							<span>Argonaut Data Query Immunization Profile</span>
+							<br/>
+						</a>
 						<br/>
 					</p><p><strong>Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-immunization</strong></p> <ul> <li>A client has connected to a server and fetched all immunizations for a patient using GET /Immunization?patient=[id].</li> </ul>     <p/><span>Search Parameters:</span><table border="1">
 						<thead>
@@ -1002,6 +1072,10 @@
 					</a>
 					<p>
 						<span>Supported Profiles:  </span>
+						<a href="http://fhir.org/guides/argonaut/StructureDefinition-argo-diagnosticreport.html">
+							<span>Argonaut Data Query DiagnosticReport Profile</span>
+							<br/>
+						</a>
 						<br/>
 					</p><p><strong>Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-diagnosticreport</strong></p> <ul> <li>A server is capable of returning all of a patient’s laboratory diagnostic reports queried by category using GET [base]/DiagnosticReport?patient=[id]&amp;category=LAB.</li> <li>A server is capable of returning all of a patient’s laboratory diagnostic reports queried by category code and date range using GET [base]/DiagnosticReport?patient=[id]&amp;category=LAB&amp;date=[date]{&amp;date=[date]}.</li> <li><p>A server is capable of returning all of a patient’s laboratory diagnostic reports queried by category and code using GET [base]/DiagnosticReport?patient=[id]&amp;category=LAB&amp;code=[LOINC].</p></li> <li><p>A server <strong>SHOULD</strong> be capable of returning all of a patient’s laboratory diagnostic reports queried by category and one or more codes and date range using GET [base]/DiagnosticReport?patient=[id]&amp;category=LAB&amp;code=[LOINC1{,LOINC2,LOINC3,…}]&amp;date=[date]{&amp;date=[date]}.</p></li> </ul>     <p/><span>Search Parameters:</span><table border="1">
 						<thead>
@@ -1103,6 +1177,10 @@
 					</a>
 					<p>
 						<span>Supported Profiles:  </span>
+						<a href="http://fhir.org/guides/argonaut/StructureDefinition-argo-medication.html">
+							<span>Argonaut Data Query Medication Profile</span>
+							<br/>
+						</a>
 						<br/>
 					</p><p>The MedicationStatement and MedicationOrder resources can represent a medication, using either a code or refer to a Medication resource. If the Medication Resource is used in a MedicationStatement or a MedicationOrder, then the READ and SEARCH Criteria <strong>SHALL</strong> be supported.</p><p/><span>Search Parameters:</span><table border="1">
 						<thead>
@@ -1134,6 +1212,10 @@
 					</a>
 					<p>
 						<span>Supported Profiles:  </span>
+						<a href="http://fhir.org/guides/argonaut/StructureDefinition-argo-medicationstatement.html">
+							<span>Argonaut Data Query MedicationStatement Profile</span>
+							<br/>
+						</a>
 						<br/>
 					</p><p><strong>Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-medicationstatement</strong></p> <p>The MedicationStatement and MedicationOrder resources can represent a medication, using either a code or refer to a Medication resource. When referencing a Medication resource, the resource may be <a href="http://hl7.org/fhir/2017Jan/references.html#contained">contained</a> or an external resource. The server application can choose any one way or more than one method, but <strong>IF</strong> the an external reference to Medication is used, the server <strong>SHALL</strong> support the <a href="http://hl7.org/fhir/2017Jan/references.html#include">include</a> parameter for searching this element. The client application must support both methods.</p> <ul> <li>A server is capable of returning a patient’s medications using one of or both</li> </ul> <ol> <li>GET /MedicationStatement?patient=[id]</li> <li>GET /MedicationStatement?patient=[id]&amp;_include=MedicationStatement:medication</li> </ol> <p/><span>Search Parameters:</span><table border="1">
 						<thead>
@@ -1177,6 +1259,10 @@
 					</a>
 					<p>
 						<span>Supported Profiles:  </span>
+						<a href="http://fhir.org/guides/argonaut/StructureDefinition-argo-MedicationOrder.html">
+							<span>Argonaut Data Query MedicationOrder Profile</span>
+							<br/>
+						</a>
 						<br/>
 					</p><p><strong>Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-MedicationOrder</strong></p> <p>The MedicationStatement and MedicationOrder resources can represent a medication, using either a code or refer to a Medication resource. When referencing a Medication resource, the resource may be <a href="http://hl7.org/fhir/2017Jan/references.html#contained">contained</a> or an external resource. The server application can choose any one way or more than one method, but if the an external reference to Medication is used, the server SHALL support the <a href="http://hl7.org/fhir/2017Jan/references.html#include">include</a> parameter for searching this element. The client application must support both methods.</p> <ul> <li>A server is capable of returning a patient’s medications using one of or both</li> </ul> <ol> <li>GET /MedicationOrder?patient=[id]</li> <li>GET /MedicationOrder?patient=[id]&amp;_include=MedicationOrder:medication</li> </ol> <p/><span>Search Parameters:</span><table border="1">
 						<thead>
@@ -1220,8 +1306,20 @@
 					</a>
 					<p>
 						<span>Supported Profiles:  </span>
+						<a href="http://fhir.org/guides/argonaut/StructureDefinition-argo-observationresults.html">
+							<span>Argonaut Data Query Result Observation Profile</span>
+							<br/>
+						</a>
+						<a href="http://fhir.org/guides/argonaut/StructureDefinition-argo-vitalsigns.html">
+							<span>Argonaut Data Query Vital Signs Profile</span>
+							<br/>
+						</a>
+						<a href="http://fhir.org/guides/argonaut/StructureDefinition-argo-smokingstatus.html">
+							<span>Argonaut Data Query Smoking Status Observation Profile</span>
+							<br/>
+						</a>
 						<br/>
-					</p>. <p><strong>Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-observationresults</strong></p> <ul> <li>A server is capable of returning all of a patient's laboratory results queried by category using GET [base]/Observation?patient=[id]&amp;category=laboratory.</li> <li>A server is capable of returning all of a patient's laboratory results queried by category code and date range usingGET [base]/Observation?patient=[id]&amp;category=laboratory&amp;date=[date]{&amp;date=[date]}.</li> <li>A server is capable of returning all of a patient's laboratory results queried by category and code using GET [base]/Observation?patient=[id]&amp;category=laboratory&amp;code=[LOINC].</li> <li>A server SHOULD be capable of returning all of a patient's laboratory results queried by category and one or more codes and date range using GET [base]/Observation?patient=[id]&amp;category=laboratory&amp;code=[LOINC1{,LOINC2,LOINC3,...}]&amp;date=[date]{&amp;date=[date]}.</li> </ul> <p><strong>Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-smokingstatus</strong></p> <ul> <li>A server is capable of returning a a patient’s smoking status using GET [base]/Observation?patient=[id]&amp;code=72166-2</li> </ul> <p><strong>Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-vitalsigns</strong></p> <ul> <li>A server is capable of returning all of a patient’s vital signs that it supports using GET [base]/Observation?patient=[id]&amp;category=vital-signs.</li> <li>A server is capable of returning all of a patient’s vital signs queried by date range using GET [base]/Observation?patient=[id]&amp;category=vital-signs&amp;date=[date]{&amp;date=[date]}.</li> <li><p>A server is capable of returning any of a patient’s vital signs queried by one or more of the codes listed below using GET [base]/Observation?patient=[id]&amp;code[vital sign LOINC{,LOINC2,LOINC3,…}].</p></li> <li><p>A server <strong>SHOULD</strong> be capable of returning any of a patient’s vital signs queried by one or more of the codes listed below and date range using GET [base]/Observation?patient=[id]&amp;code=[LOINC{,LOINC2…}]vital-signs&amp;date=[date]{&amp;date=[date]}.</p></li> </ul>     <p/><span>Search Parameters:</span><table border="1">
+					</p>.  <p><strong>Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-observationresults</strong></p> <p>A server is capable of returning all of a patient’s laboratory results queried by category using GET [base]/Observation?patient=[id]&amp;category=laboratory.<br /> A server is capable of returning all of a patient’s laboratory results queried by category code and date range usingGET [base]/Observation?patient=[id]&amp;category=laboratory&amp;date=[date]{&amp;date=[date]}.<br /> A server is capable of returning all of a patient’s laboratory results queried by category and code using GET [base]/Observation?patient=[id]&amp;category=laboratory&amp;code=[LOINC].</p> <p>A server SHOULD be capable of returning all of a patient’s laboratory results queried by category and one or more codes and date range using GET [base]/Observation?patient=[id]&amp;category=laboratory&amp;code=[LOINC1{,LOINC2,LOINC3,…}]&amp;date=[date]{&amp;date=[date]}.</p> <p><strong>Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-smokingstatus</strong></p> <ul> <li>A server is capable of returning a a patient’s smoking status using GET [base]/Observation?patient=[id]&amp;code=72166-2</li> </ul> <p><strong>Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-vitalsigns</strong></p> <ul> <li>A server is capable of returning all of a patient’s vital signs that it supports using GET [base]/Observation?patient=[id]&amp;category=vital-signs.</li> <li>A server is capable of returning all of a patient’s vital signs queried by date range using GET [base]/Observation?patient=[id]&amp;category=vital-signs&amp;date=[date]{&amp;date=[date]}.</li> <li><p>A server is capable of returning any of a patient’s vital signs queried by one or more of the codes listed below using GET [base]/Observation?patient=[id]&amp;code[vital sign LOINC{,LOINC2,LOINC3,…}].</p></li> <li><p>A server <strong>SHOULD</strong> be capable of returning any of a patient’s vital signs queried by one or more of the codes listed below and date range using GET [base]/Observation?patient=[id]&amp;code=[LOINC{,LOINC2…}]vital-signs&amp;date=[date]{&amp;date=[date]}.</p></li> </ul>     <p/><span>Search Parameters:</span><table border="1">
 						<thead>
 							<tr>
 								<th style="width:2.71in; ">
@@ -1321,6 +1419,10 @@
 					</a>
 					<p>
 						<span>Supported Profiles:  </span>
+						<a href="http://fhir.org/guides/argonaut/StructureDefinition-argo-procedure.html">
+							<span>Argonaut Data Query Procedure Profile</span>
+							<br/>
+						</a>
 						<br/>
 					</p> <p><strong>Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-procedure</strong></p> <ul> <li>A server is capable of returning a patient’s procedures using GET/Procedure?patient=[id].</li> <li>A server is capable of returning all of all of a patient’s procedures over a specified time period using GET /Procedure?patient=[id]&amp;date=[date]{&amp;date=[date]}.</li> </ul>   <p/><span>Search Parameters:</span><table border="1">
 						<thead>
@@ -1377,7 +1479,6 @@
 			<br/>
 		</div>
 	</text>
-
 
 
 	<url value="http://fhir.org/guides/argonaut/Conformance/server"/>
@@ -1907,7 +2008,20 @@
 		</resource>
 		<resource>
 <extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-resource-documentation">
-				<valueMarkdown value=" &lt;h4&gt;Search Criteria for StructureDefinition-argo-documentreference&lt;/h4&gt; &lt;ul&gt; &lt;li&gt;To fetch document references, the Server &lt;strong&gt;SHALL&lt;/strong&gt; support &lt;strong&gt;either&lt;/strong&gt;: &lt;ul&gt; &lt;li&gt;a direct query for DocumentReference resources as described here&lt;/li&gt; &lt;li&gt;or the &lt;a href=&quot;OperationDefinition-docref.html&quot;&gt;$docref operation&lt;/a&gt;&amp;nbsp;operation&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt; &lt;/ul&gt; &lt;p style=&quot;padding-left: 60px;&quot;&gt;The Client &lt;strong&gt;SHALL&lt;/strong&gt; support both methods.&lt;/p&gt; &lt;ul&gt; &lt;li&gt;If supporting a direct query, a&amp;nbsp;server &lt;strong&gt;SHALL&lt;/strong&gt;&amp;nbsp;be capable of returning at least the most recent CCD document references and &lt;strong&gt;MAY&lt;/strong&gt; provide most recent references to other document types for a patient using:GET [base]/DocumentReference/$docref?patient=[id]&lt;/li&gt; &lt;li&gt;If supporting a direct query, A server &lt;strong&gt;SHOULD&lt;/strong&gt;&amp;nbsp;be capable of returning references to CCD documents and &lt;strong&gt;MAY&lt;/strong&gt; provide references to other document types for a patient searched by type and/or date using:GET [base]/DocumentReference/$docref?patient=[id]{&amp;amp;type=[type]}{&amp;amp;period=[date]}&lt;/li&gt; &lt;/ul&gt;"/>
+				<valueMarkdown value=" &lt;h4&gt;Search Criteria for StructureDefinition-argo-documentreference&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;To fetch document references, the Server &lt;strong&gt;SHALL&lt;/strong&gt; support &lt;strong&gt;either&lt;/strong&gt;:
+&lt;ul&gt;
+&lt;li&gt;a direct query for DocumentReference resources as described here&lt;/li&gt;
+&lt;li&gt;or the &lt;a href=&quot;OperationDefinition-docref.html&quot;&gt;$docref operation&lt;/a&gt;&amp;nbsp;operation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p style=&quot;padding-left: 60px;&quot;&gt;The Client &lt;strong&gt;SHALL&lt;/strong&gt; support both methods.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If supporting a direct query, a&amp;nbsp;server &lt;strong&gt;SHALL&lt;/strong&gt;&amp;nbsp;be capable of returning at least the most recent CCD document references and &lt;strong&gt;MAY&lt;/strong&gt; provide most recent references to other document types for a patient using:GET [base]/DocumentReference/$docref?patient=[id]&lt;/li&gt;
+&lt;li&gt;If supporting a direct query, A server &lt;strong&gt;SHOULD&lt;/strong&gt;&amp;nbsp;be capable of returning references to CCD documents and &lt;strong&gt;MAY&lt;/strong&gt; provide references to other document types for a patient searched by type and/or date using:GET [base]/DocumentReference/$docref?patient=[id]{&amp;amp;type=[type]}{&amp;amp;period=[date]}&lt;/li&gt;
+&lt;/ul&gt;"/>
 			</extension>
 		<extension url="http://hl7.org/fhir/StructureDefinition/conformance-search-parameter-combination">
 				<extension url="required">
@@ -2317,7 +2431,13 @@
 		</resource>
 		<resource>
 			<extension url="http://fhir.org/guides/argonaut/StructureDefinition/argo-resource-documentation">
-				<valueMarkdown value=". &lt;p&gt;&lt;strong&gt;Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-observationresults&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;A server is capable of returning all of a patient&amp;rsquo;s laboratory results queried by category using GET [base]/Observation?patient=[id]&amp;amp;category=laboratory.&lt;/li&gt; &lt;li&gt;A server is capable of returning all of a patient&amp;rsquo;s laboratory results queried by category code and date range usingGET [base]/Observation?patient=[id]&amp;amp;category=laboratory&amp;amp;date=[date]{&amp;amp;date=[date]}.&lt;/li&gt; &lt;li&gt;A server is capable of returning all of a patient&amp;rsquo;s laboratory results queried by category and code using GET [base]/Observation?patient=[id]&amp;amp;category=laboratory&amp;amp;code=[LOINC].&lt;/li&gt; &lt;li&gt;A server SHOULD be capable of returning all of a patient&amp;rsquo;s laboratory results queried by category and one or more codes and date range using GET [base]/Observation?patient=[id]&amp;amp;category=laboratory&amp;amp;code=[LOINC1{,LOINC2,LOINC3,&amp;hellip;}]&amp;amp;date=[date]{&amp;amp;date=[date]}.&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;strong&gt;Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-smokingstatus&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;A server is capable of returning a a patient’s smoking status using GET [base]/Observation?patient=[id]&amp;amp;code=72166-2&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;strong&gt;Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-vitalsigns&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;A server is capable of returning all of a patient’s vital signs that it supports using GET [base]/Observation?patient=[id]&amp;amp;category=vital-signs.&lt;/li&gt; &lt;li&gt;A server is capable of returning all of a patient’s vital signs queried by date range using GET [base]/Observation?patient=[id]&amp;amp;category=vital-signs&amp;amp;date=[date]{&amp;amp;date=[date]}.&lt;/li&gt; &lt;li&gt;&lt;p&gt;A server is capable of returning any of a patient’s vital signs queried by one or more of the codes listed below using GET [base]/Observation?patient=[id]&amp;amp;code[vital sign LOINC{,LOINC2,LOINC3,…}].&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;A server &lt;strong&gt;SHOULD&lt;/strong&gt; be capable of returning any of a patient’s vital signs queried by one or more of the codes listed below and date range using GET [base]/Observation?patient=[id]&amp;amp;code=[LOINC{,LOINC2…}]vital-signs&amp;amp;date=[date]{&amp;amp;date=[date]}.&lt;/p&gt;&lt;/li&gt; &lt;/ul&gt;     "/>
+				<valueMarkdown value=". &lt;p&gt;&lt;strong&gt;Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-observationresults&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;A server is capable of returning all of a patient&amp;rsquo;s laboratory results queried by category using GET [base]/Observation?patient=[id]&amp;amp;category=laboratory.&lt;/li&gt;
+&lt;li&gt;A server is capable of returning all of a patient&amp;rsquo;s laboratory results queried by category code and date range usingGET [base]/Observation?patient=[id]&amp;amp;category=laboratory&amp;amp;date=[date]{&amp;amp;date=[date]}.&lt;/li&gt;
+&lt;li&gt;A server is capable of returning all of a patient&amp;rsquo;s laboratory results queried by category and code using GET [base]/Observation?patient=[id]&amp;amp;category=laboratory&amp;amp;code=[LOINC].&lt;/li&gt;
+&lt;li&gt;A server SHOULD be capable of returning all of a patient&amp;rsquo;s laboratory results queried by category and one or more codes and date range using GET [base]/Observation?patient=[id]&amp;amp;category=laboratory&amp;amp;code=[LOINC1{,LOINC2,LOINC3,&amp;hellip;}]&amp;amp;date=[date]{&amp;amp;date=[date]}.&lt;/li&gt;
+&lt;/ul&gt; &lt;p&gt;&lt;strong&gt;Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-smokingstatus&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;A server is capable of returning a a patient’s smoking status using GET [base]/Observation?patient=[id]&amp;amp;code=72166-2&lt;/li&gt; &lt;/ul&gt; &lt;p&gt;&lt;strong&gt;Summary of Argonaut Data Query Search Criteria for StructureDefinition-argo-vitalsigns&lt;/strong&gt;&lt;/p&gt; &lt;ul&gt; &lt;li&gt;A server is capable of returning all of a patient’s vital signs that it supports using GET [base]/Observation?patient=[id]&amp;amp;category=vital-signs.&lt;/li&gt; &lt;li&gt;A server is capable of returning all of a patient’s vital signs queried by date range using GET [base]/Observation?patient=[id]&amp;amp;category=vital-signs&amp;amp;date=[date]{&amp;amp;date=[date]}.&lt;/li&gt; &lt;li&gt;&lt;p&gt;A server is capable of returning any of a patient’s vital signs queried by one or more of the codes listed below using GET [base]/Observation?patient=[id]&amp;amp;code[vital sign LOINC{,LOINC2,LOINC3,…}].&lt;/p&gt;&lt;/li&gt; &lt;li&gt;&lt;p&gt;A server &lt;strong&gt;SHOULD&lt;/strong&gt; be capable of returning any of a patient’s vital signs queried by one or more of the codes listed below and date range using GET [base]/Observation?patient=[id]&amp;amp;code=[LOINC{,LOINC2…}]vital-signs&amp;amp;date=[date]{&amp;amp;date=[date]}.&lt;/p&gt;&lt;/li&gt; &lt;/ul&gt;     "/>
 			</extension>
 			<extension url="http://hl7.org/fhir/StructureDefinition/conformance-search-parameter-combination">
 				<extension url="required">
