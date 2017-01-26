@@ -32,6 +32,6 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 #### Examples
 
-   - [Some Day Smoker]\(Observation-some-day-smoker.html)
+   - [Some Day Smoker[(Observation-some-day-smoker.html)
 
    [Observation]: http://hl7.org/fhir/observation.html

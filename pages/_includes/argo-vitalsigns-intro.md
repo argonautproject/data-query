@@ -128,19 +128,19 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 #### Examples
 
-- [observation-blood-glucose]\(Observation-blood-glucose.html)
-- [observation-blood-pressure]\(Observation-blood-pressure.html)
-- [observation-bmi]\(Observation-bmi.html)
-- [observation-bp-data-absent]\(Observation-bp-data-absent.html)
-- [observation-head-circumference]\(Observation-head-circumference.html)
-- [observation-heart-rate]\(Observation-heart-rate.html)
-- [observation-height]\(Observation-height.html)
-- [observation-length]\(Observation-length.html)
-- [observation-oxygen-saturation]\(Observation-oxygen-saturation.html)
-- [observation-respiratory-rate]\(Observation-respiratory-rate.html)
-- [observation-temperature]\(Observation-temperature.html)
-- [observation-vitals-panel]\(Observation-vitals-panel.html)
-- [observation-weight]\(Observation-weight.html)
+- [observation-blood-glucose[(Observation-blood-glucose.html)
+- [observation-blood-pressure[(Observation-blood-pressure.html)
+- [observation-bmi[(Observation-bmi.html)
+- [observation-bp-data-absent[(Observation-bp-data-absent.html)
+- [observation-head-circumference[(Observation-head-circumference.html)
+- [observation-heart-rate[(Observation-heart-rate.html)
+- [observation-height[(Observation-height.html)
+- [observation-length[(Observation-length.html)
+- [observation-oxygen-saturation[(Observation-oxygen-saturation.html)
+- [observation-respiratory-rate[(Observation-respiratory-rate.html)
+- [observation-temperature[(Observation-temperature.html)
+- [observation-vitals-panel[(Observation-vitals-panel.html)
+- [observation-weight[(Observation-weight.html)
 
 
 [Observation]: http://hl7.org/fhir/observation.html
