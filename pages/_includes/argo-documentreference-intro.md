@@ -3,7 +3,7 @@
 
 ##### Scope and Usage
 
-This profile sets minimum expectations  for searching and fetching patient documents using the [DocumentReference Resource]. It is loosely based on the use case ITI-68 in [IHE MHD] specification.  It identifies the mandatory core elements, extensions, vocabularies and value sets which **SHALL** be present in the DocumentReference resource when using this profile.
+This profile sets minimum expectations  for searching and fetching patient documents using the [DocumentReference Resource]. It is inspired by ITI-68 in [IHE MHD] specification.  It identifies the mandatory core elements, extensions, vocabularies and value sets which **SHALL** be present in the DocumentReference resource when using this profile.
 
 **Example Usage Scenarios:**
 
@@ -36,11 +36,12 @@ In addition it should have ( if available) :
 
 **Profile specific implementation guidance:**
 
-- For a C-CDA Clinical Summary of Care (CCD):
- - the document type code is the LOINC code  [34133-9](http://s.details.loinc.org/LOINC/34133-9.html?sections=Comprehensive) (Summary of episode note).
-  - the format code is `urn:hl7-org:sdwg:ccda-structuredBody:2.1`
-- The https address may refer to a FHIR Binary Resource (i.e. [base]/Binary/[id]) address on the server
-- The https address may have a parameter that identifies the patient (e.g. GET [url]?patient=[id]). Argonaut servers SHOULD not require this parameter, but for IHE compatibility reasons SHALL allow it to be provided, and SHALL check that it is correct if it is provided.
+For a C-CDA Clinical Summary of Care (CCD):
+
+-   The document type code is the LOINC code  [34133-9](http://s.details.loinc.org/LOINC/34133-9.html?sections=Comprehensive) (Summary of episode note).
+-   The format code is `urn:hl7-org:sdwg:ccda-structuredBody:2.1`
+-   The https address may refer to a FHIR Binary Resource (i.e. [base]/Binary/[id]) address on the server
+-   The https address may have a parameter that identifies the patient (e.g. GET [url]?patient=[id]). Argonaut servers SHOULD not require this parameter, but for IHE compatibility reasons SHALL allow it to be provided, and SHALL check that it is correct if it is provided.
 
 #### Examples
 
