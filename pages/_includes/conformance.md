@@ -1,4 +1,4 @@
-Conformance requirements defined for the Argonaut Data Query implementation Guide
+Conformance requirements defined in the Argonaut Data Query Implementation Guide
 ---------------------------------------------------------------------------------
 
 The following [Conformance] resources set the minimum expectations for the Argonaut Data Query client and server behaviors for searching and fetching health data associated with a Patient:
