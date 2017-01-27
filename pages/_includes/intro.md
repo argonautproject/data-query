@@ -1,7 +1,7 @@
 ﻿
 ## Argonaut Data Query Implementation Guide
 
-The Argonaut Data Query Implementation Guide is based upon the core [FHIR] API and documents the:
+ The Argonaut Data Query Implementation Guide is based upon the core [FHIR] DSTU2 API and documents:
 
  - Security and Authorization
  - Data element query of the ONC Common Clinical Data Set
