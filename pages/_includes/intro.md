@@ -1,4 +1,4 @@
-
+﻿
 ## Argonaut Data Query Implementation Guide
 
 The Argonaut Data Query Implementation Guide is based upon the core [FHIR] API and documents the:
@@ -33,7 +33,7 @@ Argonaut uses SMART on FHIR authorization for apps that connect to EHR data. For
 
   ----------------------
 
-  The Argonaut data element query IGs are intended to meet the 2015 Edition certification criterion for Patient Selection 170.315(g)(7) and Application Access – Data Category Request 170.315(g)(8). They were created for each of the 2015 Edition Common Clinical Data Set. Where applicable they are based on the HL7 U.S. [Data Access Framework (DAF) FHIR DSTU2 Implementation Guide]. However, the Argonaut use case and requirements per resource are a subset of those of the DAF implementation guide.
+  The Argonaut data element query IG is intended to meet the 2015 Edition certification criterion for Patient Selection 170.315(g)(7) and Application Access – Data Category Request 170.315(g)(8). They were created for each of the 2015 Edition Common Clinical Data Set. Where applicable they are based on the HL7 U.S. [Data Access Framework (DAF) FHIR DSTU2 Implementation Guide]. However, the Argonaut use case and requirements per resource are a subset of those of the DAF implementation guide.
 
   The table below lists the FHIR Resources used for the corresponding 2015 Edition Common Clinical Data Set (CCDS) Data elements:
 
@@ -62,7 +62,7 @@ Argonaut uses SMART on FHIR authorization for apps that connect to EHR data. For
   (21) |  Health concerns | Condition
 
 
-  The Argonaut Profiles for each of the data element queries is listed below.  Each profile defines the minimum mandatory elements, extensions and terminology requirements that **MUST** be present. For each profile requirements and guidance are given in a simple narrative summary. A formal hierarchical table that presents a [logical view] of the content in both a differential and snapshot view is also provided along with references to appropriate terminologies and examples.
+  The Argonaut Profiles for each of the data element queries is listed below.  Each profile defines the minimum mandatory elements, extensions and terminology requirements that **MUST** be present. Requirements and guidance are given in the profile narrative summary. A formal hierarchical table that presents a [logical view] of the content in both a differential and snapshot view is also provided along with references to appropriate terminologies and examples.
 
   -  [Argonaut AllergyIntolerance Profile](StructureDefinition-argo-allergyintolerance.html)
   -  [Argonaut CarePlan Profile](StructureDefinition-argo-careplan.html)
@@ -93,9 +93,9 @@ Argonaut uses SMART on FHIR authorization for apps that connect to EHR data. For
 
  ------------------
 
- For the Argonaut Document Query Implementation guide, we are focused on the provider and patient access and retrieval of a patient's existing C-CDA formats - specifically, transition of care and patient summary [CCD documents] required for Meaningful Use.  However other document types like PDF documents can be retrieved too. These are exposed in FHIR using a [DocumentReference Resource:  to index/search for them. This guide provides the minimal requirements to fetch a URL link to either a) patient's existing documents which have been indexed or b) a “virtual” documents such as a CCD that could be created “on-demand”.
+ The Argonaut Document Query Implementation guide defines how a provider or patient can retrieve a patient's existing clinical document - specifically, transition of care and patient summary C-CDA [CCD documents] required for Meaningful Use.  However other document formats, such as PDF, can be retrieved too. These are exposed in FHIR using a [DocumentReference] Resource:  to index/search for them. This guide provides the minimal requirements to fetch a URL link to either a) patient's existing documents which have been indexed or b) a “virtual” documents such as a CCD that could be created “on-demand”.
 
- The Document itself can be subsequently retrieved using the link provided from the DocumentQuery search results. The link could be ,for example, a [FHIR endpoint]  to a [Binary Resource]  or some other document repository. The details of how to retrieve the document are not covered in this guide.
+ The Document itself can be subsequently retrieved using the link provided from the DocumentQuery search results. The link could be, for example, a [FHIR endpoint] (FHIR STU3) to a [Binary Resource]  or some other document repository. The details of how to retrieve the document are not covered in this guide.
 
  **Use Case**
 
@@ -120,9 +120,10 @@ that presents a [logical view:  of the content in both a differential and snapsh
 
 
 [FHIR endpoint]: http://hl7.org/fhir/http.html
-[Binary Resource]: http://hl7.org/fhir/binary.html
+[Binary Resource]: http://hl7.org/fhir/DSTU2/binary.html
+[DocumentReference]: http://hl7.org/fhir/DSTU2/documentreference.html
 [CCD documents]: https://en.wikipedia.org/wiki/Continuity_of_Care_Document
-[FHIR]: http://hl7.org/fhir
+[FHIR]: http://hl7.org/fhir/DSTU2/index.html
 [Data Access Framework]: http://hl7.org/fhir/daf/daf.html
 [logical view]: http://hl7.org/fhir/formats.html
-[Data Access Framework (DAF) FHIR DSTU2 Implementation Guide]: http://hl7.org/fhir/daf/daf.html
+[Data Access Framework (DAF) FHIR DSTU2 Implementation Guide]: http://hl7.org/fhir/DSTU2/daf/daf.html
