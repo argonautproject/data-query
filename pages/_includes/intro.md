@@ -1,4 +1,3 @@
-﻿
 ## Argonaut Data Query Implementation Guide
 
  The Argonaut Data Query Implementation Guide is based upon the core [FHIR] DSTU2 API and documents:
