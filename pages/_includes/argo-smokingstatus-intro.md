@@ -27,11 +27,11 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
 
 **Profile specific implementation guidance:**
 
-* none
+* Smoking observation LOINC = 72166-2 *Tobacco smoking status NHIS*
 
 
 #### Examples
 
-   - [Some Day Smoker[(Observation-some-day-smoker.html)
+   - [Some Day Smoker](Observation-some-day-smoker.html)
 
    [Observation]: http://hl7.org/fhir/observation.html

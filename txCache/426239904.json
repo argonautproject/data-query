@@ -1,1 +1,0 @@
-{"resourceType":"OperationOutcome","issue":[{"details":{"text":"Error expanding ValueSet \"http://hl7.org/fhir/ValueSet/conformance-statement-kind: Error unmarshalling resource: Invalid pointer operation"}}]}
