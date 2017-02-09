@@ -64,7 +64,7 @@ The following data-elements are mandatory (i.e data MUST be present). These are 
     <tr>
       <td>Oxygen saturation</td>
       <td>59408-5</td>
-      <td><em>Oxygen saturation in Arterial blood by Pulse oximetry</em> - 59408-5 (Oxygen saturation in Arterial blood by Pulse oximetry) replaces the deprecated code 2710-2 which had been listed in C-CDA.</td>
+      <td><em>Oxygen saturation in Arterial blood by Pulse oximetry</em> - This LOINC replaces the deprecated code 2710-2 <em>Deprecated Oxygen saturation in Capillary blood by Oximetry</em> which had been listed in C-CDA.</td>
       <td>%</td>
     </tr>
     <tr>
