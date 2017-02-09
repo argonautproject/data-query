@@ -1,4 +1,4 @@
-This profile sets minimum expectations for the [CarePlan] resource for identifying the Care team members associated with a patient. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. **Note:** in FHIR STU3 the new [CareTeam] resource is recommended. 
+This profile sets minimum expectations for the [CarePlan] resource for identifying the Care team members associated with a patient. It identifies which core elements, extensions, vocabularies and value sets **SHALL** be present in the resource when using this profile. **Note:** in FHIR STU3 the new [CareTeam] resource is recommended.
 
 **Example Usage Scenarios:**
 
@@ -15,7 +15,7 @@ Since we are using the CarePlan Resource for identifying the Care team members, 
 **Each CareTeam must have:**
 
 1.  a patient
-1.  a status code of "active"
+1.  a status code
 1.  a category code of "careteam"
 1.  a participant role for each careteam members
 1.  names of careteam members which can be:

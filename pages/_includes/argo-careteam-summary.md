@@ -1,8 +1,9 @@
 #### Complete Summary of the Mandatory Requirements
 
 1.  One reference to a patient in `CareTeam.subject`
-1.  A fixed `CareTeam.status` = "active"
-1.  One category in `Careplan.category` which must have:
+1.  A status code in `CareTeam.status` which has a [required](http://hl7.org/fhir/terminologies.html#required) binding to the
+[CarePlanStatus] value set.
+1.  A category in `Careplan.category` which must have:
 -    a fixed `Careplan.category.coding.system` = "[http://argonaut.hl7.org/]"
 -    a fixed `Careplan.category.coding.code` = "careteam"
 1.  One participant role for each careteam member in
@@ -12,3 +13,4 @@ Value Set] value set.
 
  [CareTeam Provider Role Value Set]: ValueSet-provider-role.html
 [http://argonaut.hl7.org/]: ValueSet-argo-codesystem.html
+[CarePlanStatus]: http://hl7.org/fhir/ValueSet-care-plan-status.html
