@@ -1476,7 +1476,7 @@
 					</p>
 					<ul>
 						<li>A server is capable of returning all of a patient's laboratory results queried by category using GET [base]/Observation?patient=[id]&amp;category=laboratory.</li>
-						<li>A server is capable of returning all of a patient's laboratory results queried by category code and date range usingGET [base]/Observation?patient=[id]&amp;category=laboratory&amp;date=[date]{&amp;date=[date]}.</li>
+						<li>A server is capable of returning all of a patient's laboratory results queried by category code and date range using GET [base]/Observation?patient=[id]&amp;category=laboratory&amp;date=[date]{&amp;date=[date]}.</li>
 						<li>A server is capable of returning all of a patient's laboratory results queried by category and code using GET [base]/Observation?patient=[id]&amp;category=laboratory&amp;code=[LOINC].</li>
 						<li>A server SHOULD be capable of returning all of a patient's laboratory results queried by category and one or more codes and date range using GET [base]/Observation?patient=[id]&amp;category=laboratory&amp;code=[LOINC1{,LOINC2,LOINC3,...}]&amp;date=[date]{&amp;date=[date]}.</li>
 					</ul>

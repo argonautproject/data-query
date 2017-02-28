@@ -26,9 +26,9 @@ igpy = {"paths":{"temp":"temp","specification":"http://hl7.org/fhir/DSTU2","qa":
 
 logging.info('create the ig.xml file template as string')
 
-igxml ='''<?xml version="1.0" encoding="UTF-8"?><!--Hidden IG for de facto IG publishing--><ImplementationGuide xmlns="http://hl7.org/fhir"><id value="ig"/><url value="http://fhir.org/guides/argonaut/ImplementationGuide/ig"/><name value="Implementation Guide Template"/><status value="draft"/><experimental value="true"/><publisher value="FHIR Project"/><package><name value="base"/></package><page><source value="index.html"/><name value="blah"/><kind value="page"/></page></ImplementationGuide>'''
+igxml ='''<?xml version="1.0" encoding="UTF-8"?><!--Hidden IG for de facto IG publishing--><ImplementationGuide xmlns="http://hl7.org/fhir"><id value="ig"/><url value="http://fhir.org/guides/argonaut/ImplementationGuide/ig"/><name value="Implementation Guide Template"/><status value="draft"/><experimental value="true"/><publisher value="FHIR Project"/><package><name value="base"/></package><page><source value="index.html"/><name value="Argonaut Data Query Homepage"/><kind value="page"/></page></ImplementationGuide>'''
 
-# extension in spreadsheet - these need to be manually listed here  NOTE: as of 1/2016 IG publisher not rendering them correctly
+# extension in spreadsheet - these need to be manually listed here  NOTE: as of 1/2016 IG publisher not rendering them correctl - these need to be manually listed here needs to be named same as SD files ( eg: argonaut-[id])
 
 extensions = []
 
@@ -39,6 +39,15 @@ operations = []
 # search in spreadsheet - these need to be manually listed here
 
 searches = []
+
+#if valueset in spreadsheet is a codesystem - these need to be manually listed here
+
+codesystems = []
+
+#if valueset in spreadsheet is not a codesystem - these need to be manually listed
+
+valuesets = []
+
 
 
 
@@ -135,11 +144,16 @@ def main():
     # add spreadsheet operations
     for operation in operations:
        update_igjson('OperationDefinition', operation, 'base')
-       update_igjson('OperationDefinition', operation, 'defns')
     # add spreadsheet search parameters
     for search in searches:
        update_igjson('SearchParameter', search, 'base')
-       update_igjson('SearchParameter', search, 'defns')
+    # add spreadsheet code systems
+    for codesystem in codesystems:
+       update_igjson('CodeSystem', codesystem, 'base')
+       update_igjson('ValueSet', codesystem, 'base')
+    # add spreadsheet valuesets
+    for valueset in valuesets:
+       update_igjson('ValueSet', valueset, 'base')
 
     folder = 'examples'
     examples = os.listdir(
