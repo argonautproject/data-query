@@ -1,26 +1,20 @@
 
-#  Welcome to the Argonaut-DSTU2 Implemenation Guide Repository
+#  Welcome to the Argonaut Data and Document Query Implementation Guide Repository
 
-Authors:  Eric Haas, Brett Marquard
+Author: [Eric Haas](ehaas@healthedatainc.com)
 
+Author: [Brett Marquard](brett@riverrockassociates.com)
+
+Argonaut Lead: [Micky Tripathi](mtripathi@maehc.org)
+
+Project Coordinator: [Jennifer Monahan](jmonahan@maehc.org)
 
 -----
-FHIR DSTU2 Implementation Guide
 
+### Find the Argonaut-Provider Directory Implemenation Guide at
 
-GitHub will automatically trigger a new build whenever you commit changes.
-(To manually trigger a build, just `POST` to the Webhook URL yourself, for example via:
-`curl -X POST "https://2rxzc1u4ji.execute-api.us-east-1.amazonaws.com/prod/publish?Healthedata1/Argo-DSTU2"`)
-
-*Note: a build takes 2-3 minutes to complete. Then you can...*
-
-(If the CI Build is unavailable a recent version of the build is available here : http://healthedatainc.com/go-ftp/Argo-DSTU2/)
-
-
-### Find your rendered IG automatically available at
-
-http://build.fhir.org/ig/Healthedata1/Argo-DSTU2
+http://build.fhir.org/ig/argonautproject/data-query
 
 ### Find debugging info about the build
 
-http://build.fhir.org/ig/Healthedata1/Argo-DSTU2/debug.tgz
+http://build.fhir.org/ig/argonautproject/data-query/debug.tgz
