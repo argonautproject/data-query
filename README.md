@@ -1,6 +1,8 @@
 
 #  Welcome to the Argonaut Data and Document Query Implementation Guide Repository
 
+For information about the Argonaut Project follow this [link](http://argonautwiki.hl7.org/index.php?title=Main_Page).
+
 Author: [Eric Haas](ehaas@healthedatainc.com)
 
 Author: [Brett Marquard](brett@riverrockassociates.com)
