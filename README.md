@@ -19,4 +19,4 @@ http://build.fhir.org/ig/argonautproject/data-query
 
 ### Find debugging info about the build
 
-http://build.fhir.org/ig/argonautproject/data-query/debug.tgz
+http://build.fhir.org/ig/argonautproject/data-query/build.log
