@@ -37,7 +37,7 @@
 			<span>Supported Operations: </span>
 			<span style="font-weight:bold;">MAY</span>
 			<span> Support </span>
-			<a href="http://fhir.org/guides/argonaut/OperationDefinition/docref">
+			<a href="http://fhir.org/guides/argonaut/r2/OperationDefinition-docref.html">
 				<span>docref</span>
 			</a>
 			<h4>
@@ -897,7 +897,7 @@
 							<br/>
 						</a>
 						<br/>
-					</p> <h4>Search Criteria for StructureDefinition-argo-documentreference</h4> <ul> <li>To fetch document references, the Server <strong>SHALL</strong> support <strong>either</strong>: <ul> <li>a direct query for DocumentReference resources as described here</li> <li>or the <a href="OperationDefinition-docref.html">$docref operation</a>&#160;operation</li> </ul> </li> </ul> <p style="padding-left: 60px;">The Client <strong>SHALL</strong> support both methods.</p> <ul> <li>If supporting a direct query, a&#160;server <strong>SHALL</strong>&#160;be capable of returning at least the most recent CCD document references and <strong>MAY</strong> provide most recent references to other document types for a patient using:GET [base]/DocumentReference/$docref?patient=[id]</li> <li>If supporting a direct query, A server <strong>SHOULD</strong>&#160;be capable of returning references to CCD documents and <strong>MAY</strong> provide references to other document types for a patient searched by type and/or date using:GET [base]/DocumentReference/$docref?patient=[id]{&amp;type=[type]}{&amp;period=[date]}</li> </ul><p/><span>Search Parameters:</span><table border="1">
+					</p> <h4>Search Criteria for StructureDefinition-argo-documentreference</h4> <ul> <li>To fetch document references, the Server <strong>SHALL</strong> support <strong>either</strong>: <ul> <li>a direct query for DocumentReference resources as described here</li> <li>or the <a href="http://fhir.org/guides/argonaut/r2/OperationDefinition-docref.html">$docref operation</a>&#160;operation</li> </ul> </li> </ul> <p style="padding-left: 60px;">The Client <strong>SHALL</strong> support both methods.</p> <ul> <li>If supporting a direct query, a&#160;server <strong>SHALL</strong>&#160;be capable of returning at least the most recent CCD document references and <strong>MAY</strong> provide most recent references to other document types for a patient using:GET [base]/DocumentReference/$docref?patient=[id]</li> <li>If supporting a direct query, A server <strong>SHOULD</strong>&#160;be capable of returning references to CCD documents and <strong>MAY</strong> provide references to other document types for a patient searched by type and/or date using:GET [base]/DocumentReference/$docref?patient=[id]{&amp;type=[type]}{&amp;period=[date]}</li> </ul><p/><span>Search Parameters:</span><table border="1">
 						<thead>
 							<tr>
 								<th style="width:2.71in; ">
