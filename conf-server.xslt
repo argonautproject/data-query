@@ -8,7 +8,7 @@
 	<!--   extension urls here:-->
 		<xsl:param name="ext1" select="'http://hl7.org/fhir/StructureDefinition/conformance-search-parameter-combination'"/>
 			<xsl:param name="ext2" select="'http://hl7.org/fhir/StructureDefinition/conformance-expectation'"/>
-					<xsl:param name="ext3" select="'http://fhir.org/guides/argonaut/StructureDefinition/argo-fromResource'"/>
+					<xsl:param name="ext3" select="'http://fhir.org/guides/argonaut/StructureDefinition/argo-profile-link'"/>
 					
 	<xsl:param name="altova:bGeneratingFromPxf" select="false()"/>
 	<xsl:param name="SV_OutputFormat" select="'HTML'"/>
